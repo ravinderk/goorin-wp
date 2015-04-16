@@ -1,6 +1,6 @@
 <?php
 /*
-* Template Name: Help
+* Template Name: Press
 */
 get_header(); ?>
 <div class="tertpage">
