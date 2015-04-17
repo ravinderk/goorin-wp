@@ -142,14 +142,14 @@ require get_template_directory() . '/inc/jetpack.php';
  * Shop
  */
 $args = array(
-    'label'              => __( 'Shop' ),
-    'singular_label'     => __( 'Shop' ),
+    'label'              => __( 'Shops' ),
+    'singular_label'     => __( 'Shops' ),
     'public'             => true,
     'publicly_queryable' => true,
     'show_ui'            => true,
     'query_var'          => true,
     'rewrite'            => array(
-        'slug'       => 'shop',
+        'slug'       => 'shops',
         'with_front' => true
     ),
     'capability_type'    => 'post',
@@ -160,7 +160,7 @@ $args = array(
         'editor',
         'thumbnail'
     ),
-    'has_archive'        => 'shop'
+    'has_archive'        => 'shops'
 );
 
-register_post_type( 'shop', $args );
+register_post_type( 'shops', $args );
