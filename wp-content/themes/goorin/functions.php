@@ -136,3 +136,31 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+
+/**
+ * Shop
+ */
+$args = array(
+    'label'              => __( 'Shop' ),
+    'singular_label'     => __( 'Shop' ),
+    'public'             => true,
+    'publicly_queryable' => true,
+    'show_ui'            => true,
+    'query_var'          => true,
+    'rewrite'            => array(
+        'slug'       => 'shop',
+        'with_front' => true
+    ),
+    'capability_type'    => 'post',
+    'hierarchical'       => false,
+    'menu_position'      => 5,
+    'supports'           => array(
+        'title',
+        'editor',
+        'thumbnail'
+    ),
+    'has_archive'        => 'shop'
+);
+
+register_post_type( 'shop', $args );
