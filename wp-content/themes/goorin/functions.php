@@ -158,7 +158,8 @@ $args = array(
     'supports'           => array(
         'title',
         'editor',
-        'thumbnail'
+        'thumbnail',
+        'comments'
     ),
     'has_archive'        => 'shops'
 );
