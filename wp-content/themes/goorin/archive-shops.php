@@ -4,7 +4,6 @@
 */
 
 get_header(); ?>
-	Hello test
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
