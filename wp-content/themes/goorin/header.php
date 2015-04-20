@@ -19,7 +19,7 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="main">
-	<header id="header" class="master-header">
+	<header class="site-header">
         <div class="container">
             <span class="saletext">SEE OUR <a href="#">Fall Sample Sale!</a></span>
             <a href="#" class="menu-toggle">
