@@ -133,8 +133,8 @@
                         </div>
                     </li>
                     <li class="nav-primary-item nav-3 logo-li"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo"></a></li>
-                    <li class="nav-primary-item nav-4"><a href="#" class="nav-primary-item-link">Shops</a></li>
-                    <li class="nav-primary-item nav-5"><a href="#" class="nav-primary-item-link">Experience</a></li>
+                    <li class="nav-primary-item nav-4"><a href="<?php echo esc_url( home_url() ); ?>/shops" class="nav-primary-item-link">Shops</a></li>
+                    <li class="nav-primary-item nav-5"><a href="<?php echo esc_url( home_url() ); ?>/experience" class="nav-primary-item-link">Experience</a></li>
                 </ul>
             </nav>
             <menu class="menu">
