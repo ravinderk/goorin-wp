@@ -14,6 +14,8 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/app.css?ver='.filemtime( get_template_directory().'/css/app.css'); ?>">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/global.js"></script>
 <?php wp_head(); ?>
 </head>
 
@@ -63,7 +65,7 @@
                                     </ul>
                                     <figure>
                                         <a href="#">
-                                            <img src="assets/images/fall-winter-img.png" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/fall-winter-img.png" alt="">
                                         </a> 
                                         <a href="#">
                                             <p>Fall/Winter Commuter Collection</p>
@@ -106,7 +108,7 @@
                                     </ul>
                                     <figure>
                                         <a href="#">
-                                            <img src="assets/images/fall-winter-img.png" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/fall-winter-img.png" alt="">
                                         </a> 
                                         <a href="#">
                                             <p>Fall/Winter Commuter Collection</p>
