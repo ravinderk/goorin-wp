@@ -30,6 +30,19 @@
             <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo logo-mobile"></a>
             <a href="#" class="cart-count">2</a>
             <nav class="nav-primary">
+                <div class="site-search">
+			    	<div class="container">
+			    		<div class="site-search-main">
+			    			<a href="#" class="search-close"><span></span></a>
+			    			<div class="site-search-form">
+			    				<form role="search" method="get" id="searchform" class="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+									<input type="text" value="<?php echo get_search_query(); ?>" name="s" id="s" placeholder="Search" />
+									<input type="submit" id="searchsubmit" value="<?php echo esc_attr_x( 'Search', 'submit button' ); ?>" />
+								</form>	
+			    			</div>
+			    		</div>
+			    	</div>
+			    </div>
                 <ul>
                     <li class="nav-primary-item nav-1 has-subnav">
                         <a href="#" class="navlink nav-primary-item-link">Mens<span></span></a>
@@ -125,9 +138,11 @@
                 </ul>
             </nav>
             <menu class="menu">
-                <a href="#">Sign in</a>
+            	<a href="#" class="menu-account-link">ACCOUNT</a>
                 <span>•</span>
-                <a href="#">Cart</a>
+                <a href="#" class="menu-search-link">Search</a>
+                <span>•</span>
+                <a href="#" class="menu-cart-link">Cart</a>
             </menu>
         </div>
         <div class="nav-overlay"></div>
