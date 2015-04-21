@@ -137,7 +137,7 @@
             } else {
               // only remove “detached” class if user is at the top of document (menu jump fix)
               if (currentScroll <= 0){
-                $('header').removeClass();
+                $('header').removeClass('detached');
               }
             }
 
