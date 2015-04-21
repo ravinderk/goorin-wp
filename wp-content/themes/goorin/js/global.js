@@ -29,6 +29,7 @@
                 $('.nav-primary-item').removeClass('active');
                 $('.nav-primary a.navlink').off('click', mob_trigger);
                 $('.nav-primary a.navlink').on('click', mob_trigger);
+                $('.site-search').css('display' , 'block');
             })
             .register("screen and (min-width:1140px)", function() {
                 $('body').removeClass('bodyhidden');
@@ -40,7 +41,7 @@
                 $('.nav-primary').removeClass('is_hover');
                 $('.nav-primary-item').removeClass('active');
                 $('.nav-primary-item').removeClass('is_mobile_active');
-
+                $('.site-search').css('display' , 'none');
                 $('.nav-primary-item-link').hover(function() {
                     if ($(this).parent().hasClass('has-subnav')) {
                         $('.nav-overlay').addClass('is_open');
@@ -92,7 +93,16 @@
             }
             return false
         });
-        
+        $('.menu-search-link').click(function() {
+            $(this).toggleClass('is_search_open');
+            $('.site-search').slideToggle();
+            return false
+        });
+         $('.search-close').click(function() {
+            $('.menu-search-link').toggleClass('is_search_open');
+            $('.site-search').slideUp();
+            return false
+        });
         var previousScroll = 0, // previous scroll position
         menuOffset = 76, // height of menu (once scroll passed it, menu is hidden)
         detachPoint = 650, // point of detach (after scroll passed it, menu is fixed)
