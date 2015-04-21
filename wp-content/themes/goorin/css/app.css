@@ -1654,7 +1654,7 @@ body.bodyhidden, .site-header .submenu, .site-header .nav-primary, .site-search 
     height: 40px;
     width: 40px;
     position: absolute;
-    top: 16px;
+    top: 22px;
     left: 0;
     display: inline-block;
   }

@@ -78,7 +78,7 @@
                                     </ul>
                                     <figure>
                                         <a href="#">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/fall-winter-img.png" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/fall-winter-men-img.png" alt="">
                                         </a> 
                                         <a href="#">
                                             <p>Fall/Winter Commuter Collection</p>
@@ -121,7 +121,7 @@
                                     </ul>
                                     <figure>
                                         <a href="#">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/fall-winter-img.png" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/fall-winter-women-img.png" alt="">
                                         </a> 
                                         <a href="#">
                                             <p>Fall/Winter Commuter Collection</p>
