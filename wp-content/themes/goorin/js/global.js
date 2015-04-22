@@ -93,7 +93,7 @@
             }
             return false
         });
-        $('.menu-search-link').click(function() {
+        $('.menu-search-link').mouseover(function() {
             $(this).toggleClass('is_search_open');
             $('.site-search').slideToggle();
             return false

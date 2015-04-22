@@ -962,6 +962,16 @@ body.bodyhidden, .site-header .submenu, .site-header .nav-primary, .site-search 
   text-decoration: underline;
 }
 
+/* line 119, sass/components/_dropdown.scss */
+.cart-dropdown {
+  width: 565px;
+  background: #edf0e8;
+  border: 1px solid #bebebe;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
 /* line 2, sass/components/_navigation.scss */
 .site-header .nav-primary {
   z-index: 999;
