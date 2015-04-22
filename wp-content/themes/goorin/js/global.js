@@ -21,7 +21,15 @@
             $(this).parent().siblings().find('.submenu').slideUp();
             return false;
         };
+        var cart_mouseleave = function() {
+            $(this).fadeOut();
+        };
         enquire
+            .register("screen and (max-width:767px)", function() {
+                $('.site-search').css('display' , 'block');
+                $('.cart-dropdown').css('display' , 'none');
+                $('.cart-dropdown').off('mouseleave', cart_mouseleave);
+            })    
             .register("screen and (max-width:1139px)", function() {
                 $('.nav-overlay').removeClass('is_open');
                 $('.site-header').removeClass('nav_hovered');
@@ -31,6 +39,7 @@
                 $('.nav-primary a.navlink').on('click', mob_trigger);
                 $('.site-search').css('display' , 'block');
                 $('.cart-dropdown').css('display' , 'none');
+                $('.cart-dropdown').on('mouseleave', cart_mouseleave);
             })
             .register("screen and (min-width:1140px)", function() {
                 $('body').removeClass('bodyhidden');
@@ -44,6 +53,7 @@
                 $('.nav-primary-item').removeClass('is_mobile_active');
                 $('.site-search').css('display' , 'none');
                 $('.cart-dropdown').css('display' , 'none');
+                $('.cart-dropdown').on('mouseleave', cart_mouseleave);
                 $('.nav-primary-item-link').hover(function() {
                     if ($(this).parent().hasClass('has-subnav')) {
                         $('.nav-overlay').addClass('is_open');
@@ -108,11 +118,7 @@
             $('.cart-dropdown').fadeToggle();
             return false
         });
-        $('.cart-dropdown').mouseleave(function() {
-            $(this).fadeOut();
-            return false
-        });
-         $('.search-close').click(function() {
+        $('.search-close').click(function() {
             $('.menu-search-link').toggleClass('is_search_open');
             $('.site-search').slideUp();
             return false
