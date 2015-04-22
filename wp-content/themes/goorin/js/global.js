@@ -101,7 +101,7 @@
             return false
         });
         $('.cart-count').click(function() {
-            $('.cart-dropdown').slideToggle();
+            $('.cart-dropdown').fadeToggle();
             return false
         });
         $('.menu-cart-link').mouseover(function() {
