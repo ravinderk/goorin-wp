@@ -50,31 +50,29 @@
                             <div class="container">
                                 <div class="colbox">
                                     <ul class="col-1">
-                                        <h6>Featured</h6>
+                                        <h6>MENS</h6>
                                         <li><a href="#">New</a></li>
+                                        <li><a href="#">Signature Style</a></li>
                                         <li><a href="#">Top Sellers</a></li>
-                                        <li><a href="#">Holiday Gifts</a></li>
-                                        <li><a href="#">XXL</a></li>
-                                        <li><a href="#">Classic Staples</a></li>
-                                        <li><a href="#">Spring Favorites</a></li>
+                                        <li><a href="#">Gifts</a></li>
+                                        <li><a href="#">Sale</a></li>
+                                        <li><a href="#">Gift Cards</a></li>
                                     </ul>
                                     <ul class="col-2">
                                         <h6>Collections</h6>
-                                        <li><a href="#">Everyday Goorin Originals</a></li>
-                                        <li><a href="#">Heritage American Made Felt</a></li>
-                                        <li><a href="#">Premium Straws & Panamas</a></li>
-                                        <li><a href="#">Outdoor Grenadier</a></li>
-                                        <li><a href="#">Ted’s Finest Flatcaps & Tweeds</a></li>
-                                        <li><a href="#">Artist Collection</a></li>
-                                        <li><a href="#">Ltd</a></li>
-                                        <li><a href="#">Kids</a></li>
+                                        <li><a href="#">Goorin Everyday</a></li>
+                                        <li><a href="#">Heritage</a></li>
+                                        <li><a href="#">Ted's Finest Flatcaps & Tweeds</a></li>
+                                        <li><a href="#">Premium Straw</a></li>
+                                        <li><a href="#">Grenadier Sport</a></li>
                                     </ul>
                                     <ul class="col-3">
                                         <h6>Shapes</h6>
                                         <li><a href="#">Fedora</a></li>
                                         <li><a href="#">Flatcap</a></li>
                                         <li><a href="#">Baseball</a></li>
-                                        <li><a href="#">Cadet</a></li>
+                                        <li><a href="#">Beanies</a></li>
+                                        <li><a href="#">View All</a></li>
                                     </ul>
                                     <figure>
                                         <a href="#">
@@ -94,30 +92,30 @@
                             <div class="container">
                                 <div class="colbox">
                                     <ul class="col-1">
-                                        <h6>Featured2</h6>
+                                        <h6>WOMENS</h6>
                                         <li><a href="#">New</a></li>
+                                        <li><a href="#">Signature Style</a></li>
                                         <li><a href="#">Top Sellers</a></li>
-                                        <li><a href="#">Holiday Gifts</a></li>
-                                        <li><a href="#">XXL</a></li>
-
+                                        <li><a href="#">Gifts</a></li>
+                                        <li><a href="#">Sale</a></li>
+                                        <li><a href="#">Gift Cards</a></li>
                                     </ul>
                                     <ul class="col-2">
                                         <h6>Collections</h6>
-                                        <li><a href="#">Everyday Goorin Originals</a></li>
-                                        <li><a href="#">Heritage American Made Felt</a></li>
-                                        <li><a href="#">Premium Straws & Panamas</a></li>
-                                        <li><a href="#">Outdoor Grenadier</a></li>
+                                        <li><a href="#">Goorin Everyday</a></li>
+                                        <li><a href="#">Heritage</a></li>
+                                        <li><a href="#">Ted's Finest Flatcaps & Tweeds</a></li>
+                                        <li><a href="#">Premium Straw</a></li>
+                                        <li><a href="#">Grenadier Sport</a></li>
                                     </ul>
                                     <ul class="col-3">
                                         <h6>Shapes</h6>
                                         <li><a href="#">Fedora</a></li>
                                         <li><a href="#">Flatcap</a></li>
-                                        <li><a href="#">Baseball</a></li>
-                                        <li><a href="#">Cadet</a></li>
-                                        <li><a href="#">Fedora</a></li>
-                                        <li><a href="#">Flatcap</a></li>
-                                        <li><a href="#">Baseball</a></li>
-                                        <li><a href="#">Cadet</a></li>
+                                        <li><a href="#">Floppy</a></li>
+                                        <li><a href="#">Cloche</a></li>
+                                        <li><a href="#">Accessories</a></li>
+                                        <li><a href="#">View All</a></li>
                                     </ul>
                                     <figure>
                                         <a href="#">
