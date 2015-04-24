@@ -779,7 +779,7 @@ img {
 }
 
 /* line 56, sass/components/_components.scss */
-.site-footer .footer-social-col ul li br, .clear {
+.site-footer .footer-social-col ul br, .clear {
   clear: both;
 }
 
@@ -1526,6 +1526,11 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
 }
 
 /* line 6, sass/layout/_layout.scss */
+.content-area {
+  min-height: 700px;
+}
+
+/* line 9, sass/layout/_layout.scss */
 .container {
   padding: 0 20px;
 }
@@ -1536,7 +1541,7 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   display: table;
 }
 @media only screen and (min-width: 640px) {
-  /* line 6, sass/layout/_layout.scss */
+  /* line 9, sass/layout/_layout.scss */
   .container {
     padding: 0 45px;
   }
@@ -2065,6 +2070,12 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
     padding: 70px 0 40px;
   }
 }
+@media only screen and (min-width: 1140px) {
+  /* line 1, sass/layout/_footer.scss */
+  .site-footer {
+    padding: 50px 0 20px;
+  }
+}
 /* line 9, sass/vendors/bourbon/addons/_clearfix.scss */
 .site-footer .footer-col-row::after, .site-footer .footer-social-row::after {
   clear: both;
@@ -2072,57 +2083,108 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   display: table;
 }
 @media only screen and (min-width: 1140px) {
-  /* line 10, sass/layout/_footer.scss */
+  /* line 13, sass/layout/_footer.scss */
   .site-footer .hidden-mobile {
     display: block;
   }
 }
 @media only screen and (min-width: 1140px) {
-  /* line 16, sass/layout/_footer.scss */
+  /* line 19, sass/layout/_footer.scss */
   .site-footer .visible-mobile {
     display: none;
   }
 }
-/* line 21, sass/layout/_footer.scss */
+/* line 24, sass/layout/_footer.scss */
 .site-footer h6 {
   color: #ffffff;
   text-transform: uppercase;
   font-weight: 600;
   margin: 0 0 12px;
 }
-/* line 30, sass/layout/_footer.scss */
+@media only screen and (min-width: 1140px) {
+  /* line 24, sass/layout/_footer.scss */
+  .site-footer h6 {
+    text-align: left;
+    font-size: 11px;
+    line-height: normal;
+  }
+}
+/* line 37, sass/layout/_footer.scss */
 .site-footer .copyright {
   color: #707070;
 }
-/* line 34, sass/layout/_footer.scss */
+@media only screen and (min-width: 1140px) {
+  /* line 37, sass/layout/_footer.scss */
+  .site-footer .copyright {
+    text-align: left;
+  }
+}
+/* line 44, sass/layout/_footer.scss */
 .site-footer .copyright a {
   color: #707070;
   text-decoration: underline;
 }
-/* line 37, sass/layout/_footer.scss */
+/* line 47, sass/layout/_footer.scss */
 .site-footer .copyright a:hover {
   text-decoration: none;
 }
-/* line 43, sass/layout/_footer.scss */
+@media only screen and (min-width: 1140px) {
+  /* line 52, sass/layout/_footer.scss */
+  .site-footer .footer-col-left {
+    float: left;
+    width: 30%;
+    margin: -10px 0 0;
+  }
+}
+/* line 58, sass/layout/_footer.scss */
 .site-footer .footer-col-left article {
   padding: 0 0 40px;
 }
-/* line 46, sass/layout/_footer.scss */
+@media only screen and (min-width: 1140px) {
+  /* line 58, sass/layout/_footer.scss */
+  .site-footer .footer-col-left article {
+    text-align: left;
+    padding: 0 0 22px;
+  }
+}
+/* line 65, sass/layout/_footer.scss */
 .site-footer .footer-col-left article h3 {
   color: #ffffff;
   margin: 0 0 15px;
   font-size: 28px;
   line-height: normal;
 }
-/* line 51, sass/layout/_footer.scss */
+@media only screen and (min-width: 1140px) {
+  /* line 65, sass/layout/_footer.scss */
+  .site-footer .footer-col-left article h3 {
+    margin: 0 0 10px;
+    font-size: 25px;
+    line-height: normal;
+  }
+}
+/* line 74, sass/layout/_footer.scss */
 .site-footer .footer-col-left article p {
   color: #848181;
 }
-/* line 57, sass/layout/_footer.scss */
+@media only screen and (min-width: 1140px) {
+  /* line 74, sass/layout/_footer.scss */
+  .site-footer .footer-col-left article p {
+    font-size: 14px;
+    line-height: normal;
+  }
+}
+@media only screen and (min-width: 1140px) {
+  /* line 82, sass/layout/_footer.scss */
+  .site-footer .footer-col-left .subscribe-form {
+    width: 260px;
+    margin: 0 0 15px;
+  }
+}
+/* line 87, sass/layout/_footer.scss */
 .site-footer .footer-col-left .subscribe-form .form-field {
   margin: 0 0 10px;
 }
-/* line 60, sass/layout/_footer.scss */
+/* line 90, sass/layout/_footer.scss */
 .site-footer .footer-col-left .subscribe-form input[type="text"] {
   border: none;
   width: 100%;
@@ -2133,7 +2195,13 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   background: #ffffff;
   background: #ffffff;
 }
-/* line 69, sass/layout/_footer.scss */
+@media only screen and (min-width: 1140px) {
+  /* line 90, sass/layout/_footer.scss */
+  .site-footer .footer-col-left .subscribe-form input[type="text"] {
+    padding: 6px 10px;
+  }
+}
+/* line 102, sass/layout/_footer.scss */
 .site-footer .footer-col-left .subscribe-form .submit-btn {
   border: none;
   width: 100%;
@@ -2142,57 +2210,129 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   background: #504b4a;
   background: #504b4a;
 }
-/* line 79, sass/layout/_footer.scss */
+@media only screen and (min-width: 1140px) {
+  /* line 102, sass/layout/_footer.scss */
+  .site-footer .footer-col-left .subscribe-form .submit-btn {
+    padding: 6px 10px;
+  }
+}
+/* line 115, sass/layout/_footer.scss */
 .site-footer .footer-col-right {
   padding: 0 0 20px;
 }
-/* line 82, sass/layout/_footer.scss */
+@media only screen and (min-width: 1140px) {
+  /* line 115, sass/layout/_footer.scss */
+  .site-footer .footer-col-right {
+    float: right;
+    width: 450px;
+  }
+}
+@media only screen and (min-width: 1140px) {
+  /* line 121, sass/layout/_footer.scss */
+  .site-footer .footer-col-right .col {
+    float: left;
+  }
+}
+/* line 125, sass/layout/_footer.scss */
 .site-footer .footer-col-right .col ul {
   list-style: none;
   margin: 0 0 30px;
   padding: 0;
 }
-/* line 86, sass/layout/_footer.scss */
+/* line 129, sass/layout/_footer.scss */
 .site-footer .footer-col-right .col ul li {
   margin: 0 0 8px;
 }
-/* line 90, sass/layout/_footer.scss */
+@media only screen and (min-width: 1140px) {
+  /* line 129, sass/layout/_footer.scss */
+  .site-footer .footer-col-right .col ul li {
+    text-align: left;
+    margin: 0 0 5px;
+  }
+}
+/* line 137, sass/layout/_footer.scss */
 .site-footer .footer-col-right .col ul li a {
   color: #707070;
   font-size: 17px;
   line-height: normal;
 }
-/* line 100, sass/layout/_footer.scss */
+@media only screen and (min-width: 1140px) {
+  /* line 137, sass/layout/_footer.scss */
+  .site-footer .footer-col-right .col ul li a {
+    font-size: 14px;
+    line-height: normal;
+  }
+}
+@media only screen and (min-width: 1140px) {
+  /* line 148, sass/layout/_footer.scss */
+  .site-footer .footer-col-right .col.col-1, .site-footer .footer-col-right .col.col-2 {
+    width: 176px;
+  }
+}
+@media only screen and (min-width: 1140px) {
+  /* line 153, sass/layout/_footer.scss */
+  .site-footer .footer-col-right .col.col-3 {
+    width: 90px;
+  }
+}
+/* line 160, sass/layout/_footer.scss */
 .site-footer .footer-social-col {
   padding: 55px 0 50px;
 }
-/* line 103, sass/layout/_footer.scss */
+@media only screen and (min-width: 1140px) {
+  /* line 160, sass/layout/_footer.scss */
+  .site-footer .footer-social-col {
+    float: right;
+    width: 450px;
+    padding: 0;
+  }
+}
+/* line 168, sass/layout/_footer.scss */
 .site-footer .footer-social-col ul {
   list-style: none;
   margin: 0 auto 30px;
   display: table;
 }
 @media only screen and (min-width: 640px) {
-  /* line 103, sass/layout/_footer.scss */
+  /* line 168, sass/layout/_footer.scss */
   .site-footer .footer-social-col ul {
     width: auto;
   }
 }
-/* line 110, sass/layout/_footer.scss */
-.site-footer .footer-social-col ul li {
-  margin: 10px;
+@media only screen and (min-width: 1140px) {
+  /* line 168, sass/layout/_footer.scss */
+  .site-footer .footer-social-col ul {
+    margin: 0;
+    display: inline-block;
+  }
 }
-/* line 113, sass/layout/_footer.scss */
-.site-footer .footer-social-col ul li:nth-child(5) {
-  margin-left: 21%;
-}
-@media only screen and (min-width: 640px) {
-  /* line 116, sass/layout/_footer.scss */
-  .site-footer .footer-social-col ul li br {
+@media only screen and (min-width: 1140px) {
+  /* line 179, sass/layout/_footer.scss */
+  .site-footer .footer-social-col ul br {
     display: none;
   }
 }
-/* line 122, sass/layout/_footer.scss */
+/* line 185, sass/layout/_footer.scss */
+.site-footer .footer-social-col ul li {
+  margin: 10px;
+}
+@media only screen and (min-width: 1140px) {
+  /* line 185, sass/layout/_footer.scss */
+  .site-footer .footer-social-col ul li {
+    margin: 0 20px 0 0;
+  }
+}
+/* line 191, sass/layout/_footer.scss */
+.site-footer .footer-social-col ul li:nth-child(5) {
+  margin-left: 21%;
+}
+@media only screen and (min-width: 1140px) {
+  /* line 191, sass/layout/_footer.scss */
+  .site-footer .footer-social-col ul li:nth-child(5) {
+    margin: 0 10px 0 0;
+  }
+}
+/* line 197, sass/layout/_footer.scss */
 .site-footer .footer-social-col ul li a {
   height: 34px;
   width: 34px;
@@ -2200,19 +2340,19 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   background: url("../images/social-icons.png") 0 0 no-repeat;
   background-size: auto 34px;
 }
-/* line 127, sass/layout/_footer.scss */
+/* line 202, sass/layout/_footer.scss */
 .site-footer .footer-social-col ul li a.facebook {
   background-position: -49px 0;
 }
-/* line 130, sass/layout/_footer.scss */
+/* line 205, sass/layout/_footer.scss */
 .site-footer .footer-social-col ul li a.instagram {
   background-position: -98px 0;
 }
-/* line 133, sass/layout/_footer.scss */
+/* line 208, sass/layout/_footer.scss */
 .site-footer .footer-social-col ul li a.pinterest {
   background-position: -147px 0;
 }
-/* line 136, sass/layout/_footer.scss */
+/* line 211, sass/layout/_footer.scss */
 .site-footer .footer-social-col ul li a.tumbler {
   background-position: right 0;
 }
