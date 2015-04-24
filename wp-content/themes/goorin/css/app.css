@@ -656,7 +656,7 @@ table {
   src: url("../fonts/sweetsans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sweetsans-bold-webfont.woff2") format("woff2"), url("../fonts/sweetsans-bold-webfont.woff") format("woff"), url("../fonts/sweetsans-bold-webfont.ttf") format("truetype"), url("../fonts/sweetsans-bold-webfont.svg#SweetSans") format("svg");
 }
 /* line 11, sass/base/_typography.scss */
-body, .site-header .submenu .colbox ul li a, .site-header .submenu figure p, .cart-dropdown .cart-list-loop article p, .site-header .saletext a, .site-search .site-search-form input[type="text"] {
+body, .site-header .submenu .colbox ul li a, .site-header .submenu figure p, .cart-dropdown .cart-list-loop article p, .site-header .saletext a, .site-search .site-search-form input[type="text"], .site-footer .footer-col-right .col ul li a, input, textarea, select {
   font-family: "Baskerville";
 }
 
@@ -666,7 +666,7 @@ body, .site-header .submenu .colbox ul li a, .site-header .submenu figure p, .ca
 }
 
 /* line 17, sass/base/_typography.scss */
-.btn, .site-header .submenu .colbox h6, .cart-dropdown .cart-list-loop article h6, .site-header .menu, .site-header .menu .cart-count-icon, .site-header .cart-count, .site-header .saletext {
+.btn, .site-header .submenu .colbox h6, .cart-dropdown .cart-list-loop article h6, .site-header .menu, .site-header .menu .cart-count-icon, .site-header .cart-count, .site-header .saletext, .site-footer h6 {
   font-family: "SweetSans";
 }
 
@@ -678,7 +678,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 48, sass/base/_typography.scss */
-.site-header .submenu .colbox ul li a, .site-header .submenu figure p {
+.site-header .submenu .colbox ul li a, .site-header .submenu figure p, .site-footer .footer-col-left article p {
   font-size: 18px;
   line-height: normal;
 }
@@ -690,13 +690,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 57, sass/base/_typography.scss */
-.cart-dropdown .cart-total .cart-message, .cart-dropdown .cart-total .cart-subtotal {
+.cart-dropdown .cart-total .cart-message, .cart-dropdown .cart-total .cart-subtotal, .site-footer h6 {
   font-size: 14px;
   line-height: normal;
 }
 
 /* line 63, sass/base/_typography.scss */
-.btn, .cart-dropdown .cart-list-loop article h6, .cart-dropdown .cart-list-loop article p {
+.btn, .cart-dropdown .cart-list-loop article h6, .cart-dropdown .cart-list-loop article p, .site-footer .copyright {
   font-size: 12px;
   line-height: normal;
 }
@@ -754,12 +754,12 @@ img {
 }
 
 /* line 35, sass/components/_components.scss */
-.site-header .submenu, .site-header .submenu figure, .cart-dropdown, .cart-dropdown .cart-list-loop a.cart-delete, .site-header .nav-primary ul li.nav-3, .site-header .menu, .site-header .saletext, .site-search .search-close {
+.site-header .submenu, .site-header .submenu figure, .cart-dropdown, .cart-dropdown .cart-list-loop a.cart-delete, .site-header .nav-primary ul li.nav-3, .site-header .menu, .site-header .saletext, .site-search .search-close, .site-footer .hidden-mobile {
   display: none;
 }
 
 /* line 38, sass/components/_components.scss */
-.cart-dropdown .cart-list-loop figure, .cart-dropdown .cart-list-loop article, .site-header .menu-toggle, .site-search .site-search-form input[type="text"] {
+.cart-dropdown .cart-list-loop figure, .cart-dropdown .cart-list-loop article, .site-header .menu-toggle, .site-search .site-search-form input[type="text"], .site-footer .footer-social-col ul li, .site-footer .footer-social-col ul li a {
   float: left;
 }
 
@@ -774,12 +774,12 @@ img {
 }
 
 /* line 47, sass/components/_components.scss */
-.btn, .cart-dropdown h2, .cart-dropdown .cart-list-loop figure, .cart-dropdown .cart-list-loop article, .cart-dropdown .cart-total .cart-message, .cart-dropdown .cart-total .cart-subtotal, .site-header .menu .cart-count-icon, .site-header .cart-count {
+.btn, .cart-dropdown h2, .cart-dropdown .cart-list-loop figure, .cart-dropdown .cart-list-loop article, .cart-dropdown .cart-total .cart-message, .cart-dropdown .cart-total .cart-subtotal, .site-header .menu .cart-count-icon, .site-header .cart-count, .site-footer h6, .site-footer .copyright, .site-footer .footer-col-left article, .site-footer .footer-col-left .subscribe-form input[type="text"], .site-footer .footer-col-left .subscribe-form .submit-btn, .site-footer .footer-col-right .col ul li {
   text-align: center;
 }
 
 /* line 56, sass/components/_components.scss */
-.clear {
+.site-footer .footer-social-col ul li br, .clear {
   clear: both;
 }
 
@@ -789,12 +789,12 @@ img {
 }
 
 /* line 62, sass/components/_components.scss */
-.site-header .submenu .colbox ul li, .cart-dropdown .cart-list-loop a.cart-delete span:before, .cart-dropdown .cart-list-loop a.cart-delete span:after, .site-header .nav-primary ul li, .site-header .menu-toggle span, .site-header .menu-toggle span:before, .site-header .menu-toggle span:after, .site-search .search-close span:before, .site-search .search-close span:after {
+.site-header .submenu .colbox ul li, .cart-dropdown .cart-list-loop a.cart-delete span:before, .cart-dropdown .cart-list-loop a.cart-delete span:after, .site-header .nav-primary ul li, .site-header .menu-toggle span, .site-header .menu-toggle span:before, .site-header .menu-toggle span:after, .site-search .search-close span:before, .site-search .search-close span:after, .site-footer .footer-col-right .col ul li, .site-footer .footer-col-right .col ul li a {
   display: block;
 }
 
 /* line 65, sass/components/_components.scss */
-body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdown .cart-list-loop, .cart-dropdown .cart-total, .cart-dropdown .cart-checkout, .site-header .nav-primary, .site-search .site-search-form {
+body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdown .cart-list-loop, .cart-dropdown .cart-total, .cart-dropdown .cart-checkout, .site-header .nav-primary, .site-search .site-search-form, .site-footer .footer-social-col {
   overflow: hidden;
 }
 
@@ -2055,9 +2055,166 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
 
 /* line 1, sass/layout/_footer.scss */
 .site-footer {
-  padding: 70px 0 40px;
+  padding: 35px 0 20px;
   background: #332827;
   background: #332827;
+}
+@media only screen and (min-width: 768px) {
+  /* line 1, sass/layout/_footer.scss */
+  .site-footer {
+    padding: 70px 0 40px;
+  }
+}
+/* line 9, sass/vendors/bourbon/addons/_clearfix.scss */
+.site-footer .footer-col-row::after, .site-footer .footer-social-row::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+@media only screen and (min-width: 1140px) {
+  /* line 10, sass/layout/_footer.scss */
+  .site-footer .hidden-mobile {
+    display: block;
+  }
+}
+@media only screen and (min-width: 1140px) {
+  /* line 16, sass/layout/_footer.scss */
+  .site-footer .visible-mobile {
+    display: none;
+  }
+}
+/* line 21, sass/layout/_footer.scss */
+.site-footer h6 {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0 0 12px;
+}
+/* line 30, sass/layout/_footer.scss */
+.site-footer .copyright {
+  color: #707070;
+}
+/* line 34, sass/layout/_footer.scss */
+.site-footer .copyright a {
+  color: #707070;
+  text-decoration: underline;
+}
+/* line 37, sass/layout/_footer.scss */
+.site-footer .copyright a:hover {
+  text-decoration: none;
+}
+/* line 43, sass/layout/_footer.scss */
+.site-footer .footer-col-left article {
+  padding: 0 0 40px;
+}
+/* line 46, sass/layout/_footer.scss */
+.site-footer .footer-col-left article h3 {
+  color: #ffffff;
+  margin: 0 0 15px;
+  font-size: 28px;
+  line-height: normal;
+}
+/* line 51, sass/layout/_footer.scss */
+.site-footer .footer-col-left article p {
+  color: #848181;
+}
+/* line 57, sass/layout/_footer.scss */
+.site-footer .footer-col-left .subscribe-form .form-field {
+  margin: 0 0 10px;
+}
+/* line 60, sass/layout/_footer.scss */
+.site-footer .footer-col-left .subscribe-form input[type="text"] {
+  border: none;
+  width: 100%;
+  color: #8f8f8f;
+  padding: 8px 10px;
+  font-size: 17px;
+  line-height: normal;
+  background: #ffffff;
+  background: #ffffff;
+}
+/* line 69, sass/layout/_footer.scss */
+.site-footer .footer-col-left .subscribe-form .submit-btn {
+  border: none;
+  width: 100%;
+  padding: 8px 10px;
+  color: gray;
+  background: #504b4a;
+  background: #504b4a;
+}
+/* line 79, sass/layout/_footer.scss */
+.site-footer .footer-col-right {
+  padding: 0 0 20px;
+}
+/* line 82, sass/layout/_footer.scss */
+.site-footer .footer-col-right .col ul {
+  list-style: none;
+  margin: 0 0 30px;
+  padding: 0;
+}
+/* line 86, sass/layout/_footer.scss */
+.site-footer .footer-col-right .col ul li {
+  margin: 0 0 8px;
+}
+/* line 90, sass/layout/_footer.scss */
+.site-footer .footer-col-right .col ul li a {
+  color: #707070;
+  font-size: 17px;
+  line-height: normal;
+}
+/* line 100, sass/layout/_footer.scss */
+.site-footer .footer-social-col {
+  padding: 55px 0 50px;
+}
+/* line 103, sass/layout/_footer.scss */
+.site-footer .footer-social-col ul {
+  list-style: none;
+  margin: 0 auto 30px;
+  display: table;
+}
+@media only screen and (min-width: 640px) {
+  /* line 103, sass/layout/_footer.scss */
+  .site-footer .footer-social-col ul {
+    width: auto;
+  }
+}
+/* line 110, sass/layout/_footer.scss */
+.site-footer .footer-social-col ul li {
+  margin: 10px;
+}
+/* line 113, sass/layout/_footer.scss */
+.site-footer .footer-social-col ul li:nth-child(5) {
+  margin-left: 21%;
+}
+@media only screen and (min-width: 640px) {
+  /* line 116, sass/layout/_footer.scss */
+  .site-footer .footer-social-col ul li br {
+    display: none;
+  }
+}
+/* line 122, sass/layout/_footer.scss */
+.site-footer .footer-social-col ul li a {
+  height: 34px;
+  width: 34px;
+  background: url("../images/social-icons.png") 0 0 no-repeat;
+  background: url("../images/social-icons.png") 0 0 no-repeat;
+  background-size: auto 34px;
+}
+/* line 127, sass/layout/_footer.scss */
+.site-footer .footer-social-col ul li a.facebook {
+  background-position: -49px 0;
+}
+/* line 130, sass/layout/_footer.scss */
+.site-footer .footer-social-col ul li a.instagram {
+  background-position: -98px 0;
+}
+/* line 133, sass/layout/_footer.scss */
+.site-footer .footer-social-col ul li a.pinterest {
+  background-position: -147px 0;
+}
+/* line 136, sass/layout/_footer.scss */
+.site-footer .footer-social-col ul li a.tumbler {
+  background-position: right 0;
 }
 
 /*# sourceMappingURL=app.css.map */

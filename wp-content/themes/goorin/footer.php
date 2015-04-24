@@ -12,8 +12,8 @@
 	<footer class="site-footer">
 		<div class="container">
 			<div class="footer-col-row">
-				<div class="footer-col-rigt">
-					<div class="col-1">
+				<div class="footer-col-right">
+					<div class="col col-1">
 						<h6>Account</h6>
 						<ul>
 							<li><a href="#">My Wishlist</a></li>
@@ -23,8 +23,8 @@
 						</ul>
 					</div>
 					<!--col1-->
-					<div class="col-2">
-						<h6>Account</h6>
+					<div class="col col-2">
+						<h6>Customer Care</h6>
 						<ul>
 							<li><a href="#">Returns</a></li>
 							<li><a href="#">Shipping Information</a></li>
@@ -35,8 +35,8 @@
 						</ul>
 					</div>
 					<!--col1-->
-					<div class="col-3">
-						<h6>Account</h6>
+					<div class="col col-3">
+						<h6>About Us</h6>
 						<ul>
 							<li><a href="#">Locations</a></li>
 							<li><a href="#">Careers</a></li>
@@ -54,7 +54,7 @@
 					<div class="subscribe-form">
 						<form>
 							<div class="form-field">
-								<input type="text" palceholder="Enter your email address">
+								<input type="text" placeholder="Enter your email address">
 							</div>
 							<div class="form-field">	
 								<input type="submit" class="submit-btn" value="Subscribe">
@@ -72,17 +72,17 @@
 						<li><a href="#" class="twitter"></a></li>
 						<li><a href="#" class="facebook"></a></li>
 						<li><a href="#" class="instagram"></a></li>
+						<br/>
 						<li><a href="#" class="pinterest"></a></li>
 						<li><a href="#" class="tumbler"></a></li>
 					</ul>
 				</div>
 			</div>
 			<!--footer-social-row-->
-			<p class="copyright visible-mobile">Goorin Bros., Inc.  <a href="#">Privacy</a>  <a href="#">Terms & Conditions</a></p>
+			<p class="copyright visible-mobile">Goorin Bros., Inc.  <br/><a href="#">Privacy</a>  <a href="#">Terms & Conditions</a></p>
 		</div>
 	</footer>
 	<!--site-footer-->
-	
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
