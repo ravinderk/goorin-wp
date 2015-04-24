@@ -2053,4 +2053,11 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   }
 }
 
+/* line 1, sass/layout/_footer.scss */
+.site-footer {
+  padding: 70px 0 40px;
+  background: #332827;
+  background: #332827;
+}
+
 /*# sourceMappingURL=app.css.map */
