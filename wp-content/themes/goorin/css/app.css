@@ -678,12 +678,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
 
-/* line 40, sass/base/_typography.scss */
-.home-content-block .post-box article h4 {
-  font-size: 22px;
-  line-height: normal;
-}
-
 /* line 48, sass/base/_typography.scss */
 .site-header .submenu .colbox ul li a, .site-header .submenu figure p, .site-footer .footer-col-left article p {
   font-size: 18px;
@@ -691,8 +685,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 51, sass/base/_typography.scss */
-.site-header .submenu .colbox h6, .cart-dropdown h2, .site-header .saletext a, .home-content-block .post-box article p {
+.site-header .submenu .colbox h6, .cart-dropdown h2, .site-header .saletext a {
   font-size: 16px;
+  line-height: normal;
+}
+
+/* line 54, sass/base/_typography.scss */
+.home-content-block .post-box article p {
+  font-size: 15px;
   line-height: normal;
 }
 
@@ -1559,7 +1559,7 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
 @media only screen and (min-width: 1140px) {
   /* line 8, sass/components/_banner.scss */
   .banner .banner-item {
-    height: 732px;
+    height: 615px;
     width: 100%;
   }
 }
@@ -1604,7 +1604,7 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   /* line 43, sass/components/_banner.scss */
   .banner article h6 {
     margin-bottom: 14px;
-    font-size: 16px;
+    font-size: 17px;
     line-height: normal;
     letter-spacing: 0px;
   }
@@ -1621,8 +1621,8 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   /* line 54, sass/components/_banner.scss */
   .banner article h2 {
     margin-bottom: 2px;
-    font-size: 56px;
-    line-height: 56px;
+    font-size: 48px;
+    line-height: 48px;
   }
 }
 /* line 66, sass/components/_banner.scss */
@@ -1632,7 +1632,7 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
 @media only screen and (min-width: 768px) {
   /* line 66, sass/components/_banner.scss */
   .banner article p {
-    font-size: 16px;
+    font-size: 17px;
     line-height: normal;
   }
 }
@@ -2995,12 +2995,14 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
 .home-content-block .post-box article h4 {
   letter-spacing: 2px;
   margin: 0 0 2px;
+  font-size: 21px;
+  line-height: normal;
   text-transform: uppercase;
 }
 @media only screen and (min-width: 768px) {
   /* line 107, sass/pages/_home.scss */
   .home-content-block .post-box article h4 {
-    font-size: 28px;
+    font-size: 27px;
     line-height: normal;
   }
 }
@@ -3045,22 +3047,18 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
 /* line 142, sass/pages/_home.scss */
 .home-content-block .post-box article p {
   padding: 8px 0;
-  line-height: 22px;
+  line-height: 21px;
 }
 @media only screen and (min-width: 980px) {
   /* line 142, sass/pages/_home.scss */
   .home-content-block .post-box article p {
-    font-size: 18px;
-    line-height: 23px;
-    padding: 14px 30% 0 0;
+    padding: 14px 10% 0 0;
   }
 }
 @media only screen and (min-width: 1140px) {
   /* line 142, sass/pages/_home.scss */
   .home-content-block .post-box article p {
-    font-size: 17px;
-    line-height: 23px;
-    padding: 7px 30% 7px 0;
+    padding: 7px 10% 7px 0;
   }
 }
 
