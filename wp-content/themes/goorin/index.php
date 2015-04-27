@@ -12,7 +12,31 @@
  */
 
 get_header(); ?>
-
+	<section class="banner">
+        <div class="banner-container">
+            <div class="banner-carousel">
+                <div class="item">
+                    <div class="banner-item item-1">
+                        <article>
+                            <h6>Mr.&nbsp;&nbsp;Fitsallm’s Favorite</h6>
+                            <h2>STYLING TIPS</h2>
+                            <p><i>for</i> men <i>with</i> character</p>
+                        </article>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="banner-item item-2">
+                        <article>
+                            <h6>Grenadier</h6>
+                            <h2>ROADTRIP</h2>
+                            <p>Collection <i>for</i> Women</p>
+                        </article>    
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </section>
+    <!--banner-->
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
