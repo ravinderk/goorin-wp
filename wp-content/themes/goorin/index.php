@@ -37,34 +37,46 @@ get_header(); ?>
         </div>    
     </section>
     <!--banner-->
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-
-		<?php if ( have_posts() ) : ?>
-
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php
-					/* Include the Post-Format-specific template for the content.
-					 * If you want to override this in a child theme, then include a file
-					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-					 */
-					get_template_part( 'content', get_post_format() );
-				?>
-
-			<?php endwhile; ?>
-
-			<?php the_posts_navigation(); ?>
-
-		<?php else : ?>
-
-			<?php get_template_part( 'content', 'none' ); ?>
-
-		<?php endif; ?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
+    <section class="home-content-block">
+        <div class="container">
+            <div class="top-content-block">
+                <div class="block">
+                    <div class="post-box is_left block-1">
+                        <figure>
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/postimg-1.jpg" alt="">
+                        </figure>
+                        <article>
+                            <h6>STYLE UP with</h6>
+                            <h4>LTD. BOX SETS</h4>
+                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in.</p>
+                        </article>
+                    </div>
+                    <div class="post-box is_right block-2">
+                        <figure>
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/postimg-2.jpg" alt="">
+                        </figure>
+                        <article>
+                            <h6>Winter</h6>
+                            <h4>Mens Lookbook</h4>
+                            <small>in <span>West Philly</span></small>
+                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.rum. </p>
+                        </article>
+                    </div>
+                    <div class="post-box is_left block-3">
+                        <figure>
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/postimg-3.jpg" alt="">
+                        </figure>
+                        <article>
+                            <h6>Grenadier</h6>
+                            <h4>Commuters</h4>
+                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <!--top-content-block-->
+        </div>    
+    </section>
+    <!--home-content-block-->
 <?//php get_sidebar(); ?>
 <?php get_footer(); ?>

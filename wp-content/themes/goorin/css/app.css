@@ -657,17 +657,17 @@ table {
   src: url("../fonts/sweetsans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sweetsans-bold-webfont.woff2") format("woff2"), url("../fonts/sweetsans-bold-webfont.woff") format("woff"), url("../fonts/sweetsans-bold-webfont.ttf") format("truetype"), url("../fonts/sweetsans-bold-webfont.svg#SweetSans") format("svg");
 }
 /* line 11, sass/base/_typography.scss */
-body, .site-header .submenu .colbox ul li a, .site-header .submenu figure p, .cart-dropdown .cart-list-loop article p, .banner article p i, .site-header .saletext a, .site-search .site-search-form input[type="text"], .site-footer .footer-col-right .col ul li a, input, textarea, select {
+body, .site-header .submenu .colbox ul li a, .site-header .submenu figure p, .cart-dropdown .cart-list-loop article p, .banner article p i, .site-header .saletext a, .site-search .site-search-form input[type="text"], .site-footer .footer-col-right .col ul li a, input, textarea, select, .home-content-block .post-box article small {
   font-family: "Baskerville";
 }
 
 /* line 14, sass/base/_typography.scss */
-.cart-dropdown h2, .banner article h2 {
+.cart-dropdown h2, .banner article h2, .home-content-block .post-box article h4 {
   font-family: "Clarendon";
 }
 
 /* line 17, sass/base/_typography.scss */
-.btn, .site-header .submenu .colbox h6, .cart-dropdown .cart-list-loop article h6, .site-header .menu, .site-header .menu .cart-count-icon, .banner article h6, .banner article p, .site-header .cart-count, .site-header .saletext, .site-footer h6 {
+.btn, .site-header .submenu .colbox h6, .cart-dropdown .cart-list-loop article h6, .site-header .menu, .site-header .menu .cart-count-icon, .banner article h6, .banner article p, .site-header .cart-count, .site-header .saletext, .site-footer h6, .home-content-block .post-box article h6, .home-content-block .post-box article small span {
   font-family: "SweetSans";
 }
 
@@ -678,6 +678,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
 
+/* line 40, sass/base/_typography.scss */
+.home-content-block .post-box article h4 {
+  font-size: 22px;
+  line-height: normal;
+}
+
 /* line 48, sass/base/_typography.scss */
 .site-header .submenu .colbox ul li a, .site-header .submenu figure p, .site-footer .footer-col-left article p {
   font-size: 18px;
@@ -685,19 +691,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 51, sass/base/_typography.scss */
-.site-header .submenu .colbox h6, .cart-dropdown h2, .site-header .saletext a {
+.site-header .submenu .colbox h6, .cart-dropdown h2, .site-header .saletext a, .home-content-block .post-box article p {
   font-size: 16px;
   line-height: normal;
 }
 
 /* line 57, sass/base/_typography.scss */
-.cart-dropdown .cart-total .cart-message, .cart-dropdown .cart-total .cart-subtotal, .site-footer h6 {
+.cart-dropdown .cart-total .cart-message, .cart-dropdown .cart-total .cart-subtotal, .site-footer h6, .home-content-block .post-box article small {
   font-size: 14px;
   line-height: normal;
 }
 
 /* line 63, sass/base/_typography.scss */
-.btn, .cart-dropdown .cart-list-loop article h6, .cart-dropdown .cart-list-loop article p, .banner article h6, .banner article p, .site-footer .copyright {
+.btn, .cart-dropdown .cart-list-loop article h6, .cart-dropdown .cart-list-loop article p, .banner article h6, .banner article p, .site-footer .copyright, .home-content-block .post-box article h6, .home-content-block .post-box article small span {
   font-size: 12px;
   line-height: normal;
 }
@@ -790,7 +796,7 @@ img {
 }
 
 /* line 62, sass/components/_components.scss */
-.site-header .submenu .colbox ul li, .cart-dropdown .cart-list-loop a.cart-delete span:before, .cart-dropdown .cart-list-loop a.cart-delete span:after, .site-header .nav-primary ul li, .site-header .menu-toggle span, .site-header .menu-toggle span:before, .site-header .menu-toggle span:after, .site-search .search-close span:before, .site-search .search-close span:after, .site-footer .footer-col-right .col ul li, .site-footer .footer-col-right .col ul li a {
+.site-header .submenu .colbox ul li, .cart-dropdown .cart-list-loop a.cart-delete span:before, .cart-dropdown .cart-list-loop a.cart-delete span:after, .site-header .nav-primary ul li, .site-header .menu-toggle span, .site-header .menu-toggle span:before, .site-header .menu-toggle span:after, .site-search .search-close span:before, .site-search .search-close span:after, .site-footer .footer-col-right .col ul li, .site-footer .footer-col-right .col ul li a, .home-content-block .post-box article small {
   display: block;
 }
 
@@ -2822,6 +2828,240 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
 .slick-dots li.slick-active button:before {
   color: black;
   opacity: 0.75;
+}
+
+/* line 2, sass/pages/_home.scss */
+.home-content-block {
+  background: #eff0e9;
+}
+@media only screen and (min-width: 640px) {
+  /* line 5, sass/pages/_home.scss */
+  .home-content-block .container {
+    max-width: 640px;
+  }
+}
+@media only screen and (min-width: 980px) {
+  /* line 5, sass/pages/_home.scss */
+  .home-content-block .container {
+    max-width: 1075px;
+    padding-left: 42px;
+    padding-right: 42px;
+  }
+}
+/* line 9, sass/vendors/bourbon/addons/_clearfix.scss */
+.home-content-block .top-content-block::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+@media only screen and (min-width: 980px) {
+  /* line 16, sass/pages/_home.scss */
+  .home-content-block .top-content-block {
+    margin: 0;
+  }
+}
+/* line 21, sass/pages/_home.scss */
+.home-content-block .top-content-block .is_left {
+  float: left;
+}
+@media only screen and (min-width: 980px) {
+  /* line 21, sass/pages/_home.scss */
+  .home-content-block .top-content-block .is_left {
+    width: 55%;
+    padding-right: 7.5%;
+  }
+}
+/* line 28, sass/pages/_home.scss */
+.home-content-block .top-content-block .is_right {
+  float: right;
+}
+@media only screen and (min-width: 980px) {
+  /* line 28, sass/pages/_home.scss */
+  .home-content-block .top-content-block .is_right {
+    width: 45%;
+  }
+}
+@media only screen and (min-width: 320px) {
+  /* line 34, sass/pages/_home.scss */
+  .home-content-block .top-content-block .block-1 {
+    margin-top: 45px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 34, sass/pages/_home.scss */
+  .home-content-block .top-content-block .block-1 {
+    margin-top: 62px;
+  }
+}
+@media only screen and (min-width: 980px) {
+  /* line 34, sass/pages/_home.scss */
+  .home-content-block .top-content-block .block-1 {
+    margin-top: 65px;
+  }
+}
+@media only screen and (min-width: 320px) {
+  /* line 45, sass/pages/_home.scss */
+  .home-content-block .top-content-block .block-2 {
+    margin-top: 45px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 45, sass/pages/_home.scss */
+  .home-content-block .top-content-block .block-2 {
+    margin-top: 62px;
+  }
+}
+@media only screen and (min-width: 980px) {
+  /* line 45, sass/pages/_home.scss */
+  .home-content-block .top-content-block .block-2 {
+    margin-top: 240px;
+  }
+}
+@media only screen and (min-width: 320px) {
+  /* line 56, sass/pages/_home.scss */
+  .home-content-block .top-content-block .block-3 {
+    margin-top: 45px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 56, sass/pages/_home.scss */
+  .home-content-block .top-content-block .block-3 {
+    margin-top: 62px;
+  }
+}
+@media only screen and (min-width: 980px) {
+  /* line 56, sass/pages/_home.scss */
+  .home-content-block .top-content-block .block-3 {
+    margin-top: 215px;
+  }
+}
+/* line 69, sass/pages/_home.scss */
+.home-content-block .post-box figure {
+  margin: 0 0 19px;
+}
+@media only screen and (min-width: 320px) {
+  /* line 72, sass/pages/_home.scss */
+  .home-content-block .post-box figure img {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 69, sass/pages/_home.scss */
+  .home-content-block .post-box figure {
+    margin: 0 0 37px;
+  }
+}
+@media only screen and (min-width: 1140px) {
+  /* line 69, sass/pages/_home.scss */
+  .home-content-block .post-box figure {
+    margin: 0 0 20px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 82, sass/pages/_home.scss */
+  .home-content-block .post-box figure img {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1140px) {
+  /* line 82, sass/pages/_home.scss */
+  .home-content-block .post-box figure img {
+    width: auto;
+  }
+}
+/* line 92, sass/pages/_home.scss */
+.home-content-block .post-box article h6 {
+  text-transform: uppercase;
+  word-spacing: 3px;
+  margin: 0 0 5px;
+}
+@media only screen and (min-width: 768px) {
+  /* line 92, sass/pages/_home.scss */
+  .home-content-block .post-box article h6 {
+    font-size: 14px;
+    line-height: normal;
+    margin: 0 0 8px;
+  }
+}
+@media only screen and (min-width: 1140px) {
+  /* line 92, sass/pages/_home.scss */
+  .home-content-block .post-box article h6 {
+    word-spacing: 2px;
+    font-size: 13px;
+    line-height: normal;
+  }
+}
+/* line 107, sass/pages/_home.scss */
+.home-content-block .post-box article h4 {
+  letter-spacing: 2px;
+  margin: 0 0 2px;
+  text-transform: uppercase;
+}
+@media only screen and (min-width: 768px) {
+  /* line 107, sass/pages/_home.scss */
+  .home-content-block .post-box article h4 {
+    font-size: 28px;
+    line-height: normal;
+  }
+}
+/* line 117, sass/pages/_home.scss */
+.home-content-block .post-box article small {
+  font-style: italic;
+  margin: 0 0 5px;
+}
+@media only screen and (min-width: 768px) {
+  /* line 117, sass/pages/_home.scss */
+  .home-content-block .post-box article small {
+    font-size: 16px;
+    line-height: normal;
+  }
+}
+@media only screen and (min-width: 1140px) {
+  /* line 117, sass/pages/_home.scss */
+  .home-content-block .post-box article small {
+    font-size: 15px;
+    line-height: normal;
+  }
+}
+/* line 129, sass/pages/_home.scss */
+.home-content-block .post-box article small span {
+  text-transform: uppercase;
+  word-spacing: 3px;
+}
+@media only screen and (min-width: 768px) {
+  /* line 129, sass/pages/_home.scss */
+  .home-content-block .post-box article small span {
+    font-size: 14px;
+    line-height: normal;
+  }
+}
+@media only screen and (min-width: 1140px) {
+  /* line 129, sass/pages/_home.scss */
+  .home-content-block .post-box article small span {
+    font-size: 13px;
+    line-height: normal;
+  }
+}
+/* line 142, sass/pages/_home.scss */
+.home-content-block .post-box article p {
+  padding: 8px 0;
+  line-height: 22px;
+}
+@media only screen and (min-width: 980px) {
+  /* line 142, sass/pages/_home.scss */
+  .home-content-block .post-box article p {
+    font-size: 18px;
+    line-height: 23px;
+    padding: 14px 30% 0 0;
+  }
+}
+@media only screen and (min-width: 1140px) {
+  /* line 142, sass/pages/_home.scss */
+  .home-content-block .post-box article p {
+    font-size: 17px;
+    line-height: 23px;
+    padding: 7px 30% 7px 0;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
