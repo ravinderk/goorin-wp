@@ -5,7 +5,7 @@
 			<span></span>
 		</a>
 		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo logo-mobile"></a>
-		<span class="cart-count">2</span>
+		<span class="cart-count"></span>
 		<nav class="nav-primary">
 			<div class="site-search">
 				<div class="container">
@@ -38,7 +38,7 @@
 			<span>•</span>
 			<a href="#" class="menu-search-link"><?php echo get_theme_mod('sale_link', 'Search'); ?></a>
 			<span>•</span>
-			<a href="#" class="menu-cart-link"><?php echo get_theme_mod('sale_link', 'Cart'); ?><span class="cart-count-icon">2</span></a>
+			<a href="#" class="menu-cart-link"><?php echo get_theme_mod('sale_link', 'Cart'); ?><span class="cart-count-icon"></span></a>
 		</menu>
 	</div>
 	<div class="nav-overlay"></div>
