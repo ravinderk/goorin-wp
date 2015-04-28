@@ -1,37 +1,46 @@
 <section class="home-content-block">
     <div class="container">
-		<?php if ( $field['heading'] ) { ?>
-			<h3><?php echo $field['heading']; ?></h3>
-		<?php } ?>
-
-		<?php if ( $field['content'] ) { ?>
-			<div><?php echo $field['content']; ?></div>
-		<?php } ?>
-
-		<?php if ( isset( $field['main_image'] ) ) { ?>
-			<img src="<?php echo $field['main_image']['url']; ?>" />
-		<?php } ?>
-
-		<?php foreach ( $field['related_features'] as $related_feature ) { ?>
-
-			<?php if ( isset( $related_feature['image'] ) ) { ?>
-				<img src="<?php echo $related_feature['image']['url']; ?>" />
-			<?php } ?>
-
-			<?php if ( $related_feature['pre-heading_text'] ) { ?>
-				<h3><?php echo $related_feature['pre-heading_text']; ?></h3>
-			<?php } ?>
-
-			<?php if ( $related_feature['heading'] ) { ?>
-				<h3><?php echo $related_feature['heading']; ?></h3>
-			<?php } ?>
-
-			<?php if ( $related_feature['content'] ) { ?>
-				<div><?php echo $related_feature['content']; ?></div>
-			<?php } ?>
-
-			<a href="<?php echo $related_feature['link']; ?>">Link</a>
-
-		<?php } ?>
+    	<div class="spring-preview-block">
+    		<?php if ( isset( $field['main_image'] ) ) { ?>
+	    		<figure class="spring-preview-image">
+	                 <img src="<?php echo $field['main_image']['url']; ?>" />  
+	            </figure>
+	        <?php } ?>
+	        <div class="spring-preview-content">
+                <hgroup>
+                    <?php if ( $field['heading'] ) { ?>
+                    	<h2><?php echo $field['heading']; ?></h2>
+                    <?php } ?>	
+                    <?php if ( $field['content'] ) { ?>
+                    	<p><?php echo $field['content']; ?></p>
+                    <?php } ?>	
+                </hgroup>
+                <div class="spring-related-feature">
+                	<h5>RELATED Features</h5>
+                	<div class="related-feature-content">
+                		<?php foreach ( $field['related_features'] as $related_feature ) { ?>
+							<div class="related-feature-box pull-left">
+                                <?php if ( isset( $related_feature['image'] ) ) { ?>
+	                                <figure>
+	                                   <a href="<?php echo $related_feature['link']; ?>"><img src="<?php echo $related_feature['image']['url']; ?>" /></a>
+	                                </figure>
+                                <?php } ?>
+                                <article>
+                                    <?php if ( $related_feature['pre-heading_text'] ) { ?>
+										<h6><?php echo $related_feature['pre-heading_text']; ?></h6>
+									<?php } ?>
+                                    <?php if ( $related_feature['heading'] ) { ?>
+										<h4><a href="<?php echo $related_feature['link']; ?>"><?php echo $related_feature['heading']; ?></a></h4>
+									<?php } ?>
+                                    <?php if ( $related_feature['content'] ) { ?>
+										<p><?php echo $related_feature['content']; ?></p>
+									<?php } ?>
+                                </article>
+                            </div>
+						<?php } ?>
+                	</div>
+                </div>
+            </div> 
+		</div>
 	</div>
 </section>		

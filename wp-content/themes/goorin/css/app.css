@@ -3438,50 +3438,54 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   }
 }
 /* line 425, sass/pages/_home.scss */
+.spring-preview-block .spring-preview-content .related-feature-box a {
+  color: #000000;
+}
+/* line 428, sass/pages/_home.scss */
 .spring-preview-block .spring-preview-content .related-feature-box figure {
   margin: 0 0 10px;
 }
-/* line 427, sass/pages/_home.scss */
+/* line 430, sass/pages/_home.scss */
 .spring-preview-block .spring-preview-content .related-feature-box figure img {
   width: 100%;
 }
-/* line 431, sass/pages/_home.scss */
+/* line 434, sass/pages/_home.scss */
 .spring-preview-block .spring-preview-content .related-feature-box article {
   padding: 0 10%;
 }
 @media only screen and (min-width: 768px) {
-  /* line 431, sass/pages/_home.scss */
+  /* line 434, sass/pages/_home.scss */
   .spring-preview-block .spring-preview-content .related-feature-box article {
     padding: 0;
   }
 }
-/* line 437, sass/pages/_home.scss */
+/* line 440, sass/pages/_home.scss */
 .spring-preview-block .spring-preview-content .related-feature-box h6 {
   text-transform: uppercase;
   margin: 0 0 4px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 437, sass/pages/_home.scss */
+  /* line 440, sass/pages/_home.scss */
   .spring-preview-block .spring-preview-content .related-feature-box h6 {
     font-size: 13px;
     line-height: normal;
     text-align: left;
   }
 }
-/* line 448, sass/pages/_home.scss */
+/* line 451, sass/pages/_home.scss */
 .spring-preview-block .spring-preview-content .related-feature-box h4 {
   text-transform: uppercase;
   line-height: 26px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 448, sass/pages/_home.scss */
+  /* line 451, sass/pages/_home.scss */
   .spring-preview-block .spring-preview-content .related-feature-box h4 {
     font-size: 18px;
     line-height: 22px;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 456, sass/pages/_home.scss */
+  /* line 459, sass/pages/_home.scss */
   .spring-preview-block .spring-preview-content .related-feature-box p {
     display: block;
   }
