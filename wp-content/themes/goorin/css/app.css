@@ -1581,15 +1581,7 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
     width: 100%;
   }
 }
-/* line 24, sass/components/_banner.scss */
-.banner .banner-item.item-1 {
-  background-image: url("../images/hero-img-1.jpg");
-}
-/* line 27, sass/components/_banner.scss */
-.banner .banner-item.item-2 {
-  background-image: url("../images/hero-img-2.jpg");
-}
-/* line 32, sass/components/_banner.scss */
+/* line 25, sass/components/_banner.scss */
 .banner article {
   width: 100%;
   color: #ffffff;
@@ -1598,7 +1590,7 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   left: 0;
 }
 @media only screen and (min-width: 768px) {
-  /* line 32, sass/components/_banner.scss */
+  /* line 25, sass/components/_banner.scss */
   .banner article {
     position: absolute;
     bottom: 106px;
@@ -1606,20 +1598,20 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   }
 }
 @media only screen and (min-width: 1140px) {
-  /* line 32, sass/components/_banner.scss */
+  /* line 25, sass/components/_banner.scss */
   .banner article {
     position: absolute;
     bottom: 125px;
     left: 0;
   }
 }
-/* line 43, sass/components/_banner.scss */
+/* line 36, sass/components/_banner.scss */
 .banner article h6 {
   text-transform: uppercase;
   font-weight: normal;
 }
 @media only screen and (min-width: 768px) {
-  /* line 43, sass/components/_banner.scss */
+  /* line 36, sass/components/_banner.scss */
   .banner article h6 {
     margin-bottom: 14px;
     font-size: 17px;
@@ -1627,7 +1619,7 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
     letter-spacing: 0px;
   }
 }
-/* line 54, sass/components/_banner.scss */
+/* line 47, sass/components/_banner.scss */
 .banner article h2 {
   margin-bottom: 2px;
   font-size: 30px;
@@ -1636,25 +1628,25 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   font-weight: normal;
 }
 @media only screen and (min-width: 640px) {
-  /* line 54, sass/components/_banner.scss */
+  /* line 47, sass/components/_banner.scss */
   .banner article h2 {
     margin-bottom: 2px;
     font-size: 48px;
     line-height: 48px;
   }
 }
-/* line 66, sass/components/_banner.scss */
+/* line 59, sass/components/_banner.scss */
 .banner article p {
   text-transform: uppercase;
 }
 @media only screen and (min-width: 768px) {
-  /* line 66, sass/components/_banner.scss */
+  /* line 59, sass/components/_banner.scss */
   .banner article p {
     font-size: 17px;
     line-height: normal;
   }
 }
-/* line 73, sass/components/_banner.scss */
+/* line 66, sass/components/_banner.scss */
 .banner article p i {
   text-transform: none;
   font-style: italic;
@@ -1662,13 +1654,13 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   line-height: normal;
 }
 @media only screen and (min-width: 768px) {
-  /* line 73, sass/components/_banner.scss */
+  /* line 66, sass/components/_banner.scss */
   .banner article p i {
     font-size: 18px;
     line-height: normal;
   }
 }
-/* line 84, sass/components/_banner.scss */
+/* line 77, sass/components/_banner.scss */
 .banner .slick-dots {
   margin: 0;
   padding: 0;
@@ -1678,20 +1670,20 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   left: 0;
 }
 @media only screen and (min-width: 768px) {
-  /* line 84, sass/components/_banner.scss */
+  /* line 77, sass/components/_banner.scss */
   .banner .slick-dots {
     position: absolute;
     bottom: 40px;
     left: 0;
   }
 }
-/* line 92, sass/components/_banner.scss */
+/* line 85, sass/components/_banner.scss */
 .banner .slick-dots li {
   margin: 0 auto;
   height: auto;
   width: auto;
 }
-/* line 95, sass/components/_banner.scss */
+/* line 88, sass/components/_banner.scss */
 .banner .slick-dots li button {
   height: 6px;
   width: 6px;
@@ -1704,7 +1696,7 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   border-radius: 50%;
 }
 @media only screen and (min-width: 768px) {
-  /* line 95, sass/components/_banner.scss */
+  /* line 88, sass/components/_banner.scss */
   .banner .slick-dots li button {
     height: 8px;
     width: 8px;
@@ -1712,7 +1704,7 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
     margin-left: 7px;
   }
 }
-/* line 107, sass/components/_banner.scss */
+/* line 100, sass/components/_banner.scss */
 .banner .slick-dots li.slick-active button {
   background: #ffffff;
   background: #ffffff;
