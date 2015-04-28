@@ -75,6 +75,52 @@ get_header(); ?>
                 </div>
             </div>
             <!--top-content-block-->
+            <div class="hollyday-content-block">
+                <hgroup class="hide-desktop">
+                    <h6>Just in time For the </h6>
+                    <h2>Holiday</h2>
+                </hgroup>
+                <hgroup class="hide-mobile">
+                    <h6>Just in time</h6>
+                    <h2>For the holidays</h2>
+                </hgroup>
+                <div class="hollyday-product-block">
+                    <div class="hollyday-left-block">
+                        <div class="hollyday-box">
+                            <figure>
+                               <img src="<?php echo get_template_directory_uri(); ?>/images/hat-big.png" alt="">
+                            </figure>
+                            <article>
+                                <h6>New Fall Heritage</h6>
+                                <h3>HARRY GRIM</h3>
+                                <hr/>
+                                <p>We're all about quality here at Goorin Bros. And the Slappy wool fedora proves it. The well-loved classic shape and bold style of this hat will enhance any look. </p>
+                            </article>
+                        </div>    
+                    </div>
+                    <div class="hollyday-right-block">
+                        <div class="hollyday-box">
+                            <figure>
+                               <img src="<?php echo get_template_directory_uri(); ?>/images/hat-men.png" alt="">
+                            </figure>
+                            <article>
+                                <h4>Mens</h4>
+                                <h6>New Styles <span>for</span> Winter</h6>
+                            </article>
+                        </div>
+                        <div class="hollyday-box">
+                            <figure>
+                               <img src="<?php echo get_template_directory_uri(); ?>/images/hat-women.png" alt="">
+                            </figure>
+                            <article>
+                                <h4>Womens</h4>
+                                <h6>New Styles <span>for</span> Winter</h6>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--hollyday-content-block-->
         </div>    
     </section>
     <!--home-content-block-->

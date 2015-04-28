@@ -657,17 +657,17 @@ table {
   src: url("../fonts/sweetsans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sweetsans-bold-webfont.woff2") format("woff2"), url("../fonts/sweetsans-bold-webfont.woff") format("woff"), url("../fonts/sweetsans-bold-webfont.ttf") format("truetype"), url("../fonts/sweetsans-bold-webfont.svg#SweetSans") format("svg");
 }
 /* line 11, sass/base/_typography.scss */
-body, .site-header .submenu .colbox ul li a, .site-header .submenu figure p, .cart-dropdown .cart-list-loop article p, .banner article p i, .site-header .saletext a, .site-search .site-search-form input[type="text"], .site-footer .footer-col-right .col ul li a, input, textarea, select, .home-content-block .post-box article small {
+body, .site-header .submenu .colbox ul li a, .site-header .submenu figure p, .cart-dropdown .cart-list-loop article p, .banner article p i, .site-header .saletext a, .site-search .site-search-form input[type="text"], .site-footer .footer-col-right .col ul li a, input, textarea, select, .home-content-block .post-box article small, .hollyday-content-block .hollyday-product-block .hollyday-box article h6 span {
   font-family: "Baskerville";
 }
 
 /* line 14, sass/base/_typography.scss */
-.cart-dropdown h2, .banner article h2, .home-content-block .post-box article h4 {
+.cart-dropdown h2, .banner article h2, .home-content-block .post-box article h4, .hollyday-content-block hgroup h2 {
   font-family: "Clarendon";
 }
 
 /* line 17, sass/base/_typography.scss */
-.btn, .site-header .submenu .colbox h6, .cart-dropdown .cart-list-loop article h6, .site-header .menu, .site-header .menu .cart-count-icon, .banner article h6, .banner article p, .site-header .cart-count, .site-header .saletext, .site-footer h6, .home-content-block .post-box article h6, .home-content-block .post-box article small span {
+.btn, .site-header .submenu .colbox h6, .cart-dropdown .cart-list-loop article h6, .site-header .menu, .site-header .menu .cart-count-icon, .banner article h6, .banner article p, .site-header .cart-count, .site-header .saletext, .site-footer h6, .home-content-block .post-box article h6, .home-content-block .post-box article small span, .hollyday-content-block hgroup h6, .hollyday-content-block .hollyday-product-block .hollyday-box article h3, .hollyday-content-block .hollyday-product-block .hollyday-box article h4, .hollyday-content-block .hollyday-product-block .hollyday-box article h6 {
   font-family: "SweetSans";
 }
 
@@ -678,14 +678,20 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
 
+/* line 28, sass/base/_typography.scss */
+.hollyday-content-block hgroup h2 {
+  font-size: 40px;
+  line-height: normal;
+}
+
 /* line 48, sass/base/_typography.scss */
-.site-header .submenu .colbox ul li a, .site-header .submenu figure p, .site-footer .footer-col-left article p {
+.site-header .submenu .colbox ul li a, .site-header .submenu figure p, .site-footer .footer-col-left article p, .hollyday-content-block .hollyday-product-block .hollyday-box article h4 {
   font-size: 18px;
   line-height: normal;
 }
 
 /* line 51, sass/base/_typography.scss */
-.site-header .submenu .colbox h6, .cart-dropdown h2, .site-header .saletext a {
+.site-header .submenu .colbox h6, .cart-dropdown h2, .site-header .saletext a, .hollyday-content-block .hollyday-product-block .hollyday-box article p {
   font-size: 16px;
   line-height: normal;
 }
@@ -697,13 +703,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 57, sass/base/_typography.scss */
-.cart-dropdown .cart-total .cart-message, .cart-dropdown .cart-total .cart-subtotal, .site-footer h6, .home-content-block .post-box article small {
+.cart-dropdown .cart-total .cart-message, .cart-dropdown .cart-total .cart-subtotal, .site-footer h6, .home-content-block .post-box article small, .hollyday-content-block .hollyday-product-block .hollyday-box article h6 span {
   font-size: 14px;
   line-height: normal;
 }
 
 /* line 63, sass/base/_typography.scss */
-.btn, .cart-dropdown .cart-list-loop article h6, .cart-dropdown .cart-list-loop article p, .banner article h6, .banner article p, .site-footer .copyright, .home-content-block .post-box article h6, .home-content-block .post-box article small span {
+.btn, .cart-dropdown .cart-list-loop article h6, .cart-dropdown .cart-list-loop article p, .banner article h6, .banner article p, .site-footer .copyright, .home-content-block .post-box article h6, .home-content-block .post-box article small span, .hollyday-content-block hgroup h6, .hollyday-content-block .hollyday-product-block .hollyday-box article h6 {
   font-size: 12px;
   line-height: normal;
 }
@@ -766,7 +772,7 @@ img {
 }
 
 /* line 38, sass/components/_components.scss */
-.cart-dropdown .cart-list-loop figure, .cart-dropdown .cart-list-loop article, .banner .slick-dots li button, .site-header .menu-toggle, .site-search .site-search-form input[type="text"], .site-footer .footer-social-col ul li, .site-footer .footer-social-col ul li a {
+.cart-dropdown .cart-list-loop figure, .cart-dropdown .cart-list-loop article, .banner .slick-dots li button, .site-header .menu-toggle, .site-search .site-search-form input[type="text"], .site-footer .footer-social-col ul li, .site-footer .footer-social-col ul li a, .hollyday-content-block .hollyday-product-block .hollyday-right-block .hollyday-box {
   float: left;
 }
 
@@ -781,7 +787,7 @@ img {
 }
 
 /* line 47, sass/components/_components.scss */
-.btn, .cart-dropdown h2, .cart-dropdown .cart-list-loop figure, .cart-dropdown .cart-list-loop article, .cart-dropdown .cart-total .cart-message, .cart-dropdown .cart-total .cart-subtotal, .site-header .menu .cart-count-icon, .banner article, .site-header .cart-count, .site-footer h6, .site-footer .copyright, .site-footer .footer-col-left article, .site-footer .footer-col-left .subscribe-form input[type="text"], .site-footer .footer-col-left .subscribe-form .submit-btn, .site-footer .footer-col-right .col ul li {
+.btn, .cart-dropdown h2, .cart-dropdown .cart-list-loop figure, .cart-dropdown .cart-list-loop article, .cart-dropdown .cart-total .cart-message, .cart-dropdown .cart-total .cart-subtotal, .site-header .menu .cart-count-icon, .banner article, .site-header .cart-count, .site-footer h6, .site-footer .copyright, .site-footer .footer-col-left article, .site-footer .footer-col-left .subscribe-form input[type="text"], .site-footer .footer-col-left .subscribe-form .submit-btn, .site-footer .footer-col-right .col ul li, .hollyday-content-block hgroup, .hollyday-content-block .hollyday-product-block .hollyday-box {
   text-align: center;
 }
 
@@ -801,7 +807,7 @@ img {
 }
 
 /* line 65, sass/components/_components.scss */
-body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdown .cart-list-loop, .cart-dropdown .cart-total, .cart-dropdown .cart-checkout, .site-header .nav-primary, .banner .slick-slider, .banner .banner-item, .site-search .site-search-form, .site-footer .footer-social-col {
+body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdown .cart-list-loop, .cart-dropdown .cart-total, .cart-dropdown .cart-checkout, .site-header .nav-primary, .banner .slick-slider, .banner .banner-item, .site-search .site-search-form, .site-footer .footer-social-col, .hollyday-content-block .hollyday-product-block .hollyday-box article hr {
   overflow: hidden;
 }
 
@@ -3060,6 +3066,274 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   .home-content-block .post-box article p {
     padding: 7px 10% 7px 0;
   }
+}
+
+/* line 9, sass/vendors/bourbon/addons/_clearfix.scss */
+.hollyday-content-block::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+@media only screen and (min-width: 320px) {
+  /* line 156, sass/pages/_home.scss */
+  .hollyday-content-block {
+    padding-bottom: 100px;
+  }
+}
+@media only screen and (min-width: 1140px) {
+  /* line 156, sass/pages/_home.scss */
+  .hollyday-content-block {
+    padding-bottom: 150px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 165, sass/pages/_home.scss */
+  .hollyday-content-block .hide-desktop {
+    display: none;
+  }
+}
+@media only screen and (min-width: 320px) {
+  /* line 170, sass/pages/_home.scss */
+  .hollyday-content-block .hide-mobile {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 170, sass/pages/_home.scss */
+  .hollyday-content-block .hide-mobile {
+    display: block;
+  }
+}
+@media only screen and (min-width: 320px) {
+  /* line 178, sass/pages/_home.scss */
+  .hollyday-content-block hgroup {
+    margin-top: 70px;
+    padding: 0 0 30px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 178, sass/pages/_home.scss */
+  .hollyday-content-block hgroup {
+    margin-top: 110px;
+    padding: 0 0 70px;
+  }
+}
+@media only screen and (min-width: 1140px) {
+  /* line 178, sass/pages/_home.scss */
+  .hollyday-content-block hgroup {
+    margin-top: 150px;
+    padding: 0 0 70px;
+  }
+}
+/* line 192, sass/pages/_home.scss */
+.hollyday-content-block hgroup h6 {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0 0 8px;
+}
+@media only screen and (min-width: 768px) {
+  /* line 192, sass/pages/_home.scss */
+  .hollyday-content-block hgroup h6 {
+    font-size: 15px;
+    line-height: normal;
+    letter-spacing: 0;
+    margin: 0 0 6px;
+  }
+}
+@media only screen and (min-width: 1140px) {
+  /* line 192, sass/pages/_home.scss */
+  .hollyday-content-block hgroup h6 {
+    margin: 0 0 8px;
+  }
+}
+/* line 207, sass/pages/_home.scss */
+.hollyday-content-block hgroup h2 {
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+@media only screen and (min-width: 980px) {
+  /* line 207, sass/pages/_home.scss */
+  .hollyday-content-block hgroup h2 {
+    font-size: 35px;
+    line-height: normal;
+    letter-spacing: 2px;
+  }
+}
+@media only screen and (min-width: 980px) {
+  /* line 219, sass/pages/_home.scss */
+  .hollyday-content-block .hollyday-product-block .hollyday-left-block {
+    float: left;
+    width: 564px;
+    margin-left: -30px;
+  }
+}
+@media only screen and (min-width: 320px) {
+  /* line 226, sass/pages/_home.scss */
+  .hollyday-content-block .hollyday-product-block .hollyday-left-block .hollyday-box figure {
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 226, sass/pages/_home.scss */
+  .hollyday-content-block .hollyday-product-block .hollyday-left-block .hollyday-box figure {
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (min-width: 320px) {
+  /* line 219, sass/pages/_home.scss */
+  .hollyday-content-block .hollyday-product-block .hollyday-left-block {
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 219, sass/pages/_home.scss */
+  .hollyday-content-block .hollyday-product-block .hollyday-left-block {
+    margin-bottom: 80px;
+  }
+}
+@media only screen and (min-width: 980px) {
+  /* line 219, sass/pages/_home.scss */
+  .hollyday-content-block .hollyday-product-block .hollyday-left-block {
+    margin-bottom: 0;
+  }
+}
+/* line 9, sass/vendors/bourbon/addons/_clearfix.scss */
+.hollyday-content-block .hollyday-product-block .hollyday-right-block::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+@media only screen and (min-width: 980px) {
+  /* line 245, sass/pages/_home.scss */
+  .hollyday-content-block .hollyday-product-block .hollyday-right-block {
+    float: right;
+    width: 280px;
+    margin-right: -10px;
+  }
+}
+/* line 252, sass/pages/_home.scss */
+.hollyday-content-block .hollyday-product-block .hollyday-right-block .hollyday-box {
+  width: 50%;
+  padding: 0 5px;
+}
+@media only screen and (min-width: 320px) {
+  /* line 252, sass/pages/_home.scss */
+  .hollyday-content-block .hollyday-product-block .hollyday-right-block .hollyday-box {
+    padding: 0 10px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 252, sass/pages/_home.scss */
+  .hollyday-content-block .hollyday-product-block .hollyday-right-block .hollyday-box {
+    padding: 0 25px;
+  }
+}
+@media only screen and (min-width: 980px) {
+  /* line 252, sass/pages/_home.scss */
+  .hollyday-content-block .hollyday-product-block .hollyday-right-block .hollyday-box {
+    float: none;
+    width: 100%;
+    margin-bottom: 70px;
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 1140px) {
+  /* line 252, sass/pages/_home.scss */
+  .hollyday-content-block .hollyday-product-block .hollyday-right-block .hollyday-box {
+    padding: 0 15px;
+  }
+}
+/* line 271, sass/pages/_home.scss */
+.hollyday-content-block .hollyday-product-block .hollyday-right-block .hollyday-box figure {
+  margin: 0 0 10px;
+}
+@media only screen and (min-width: 768px) {
+  /* line 271, sass/pages/_home.scss */
+  .hollyday-content-block .hollyday-product-block .hollyday-right-block .hollyday-box figure {
+    margin: 0 0 28px;
+  }
+}
+@media only screen and (min-width: 1140px) {
+  /* line 271, sass/pages/_home.scss */
+  .hollyday-content-block .hollyday-product-block .hollyday-right-block .hollyday-box figure {
+    margin: 0 0 30px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 280, sass/pages/_home.scss */
+  .hollyday-content-block .hollyday-product-block .hollyday-right-block .hollyday-box h4 {
+    margin: 0 0 6px;
+  }
+}
+/* line 290, sass/pages/_home.scss */
+.hollyday-content-block .hollyday-product-block .hollyday-box article h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0;
+  font-size: 28px;
+  line-height: normal;
+}
+@media only screen and (min-width: 768px) {
+  /* line 290, sass/pages/_home.scss */
+  .hollyday-content-block .hollyday-product-block .hollyday-box article h3 {
+    font-size: 38px;
+    line-height: normal;
+  }
+}
+/* line 300, sass/pages/_home.scss */
+.hollyday-content-block .hollyday-product-block .hollyday-box article h4 {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/* line 307, sass/pages/_home.scss */
+.hollyday-content-block .hollyday-product-block .hollyday-box article h6 {
+  text-transform: uppercase;
+  margin: 0 0 3px;
+}
+@media only screen and (min-width: 768px) {
+  /* line 307, sass/pages/_home.scss */
+  .hollyday-content-block .hollyday-product-block .hollyday-box article h6 {
+    font-size: 12px;
+    line-height: normal;
+    letter-spacing: 1px;
+    margin: 0 0 3px;
+  }
+}
+@media only screen and (min-width: 980px) {
+  /* line 307, sass/pages/_home.scss */
+  .hollyday-content-block .hollyday-product-block .hollyday-box article h6 {
+    font-size: 12px;
+    line-height: normal;
+  }
+}
+/* line 321, sass/pages/_home.scss */
+.hollyday-content-block .hollyday-product-block .hollyday-box article h6 span {
+  text-transform: none;
+  font-style: italic;
+}
+/* line 328, sass/pages/_home.scss */
+.hollyday-content-block .hollyday-product-block .hollyday-box article p {
+  line-height: 22px;
+  padding: 11px 13px 0;
+}
+@media only screen and (min-width: 768px) {
+  /* line 328, sass/pages/_home.scss */
+  .hollyday-content-block .hollyday-product-block .hollyday-box article p {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 18px 85px 0;
+  }
+}
+/* line 337, sass/pages/_home.scss */
+.hollyday-content-block .hollyday-product-block .hollyday-box article hr {
+  border: none;
+  margin-top: 14px;
+  margin-bottom: 0;
+  background: #000000;
+  background: #000000;
+  height: 2px;
+  width: 16px;
 }
 
 /*# sourceMappingURL=app.css.map */
