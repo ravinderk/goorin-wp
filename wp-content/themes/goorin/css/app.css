@@ -667,7 +667,7 @@ body, .site-header .submenu .colbox ul li a, .site-header .submenu figure p, .ca
 }
 
 /* line 17, sass/base/_typography.scss */
-.btn, .site-header .submenu .colbox h6, .cart-dropdown .cart-list-loop article h6, .site-header .menu, .site-header .menu .cart-count-icon, .banner article h6, .banner article p, .site-header .cart-count, .site-header .saletext, .site-footer h6, .home-content-block .post-box article h6, .home-content-block .post-box article small span, .hollyday-content-block hgroup h6, .hollyday-content-block .hollyday-product-block .hollyday-box article h3, .hollyday-content-block .hollyday-product-block .hollyday-box article h4, .hollyday-content-block .hollyday-product-block .hollyday-box article h6 {
+.btn, .site-header .submenu .colbox h6, .cart-dropdown .cart-list-loop article h6, .site-header .menu, .site-header .menu .cart-count-icon, .banner article h6, .banner article p, .site-header .cart-count, .site-header .saletext, .site-footer h6, .home-content-block .post-box article h6, .home-content-block .post-box article small span, .hollyday-content-block hgroup h6, .hollyday-content-block .hollyday-product-block .hollyday-box article h3, .hollyday-content-block .hollyday-product-block .hollyday-box article h4, .hollyday-content-block .hollyday-product-block .hollyday-box article h6, .spring-preview-block .spring-preview-content .spring-related-feature h5, .spring-preview-block .spring-preview-content .related-feature-box h6 {
   font-family: "SweetSans";
 }
 
@@ -684,6 +684,18 @@ h1, h2, h3, h4, h5, h6 {
   line-height: normal;
 }
 
+/* line 34, sass/base/_typography.scss */
+.spring-preview-block .spring-preview-content hgroup h2 {
+  font-size: 28px;
+  line-height: normal;
+}
+
+/* line 40, sass/base/_typography.scss */
+.spring-preview-block .spring-preview-content .related-feature-box h4 {
+  font-size: 22px;
+  line-height: normal;
+}
+
 /* line 48, sass/base/_typography.scss */
 .site-header .submenu .colbox ul li a, .site-header .submenu figure p, .site-footer .footer-col-left article p, .hollyday-content-block .hollyday-product-block .hollyday-box article h4 {
   font-size: 18px;
@@ -697,13 +709,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 54, sass/base/_typography.scss */
-.home-content-block .post-box article p {
+.home-content-block .post-box article p, .spring-preview-block .spring-preview-content hgroup p, .spring-preview-block .spring-preview-content .spring-related-feature h5 {
   font-size: 15px;
   line-height: normal;
 }
 
 /* line 57, sass/base/_typography.scss */
-.cart-dropdown .cart-total .cart-message, .cart-dropdown .cart-total .cart-subtotal, .site-footer h6, .home-content-block .post-box article small, .hollyday-content-block .hollyday-product-block .hollyday-box article h6 span {
+.cart-dropdown .cart-total .cart-message, .cart-dropdown .cart-total .cart-subtotal, .site-footer h6, .home-content-block .post-box article small, .hollyday-content-block .hollyday-product-block .hollyday-box article h6 span, .spring-preview-block .spring-preview-content .related-feature-box p {
   font-size: 14px;
   line-height: normal;
 }
@@ -715,7 +727,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 66, sass/base/_typography.scss */
-.site-header .menu, .site-header .saletext {
+.site-header .menu, .site-header .saletext, .spring-preview-block .spring-preview-content .related-feature-box h6 {
   font-size: 11px;
   line-height: normal;
 }
@@ -767,7 +779,7 @@ img {
 }
 
 /* line 35, sass/components/_components.scss */
-.site-header .submenu, .site-header .submenu figure, .cart-dropdown, .cart-dropdown .cart-list-loop a.cart-delete, .site-header .nav-primary ul li.nav-3, .site-header .menu, .site-header .saletext, .site-search .search-close, .site-footer .hidden-mobile {
+.site-header .submenu, .site-header .submenu figure, .cart-dropdown, .cart-dropdown .cart-list-loop a.cart-delete, .site-header .nav-primary ul li.nav-3, .site-header .menu, .site-header .saletext, .site-search .search-close, .site-footer .hidden-mobile, .spring-preview-block .spring-preview-content .related-feature-box p {
   display: none;
 }
 
@@ -787,7 +799,7 @@ img {
 }
 
 /* line 47, sass/components/_components.scss */
-.btn, .cart-dropdown h2, .cart-dropdown .cart-list-loop figure, .cart-dropdown .cart-list-loop article, .cart-dropdown .cart-total .cart-message, .cart-dropdown .cart-total .cart-subtotal, .site-header .menu .cart-count-icon, .banner article, .site-header .cart-count, .site-footer h6, .site-footer .copyright, .site-footer .footer-col-left article, .site-footer .footer-col-left .subscribe-form input[type="text"], .site-footer .footer-col-left .subscribe-form .submit-btn, .site-footer .footer-col-right .col ul li, .hollyday-content-block hgroup, .hollyday-content-block .hollyday-product-block .hollyday-box {
+.btn, .cart-dropdown h2, .cart-dropdown .cart-list-loop figure, .cart-dropdown .cart-list-loop article, .cart-dropdown .cart-total .cart-message, .cart-dropdown .cart-total .cart-subtotal, .site-header .menu .cart-count-icon, .banner article, .site-header .cart-count, .site-footer h6, .site-footer .copyright, .site-footer .footer-col-left article, .site-footer .footer-col-left .subscribe-form input[type="text"], .site-footer .footer-col-left .subscribe-form .submit-btn, .site-footer .footer-col-right .col ul li, .hollyday-content-block hgroup, .hollyday-content-block .hollyday-product-block .hollyday-box, .spring-preview-block .spring-preview-content hgroup, .spring-preview-block .spring-preview-content .spring-related-feature h5, .spring-preview-block .spring-preview-content .related-feature-box, .spring-preview-block .spring-preview-content .related-feature-box h6 {
   text-align: center;
 }
 
@@ -807,7 +819,7 @@ img {
 }
 
 /* line 65, sass/components/_components.scss */
-body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdown .cart-list-loop, .cart-dropdown .cart-total, .cart-dropdown .cart-checkout, .site-header .nav-primary, .banner .slick-slider, .banner .banner-item, .site-search .site-search-form, .site-footer .footer-social-col, .hollyday-content-block .hollyday-product-block .hollyday-box article hr {
+body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdown .cart-list-loop, .cart-dropdown .cart-total, .cart-dropdown .cart-checkout, .site-header .nav-primary, .banner .slick-slider, .banner .banner-item, .site-search .site-search-form, .site-footer .footer-social-col, .hollyday-content-block .hollyday-product-block .hollyday-box article hr, .spring-preview-block {
   overflow: hidden;
 }
 
@@ -3334,6 +3346,90 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   background: #000000;
   height: 2px;
   width: 16px;
+}
+
+/* line 351, sass/pages/_home.scss */
+.spring-preview-block .spring-preview-image {
+  margin: 0 0 15px;
+}
+@media only screen and (min-width: 1024px) {
+  /* line 351, sass/pages/_home.scss */
+  .spring-preview-block .spring-preview-image {
+    width: 55%;
+    padding-right: 7.5%;
+    float: left;
+  }
+}
+/* line 358, sass/pages/_home.scss */
+.spring-preview-block .spring-preview-image img {
+  width: 100%;
+}
+/* line 362, sass/pages/_home.scss */
+.spring-preview-block .spring-preview-content {
+  padding: 40px 0 0;
+  background: url("../images/castle-img.png") center top no-repeat;
+  background: url("../images/castle-img.png") center top no-repeat;
+}
+@media only screen and (min-width: 1024px) {
+  /* line 362, sass/pages/_home.scss */
+  .spring-preview-block .spring-preview-content {
+    width: 45%;
+    float: right;
+  }
+}
+/* line 369, sass/pages/_home.scss */
+.spring-preview-block .spring-preview-content hgroup {
+  margin: 0 0 50px;
+}
+/* line 372, sass/pages/_home.scss */
+.spring-preview-block .spring-preview-content hgroup h2 {
+  text-transform: uppercase;
+  margin: 0 0 25px;
+  line-height: 31px;
+}
+/* line 383, sass/pages/_home.scss */
+.spring-preview-block .spring-preview-content .spring-related-feature h5 {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0 0 20px;
+}
+/* line 9, sass/vendors/bourbon/addons/_clearfix.scss */
+.spring-preview-block .spring-preview-content .related-feature-content::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 395, sass/pages/_home.scss */
+.spring-preview-block .spring-preview-content .related-feature-box {
+  margin: 0 0 55px;
+}
+/* line 398, sass/pages/_home.scss */
+.spring-preview-block .spring-preview-content .related-feature-box figure {
+  margin: 0 0 10px;
+}
+/* line 400, sass/pages/_home.scss */
+.spring-preview-block .spring-preview-content .related-feature-box figure img {
+  width: 100%;
+}
+/* line 404, sass/pages/_home.scss */
+.spring-preview-block .spring-preview-content .related-feature-box article {
+  padding: 0 10%;
+}
+/* line 407, sass/pages/_home.scss */
+.spring-preview-block .spring-preview-content .related-feature-box h6 {
+  text-transform: uppercase;
+  margin: 0 0 4px;
+}
+/* line 414, sass/pages/_home.scss */
+.spring-preview-block .spring-preview-content .related-feature-box h4 {
+  text-transform: uppercase;
+  line-height: 26px;
+}
+@media only screen and (min-width: 768px) {
+  /* line 419, sass/pages/_home.scss */
+  .spring-preview-block .spring-preview-content .related-feature-box p {
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

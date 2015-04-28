@@ -126,12 +126,12 @@ get_header(); ?>
                     <img src="<?php echo get_template_directory_uri(); ?>/images/spring-preview-img.jpg" alt="">   
                 </figure>
                 <div class="spring-preview-content">
-                    <article>
+                    <hgroup>
                         <h2>Spring 2015 sneak Preview</h2>
                         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.</p>
-                    </article>
+                    </hgroup>
                     <div class="spring-related-feature">
-                        <h6>RELATED Features</h6>
+                        <h5>RELATED Features</h5>
                         <div class="related-feature-content">
                             <div class="related-feature-box">
                                 <figure>
