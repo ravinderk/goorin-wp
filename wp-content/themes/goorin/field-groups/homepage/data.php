@@ -1006,12 +1006,12 @@ $group = array (
               'label' => 'Main Image',
               'name' => 'main_image',
               '_name' => 'main_image',
-              'type' => 'text',
+              'type' => 'image',
               'order_no' => 2,
               'instructions' => '',
               'required' => 0,
               'id' => 'acf-field-main_image',
-              'class' => 'text',
+              'class' => 'image',
               'conditional_logic' => 
               array (
                 'status' => 0,
@@ -1021,18 +1021,14 @@ $group = array (
                   array (
                     'field' => 'null',
                     'operator' => '==',
-                    'value' => '',
                   ),
                 ),
                 'allorany' => 'all',
               ),
               'column_width' => '',
-              'default_value' => '',
-              'placeholder' => '',
-              'prepend' => '',
-              'append' => '',
-              'formatting' => 'html',
-              'maxlength' => '',
+              'save_format' => 'object',
+              'preview_size' => 'thumbnail',
+              'library' => 'all',
             ),
             3 => 
             array (
@@ -1055,6 +1051,7 @@ $group = array (
                   array (
                     'field' => 'null',
                     'operator' => '==',
+                    'value' => '',
                   ),
                 ),
                 'allorany' => 'all',
