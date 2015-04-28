@@ -1,6 +1,6 @@
-<section class="home-content-block">
+<section class="home-content-block spring-preview-block">
     <div class="container">
-    	<div class="spring-preview-block">
+    	<div class="spring-preview-main">
     		<?php if ( isset( $field['main_image'] ) ) { ?>
 	    		<figure class="spring-preview-image">
 	                 <img src="<?php echo $field['main_image']['url']; ?>" />  
@@ -12,7 +12,7 @@
                     	<h2><?php echo $field['heading']; ?></h2>
                     <?php } ?>	
                     <?php if ( $field['content'] ) { ?>
-                    	<p><?php echo $field['content']; ?></p>
+                    	<div class="heading-content"><?php echo $field['content']; ?></div>
                     <?php } ?>	
                 </hgroup>
                 <div class="spring-related-feature">
@@ -33,7 +33,7 @@
 										<h4><a href="<?php echo $related_feature['link']; ?>"><?php echo $related_feature['heading']; ?></a></h4>
 									<?php } ?>
                                     <?php if ( $related_feature['content'] ) { ?>
-										<p><?php echo $related_feature['content']; ?></p>
+										<div class="box-content"><?php echo $related_feature['content']; ?></div>
 									<?php } ?>
                                 </article>
                             </div>
