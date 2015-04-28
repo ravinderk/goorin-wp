@@ -32,9 +32,10 @@
 								<?php } ?>
 							</article>
 						</div>
-					<?php } ?>
+						
+						<?php $block_counter++; ?>
 
-					<?php $block_counter++; ?>
+					<?php } ?>
 
 					<?php if ( isset( $field['right_column_entry'][ $anatta_counter ] ) ) { ?>
 						<div class="post-box is_right block-<?php echo $block_counter; ?>">
@@ -58,9 +59,10 @@
 								<?php } ?>
 							</article>
 						</div>
-					<?php } ?>
 
-					<?php $block_counter++; ?>
+						<?php $block_counter++; ?>		
+			
+					<?php } ?>
 
 				<?php } ?>
 			</div>
