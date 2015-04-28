@@ -121,6 +121,45 @@ get_header(); ?>
                 </div>
             </div>
             <!--hollyday-content-block-->
+            <div class="spring-preview-block">
+                <figure class="spring-preview-image">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/spring-preview-img.jpg" alt="">   
+                </figure>
+                <div class="spring-preview-content">
+                    <article>
+                        <h2>Spring 2015 sneak Preview</h2>
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.</p>
+                    </article>
+                    <div class="spring-related-feature">
+                        <h6>RELATED Features</h6>
+                        <div class="related-feature-content">
+                            <div class="related-feature-box">
+                                <figure>
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/related-img1.jpg" alt="">
+                                </figure>
+                                <article>
+                                    <h6>Ephemera</h6>
+                                    <h4>BOSTON hat FACTORY TOUR</h4>
+                                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex...</p>
+                                </article>
+                            </div>
+                            <!--related-feature-box-->
+                            <div class="related-feature-box">
+                                <figure>
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/related-img2.jpg" alt="">
+                                </figure>
+                                <article>
+                                    <h6>Ephemera</h6>
+                                    <h4>BOSTON hat FACTORY TOUR</h4>
+                                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex...</p>
+                                </article>
+                            </div>
+                            <!--related-feature-box-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--spring-preview-block-->
         </div>    
     </section>
     <!--home-content-block-->
