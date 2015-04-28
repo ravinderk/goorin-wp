@@ -19,7 +19,7 @@
                 	<h5>RELATED Features</h5>
                 	<div class="related-feature-content">
                 		<?php foreach ( $field['related_features'] as $related_feature ) { ?>
-							<div class="related-feature-box pull-left">
+							<div class="related-feature-box">
                                 <?php if ( isset( $related_feature['image'] ) ) { ?>
 	                                <figure>
 	                                   <a href="<?php echo $related_feature['link']; ?>"><img src="<?php echo $related_feature['image']['url']; ?>" /></a>
