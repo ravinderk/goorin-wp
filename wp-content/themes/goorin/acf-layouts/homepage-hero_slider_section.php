@@ -7,6 +7,8 @@
 		                <div class="banner-item item-1" style='background-image:url("<?php echo $hero_section_slide['background_image']['url']; ?>");'>
 		                	<?php if ( $hero_section_slide['content'] ) { ?>
 								<article>
+									<h6><?php echo $hero_section_slide['pre-heading_text']; ?></h6>
+									<h2><?php echo $hero_section_slide['heading']; ?><h2>
 									<?php echo $hero_section_slide['content']; ?>
 								</article>
 							<?php } ?>

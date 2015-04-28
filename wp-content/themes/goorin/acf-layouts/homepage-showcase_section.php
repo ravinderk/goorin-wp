@@ -3,7 +3,7 @@
 		<div class="top-content-main">
 			<div class="block">
 				<?php
-				$block_counter = 1;
+				$block_counter = 0;
 				for (
 					$anatta_counter = 0;
 					$anatta_counter < max( count( $field['left_column_entry'] ), count( $field['right_column_entry'] ) );
@@ -34,8 +34,8 @@
 						</div>
 						
 						<?php
-						if ( $block_counter == 3 ) {
-							$block_counter = 1;
+						if ( $block_counter == 2 ) {
+							$block_counter = 0;
 						} else {
 							$block_counter++;
 						}
@@ -67,8 +67,8 @@
 						</div>
 
 						<?php
-						if ( $block_counter == 3 ) {
-							$block_counter = 1;
+						if ( $block_counter == 2 ) {
+							$block_counter = 0;
 						} else {
 							$block_counter++;
 						}
