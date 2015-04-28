@@ -1,58 +1,69 @@
 <section class="home-content-block top-content-block">
-    <div class="container">
-    	<div class="top-content-block">
-                <div class="block">
-                	<?php foreach ( $field['left_column_entry'] as $showcase_entry ) { ?>
-						<div class="post-box is_left block-1">
-							<!--we need to cjhange this class like this in loop
-								<div class="post-box is_right block-2">
-								<div class="post-box is_left block-3">
-							-->	
-	                        <?php if ( isset( $showcase_entry['image'] ) ) { ?>
+	<div class="container">
+		<div class="top-content-block">
+			<div class="block">
+				<?php
+				$block_counter = 0;
+				for (
+					$anatta_counter = 0;
+					$anatta_counter < max( count( $field['left_column_entry'] ), count( $field['right_column_entry'] ) );
+					$anatta_counter++
+				) {
+				?>
+					<?php if ( isset( $field['left_column_entry'][ $anatta_counter ] ) ) { ?>
+						<div class="post-box is_left block-<?php echo $block_counter; ?>">
+							<?php if ( isset( $field['left_column_entry'][ $anatta_counter ]['image'] ) ) { ?>
 								<figure>
-									<img src="<?php echo $showcase_entry['image']['url']; ?>" />
+									<img src="<?php echo $field['left_column_entry'][ $anatta_counter ]['image']['url']; ?>" />
 								</figure>	
 							<?php } ?>
-	                        <article>
-	                            <?php if ( $showcase_entry['pre-heading_text'] ) { ?>
-									<h6><?php echo $showcase_entry['pre-heading_text']; ?></h6>
+							<article>
+								<?php if ( $field['left_column_entry'][ $anatta_counter ]['pre-heading_text'] ) { ?>
+									<h6><?php echo $field['left_column_entry'][ $anatta_counter ]['pre-heading_text']; ?></h6>
 								<?php } ?>
-								<?php if ( $showcase_entry['heading'] ) { ?>
-									<h4><?php echo $showcase_entry['heading']; ?></h4>
+								<?php if ( $field['left_column_entry'][ $anatta_counter ]['heading'] ) { ?>
+									<h4><?php echo $field['left_column_entry'][ $anatta_counter ]['heading']; ?></h4>
 								<?php } ?>
-	                            <?php if ( $showcase_entry['post-heading_text'] ) { ?>
-									<h6><?php echo $showcase_entry['post-heading_text']; ?></h6>
+								<?php if ( $field['left_column_entry'][ $anatta_counter ]['post-heading_text'] ) { ?>
+									<h6><?php echo $field['left_column_entry'][ $anatta_counter ]['post-heading_text']; ?></h6>
 								<?php } ?>
-	                            <?php if ( $showcase_entry['content'] ) { ?>
-									<div class="post-box-content"><?php echo $showcase_entry['content']; ?></div>
+								<?php if ( $field['left_column_entry'][ $anatta_counter ]['content'] ) { ?>
+									<div class="post-box-content"><?php echo $field['left_column_entry'][ $anatta_counter ]['content']; ?></div>
 								<?php } ?>
-	                        </article>
-	                    </div>
-                    <?php } ?>
-				</div>
-				<?php foreach ( $field['right_column_entry'] as $showcase_entry ) { ?>
-
-					<?php if ( isset( $showcase_entry['image'] ) ) { ?>
-						<img src="<?php echo $showcase_entry['image']['url']; ?>" />
+							</article>
+						</div>
 					<?php } ?>
 
-					<?php if ( $showcase_entry['pre-heading_text'] ) { ?>
-						<h3><?php echo $showcase_entry['pre-heading_text']; ?></h3>
+					<?php $block_counter++; ?>
+
+					<?php if ( isset( $field['right_column_entry'][ $anatta_counter ] ) ) { ?>
+						<div class="post-box is_right block-<?php echo $block_counter; ?>">
+							<?php if ( isset( $field['right_column_entry'][ $anatta_counter ]['image'] ) ) { ?>
+								<figure>
+									<img src="<?php echo $field['right_column_entry'][ $anatta_counter ]['image']['url']; ?>" />
+								</figure>
+							<?php } ?>
+							<article>
+								<?php if ( $field['right_column_entry'][ $anatta_counter ]['pre-heading_text'] ) { ?>
+									<h6><?php echo $field['right_column_entry'][ $anatta_counter ]['pre-heading_text']; ?></h6>
+								<?php } ?>
+								<?php if ( $field['right_column_entry'][ $anatta_counter ]['heading'] ) { ?>
+									<h4><?php echo $field['right_column_entry'][ $anatta_counter ]['heading']; ?></h4>
+								<?php } ?>
+								<?php if ( $field['right_column_entry'][ $anatta_counter ]['post-heading_text'] ) { ?>
+									<h6><?php echo $field['right_column_entry'][ $anatta_counter ]['post-heading_text']; ?></h6>
+								<?php } ?>
+								<?php if ( $field['right_column_entry'][ $anatta_counter ]['content'] ) { ?>
+									<div class="post-box-content"><?php echo $field['right_column_entry'][ $anatta_counter ]['content']; ?></div>
+								<?php } ?>
+							</article>
+						</div>
 					<?php } ?>
 
-					<?php if ( $showcase_entry['heading'] ) { ?>
-						<h3><?php echo $showcase_entry['heading']; ?></h3>
-					<?php } ?>
-
-					<?php if ( $showcase_entry['post-heading_text'] ) { ?>
-						<h3><?php echo $showcase_entry['post-heading_text']; ?></h3>
-					<?php } ?>
-
-					<?php if ( $showcase_entry['content'] ) { ?>
-						<div><?php echo $showcase_entry['content']; ?></div>
-					<?php } ?>
+					<?php $block_counter++; ?>
 
 				<?php } ?>
+			</div>
 		</div>		
 	</div>
 </section>		
