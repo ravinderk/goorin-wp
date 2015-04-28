@@ -133,7 +133,7 @@ get_header(); ?>
                     <div class="spring-related-feature">
                         <h5>RELATED Features</h5>
                         <div class="related-feature-content">
-                            <div class="related-feature-box">
+                            <div class="related-feature-box pull-left">
                                 <figure>
                                     <img src="<?php echo get_template_directory_uri(); ?>/images/related-img1.jpg" alt="">
                                 </figure>
@@ -144,14 +144,14 @@ get_header(); ?>
                                 </article>
                             </div>
                             <!--related-feature-box-->
-                            <div class="related-feature-box">
+                            <div class="related-feature-box pull-right">
                                 <figure>
                                     <img src="<?php echo get_template_directory_uri(); ?>/images/related-img2.jpg" alt="">
                                 </figure>
                                 <article>
-                                    <h6>Ephemera</h6>
-                                    <h4>BOSTON hat FACTORY TOUR</h4>
-                                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex...</p>
+                                    <h6>Style</h6>
+                                    <h4>SXSW + Coachella + You</h4>
+                                    <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in.</p>
                                 </article>
                             </div>
                             <!--related-feature-box-->
