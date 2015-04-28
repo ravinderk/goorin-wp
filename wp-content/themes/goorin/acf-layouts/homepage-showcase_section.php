@@ -1,6 +1,6 @@
 <section class="home-content-block top-content-block">
 	<div class="container">
-		<div class="top-content-block">
+		<div class="top-content-main">
 			<div class="block">
 				<?php
 				$block_counter = 0;
