@@ -184,3 +184,40 @@ $args = array(
 );
 
 register_post_type( 'nav_menu_image', $args );
+
+function goorin_api_rewrite_tag() {
+	add_rewrite_tag( '%api%', '([^&]+)' );
+}
+
+add_action( 'init', 'goorin_api_rewrite_tag' );
+
+function goorin_api_rewrite_rule() {
+	add_rewrite_rule( 'api/([^/]+)', 'index.php?api=$matches[1]', 'top' );
+}
+
+add_action( 'init', 'goorin_api_rewrite_rule' );
+
+if( !get_option( 'goorin_api_installed' ) ) {
+	function goorin_api_flush_rules() {
+		flush_rewrite_rules( false );
+		add_option( 'goorin_api_installed', '1' );
+	}
+
+	add_action( 'init', 'goorin_api_flush_rules', PHP_INT_MAX );
+}
+
+function goorin_api_handler() {
+	global $wp_query;
+	if( isset( $wp_query->query_vars['api'] ) && $wp_query->query_vars['api'] ) {
+		switch( $wp_query->query_vars['api'] ) {
+			case 'header':
+				echo 'header';
+				die();
+			case 'footer':
+				echo 'footer';
+				die();
+		}
+	}
+}
+
+add_action( 'template_redirect', 'goorin_api_handler' );
