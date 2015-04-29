@@ -1900,7 +1900,7 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   }
 }
 /* line 98, sass/layout/_header.scss */
-.site-header .logo {
+.site-header .logo, .site-header .logo-li a {
   display: table;
   margin: 0 auto;
   background-image: url("../images/logo_mobile_2x.png");
@@ -1911,14 +1911,14 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
   /* line 98, sass/layout/_header.scss */
-  .site-header .logo {
+  .site-header .logo, .site-header .logo-li a {
     background-image: url("../images/logo_mobile_2x.png");
     background-size: 45px 42px;
   }
 }
 @media only screen and (min-width: 1140px) {
   /* line 98, sass/layout/_header.scss */
-  .site-header .logo {
+  .site-header .logo, .site-header .logo-li a {
     height: 76px;
     width: 235px;
     background-image: url("../images/logo_2x.png");
@@ -1930,7 +1930,7 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
 }
 @media only screen and (min-width: 1140px) and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-width: 1140px) and (min--moz-device-pixel-ratio: 1.3), only screen and (min-width: 1140px) and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-width: 1140px) and (min-resolution: 125dpi), only screen and (min-width: 1140px) and (min-resolution: 1.3dppx) {
   /* line 98, sass/layout/_header.scss */
-  .site-header .logo {
+  .site-header .logo, .site-header .logo-li a {
     background-image: url("../images/logo_2x.png");
     background-size: 340px 82px;
   }
@@ -1938,7 +1938,7 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
 
 @media only screen and (min-width: 1140px) {
   /* line 113, sass/layout/_header.scss */
-  .site-header .logo.logo-mobile {
+  .site-header .logo.logo-mobile, .site-header .logo-li a.logo-mobile {
     display: none;
   }
 }
