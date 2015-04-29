@@ -1501,7 +1501,7 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   font-weight: bold;
   margin: 0;
   position: absolute;
-  top: 33px;
+  top: 35px;
   right: 45px;
 }
 @media only screen and (min-width: 1140px) {
@@ -1944,7 +1944,7 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   font-weight: bold;
   letter-spacing: 1px;
   position: absolute;
-  top: 27px;
+  top: 29px;
 }
 /* line 134, sass/layout/_header.scss */
 .site-header .saletext a {
