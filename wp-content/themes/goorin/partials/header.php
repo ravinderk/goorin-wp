@@ -32,13 +32,13 @@
 			?>
 		</nav>
 		<menu class="menu">
-			<!--<a href="#" class="menu-account-link"><?php echo get_theme_mod('sale_link', 'LOGIN'); ?></a>
+			<!--<a href="#" class="menu-account-link"><?php echo get_theme_mod('login_text', 'LOGIN'); ?></a>
 			<span>•</span>-->
-			<a href="http://redesign.goorin.com/customer/account/" class="menu-account-link"><?php echo get_theme_mod('sale_link', 'Account'); ?></a>
+			<a href="http://redesign.goorin.com/customer/account/" class="menu-account-link"><?php echo get_theme_mod('account_text', 'Account'); ?></a>
 			<span>•</span>
-			<a href="#" class="menu-search-link"><?php echo get_theme_mod('sale_link', 'Search'); ?></a>
+			<a href="#" class="menu-search-link"><?php echo get_theme_mod('search_text', 'Search'); ?></a>
 			<span>•</span>
-			<a href="#" class="menu-cart-link"><?php echo get_theme_mod('sale_link', 'Cart'); ?><span class="cart-count-icon">0</span></a>
+			<a href="#" class="menu-cart-link"><?php echo get_theme_mod('cart_text', 'Cart'); ?><span class="cart-count-icon">0</span></a>
 		</menu>
 	</div>
 	<div class="nav-overlay"></div>
