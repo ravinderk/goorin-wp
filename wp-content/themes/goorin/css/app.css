@@ -1117,7 +1117,7 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
 /* line 185, sass/components/_dropdown.scss */
 .cart-dropdown .cart-list-loop figure {
   height: 80px;
-  width: 50%;
+  width: 40%;
 }
 @media only screen and (min-width: 768px) {
   /* line 185, sass/components/_dropdown.scss */
@@ -1140,7 +1140,7 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
 }
 /* line 197, sass/components/_dropdown.scss */
 .cart-dropdown .cart-list-loop article {
-  width: 50%;
+  width: 60%;
 }
 @media only screen and (min-width: 768px) {
   /* line 197, sass/components/_dropdown.scss */

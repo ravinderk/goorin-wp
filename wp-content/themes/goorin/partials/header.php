@@ -5,7 +5,7 @@
 			<span></span>
 		</a>
 		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo logo-mobile"></a>
-		<span class="cart-count"></span>
+		<span class="cart-count">1</span>
 		<nav class="nav-primary">
 			<div class="site-search">
 				<div class="container">
