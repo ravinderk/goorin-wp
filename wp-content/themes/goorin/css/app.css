@@ -2469,24 +2469,28 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
     line-height: normal;
   }
 }
+/* line 163, sass/layout/_footer.scss */
+.site-footer .footer-col-right .col ul li a:hover {
+  text-decoration: underline;
+}
 @media only screen and (min-width: 1024px) {
-  /* line 166, sass/layout/_footer.scss */
+  /* line 169, sass/layout/_footer.scss */
   .site-footer .footer-col-right .col.col-1, .site-footer .footer-col-right .col.col-2 {
     width: 177px;
   }
 }
 @media only screen and (min-width: 1024px) {
-  /* line 171, sass/layout/_footer.scss */
+  /* line 174, sass/layout/_footer.scss */
   .site-footer .footer-col-right .col.col-3 {
     width: 90px;
   }
 }
-/* line 178, sass/layout/_footer.scss */
+/* line 181, sass/layout/_footer.scss */
 .site-footer .footer-social-col {
   padding: 55px 0 50px;
 }
 @media only screen and (min-width: 1024px) {
-  /* line 178, sass/layout/_footer.scss */
+  /* line 181, sass/layout/_footer.scss */
   .site-footer .footer-social-col {
     float: right;
     width: 473px;
@@ -2494,64 +2498,64 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
     margin: -7px 0 0;
   }
 }
-/* line 188, sass/layout/_footer.scss */
+/* line 191, sass/layout/_footer.scss */
 .site-footer .footer-social-col ul {
   list-style: none;
   margin: 0 auto 30px;
   display: table;
 }
 @media only screen and (min-width: 640px) {
-  /* line 188, sass/layout/_footer.scss */
+  /* line 191, sass/layout/_footer.scss */
   .site-footer .footer-social-col ul {
     width: auto;
   }
 }
 @media only screen and (min-width: 1024px) {
-  /* line 188, sass/layout/_footer.scss */
+  /* line 191, sass/layout/_footer.scss */
   .site-footer .footer-social-col ul {
     margin: 0;
     display: inline-block;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 201, sass/layout/_footer.scss */
+  /* line 204, sass/layout/_footer.scss */
   .site-footer .footer-social-col ul br {
     display: none;
   }
 }
-/* line 207, sass/layout/_footer.scss */
+/* line 210, sass/layout/_footer.scss */
 .site-footer .footer-social-col ul li {
   margin: 10px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 207, sass/layout/_footer.scss */
+  /* line 210, sass/layout/_footer.scss */
   .site-footer .footer-social-col ul li {
     margin: 0 10px;
   }
 }
 @media only screen and (min-width: 1024px) {
-  /* line 207, sass/layout/_footer.scss */
+  /* line 210, sass/layout/_footer.scss */
   .site-footer .footer-social-col ul li {
     margin: 3px 21px 0 0;
   }
 }
-/* line 218, sass/layout/_footer.scss */
+/* line 221, sass/layout/_footer.scss */
 .site-footer .footer-social-col ul li:nth-child(5) {
   margin-left: 21%;
 }
 @media only screen and (min-width: 768px) {
-  /* line 218, sass/layout/_footer.scss */
+  /* line 221, sass/layout/_footer.scss */
   .site-footer .footer-social-col ul li:nth-child(5) {
     margin: 0 10px;
   }
 }
 @media only screen and (min-width: 1024px) {
-  /* line 218, sass/layout/_footer.scss */
+  /* line 221, sass/layout/_footer.scss */
   .site-footer .footer-social-col ul li:nth-child(5) {
     margin: 0 20px 0 0;
   }
 }
-/* line 228, sass/layout/_footer.scss */
+/* line 231, sass/layout/_footer.scss */
 .site-footer .footer-social-col ul li a {
   height: 34px;
   width: 34px;
@@ -2559,21 +2563,29 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   background: url("../images/social-icons.png") 0 0 no-repeat;
   background-size: auto 34px;
 }
-/* line 233, sass/layout/_footer.scss */
+/* line 236, sass/layout/_footer.scss */
 .site-footer .footer-social-col ul li a.facebook {
   background-position: -49px 0;
 }
-/* line 236, sass/layout/_footer.scss */
+/* line 239, sass/layout/_footer.scss */
 .site-footer .footer-social-col ul li a.instagram {
   background-position: -98px 0;
 }
-/* line 239, sass/layout/_footer.scss */
+/* line 242, sass/layout/_footer.scss */
 .site-footer .footer-social-col ul li a.pinterest {
   background-position: -147px 0;
 }
-/* line 242, sass/layout/_footer.scss */
+/* line 245, sass/layout/_footer.scss */
 .site-footer .footer-social-col ul li a.tumbler {
   background-position: right 0;
+}
+
+/* line 1, sass/layout/_forms.scss */
+input {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
 }
 
 /* Slider */
@@ -3464,7 +3476,7 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   background: url("../images/castle-img.png") center top no-repeat;
   background: url("../images/castle-img.png") center top no-repeat;
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 980px) {
   /* line 471, sass/pages/_home.scss */
   .spring-preview-block .spring-preview-content {
     width: 50%;
@@ -3521,7 +3533,7 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
 .spring-preview-block .spring-preview-content .related-feature-box {
   margin: 0 0 55px;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 980px) {
   /* line 518, sass/pages/_home.scss */
   .spring-preview-block .spring-preview-content .related-feature-box {
     width: 46%;
