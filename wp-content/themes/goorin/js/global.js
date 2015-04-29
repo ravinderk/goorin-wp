@@ -170,7 +170,7 @@
             infinite: true,
             speed: 500,
             fade: true,
-            autoplay: false,
+            autoplay: true,
             autoplaySpeed: 4000,
             slide: '.item',
             cssEase: 'linear',
