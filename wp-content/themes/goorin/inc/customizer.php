@@ -89,6 +89,125 @@ function goorin_customize_register( $wp_customize ) {
 					'settings' => 'cart_text',
 			) )
 	);
+
+	$wp_customize->add_setting( 'terms_conditions_text',
+			array(
+					'default'   => 'Goorin Bros. Hat Shop'
+			)
+	);
+	$wp_customize->add_setting( 'terms_conditions_link1',
+			array(
+					'default'   => 'Goorin Bros. Hat Shop'
+			)
+	);
+	$wp_customize->add_setting( 'terms_conditions_link1_text',
+			array(
+					'default'   => 'Goorin Bros. Hat Shop'
+			)
+	);
+	$wp_customize->add_setting( 'terms_conditions_link2',
+			array(
+					'default'   => 'Goorin Bros. Hat Shop'
+			)
+	);
+	$wp_customize->add_setting( 'terms_conditions_link2_text',
+			array(
+					'default'   => 'Goorin Bros. Hat Shop'
+			)
+	);
+	$wp_customize->add_setting( 'twitter_link',
+			array(
+					'default'   => '#'
+			)
+	);
+	$wp_customize->add_setting( 'facebook_link',
+			array(
+					'default'   => '#'
+			)
+	);
+	$wp_customize->add_setting( 'instagram_link',
+			array(
+					'default'   => '#'
+			)
+	);
+	$wp_customize->add_setting( 'pinterest_link',
+			array(
+					'default'   => '#'
+			)
+	);
+	$wp_customize->add_setting( 'tumblr_link',
+			array(
+					'default'   => '#'
+			)
+	);
+
+	$wp_customize->add_section( 'goorin_footer_section',
+			array(
+					'title'    => __( 'Footer', 'goorin' ),
+					'priority' => 30,
+			)
+	);
+
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'terms_conditions_text', array(
+					'label'    => __( 'Terms and Conditions Text', 'goorin' ),
+					'section'  => 'goorin_footer_section',
+					'settings' => 'terms_conditions_text'
+			) )
+	);
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'terms_conditions_link1', array(
+					'label'    => __( 'Terms and Conditions Link 1', 'goorin' ),
+					'section'  => 'goorin_footer_section',
+					'settings' => 'terms_conditions_link1'
+			) )
+	);
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'terms_conditions_link1_text', array(
+					'label'    => __( 'Link 1 Text', 'goorin' ),
+					'section'  => 'goorin_footer_section',
+					'settings' => 'terms_conditions_link1_text'
+			) )
+	);
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'terms_conditions_link2', array(
+					'label'    => __( 'Terms and Conditions Link 2', 'goorin' ),
+					'section'  => 'goorin_footer_section',
+					'settings' => 'terms_conditions_link2'
+			) )
+	);
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'terms_conditions_link2_text', array(
+					'label'    => __( 'Link 2 Text', 'goorin' ),
+					'section'  => 'goorin_footer_section',
+					'settings' => 'terms_conditions_link2_text'
+			) )
+	);
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'twitter_link', array(
+					'label'    => __( 'Twitter Link', 'goorin' ),
+					'section'  => 'goorin_footer_section',
+					'settings' => 'twitter_link'
+			) )
+	);
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'facebook_link', array(
+					'label'    => __( 'Facebook Link', 'goorin' ),
+					'section'  => 'goorin_footer_section',
+					'settings' => 'facebook_link'
+			) )
+	);
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'instagram_link', array(
+					'label'    => __( 'Instagram Link', 'goorin' ),
+					'section'  => 'goorin_footer_section',
+					'settings' => 'instagram_link'
+			) )
+	);
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'pinterest_link', array(
+					'label'    => __( 'Pinterest Link', 'goorin' ),
+					'section'  => 'goorin_footer_section',
+					'settings' => 'pinterest_link'
+			) )
+	);
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'tumblr_link', array(
+					'label'    => __( 'Tumblr Link', 'goorin' ),
+					'section'  => 'goorin_footer_section',
+					'settings' => 'tumblr_link'
+			) )
+	);
 }
 add_action( 'customize_register', 'goorin_customize_register' );
 

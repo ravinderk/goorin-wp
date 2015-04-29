@@ -272,3 +272,7 @@ function goorin_header() {
 function goorin_footer() {
 	get_template_part('partials/footer');
 }
+
+function magento_url() {
+	return 'http://stage.goorin.com/';
+}
