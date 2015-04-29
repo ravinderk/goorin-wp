@@ -1,40 +1,16 @@
 <footer class="site-footer">
 	<div class="container">
 		<div class="footer-col-row">
-			<div class="footer-col-right">
-				<div class="col col-1">
-					<h6>Account</h6>
-					<ul>
-						<li><a href="#">My Wishlist</a></li>
-						<li><a href="#">Order History</a></li>
-						<li><a href="#">Order Status</a></li>
-						<li><a href="#">Gift Card Balance</a></li>
-					</ul>
-				</div>
-				<!--col1-->
-				<div class="col col-2">
-					<h6>Customer Care</h6>
-					<ul>
-						<li><a href="#">Returns</a></li>
-						<li><a href="#">Shipping Information</a></li>
-						<li><a href="#">Contact Us</a></li>
-						<li><a href="#">Gift Cards</a></li>
-						<li><a href="#">Hat Size Guide</a></li>
-						<li><a href="#">Hat Care</a></li>
-					</ul>
-				</div>
-				<!--col1-->
-				<div class="col col-3">
-					<h6>About Us</h6>
-					<ul>
-						<li><a href="#">Locations</a></li>
-						<li><a href="#">Careers</a></li>
-						<li><a href="#">Press</a></li>
-						<li><a href="#">Blog</a></li>
-					</ul>
-				</div>
-				<!--col1-->
-			</div>
+			<?php
+			get_template_part( 'inc/Footer_Walker' );
+			wp_nav_menu( array(
+							'theme_location' => 'footer',
+							'walker'         => new Goorin_Footer_Walker(),
+							'container'      => 'div',
+							'menu_class'     => 'footer-col-right'
+					)
+			);
+			?>
 			<div class="footer-col-left">
 				<article>
 					<h3>Keep me posted.</h3>
