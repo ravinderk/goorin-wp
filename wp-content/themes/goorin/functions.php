@@ -211,10 +211,10 @@ function goorin_api_handler() {
 	if( isset( $wp_query->query_vars['api'] ) && $wp_query->query_vars['api'] ) {
 		switch( $wp_query->query_vars['api'] ) {
 			case 'header':
-				echo 'header';
+				goorin_header();
 				die();
 			case 'footer':
-				echo 'footer';
+				goorin_footer();
 				die();
 		}
 	}
