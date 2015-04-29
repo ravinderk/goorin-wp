@@ -18,7 +18,6 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/global.js"></script>
 <?php wp_head(); ?>
 </head>
-
 <body <?php body_class(); ?>>
 <div id="page" class="main">
 	<?php goorin_header(); ?>
