@@ -1608,13 +1608,7 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
     width: 100%;
   }
 }
-@media only screen and (min-width: 768px) {
-  /* line 26, sass/components/_banner.scss */
-  .banner .banner-item:hover .slick-prev, .banner .banner-item:hover .slick-next {
-    display: block !important;
-  }
-}
-/* line 32, sass/components/_banner.scss */
+/* line 25, sass/components/_banner.scss */
 .banner article {
   width: 100%;
   color: #ffffff;
@@ -1623,7 +1617,7 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   left: 0;
 }
 @media only screen and (min-width: 768px) {
-  /* line 32, sass/components/_banner.scss */
+  /* line 25, sass/components/_banner.scss */
   .banner article {
     position: absolute;
     bottom: 106px;
@@ -1631,20 +1625,20 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   }
 }
 @media only screen and (min-width: 1140px) {
-  /* line 32, sass/components/_banner.scss */
+  /* line 25, sass/components/_banner.scss */
   .banner article {
     position: absolute;
     bottom: 115px;
     left: 0;
   }
 }
-/* line 43, sass/components/_banner.scss */
+/* line 36, sass/components/_banner.scss */
 .banner article h6 {
   text-transform: uppercase;
   font-weight: normal;
 }
 @media only screen and (min-width: 768px) {
-  /* line 43, sass/components/_banner.scss */
+  /* line 36, sass/components/_banner.scss */
   .banner article h6 {
     margin-bottom: 14px;
     font-size: 17px;
@@ -1652,7 +1646,7 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
     letter-spacing: 0px;
   }
 }
-/* line 54, sass/components/_banner.scss */
+/* line 47, sass/components/_banner.scss */
 .banner article h2 {
   margin-bottom: 2px;
   font-size: 30px;
@@ -1661,25 +1655,25 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   font-weight: normal;
 }
 @media only screen and (min-width: 640px) {
-  /* line 54, sass/components/_banner.scss */
+  /* line 47, sass/components/_banner.scss */
   .banner article h2 {
     margin-bottom: 14px;
     font-size: 48px;
     line-height: 48px;
   }
 }
-/* line 66, sass/components/_banner.scss */
+/* line 59, sass/components/_banner.scss */
 .banner article p {
   text-transform: uppercase;
 }
 @media only screen and (min-width: 768px) {
-  /* line 66, sass/components/_banner.scss */
+  /* line 59, sass/components/_banner.scss */
   .banner article p {
     font-size: 17px;
     line-height: normal;
   }
 }
-/* line 73, sass/components/_banner.scss */
+/* line 66, sass/components/_banner.scss */
 .banner article p i, .banner article p em {
   text-transform: none;
   font-style: italic;
@@ -1687,13 +1681,13 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   line-height: normal;
 }
 @media only screen and (min-width: 768px) {
-  /* line 73, sass/components/_banner.scss */
+  /* line 66, sass/components/_banner.scss */
   .banner article p i, .banner article p em {
     font-size: 18px;
     line-height: normal;
   }
 }
-/* line 84, sass/components/_banner.scss */
+/* line 77, sass/components/_banner.scss */
 .banner .slick-dots {
   margin: 0;
   padding: 0;
@@ -1703,7 +1697,7 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   left: 0;
 }
 @media only screen and (min-width: 768px) {
-  /* line 84, sass/components/_banner.scss */
+  /* line 77, sass/components/_banner.scss */
   .banner .slick-dots {
     display: none !important;
     position: absolute;
@@ -1711,13 +1705,13 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
     left: 0;
   }
 }
-/* line 93, sass/components/_banner.scss */
+/* line 86, sass/components/_banner.scss */
 .banner .slick-dots li {
   margin: 0 auto;
   height: auto;
   width: auto;
 }
-/* line 96, sass/components/_banner.scss */
+/* line 89, sass/components/_banner.scss */
 .banner .slick-dots li button {
   height: 6px;
   width: 6px;
@@ -1730,7 +1724,7 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   border-radius: 50%;
 }
 @media only screen and (min-width: 768px) {
-  /* line 96, sass/components/_banner.scss */
+  /* line 89, sass/components/_banner.scss */
   .banner .slick-dots li button {
     height: 8px;
     width: 8px;
@@ -1738,12 +1732,12 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
     margin-left: 7px;
   }
 }
-/* line 108, sass/components/_banner.scss */
+/* line 101, sass/components/_banner.scss */
 .banner .slick-dots li.slick-active button {
   background: #ffffff;
   background: #ffffff;
 }
-/* line 114, sass/components/_banner.scss */
+/* line 107, sass/components/_banner.scss */
 .banner .slick-prev, .banner .slick-next {
   top: 50%;
   font-size: 0;
@@ -1758,29 +1752,35 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   background: none;
   background: none;
 }
-/* line 125, sass/components/_banner.scss */
+/* line 118, sass/components/_banner.scss */
 .banner .slick-prev {
   left: 45px;
   opacity: 0.5;
   background: url("../images/slider-prev.png") right 0 no-repeat;
   background: url("../images/slider-prev.png") right 0 no-repeat;
 }
-/* line 129, sass/components/_banner.scss */
+/* line 122, sass/components/_banner.scss */
 .banner .slick-prev:hover {
   opacity: 1;
   background-position: 0 0;
 }
-/* line 134, sass/components/_banner.scss */
+/* line 127, sass/components/_banner.scss */
 .banner .slick-next {
   right: 45px;
   opacity: 0.5;
   background: url("../images/slider-next.png") 0 0 no-repeat;
   background: url("../images/slider-next.png") 0 0 no-repeat;
 }
-/* line 138, sass/components/_banner.scss */
+/* line 131, sass/components/_banner.scss */
 .banner .slick-next:hover {
   opacity: 1;
   background-position: right 0;
+}
+@media only screen and (min-width: 768px) {
+  /* line 138, sass/components/_banner.scss */
+  .banner:hover .slick-prev, .banner:hover .slick-next {
+    display: block !important;
+  }
 }
 
 /* line 1, sass/layout/_layout.scss */
@@ -1990,7 +1990,7 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
     height: 76px;
     width: 235px;
     background-image: url("../images/logo_2x.png");
-    background-position: -45px 0;
+    background-position: -50px 0;
     background-size: 340px 82px;
     left: 3px;
     position: relative;
