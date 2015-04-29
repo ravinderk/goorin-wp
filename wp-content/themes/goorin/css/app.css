@@ -3458,7 +3458,7 @@ input {
 .spring-preview-block .spring-preview-image {
   margin: 0 0 15px;
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 980px) {
   /* line 459, sass/pages/_home.scss */
   .spring-preview-block .spring-preview-image {
     width: 50%;
@@ -3533,7 +3533,7 @@ input {
 .spring-preview-block .spring-preview-content .related-feature-box {
   margin: 0 0 55px;
 }
-@media only screen and (min-width: 980px) {
+@media only screen and (min-width: 768px) {
   /* line 518, sass/pages/_home.scss */
   .spring-preview-block .spring-preview-content .related-feature-box {
     width: 46%;
