@@ -192,7 +192,7 @@ function goorin_api_rewrite_tag() {
 add_action( 'init', 'goorin_api_rewrite_tag' );
 
 function goorin_api_rewrite_rule() {
-	add_rewrite_rule( 'api/([^/]+)', 'index.php?api=$matches[1]', 'top' );
+	add_rewrite_rule( 'api/([^/]+)/key/57d2c3f1c88f78d043ff3c82fbcd2d77', 'index.php?api=$matches[1]', 'top' );
 }
 
 add_action( 'init', 'goorin_api_rewrite_rule' );
