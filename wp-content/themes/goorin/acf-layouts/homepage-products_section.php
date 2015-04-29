@@ -1,9 +1,13 @@
 <section class="home-content-block hollyday-content-block">
     <div class="container">
     	<div class="hollyday-content-main">
-			<hgroup>
-                <h6>Just in time For  </h6>
-                <h2>The Holiday</h2>
+			<hgroup class="hide-desktop">
+                <h6>Just in time For the </h6>
+                <h2>Holiday</h2>
+            </hgroup>
+            <hgroup class="hide-mobile">
+                <h6>Just in time For</h6>
+                <h2>the holidays</h2>
             </hgroup>
             <div class="hollyday-product-block">
             	<div class="hollyday-left-block">
@@ -42,7 +46,7 @@
 									<h4><?php echo $product['heading']; ?></h4>
 								<?php } ?>
 	                            <?php if ( $product['post-heading_text'] ) { ?>
-									<h6><?php echo $product['post-heading_text']; ?></h6>
+									<div class="hollyday-product-content"><?php echo $product['post-heading_text']; ?></div>
 								<?php } ?>
 	                        </article>
 	                    </div>

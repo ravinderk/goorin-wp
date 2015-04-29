@@ -8,8 +8,10 @@
 		                	<?php if ( $hero_section_slide['content'] ) { ?>
 								<article>
 									<h6><?php echo $hero_section_slide['pre-heading_text']; ?></h6>
-									<h2><?php echo $hero_section_slide['heading']; ?><h2>
-									<?php echo $hero_section_slide['content']; ?>
+									<h2><?php echo $hero_section_slide['heading']; ?></h2>
+									<div class="slider-content">
+										<?php echo $hero_section_slide['content']; ?>
+									</div>	
 								</article>
 							<?php } ?>
 		                </div>
