@@ -264,3 +264,11 @@ function goorin_category_transient_flusher() {
 }
 add_action( 'edit_category', 'goorin_category_transient_flusher' );
 add_action( 'save_post',     'goorin_category_transient_flusher' );
+
+function goorin_header() {
+	get_template_part('partials/header');
+}
+
+function goorin_footer() {
+	get_template_part('partials/footer');
+}

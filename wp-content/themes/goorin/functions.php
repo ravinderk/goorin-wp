@@ -46,11 +46,12 @@ function goorin_setup() {
 	 *
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
-	//add_theme_support( 'post-thumbnails' );
+	add_theme_support( 'post-thumbnails' );
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'primary' => __( 'Primary Menu', 'goorin' ),
+		'header' => __( 'Header Menu', 'goorin' ),
+		'footer' => __( 'Footer Menu', 'goorin' ),
 	) );
 
 	/*
@@ -165,3 +166,21 @@ $args = array(
 );
 
 register_post_type( 'shops', $args );
+
+$args = array(
+    'label'              => __( 'Nav Menu Images' ),
+    'singular_label'     => __( 'Nav Menu Image' ),
+    'public'             => false,
+    'show_ui'            => true,
+    'show_in_nav_menus'  => true,
+    'capability_type'    => 'post',
+    'hierarchical'       => false,
+    'menu_position'      => 25,
+    'supports'           => array(
+        'title',
+        'thumbnail',
+        'custom-fields'
+    ),
+);
+
+register_post_type( 'nav_menu_image', $args );
