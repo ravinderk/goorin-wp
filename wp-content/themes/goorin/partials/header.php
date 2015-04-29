@@ -38,7 +38,7 @@
 			<span>•</span>
 			<a href="#" class="menu-search-link"><?php echo get_theme_mod('sale_link', 'Search'); ?></a>
 			<span>•</span>
-			<a href="#" class="menu-cart-link"><?php echo get_theme_mod('sale_link', 'Cart'); ?><span class="cart-count-icon" style="display:none"></span></a>
+			<a href="#" class="menu-cart-link"><?php echo get_theme_mod('sale_link', 'Cart'); ?><span class="cart-count-icon">0</span></a>
 		</menu>
 	</div>
 	<div class="nav-overlay"></div>

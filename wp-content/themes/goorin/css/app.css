@@ -1516,9 +1516,20 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
 }
 /* line 190, sass/components/_navigation.scss */
 .site-header .menu a:hover {
+  color: #d1a401;
   text-decoration: underline;
 }
+/* line 193, sass/components/_navigation.scss */
+.site-header .menu a:hover .cart-count-icon {
+  color: #000000;
+  background: #d1a401;
+  background: #d1a401;
+}
 /* line 198, sass/components/_navigation.scss */
+.site-header .menu a.menu-cart-link {
+  padding: 0 35px 0 0;
+}
+/* line 202, sass/components/_navigation.scss */
 .site-header .menu span {
   color: #726b67;
   font-size: 8px;
@@ -1526,7 +1537,7 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   padding-right: 4px;
   padding-left: 4px;
 }
-/* line 204, sass/components/_navigation.scss */
+/* line 208, sass/components/_navigation.scss */
 .site-header .menu .cart-count-icon {
   position: absolute;
   top: -7px;
