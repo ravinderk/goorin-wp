@@ -74,12 +74,12 @@ $group = array (
                   'label' => 'Pre-Heading Text',
                   'name' => 'pre-heading_text',
                   '_name' => 'pre-heading_text',
-                  'type' => 'text',
+                  'type' => 'wysiwyg',
                   'order_no' => 0,
                   'instructions' => '',
                   'required' => 0,
                   'id' => 'acf-field-pre-heading_text',
-                  'class' => 'text',
+                  'class' => 'wysiwyg',
                   'conditional_logic' => 
                   array (
                     'status' => 0,
@@ -95,11 +95,8 @@ $group = array (
                   ),
                   'column_width' => '',
                   'default_value' => '',
-                  'placeholder' => '',
-                  'prepend' => '',
-                  'append' => '',
-                  'formatting' => 'html',
-                  'maxlength' => '',
+                  'toolbar' => 'basic',
+                  'media_upload' => 'no',
                 ),
                 1 => 
                 array (
@@ -122,6 +119,7 @@ $group = array (
                       array (
                         'field' => 'null',
                         'operator' => '==',
+                        'value' => '',
                       ),
                     ),
                     'allorany' => 'all',
@@ -136,43 +134,12 @@ $group = array (
                 ),
                 2 => 
                 array (
-                  'key' => 'field_553e4ba6698cb',
-                  'label' => 'Content',
-                  'name' => 'content',
-                  '_name' => 'content',
-                  'type' => 'wysiwyg',
-                  'order_no' => 2,
-                  'instructions' => '',
-                  'required' => 0,
-                  'id' => 'acf-field-content',
-                  'class' => 'wysiwyg',
-                  'conditional_logic' => 
-                  array (
-                    'status' => 0,
-                    'rules' => 
-                    array (
-                      0 => 
-                      array (
-                        'field' => 'null',
-                        'operator' => '==',
-                        'value' => '',
-                      ),
-                    ),
-                    'allorany' => 'all',
-                  ),
-                  'column_width' => '',
-                  'default_value' => '',
-                  'toolbar' => 'full',
-                  'media_upload' => 'no',
-                ),
-                3 => 
-                array (
                   'key' => 'field_553e4bb2698cc',
                   'label' => 'Background Image',
                   'name' => 'background_image',
                   '_name' => 'background_image',
                   'type' => 'image',
-                  'order_no' => 3,
+                  'order_no' => 2,
                   'instructions' => '',
                   'required' => 0,
                   'id' => 'acf-field-background_image',
@@ -195,6 +162,74 @@ $group = array (
                   'save_format' => 'object',
                   'preview_size' => 'thumbnail',
                   'library' => 'all',
+                ),
+                3 => 
+                array (
+                  'key' => 'field_5540fbd41fe8a',
+                  'label' => 'CTA Text',
+                  'name' => 'cta_text',
+                  '_name' => 'cta_text',
+                  'type' => 'text',
+                  'order_no' => 3,
+                  'instructions' => '',
+                  'required' => 0,
+                  'id' => 'acf-field-cta_text',
+                  'class' => 'text',
+                  'conditional_logic' => 
+                  array (
+                    'status' => 0,
+                    'rules' => 
+                    array (
+                      0 => 
+                      array (
+                        'field' => 'null',
+                        'operator' => '==',
+                        'value' => '',
+                      ),
+                    ),
+                    'allorany' => 'all',
+                  ),
+                  'column_width' => '',
+                  'default_value' => '',
+                  'placeholder' => '',
+                  'prepend' => '',
+                  'append' => '',
+                  'formatting' => 'html',
+                  'maxlength' => '',
+                ),
+                4 => 
+                array (
+                  'key' => 'field_5540fbd91fe8b',
+                  'label' => 'CTA URL',
+                  'name' => 'cta_url',
+                  '_name' => 'cta_url',
+                  'type' => 'text',
+                  'order_no' => 4,
+                  'instructions' => '',
+                  'required' => 0,
+                  'id' => 'acf-field-cta_url',
+                  'class' => 'text',
+                  'conditional_logic' => 
+                  array (
+                    'status' => 0,
+                    'rules' => 
+                    array (
+                      0 => 
+                      array (
+                        'field' => 'null',
+                        'operator' => '==',
+                        'value' => '',
+                      ),
+                    ),
+                    'allorany' => 'all',
+                  ),
+                  'column_width' => '',
+                  'default_value' => '',
+                  'placeholder' => '',
+                  'prepend' => '',
+                  'append' => '',
+                  'formatting' => 'html',
+                  'maxlength' => '',
                 ),
               ),
               'row_min' => '',
@@ -842,6 +877,7 @@ $group = array (
                   array (
                     'field' => 'null',
                     'operator' => '==',
+                    'value' => '',
                   ),
                 ),
                 'allorany' => 'all',
@@ -935,6 +971,7 @@ $group = array (
                       array (
                         'field' => 'null',
                         'operator' => '==',
+                        'value' => '',
                       ),
                     ),
                     'allorany' => 'all',
