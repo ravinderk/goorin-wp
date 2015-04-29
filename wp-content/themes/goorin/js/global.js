@@ -42,11 +42,26 @@
         var cart_mouseleave = function() {
             $(this).fadeOut();
         };
+        var cart_trigger_mobile = function() {
+            $('.cart-dropdown').slideToggle();
+        };
+        var cart_trigger_tablet = function() {
+             $('.cart-dropdown').fadeToggle();
+        };
         enquire
             .register("screen and (max-width:767px)", function() {
                 $('.site-search').css('display' , 'block');
                 $('.cart-dropdown').css('display' , 'none');
+                $('.cart-count').off('click', cart_trigger_tablet);
+                $('.cart-count').on('click', cart_trigger_mobile);
                 $('.cart-dropdown').off('mouseleave', cart_mouseleave);
+            }) 
+            .register("screen and (min-width:768px)", function() {
+                $('.cart-dropdown').css('display' , 'none');
+                $('.cart-count').off('click', cart_trigger_mobile);
+                $('.cart-count').on('click', cart_trigger_tablet);
+                $('.cart-dropdown').off('mouseleave', cart_mouseleave);
+                $('.cart-dropdown').on('mouseleave', cart_mouseleave);
             })    
             .register("screen and (max-width:1139px)", function() {
                 $('.nav-overlay').removeClass('is_open');
@@ -56,8 +71,6 @@
                 $('.nav-primary a.navlink').off('click', mob_trigger);
                 $('.nav-primary a.navlink').on('click', mob_trigger);
                 $('.site-search').css('display' , 'block');
-                $('.cart-dropdown').css('display' , 'none');
-                $('.cart-dropdown').on('mouseleave', cart_mouseleave);
             })
             .register("screen and (min-width:1140px)", function() {
                 $('body').removeClass('bodyhidden');
@@ -126,10 +139,6 @@
         $('.menu-search-link').mouseover(function() {
             $(this).toggleClass('is_search_open');
             $('.site-search').slideToggle();
-            return false
-        });
-        $('.cart-count').click(function() {
-            $('.cart-dropdown').fadeToggle();
             return false
         });
         $('.menu-cart-link').mouseover(function() {
