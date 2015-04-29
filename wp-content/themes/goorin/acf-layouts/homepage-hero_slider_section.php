@@ -6,12 +6,14 @@
 					<div class="item">
 		                <div class="banner-item item-1" style='background-image:url("<?php echo $hero_section_slide['background_image']['url']; ?>");'>
 							<article>
-								<h6><?php echo $hero_section_slide['pre-heading_text']; ?></h6>
+								<div class="banner-content"><?php echo $hero_section_slide['pre-heading_text']; ?></div>
 								<h2><?php echo $hero_section_slide['heading']; ?></h2>
 								<?php if ( isset( $hero_section_slide['cta_text'] ) ) { ?>
-									<a href="<?php echo $hero_section_slide['cta_url']; ?>">
-										<?php echo $hero_section_slide['cta_text']; ?>
-									</a>
+									<div class="banner-btn">	
+										<a href="<?php echo $hero_section_slide['cta_url']; ?>" class="btn">
+											<?php echo $hero_section_slide['cta_text']; ?>
+										</a>
+									</div>
 								<?php } ?>
 							</article>
 		                </div>
