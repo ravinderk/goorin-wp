@@ -32,9 +32,9 @@
 			?>
 		</nav>
 		<menu class="menu">
-			<a href="#" class="menu-account-link"><?php echo get_theme_mod('sale_link', 'LOGIN'); ?></a>
-			<span>•</span>
-			<a href="#" class="menu-account-link"><?php echo get_theme_mod('sale_link', 'Account'); ?></a>
+			<!--<a href="#" class="menu-account-link"><?php echo get_theme_mod('sale_link', 'LOGIN'); ?></a>
+			<span>•</span>-->
+			<a href="http://redesign.goorin.com/customer/account/" class="menu-account-link"><?php echo get_theme_mod('sale_link', 'Account'); ?></a>
 			<span>•</span>
 			<a href="#" class="menu-search-link"><?php echo get_theme_mod('sale_link', 'Search'); ?></a>
 			<span>•</span>
