@@ -41,12 +41,16 @@
         };
         var cart_mouseleave = function() {
             $(this).fadeOut();
+            $('.cart-count').removeClass('is_active');
+            $('.menu-cart-link').removeClass('is_active');
         };
         var cart_trigger_mobile = function() {
             $('.cart-dropdown').slideToggle();
+            $(this).toggleClass('is_active');
         };
         var cart_trigger_tablet = function() {
              $('.cart-dropdown').fadeToggle();
+             $(this).toggleClass('is_active');
         };
         enquire
             .register("screen and (max-width:767px)", function() {
@@ -58,6 +62,7 @@
             }) 
             .register("screen and (min-width:768px)", function() {
                 $('.cart-dropdown').css('display' , 'none');
+                $('.cart-count').removeClass('is_active');
                 $('.cart-count').off('click', cart_trigger_mobile);
                 $('.cart-count').on('click', cart_trigger_tablet);
                 $('.cart-dropdown').off('mouseleave', cart_mouseleave);
@@ -71,6 +76,7 @@
                 $('.nav-primary a.navlink').off('click', mob_trigger);
                 $('.nav-primary a.navlink').on('click', mob_trigger);
                 $('.site-search').css('display' , 'block');
+                $('.cart-count').removeClass('is_active');
             })
             .register("screen and (min-width:1140px)", function() {
                 $('body').removeClass('bodyhidden');
@@ -136,17 +142,18 @@
             }
             return false
         });
-        $('.menu-search-link').mouseover(function() {
-            $(this).toggleClass('is_search_open');
+        $('.menu-search-link').click(function() {
             $('.site-search').slideToggle();
+            $(this).toggleClass('is_active');
             return false
         });
-        $('.menu-cart-link').mouseover(function() {
+        $('.menu-cart-link').click(function() {
+            $(this).toggleClass('is_active');
             $('.cart-dropdown').fadeToggle();
             return false
         });
         $('.search-close').click(function() {
-            $('.menu-search-link').toggleClass('is_search_open');
+            $('.menu-search-link').removeClass('is_active');
             $('.site-search').slideUp();
             return false
         });
