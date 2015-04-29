@@ -1634,7 +1634,7 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
 }
 /* line 36, sass/components/_banner.scss */
 .banner article .banner-content {
-  margin: 0 0 15px;
+  margin: 0 0 10px;
 }
 /* line 39, sass/components/_banner.scss */
 .banner article h6 {
@@ -1652,7 +1652,7 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
 }
 /* line 50, sass/components/_banner.scss */
 .banner article h2 {
-  margin-bottom: 2px;
+  margin-bottom: 10px;
   font-size: 30px;
   line-height: 30px;
   letter-spacing: 4px;
