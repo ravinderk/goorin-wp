@@ -97,22 +97,22 @@ function goorin_customize_register( $wp_customize ) {
 	);
 	$wp_customize->add_setting( 'terms_conditions_link1',
 			array(
-					'default'   => 'Goorin Bros. Hat Shop'
+					'default'   => '#'
 			)
 	);
 	$wp_customize->add_setting( 'terms_conditions_link1_text',
 			array(
-					'default'   => 'Goorin Bros. Hat Shop'
+					'default'   => 'Terms and Conditions'
 			)
 	);
 	$wp_customize->add_setting( 'terms_conditions_link2',
 			array(
-					'default'   => 'Goorin Bros. Hat Shop'
+					'default'   => '#'
 			)
 	);
 	$wp_customize->add_setting( 'terms_conditions_link2_text',
 			array(
-					'default'   => 'Goorin Bros. Hat Shop'
+					'default'   => 'Privacy Policy'
 			)
 	);
 	$wp_customize->add_setting( 'twitter_link',
