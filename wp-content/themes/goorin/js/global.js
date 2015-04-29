@@ -141,6 +141,14 @@
             $('.site-search').slideUp();
             return false
         });
+        $(window).on("load resize", function(e) {
+            if ($(window).width() >= 640) {
+                var window_size = $(window).height();
+                $('.banner-item').height(window_size - 225);
+            } else {
+                $('.banner-item').height(380);
+            }
+        });
         $('.banner-carousel').slick({
             dots: true,
             infinite: true,
