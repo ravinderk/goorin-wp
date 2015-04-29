@@ -1628,17 +1628,21 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   /* line 25, sass/components/_banner.scss */
   .banner article {
     position: absolute;
-    bottom: 115px;
+    bottom: 80px;
     left: 0;
   }
 }
 /* line 36, sass/components/_banner.scss */
+.banner article .banner-content {
+  margin: 0 0 15px;
+}
+/* line 39, sass/components/_banner.scss */
 .banner article h6 {
   text-transform: uppercase;
   font-weight: normal;
 }
 @media only screen and (min-width: 768px) {
-  /* line 36, sass/components/_banner.scss */
+  /* line 39, sass/components/_banner.scss */
   .banner article h6 {
     margin-bottom: 14px;
     font-size: 17px;
@@ -1646,7 +1650,7 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
     letter-spacing: 0px;
   }
 }
-/* line 47, sass/components/_banner.scss */
+/* line 50, sass/components/_banner.scss */
 .banner article h2 {
   margin-bottom: 2px;
   font-size: 30px;
@@ -1655,25 +1659,25 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   font-weight: normal;
 }
 @media only screen and (min-width: 640px) {
-  /* line 47, sass/components/_banner.scss */
+  /* line 50, sass/components/_banner.scss */
   .banner article h2 {
-    margin-bottom: 12px;
+    margin-bottom: 20px;
     font-size: 56px;
     line-height: 56px;
   }
 }
-/* line 59, sass/components/_banner.scss */
+/* line 62, sass/components/_banner.scss */
 .banner article p {
   text-transform: uppercase;
 }
 @media only screen and (min-width: 768px) {
-  /* line 59, sass/components/_banner.scss */
+  /* line 62, sass/components/_banner.scss */
   .banner article p {
     font-size: 13px;
     line-height: normal;
   }
 }
-/* line 66, sass/components/_banner.scss */
+/* line 69, sass/components/_banner.scss */
 .banner article p i, .banner article p em {
   text-transform: none;
   font-style: italic;
@@ -1681,20 +1685,26 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   line-height: normal;
 }
 @media only screen and (min-width: 768px) {
-  /* line 66, sass/components/_banner.scss */
+  /* line 69, sass/components/_banner.scss */
   .banner article p i, .banner article p em {
     font-size: 13px;
     line-height: normal;
   }
 }
-/* line 76, sass/components/_banner.scss */
+/* line 79, sass/components/_banner.scss */
 .banner article .btn {
-  border: 4px solid #ffffff;
-  padding: 15px 55px;
+  border: 2px solid #ffffff;
+  font-size: 13px;
+  line-height: normal;
+  padding: 13px 55px;
   background: none;
   background: none;
 }
-/* line 82, sass/components/_banner.scss */
+/* line 84, sass/components/_banner.scss */
+.banner article .btn:hover {
+  color: #ffffff;
+}
+/* line 89, sass/components/_banner.scss */
 .banner .slick-dots {
   margin: 0;
   padding: 0;
@@ -1704,20 +1714,20 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   left: 0;
 }
 @media only screen and (min-width: 768px) {
-  /* line 82, sass/components/_banner.scss */
+  /* line 89, sass/components/_banner.scss */
   .banner .slick-dots {
     position: absolute;
     bottom: 30px;
     left: 0;
   }
 }
-/* line 90, sass/components/_banner.scss */
+/* line 97, sass/components/_banner.scss */
 .banner .slick-dots li {
   margin: 0 auto;
   height: auto;
   width: auto;
 }
-/* line 93, sass/components/_banner.scss */
+/* line 100, sass/components/_banner.scss */
 .banner .slick-dots li button {
   height: 6px;
   width: 6px;
@@ -1730,7 +1740,7 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   border-radius: 50%;
 }
 @media only screen and (min-width: 768px) {
-  /* line 93, sass/components/_banner.scss */
+  /* line 100, sass/components/_banner.scss */
   .banner .slick-dots li button {
     height: 8px;
     width: 8px;
@@ -1738,12 +1748,12 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
     margin-left: 7px;
   }
 }
-/* line 105, sass/components/_banner.scss */
+/* line 112, sass/components/_banner.scss */
 .banner .slick-dots li.slick-active button {
   background: #ffffff;
   background: #ffffff;
 }
-/* line 111, sass/components/_banner.scss */
+/* line 118, sass/components/_banner.scss */
 .banner .slick-prev, .banner .slick-next {
   top: 50%;
   font-size: 0;
@@ -1758,32 +1768,32 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   background: none;
   background: none;
 }
-/* line 122, sass/components/_banner.scss */
+/* line 129, sass/components/_banner.scss */
 .banner .slick-prev {
   left: 45px;
   opacity: 0.5;
   background: url("../images/slider-prev.png") right 0 no-repeat;
   background: url("../images/slider-prev.png") right 0 no-repeat;
 }
-/* line 126, sass/components/_banner.scss */
+/* line 133, sass/components/_banner.scss */
 .banner .slick-prev:hover {
   opacity: 1;
   background-position: 0 0;
 }
-/* line 131, sass/components/_banner.scss */
+/* line 138, sass/components/_banner.scss */
 .banner .slick-next {
   right: 45px;
   opacity: 0.5;
   background: url("../images/slider-next.png") 0 0 no-repeat;
   background: url("../images/slider-next.png") 0 0 no-repeat;
 }
-/* line 135, sass/components/_banner.scss */
+/* line 142, sass/components/_banner.scss */
 .banner .slick-next:hover {
   opacity: 1;
   background-position: right 0;
 }
-@media only screen and (min-width: 768px) {
-  /* line 142, sass/components/_banner.scss */
+@media only screen and (min-width: 1140px) {
+  /* line 149, sass/components/_banner.scss */
   .banner:hover .slick-prev, .banner:hover .slick-next {
     display: block !important;
   }
