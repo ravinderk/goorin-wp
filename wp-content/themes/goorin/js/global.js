@@ -166,7 +166,6 @@
                 $('.banner-item').height(380);
             }
         });
-
         window.goorin = window.goorin || {};
         window.goorin.bannerSlide = $('.banner-carousel').slick({
             dots: true,
@@ -194,7 +193,6 @@
                 window.goorin.bannerSlide.slickPause();
             },1000);
         });
-        
         var previousScroll = 0, // previous scroll position
         menuOffset = 76, // height of menu (once scroll passed it, menu is hidden)
         detachPoint = 650, // point of detach (after scroll passed it, menu is fixed)

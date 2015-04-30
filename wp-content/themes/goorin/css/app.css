@@ -1259,7 +1259,7 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
     width: auto;
     background: none;
     background: none;
-    display: none !important;
+    display: table !important;
     -webkit-transform: inherit;
     -moz-transform: inherit;
     -ms-transform: inherit;
