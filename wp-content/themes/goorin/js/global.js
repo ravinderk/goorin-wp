@@ -165,27 +165,33 @@
                 $('.banner-item').height(380);
             }
         });
-        $('.banner-carousel').slick({
-            dots: true,
-            infinite: true,
-            speed: 500,
-            fade: true,
-            autoplay: true,
-            autoplaySpeed: 4000,
-            slide: '.item',
-            cssEase: 'linear',
-            responsive: [
-                {
-                  breakpoint: 480,
-                  settings: {
-                    fade: false,
-                    speed: 500,
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                  }
-                }
-              ]
+        $(function () {
+            var bannerSlide = $('.banner-carousel').slick({
+                dots: true,
+                infinite: false,
+                speed: 500,
+                fade: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                slide: '.item',
+                cssEase: 'linear',
+                responsive: [
+                    {
+                      breakpoint: 480,
+                      settings: {
+                        fade: false,
+                        speed: 500,
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                      }
+                    }
+                  ]
+            });
+            $('.banner-carousel > button').on('click', function () {
+                bannerSlide.slickPause();
+            });
         });
+        
         var previousScroll = 0, // previous scroll position
         menuOffset = 76, // height of menu (once scroll passed it, menu is hidden)
         detachPoint = 650, // point of detach (after scroll passed it, menu is fixed)
