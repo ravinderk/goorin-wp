@@ -166,36 +166,33 @@
                 $('.banner-item').height(380);
             }
         });
-        $(function () {
-            var bannerSlide = $('.banner-carousel').slick({
-                dots: true,
-                infinite: false,
-                speed: 500,
-                fade: true,
-                autoplay: true,
-                autoplaySpeed: 4000,
-                slide: '.item',
-                cssEase: 'linear',
-                responsive: [
-                    {
-                      breakpoint: 480,
-                      settings: {
-                        fade: false,
-                        speed: 500,
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                      }
-                    }
-                  ]
-            });
-            $('.banner-carousel > button').on('click', function () {
-                window.goorin = window.goorin || {};
-                console.log(window.goorin.sliderHasBeenPaused);
-                if ( 1 != window.goorin.sliderHasBeenPaused ) {
-                    bannerSlide.slickPause();
+
+        window.goorin = window.goorin || {};
+        window.goorin.bannerSlide = $('.banner-carousel').slick({
+            dots: true,
+            infinite: false,
+            speed: 500,
+            fade: true,
+            autoplay: true,
+            autoplaySpeed: 4000,
+            slide: '.item',
+            cssEase: 'linear',
+            responsive: [
+                {
+                  breakpoint: 480,
+                  settings: {
+                    fade: false,
+                    speed: 500,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                  }
                 }
-                window.goorin.sliderHasBeenPaused = 1; 
-            });
+              ]
+        });
+        $('.banner-carousel > button').on('click', function () {
+            setTimeout(function(){
+                window.goorin.bannerSlide.slickPause();
+            },1000);
         });
         
         var previousScroll = 0, // previous scroll position
