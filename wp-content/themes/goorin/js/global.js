@@ -172,7 +172,7 @@
                 speed: 500,
                 fade: true,
                 autoplay: true,
-                autoplaySpeed: 2000,
+                autoplaySpeed: 4000,
                 slide: '.item',
                 cssEase: 'linear',
                 responsive: [
