@@ -1779,8 +1779,8 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   height: 4px;
   width: 4px;
   padding: 3px;
-  margin-right: 2px;
-  margin-left: 2px;
+  margin-right: 4px;
+  margin-left: 4px;
   background: #464646;
   background: #464646;
   -webkit-border-radius: 50%;
