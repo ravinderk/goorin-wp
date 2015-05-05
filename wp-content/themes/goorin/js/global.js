@@ -130,6 +130,10 @@
                 }, function() {
                     return false;
                 });
+
+                // Mage functions
+                $('.cat-left-col').css('display' , 'block');    
+
             });
         $('.menu-toggle').click(function() {
             $(this).toggleClass('is_mobile_menu_open');
@@ -240,5 +244,22 @@
             previousScroll = currentScroll;
           }
         })
+
+
+
+        // Mage functions
+
+        $('.sort-btn a').click(function() {
+            $(this).toggleClass('active');
+            $('.cat-left-col').slideToggle();
+            return false
+        });
+        $('.cat-bottom-col a.backtotop').click(function() {
+            $('html, body').animate({scrollTop : 0},600);
+            return false
+        });
+
+
+
     });
     

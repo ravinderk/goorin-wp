@@ -298,12 +298,12 @@ dl,
 menu,
 ol,
 ul {
-  margin: 1em 0;
+  margin: 0;
 }
 
 /* line 299, sass/base/_reset.scss */
 dd {
-  margin: 0 0 0 40px;
+  margin: 0;
 }
 
 /**
@@ -721,7 +721,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 63, sass/base/_typography.scss */
-.btn, .cart-dropdown .cart-list-loop article h6, .cart-dropdown .cart-list-loop article p, .banner article h6, .banner article p, .site-footer .copyright, .home-content-block .post-box article h6, .home-content-block .post-box article small span, .hollyday-content-block hgroup h6, .hollyday-content-block .hollyday-product-block .hollyday-box article h6, .hollyday-content-block .hollyday-product-block .hollyday-box article .hollyday-product-content p {
+.btn, .cart-dropdown .cart-list-loop article h6, .cart-dropdown .cart-list-loop article p, .banner article h6, .site-footer .copyright, .home-content-block .post-box article h6, .home-content-block .post-box article small span, .hollyday-content-block hgroup h6, .hollyday-content-block .hollyday-product-block .hollyday-box article h6, .hollyday-content-block .hollyday-product-block .hollyday-box article .hollyday-product-content p {
   font-size: 12px;
   line-height: normal;
 }
@@ -729,6 +729,12 @@ h1, h2, h3, h4, h5, h6 {
 /* line 66, sass/base/_typography.scss */
 .site-header .menu, .site-header .saletext, .spring-preview-block .spring-preview-content .related-feature-box h6 {
   font-size: 11px;
+  line-height: normal;
+}
+
+/* line 69, sass/base/_typography.scss */
+.banner article p {
+  font-size: 10px;
   line-height: normal;
 }
 
@@ -844,19 +850,39 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   color: #ffffff;
   font-weight: bold;
   text-transform: uppercase;
-  border: 4px solid #000000;
+  border: 2px solid #000000;
   letter-spacing: 1px;
-  padding: 15px 30px;
+  padding: 12px 20px;
   background: #000000;
   background: #000000;
 }
-/* line 13, sass/components/_buttons.scss */
+@media only screen and (min-width: 1024px) {
+  /* line 1, sass/components/_buttons.scss */
+  .btn {
+    border-size: 4px;
+    padding: 15px 30px;
+  }
+}
+/* line 17, sass/components/_buttons.scss */
 .btn:hover {
   color: #000000;
   background: none;
   background: none;
 }
-/* line 17, sass/components/_buttons.scss */
+/* line 21, sass/components/_buttons.scss */
+.btn.btn-b {
+  color: #000000;
+  border-color: #000000;
+  background: none;
+  background: none;
+}
+/* line 25, sass/components/_buttons.scss */
+.btn.btn-b:hover, .btn.btn-b.active {
+  color: #ffffff;
+  background: #000000;
+  background: #000000;
+}
+/* line 30, sass/components/_buttons.scss */
 .btn.btn-n {
   color: #000000;
   border-color: transparent;
@@ -1634,7 +1660,7 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
 }
 /* line 36, sass/components/_banner.scss */
 .banner article .banner-content {
-  margin: 0 0 10px;
+  margin: 0 0 5px;
 }
 /* line 39, sass/components/_banner.scss */
 .banner article h6 {
@@ -1652,61 +1678,72 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
 }
 /* line 50, sass/components/_banner.scss */
 .banner article h2 {
-  margin-bottom: 20px;
-  font-size: 30px;
-  line-height: 30px;
   letter-spacing: 4px;
   font-weight: normal;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-size: 32.57px;
+  line-height: 30px;
 }
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 1024px) {
   /* line 50, sass/components/_banner.scss */
   .banner article h2 {
     margin-bottom: 20px;
-    font-size: 56px;
-    line-height: 56px;
+    font-size: 58px;
+    line-height: 58px;
   }
 }
-/* line 62, sass/components/_banner.scss */
+/* line 63, sass/components/_banner.scss */
 .banner article p {
+  font-weight: bold;
   text-transform: uppercase;
 }
 @media only screen and (min-width: 768px) {
-  /* line 62, sass/components/_banner.scss */
+  /* line 63, sass/components/_banner.scss */
   .banner article p {
-    font-size: 13px;
+    font-size: 13.68px;
     line-height: normal;
   }
 }
-/* line 69, sass/components/_banner.scss */
+/* line 71, sass/components/_banner.scss */
 .banner article p i, .banner article p em {
   text-transform: none;
   font-style: italic;
+  font-weight: normal;
   font-size: 14px;
   line-height: normal;
 }
 @media only screen and (min-width: 768px) {
-  /* line 69, sass/components/_banner.scss */
+  /* line 71, sass/components/_banner.scss */
   .banner article p i, .banner article p em {
     font-size: 13px;
     line-height: normal;
   }
 }
-/* line 79, sass/components/_banner.scss */
+/* line 82, sass/components/_banner.scss */
 .banner article .btn {
   border: 2px solid #ffffff;
-  font-size: 13px;
+  font-size: 8px;
   line-height: normal;
-  padding: 13px 55px;
+  padding: 8px 40px;
   background: none;
   background: none;
 }
-/* line 84, sass/components/_banner.scss */
+/* line 87, sass/components/_banner.scss */
 .banner article .btn:hover {
-  color: #ffffff;
-  background: #000000;
-  background: #000000;
+  color: #000000;
+  background: #ffffff;
+  background: #ffffff;
 }
-/* line 90, sass/components/_banner.scss */
+@media only screen and (min-width: 768px) {
+  /* line 82, sass/components/_banner.scss */
+  .banner article .btn {
+    font-size: 13px;
+    line-height: normal;
+    padding: 13px 55px;
+  }
+}
+/* line 97, sass/components/_banner.scss */
 .banner .slick-dots {
   margin: 0;
   padding: 0;
@@ -1716,20 +1753,20 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   left: 0;
 }
 @media only screen and (min-width: 768px) {
-  /* line 90, sass/components/_banner.scss */
+  /* line 97, sass/components/_banner.scss */
   .banner .slick-dots {
     position: absolute;
     bottom: 30px;
     left: 0;
   }
 }
-/* line 98, sass/components/_banner.scss */
+/* line 105, sass/components/_banner.scss */
 .banner .slick-dots li {
   margin: 0 auto;
   height: auto;
   width: auto;
 }
-/* line 101, sass/components/_banner.scss */
+/* line 108, sass/components/_banner.scss */
 .banner .slick-dots li button {
   height: 6px;
   width: 6px;
@@ -1742,7 +1779,7 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   border-radius: 50%;
 }
 @media only screen and (min-width: 768px) {
-  /* line 101, sass/components/_banner.scss */
+  /* line 108, sass/components/_banner.scss */
   .banner .slick-dots li button {
     height: 8px;
     width: 8px;
@@ -1750,12 +1787,12 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
     margin-left: 7px;
   }
 }
-/* line 113, sass/components/_banner.scss */
+/* line 120, sass/components/_banner.scss */
 .banner .slick-dots li.slick-active button {
   background: #ffffff;
   background: #ffffff;
 }
-/* line 119, sass/components/_banner.scss */
+/* line 126, sass/components/_banner.scss */
 .banner .slick-prev, .banner .slick-next {
   top: 50%;
   font-size: 0;
@@ -1770,32 +1807,32 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   background: none;
   background: none;
 }
-/* line 130, sass/components/_banner.scss */
+/* line 137, sass/components/_banner.scss */
 .banner .slick-prev {
   left: 45px;
   opacity: 0.5;
   background: url("../images/slider-prev.png") right 0 no-repeat;
   background: url("../images/slider-prev.png") right 0 no-repeat;
 }
-/* line 134, sass/components/_banner.scss */
+/* line 141, sass/components/_banner.scss */
 .banner .slick-prev:hover {
   opacity: 1;
   background-position: 0 0;
 }
-/* line 139, sass/components/_banner.scss */
+/* line 146, sass/components/_banner.scss */
 .banner .slick-next {
   right: 45px;
   opacity: 0.5;
   background: url("../images/slider-next.png") 0 0 no-repeat;
   background: url("../images/slider-next.png") 0 0 no-repeat;
 }
-/* line 143, sass/components/_banner.scss */
+/* line 150, sass/components/_banner.scss */
 .banner .slick-next:hover {
   opacity: 1;
   background-position: right 0;
 }
 @media only screen and (min-width: 1140px) {
-  /* line 150, sass/components/_banner.scss */
+  /* line 157, sass/components/_banner.scss */
   .banner:hover .slick-prev, .banner:hover .slick-next {
     display: block !important;
   }
