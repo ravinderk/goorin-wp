@@ -28,9 +28,9 @@ get_header(); ?>
 				<img src="<?php echo get_template_directory_uri(); ?>/images/cat-hero-image.jpg">
 			</figure>
 			<article>
-				<div class="cat-sub-head">
-					the  Weekend Tradition
-				</div>
+				<hgroup class="cat-sub-head">
+					<em>the</em>  Weekend Tradition
+				</hgroup>
 				<h1>Rooftop Brunch</h1>
 				<div class="cat-hero-content">
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -53,7 +53,7 @@ get_header(); ?>
 							<div class="post-box-content">
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 								<p>
-									Left: <a href="#">Clayton, $120</a>
+									Left: <a href="#">Clayton, $120</a><br/>
 									Right: <a href="#">The Doctor, $92</a>
 								</p>
 							</div>
@@ -68,7 +68,7 @@ get_header(); ?>
 							<div class="post-box-content">
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 								<p>
-									Left: <a href="#">Vinnie the Brains, $120</a>
+									Left: <a href="#">Vinnie the Brains, $120</a><br/>
 									Right: <a href="#">Mrs. Doubtfire, $92</a>
 								</p>
 							</div>
@@ -83,7 +83,7 @@ get_header(); ?>
 							<div class="post-box-content">
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 								<p>
-									Top: <a href="#">Vinnie the Brains, $120</a>
+									Top: <a href="#">Vinnie the Brains, $120</a><br/>
 									Bottom: <a href="#">Mrs. Doubtfire, $92</a>
 								</p>
 							</div>
