@@ -223,14 +223,16 @@ get_header(); ?>
 				</article>
 				<article class="cat-featured-col2">
 					<h6>From Left to Right:</h6>
-					<ul>
-						<li><a href="#">Vinnie the Brains, $90</a></li>
-						<li><a href="#">Mrs. Doubtfire, $92</a></li>
-						<li><a href="#">Clayton, $168</a></li>
-						<li><a href="#">The Don, $130</a></li>
-						<li><a href="#">Guiillermo, $120</a></li>
-						<li><a href="#">Ron Burgandy, $94</a></li>
-					</ul>
+					<div class="cat-featured-content">
+						<ul>
+							<li><a href="#">Vinnie the Brains, $90</a></li>
+							<li><a href="#">Mrs. Doubtfire, $92</a></li>
+							<li><a href="#">Clayton, $168</a></li>
+							<li><a href="#">The Don, $130</a></li>
+							<li><a href="#">Guiillermo, $120</a></li>
+							<li><a href="#">Ron Burgandy, $94</a></li>
+						</ul>
+					</div>
 				</article>
 			</div>
 		</div>
