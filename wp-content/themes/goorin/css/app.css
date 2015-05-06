@@ -675,12 +675,12 @@ table {
   font-style: normal;
 }
 /* line 93, sass/base/_typography.scss */
-body, .site-header .submenu .colbox ul li a, .site-header .submenu figure p, .cart-dropdown .cart-list-loop article p, .banner article h2, .site-search .site-search-form input[type="text"], .site-footer .footer-col-right .col ul li a, input, textarea, select, .hollyday-content-block .hollyday-product-block .hollyday-box article h6 span, .hollyday-content-block .hollyday-product-block .hollyday-box article .hollyday-product-content p i, .hollyday-content-block .hollyday-product-block .hollyday-box article .hollyday-product-content p em, .category-campaign .cat-product-block hgroup em {
+body, .site-header .submenu .colbox ul li a, .site-header .submenu figure p, .cart-dropdown .cart-list-loop article p, .banner article h2, .site-search .site-search-form input[type="text"], .site-footer .footer-col-right .col ul li a, input, textarea, select, .hollyday-content-block .hollyday-product-block .hollyday-box article h6 span, .category-campaign .cat-product-block hgroup em {
   font-family: 'baskerville';
 }
 
 /* line 96, sass/base/_typography.scss */
-.cat-bottom-col a.backtotop, .banner article p i, .banner article p em, .site-header .saletext a, .home-content-block .post-box article small, .category-campaign .cat-hero-block .cat-sub-head em {
+.cat-bottom-col a.backtotop, .banner article p i, .banner article p em, .site-header .saletext a, .home-content-block .post-box article small, .hollyday-content-block .hollyday-product-block .hollyday-box article .hollyday-product-content p i, .hollyday-content-block .hollyday-product-block .hollyday-box article .hollyday-product-content p em, .category-campaign .cat-hero-block .cat-sub-head em {
   font-family: 'baskerville_italic';
 }
 
@@ -690,7 +690,7 @@ body, .site-header .submenu .colbox ul li a, .site-header .submenu figure p, .ca
 }
 
 /* line 105, sass/base/_typography.scss */
-.cart-dropdown .cart-total .cart-message span {
+.cart-dropdown .cart-total .cart-message span, .category-campaign .cat-product-block .category-products ul.products-grid li.item .product-name {
   font-family: 'baskerville_bold';
 }
 
@@ -700,12 +700,12 @@ body, .site-header .submenu .colbox ul li a, .site-header .submenu figure p, .ca
 }
 
 /* line 114, sass/base/_typography.scss */
-.site-header .submenu .colbox h6, .site-header .menu .cart-count-icon, .banner article h6, .site-header .cart-count, .home-content-block .post-box article h6, .home-content-block .post-box article small span, .hollyday-content-block hgroup h6, .hollyday-content-block .hollyday-product-block .hollyday-box article h3, .hollyday-content-block .hollyday-product-block .hollyday-box article h6, .hollyday-content-block .hollyday-product-block .hollyday-box article .hollyday-product-content p, .spring-preview-block .spring-preview-content .related-feature-box h6, .category-campaign .cat-hero-block .cat-sub-head, .category-campaign .cat-product-block hgroup, .category-campaign .cat-product-block .category-products ul.products-grid li.item {
+.site-header .submenu .colbox h6, .site-header .menu .cart-count-icon, .banner article h6, .site-header .cart-count, .home-content-block .post-box article h6, .home-content-block .post-box article small span, .hollyday-content-block hgroup h6, .hollyday-content-block .hollyday-product-block .hollyday-box article h3, .hollyday-content-block .hollyday-product-block .hollyday-box article h6, .hollyday-content-block .hollyday-product-block .hollyday-box article .hollyday-product-content p, .spring-preview-block .spring-preview-content .related-feature-box h6, .category-campaign .cat-hero-block .cat-sub-head, .category-campaign .cat-product-block .category-products ul.products-grid li.item {
   font-family: 'sweet_sansregular';
 }
 
 /* line 117, sass/base/_typography.scss */
-.btn, .cart-dropdown .cart-list-loop article h6, .site-header .menu, .banner article p, .site-header .saletext, .site-footer h6, .hollyday-content-block .hollyday-product-block .hollyday-box article h4, .spring-preview-block .spring-preview-content .spring-related-feature h5 {
+.btn, .cart-dropdown .cart-list-loop article h6, .site-header .menu, .banner article p, .site-header .saletext, .site-footer h6, .hollyday-content-block .hollyday-product-block .hollyday-box article h4, .spring-preview-block .spring-preview-content .spring-related-feature h5, .category-campaign .cat-product-block hgroup {
   font-family: 'sweet_sansmedium';
 }
 
@@ -3594,7 +3594,7 @@ input {
 .hollyday-content-block .hollyday-product-block .hollyday-box article h4 {
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 400;
 }
 /* line 405, sass/pages/_home.scss */
 .hollyday-content-block .hollyday-product-block .hollyday-box article h6 {
@@ -3645,9 +3645,8 @@ input {
 /* line 442, sass/pages/_home.scss */
 .hollyday-content-block .hollyday-product-block .hollyday-box article .hollyday-product-content p i, .hollyday-content-block .hollyday-product-block .hollyday-box article .hollyday-product-content p em {
   text-transform: none;
-  font-style: italic;
 }
-/* line 450, sass/pages/_home.scss */
+/* line 449, sass/pages/_home.scss */
 .hollyday-content-block .hollyday-product-block .hollyday-box article hr {
   border: none;
   margin-top: 14px;
@@ -3659,35 +3658,35 @@ input {
 }
 
 @media only screen and (min-width: 1024px) {
-  /* line 462, sass/pages/_home.scss */
+  /* line 461, sass/pages/_home.scss */
   .spring-preview-block {
     padding: 0 0 82px;
   }
 }
-/* line 470, sass/pages/_home.scss */
+/* line 469, sass/pages/_home.scss */
 .spring-preview-block .spring-preview-image {
   margin: 0 0 15px;
 }
 @media only screen and (min-width: 980px) {
-  /* line 470, sass/pages/_home.scss */
+  /* line 469, sass/pages/_home.scss */
   .spring-preview-block .spring-preview-image {
     width: 50%;
     padding-right: 4.1%;
     float: left;
   }
 }
-/* line 478, sass/pages/_home.scss */
+/* line 477, sass/pages/_home.scss */
 .spring-preview-block .spring-preview-image img {
   width: 100%;
 }
-/* line 482, sass/pages/_home.scss */
+/* line 481, sass/pages/_home.scss */
 .spring-preview-block .spring-preview-content {
   padding: 40px 0 0;
   background: url("../images/castle-img.png") center top no-repeat;
   background: url("../images/castle-img.png") center top no-repeat;
 }
 @media only screen and (min-width: 980px) {
-  /* line 482, sass/pages/_home.scss */
+  /* line 481, sass/pages/_home.scss */
   .spring-preview-block .spring-preview-content {
     width: 50%;
     float: right;
@@ -3695,25 +3694,25 @@ input {
     margin: 18px 0 0;
   }
 }
-/* line 491, sass/pages/_home.scss */
+/* line 490, sass/pages/_home.scss */
 .spring-preview-block .spring-preview-content hgroup {
   margin: 0 0 50px;
 }
 @media only screen and (min-width: 1140px) {
-  /* line 491, sass/pages/_home.scss */
+  /* line 490, sass/pages/_home.scss */
   .spring-preview-block .spring-preview-content hgroup {
     padding: 0 10%;
     margin: 0 0 78px;
   }
 }
-/* line 499, sass/pages/_home.scss */
+/* line 498, sass/pages/_home.scss */
 .spring-preview-block .spring-preview-content hgroup h2 {
   text-transform: uppercase;
   margin: 0 0 25px;
   line-height: 31px;
 }
 @media only screen and (min-width: 1140px) {
-  /* line 499, sass/pages/_home.scss */
+  /* line 498, sass/pages/_home.scss */
   .spring-preview-block .spring-preview-content hgroup h2 {
     font-size: 30px;
     line-height: 36px;
@@ -3721,21 +3720,21 @@ input {
   }
 }
 @media only screen and (min-width: 1140px) {
-  /* line 509, sass/pages/_home.scss */
+  /* line 508, sass/pages/_home.scss */
   .spring-preview-block .spring-preview-content hgroup p {
     font-size: 16px;
     line-height: normal;
   }
 }
-/* line 514, sass/pages/_home.scss */
+/* line 513, sass/pages/_home.scss */
 .spring-preview-block .spring-preview-content hgroup p a {
   text-decoration: underline;
 }
-/* line 516, sass/pages/_home.scss */
+/* line 515, sass/pages/_home.scss */
 .spring-preview-block .spring-preview-content hgroup p a:hover {
   text-decoration: none;
 }
-/* line 523, sass/pages/_home.scss */
+/* line 522, sass/pages/_home.scss */
 .spring-preview-block .spring-preview-content .spring-related-feature h5 {
   text-transform: uppercase;
   margin: 0 0 24px;
@@ -3747,82 +3746,82 @@ input {
   content: "";
   display: table;
 }
-/* line 535, sass/pages/_home.scss */
+/* line 534, sass/pages/_home.scss */
 .spring-preview-block .spring-preview-content .related-feature-box {
   margin: 0 0 55px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 535, sass/pages/_home.scss */
+  /* line 534, sass/pages/_home.scss */
   .spring-preview-block .spring-preview-content .related-feature-box {
     width: 46%;
     text-align: left;
     float: left;
   }
-  /* line 542, sass/pages/_home.scss */
+  /* line 541, sass/pages/_home.scss */
   .spring-preview-block .spring-preview-content .related-feature-box:nth-child(2n) {
     float: right;
   }
 }
-/* line 547, sass/pages/_home.scss */
+/* line 546, sass/pages/_home.scss */
 .spring-preview-block .spring-preview-content .related-feature-box figure {
   margin: 0 0 10px;
 }
 @media only screen and (min-width: 1140px) {
-  /* line 547, sass/pages/_home.scss */
+  /* line 546, sass/pages/_home.scss */
   .spring-preview-block .spring-preview-content .related-feature-box figure {
     margin: 0 0 17px;
   }
 }
-/* line 552, sass/pages/_home.scss */
+/* line 551, sass/pages/_home.scss */
 .spring-preview-block .spring-preview-content .related-feature-box figure img {
   width: 100%;
 }
-/* line 556, sass/pages/_home.scss */
+/* line 555, sass/pages/_home.scss */
 .spring-preview-block .spring-preview-content .related-feature-box article {
   padding: 0 5%;
 }
 @media only screen and (min-width: 768px) {
-  /* line 556, sass/pages/_home.scss */
+  /* line 555, sass/pages/_home.scss */
   .spring-preview-block .spring-preview-content .related-feature-box article {
     padding: 0;
   }
 }
-/* line 562, sass/pages/_home.scss */
+/* line 561, sass/pages/_home.scss */
 .spring-preview-block .spring-preview-content .related-feature-box h6 {
   text-transform: uppercase;
   margin: 0 0 3px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 562, sass/pages/_home.scss */
+  /* line 561, sass/pages/_home.scss */
   .spring-preview-block .spring-preview-content .related-feature-box h6 {
     font-size: 13px;
     line-height: normal;
     text-align: left;
   }
 }
-/* line 573, sass/pages/_home.scss */
+/* line 572, sass/pages/_home.scss */
 .spring-preview-block .spring-preview-content .related-feature-box h4 {
   text-transform: uppercase;
   line-height: 26px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 573, sass/pages/_home.scss */
+  /* line 572, sass/pages/_home.scss */
   .spring-preview-block .spring-preview-content .related-feature-box h4 {
     font-size: 18px;
     line-height: 22px;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 581, sass/pages/_home.scss */
+  /* line 580, sass/pages/_home.scss */
   .spring-preview-block .spring-preview-content .related-feature-box p {
     display: block;
   }
 }
-/* line 587, sass/pages/_home.scss */
+/* line 586, sass/pages/_home.scss */
 .spring-preview-block .spring-preview-content .related-feature-box p a {
   text-decoration: underline;
 }
-/* line 589, sass/pages/_home.scss */
+/* line 588, sass/pages/_home.scss */
 .spring-preview-block .spring-preview-content .related-feature-box p a:hover {
   text-decoration: none;
 }
@@ -4159,11 +4158,11 @@ input {
 /* line 232, sass/pages/_category_campaign.scss */
 .category-campaign .cat-product-block hgroup {
   text-transform: uppercase;
-  font-weight: bold;
   letter-spacing: 1px;
   margin: 0 0 5px;
   font-size: 12.5px;
   line-height: normal;
+  font-weight: 400;
 }
 /* line 240, sass/pages/_category_campaign.scss */
 .category-campaign .cat-product-block hgroup em {
@@ -4258,7 +4257,6 @@ input {
 /* line 320, sass/pages/_category_campaign.scss */
 .category-campaign .cat-product-block .category-products ul.products-grid li.item .product-name {
   text-transform: uppercase;
-  font-weight: bold;
   margin: 0;
 }
 @media only screen and (min-width: 1024px) {
