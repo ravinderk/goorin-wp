@@ -657,12 +657,12 @@ table {
   src: url("../fonts/sweetsans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sweetsans-bold-webfont.woff2") format("woff2"), url("../fonts/sweetsans-bold-webfont.woff") format("woff"), url("../fonts/sweetsans-bold-webfont.ttf") format("truetype"), url("../fonts/sweetsans-bold-webfont.svg#SweetSans") format("svg");
 }
 /* line 11, sass/base/_typography.scss */
-body, .site-header .submenu .colbox ul li a, .site-header .submenu figure p, .cart-dropdown .cart-list-loop article p, .banner article h2, .banner article p i, .banner article p em, .site-header .saletext a, .site-search .site-search-form input[type="text"], .site-footer .footer-col-right .col ul li a, input, textarea, select, .home-content-block .post-box article small, .hollyday-content-block .hollyday-product-block .hollyday-box article h6 span, .hollyday-content-block .hollyday-product-block .hollyday-box article .hollyday-product-content p i, .hollyday-content-block .hollyday-product-block .hollyday-box article .hollyday-product-content p em {
+body, .cat-bottom-col a.backtotop, .site-header .submenu .colbox ul li a, .site-header .submenu figure p, .cart-dropdown .cart-list-loop article p, .banner article h2, .banner article p i, .banner article p em, .site-header .saletext a, .site-search .site-search-form input[type="text"], .site-footer .footer-col-right .col ul li a, input, textarea, select, .home-content-block .post-box article small, .hollyday-content-block .hollyday-product-block .hollyday-box article h6 span, .hollyday-content-block .hollyday-product-block .hollyday-box article .hollyday-product-content p i, .hollyday-content-block .hollyday-product-block .hollyday-box article .hollyday-product-content p em {
   font-family: "Baskerville";
 }
 
 /* line 14, sass/base/_typography.scss */
-.cart-dropdown h2, .home-content-block .post-box article h4, .hollyday-content-block hgroup h2 {
+.page-title h1, .cart-dropdown h2, .home-content-block .post-box article h4, .hollyday-content-block hgroup h2 {
   font-family: "Clarendon";
 }
 
@@ -671,68 +671,74 @@ body, .site-header .submenu .colbox ul li a, .site-header .submenu figure p, .ca
   font-family: "SweetSans";
 }
 
-/* line 21, sass/base/_typography.scss */
+/* line 25, sass/base/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 10px;
   padding: 0;
   font-weight: normal;
 }
 
-/* line 28, sass/base/_typography.scss */
+/* line 32, sass/base/_typography.scss */
 .hollyday-content-block hgroup h2 {
   font-size: 40px;
   line-height: normal;
 }
 
-/* line 34, sass/base/_typography.scss */
+/* line 38, sass/base/_typography.scss */
 .spring-preview-block .spring-preview-content hgroup h2 {
   font-size: 28px;
   line-height: normal;
 }
 
-/* line 40, sass/base/_typography.scss */
+/* line 44, sass/base/_typography.scss */
 .spring-preview-block .spring-preview-content .related-feature-box h4 {
   font-size: 22px;
   line-height: normal;
 }
 
-/* line 48, sass/base/_typography.scss */
+/* line 52, sass/base/_typography.scss */
 .site-header .submenu .colbox ul li a, .site-header .submenu figure p, .site-footer .footer-col-left article p, .hollyday-content-block .hollyday-product-block .hollyday-box article h4 {
   font-size: 18px;
   line-height: normal;
 }
 
-/* line 51, sass/base/_typography.scss */
+/* line 55, sass/base/_typography.scss */
 .site-header .submenu .colbox h6, .cart-dropdown h2, .site-header .saletext a, .hollyday-content-block .hollyday-product-block .hollyday-left-block .hollyday-box p {
   font-size: 16px;
   line-height: normal;
 }
 
-/* line 54, sass/base/_typography.scss */
+/* line 58, sass/base/_typography.scss */
 .home-content-block .post-box article p, .spring-preview-block .spring-preview-content hgroup p, .spring-preview-block .spring-preview-content .spring-related-feature h5 {
   font-size: 15px;
   line-height: normal;
 }
 
-/* line 57, sass/base/_typography.scss */
+/* line 61, sass/base/_typography.scss */
 .cart-dropdown .cart-total .cart-message, .cart-dropdown .cart-total .cart-subtotal, .site-footer h6, .site-footer .footer-col-left .subscribe-form input[type="text"], .site-footer .footer-col-left .subscribe-form .submit-btn, .home-content-block .post-box article small, .hollyday-content-block .hollyday-product-block .hollyday-box article h6 span, .hollyday-content-block .hollyday-product-block .hollyday-box article .hollyday-product-content p i, .hollyday-content-block .hollyday-product-block .hollyday-box article .hollyday-product-content p em, .spring-preview-block .spring-preview-content .related-feature-box p {
   font-size: 14px;
   line-height: normal;
 }
 
-/* line 63, sass/base/_typography.scss */
+/* line 64, sass/base/_typography.scss */
+.breadcrumbs, .cat-bottom-col a.backtotop {
+  font-size: 13px;
+  line-height: normal;
+}
+
+/* line 67, sass/base/_typography.scss */
 .btn, .cart-dropdown .cart-list-loop article h6, .cart-dropdown .cart-list-loop article p, .banner article h6, .site-footer .copyright, .home-content-block .post-box article h6, .home-content-block .post-box article small span, .hollyday-content-block hgroup h6, .hollyday-content-block .hollyday-product-block .hollyday-box article h6, .hollyday-content-block .hollyday-product-block .hollyday-box article .hollyday-product-content p {
   font-size: 12px;
   line-height: normal;
 }
 
-/* line 66, sass/base/_typography.scss */
+/* line 70, sass/base/_typography.scss */
 .site-header .menu, .site-header .saletext, .spring-preview-block .spring-preview-content .related-feature-box h6 {
   font-size: 11px;
   line-height: normal;
 }
 
-/* line 69, sass/base/_typography.scss */
+/* line 73, sass/base/_typography.scss */
 .banner article p {
   font-size: 10px;
   line-height: normal;
@@ -786,12 +792,12 @@ img {
 }
 
 /* line 36, sass/components/_components.scss */
-.site-header .submenu, .site-header .submenu figure, .cart-dropdown, .cart-dropdown .cart-list-loop a.cart-delete, .site-header .nav-primary ul li.nav-3, .site-header .menu, .site-header .saletext, .site-search .search-close, .site-footer .hidden-mobile, .spring-preview-block .spring-preview-content .related-feature-box p {
+.cat-bottom-col a.backtotop, .site-header .submenu, .site-header .submenu figure, .cart-dropdown, .cart-dropdown .cart-list-loop a.cart-delete, .site-header .nav-primary ul li.nav-3, .site-header .menu, .site-header .saletext, .site-search .search-close, .site-footer .hidden-mobile, .spring-preview-block .spring-preview-content .related-feature-box p {
   display: none;
 }
 
 /* line 39, sass/components/_components.scss */
-.cart-dropdown .cart-list-loop figure, .cart-dropdown .cart-list-loop article, .banner .slick-dots li button, .site-header .menu-toggle, .site-search .site-search-form input[type="text"], .site-footer .footer-social-col ul li, .site-footer .footer-social-col ul li a, .hollyday-content-block .hollyday-product-block .hollyday-right-block .hollyday-box {
+.breadcrumbs ul li, .cart-dropdown .cart-list-loop figure, .cart-dropdown .cart-list-loop article, .banner .slick-dots li button, .site-header .menu-toggle, .site-search .site-search-form input[type="text"], .site-footer .footer-social-col ul li, .site-footer .footer-social-col ul li a, .hollyday-content-block .hollyday-product-block .hollyday-right-block .hollyday-box {
   float: left;
 }
 
@@ -806,7 +812,7 @@ img {
 }
 
 /* line 48, sass/components/_components.scss */
-.btn, .cart-dropdown h2, .cart-dropdown .cart-list-loop figure, .cart-dropdown .cart-list-loop article, .cart-dropdown .cart-total .cart-message, .cart-dropdown .cart-total .cart-subtotal, .site-header .menu .cart-count-icon, .banner article, .site-header .cart-count, .site-footer h6, .site-footer .copyright, .site-footer .footer-col-left article, .site-footer .footer-col-left .subscribe-form input[type="text"], .site-footer .footer-col-left .subscribe-form .submit-btn, .site-footer .footer-col-right .col ul li, .hollyday-content-block hgroup, .hollyday-content-block .hollyday-product-block .hollyday-box, .spring-preview-block .spring-preview-content hgroup, .spring-preview-block .spring-preview-content .spring-related-feature h5, .spring-preview-block .spring-preview-content .related-feature-box, .spring-preview-block .spring-preview-content .related-feature-box h6 {
+.btn, .page-title h1, .cart-dropdown h2, .cart-dropdown .cart-list-loop figure, .cart-dropdown .cart-list-loop article, .cart-dropdown .cart-total .cart-message, .cart-dropdown .cart-total .cart-subtotal, .site-header .menu .cart-count-icon, .banner article, .site-header .cart-count, .site-footer h6, .site-footer .copyright, .site-footer .footer-col-left article, .site-footer .footer-col-left .subscribe-form input[type="text"], .site-footer .footer-col-left .subscribe-form .submit-btn, .site-footer .footer-col-right .col ul li, .hollyday-content-block hgroup, .hollyday-content-block .hollyday-product-block .hollyday-box, .spring-preview-block .spring-preview-content hgroup, .spring-preview-block .spring-preview-content .spring-related-feature h5, .spring-preview-block .spring-preview-content .related-feature-box, .spring-preview-block .spring-preview-content .related-feature-box h6 {
   text-align: center;
 }
 
@@ -816,7 +822,7 @@ img {
 }
 
 /* line 60, sass/components/_components.scss */
-.btn, .site-header .nav-primary ul li a span, .site-header .menu a, .site-header .menu span, .site-header .menu .cart-count-icon {
+.btn, .breadcrumbs ul li span, .site-header .nav-primary ul li a span, .site-header .menu a, .site-header .menu span, .site-header .menu .cart-count-icon {
   display: inline-block;
 }
 
@@ -836,7 +842,7 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
 }
 
 /* line 72, sass/components/_components.scss */
-.cart-dropdown .cart-list-loop, .site-header .nav-primary ul li, .site-header .nav-primary ul li a span, .banner, .banner .banner-item, .main, .site-search .site-search-main {
+.cat-bottom-col, .cart-dropdown .cart-list-loop, .site-header .nav-primary ul li, .site-header .nav-primary ul li a span, .banner, .banner .banner-item, .main, .main-page-container, .site-search .site-search-main {
   position: relative;
 }
 
@@ -888,6 +894,103 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   border-color: transparent;
   background: none;
   background: none;
+}
+
+/* line 1, sass/components/_common.scss */
+.breadcrumbs {
+  padding: 0 0 15px;
+}
+@media only screen and (min-width: 1024px) {
+  /* line 1, sass/components/_common.scss */
+  .breadcrumbs {
+    padding: 0 0 20px;
+  }
+}
+/* line 7, sass/components/_common.scss */
+.breadcrumbs ul {
+  list-style: none;
+  display: table;
+  margin: 0 auto;
+  padding: 0;
+}
+/* line 9, sass/vendors/bourbon/addons/_clearfix.scss */
+.breadcrumbs ul::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+@media only screen and (min-width: 1024px) {
+  /* line 7, sass/components/_common.scss */
+  .breadcrumbs ul {
+    display: block;
+    margin: 0;
+  }
+}
+/* line 17, sass/components/_common.scss */
+.breadcrumbs ul li {
+  text-transform: capitalize;
+}
+/* line 20, sass/components/_common.scss */
+.breadcrumbs ul li a {
+  color: #898989;
+}
+/* line 22, sass/components/_common.scss */
+.breadcrumbs ul li a:hover {
+  text-decoration: underline;
+}
+/* line 26, sass/components/_common.scss */
+.breadcrumbs ul li span {
+  color: #898989;
+  padding: 0 8px 0 5px;
+}
+/* line 31, sass/components/_common.scss */
+.breadcrumbs ul li strong {
+  color: #000000;
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+/* line 41, sass/components/_common.scss */
+.page-title h1 {
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 31px;
+  line-height: normal;
+}
+@media only screen and (min-width: 1024px) {
+  /* line 41, sass/components/_common.scss */
+  .page-title h1 {
+    text-align: left;
+  }
+}
+
+/* line 53, sass/components/_common.scss */
+.cat-bottom-col {
+  border-top: 1px solid #dcddd8;
+  padding: 20px 0 0;
+}
+@media only screen and (min-width: 768px) {
+  /* line 53, sass/components/_common.scss */
+  .cat-bottom-col {
+    padding: 50px 0 0;
+  }
+}
+/* line 60, sass/components/_common.scss */
+.cat-bottom-col a.backtotop {
+  background: url("../images/backtotop-arrow.jpg") right center no-repeat;
+  background: url("../images/backtotop-arrow.jpg") right center no-repeat;
+  color: #898989;
+  font-style: italic;
+  position: absolute;
+  top: 47px;
+  right: 0;
+  padding: 0 20px 0 0;
+}
+@media only screen and (min-width: 1024px) {
+  /* line 60, sass/components/_common.scss */
+  .cat-bottom-col a.backtotop {
+    display: block;
+  }
 }
 
 /* line 2, sass/components/_dropdown.scss */
@@ -1849,7 +1952,7 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
 }
 
 /* line 1, sass/layout/_layout.scss */
-.main {
+.main, .main-page-container {
   max-width: 1750px;
   margin: 0 auto;
 }
@@ -3682,6 +3785,17 @@ input {
 /* line 590, sass/pages/_home.scss */
 .spring-preview-block .spring-preview-content .related-feature-box p a:hover {
   text-decoration: none;
+}
+
+/* line 3, sass/pages/_category_campaign.scss */
+.category-campaign {
+  padding: 20px 0 0;
+}
+@media only screen and (min-width: 768px) {
+  /* line 3, sass/pages/_category_campaign.scss */
+  .category-campaign {
+    padding: 40px 0 30px;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
