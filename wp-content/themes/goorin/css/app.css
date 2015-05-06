@@ -3903,17 +3903,17 @@ input {
   text-decoration: none;
 }
 /* line 76, sass/pages/_category_campaign.scss */
-.category-campaign .cat-hero-block p {
+.category-campaign .cat-hero-block .cat-hero-content p {
   padding: 0 0 25px;
 }
 @media only screen and (min-width: 1140px) {
   /* line 76, sass/pages/_category_campaign.scss */
-  .category-campaign .cat-hero-block p {
+  .category-campaign .cat-hero-block .cat-hero-content p {
     padding: 0 50px 25px;
   }
 }
 /* line 81, sass/pages/_category_campaign.scss */
-.category-campaign .cat-hero-block p:last-child {
+.category-campaign .cat-hero-block .cat-hero-content p:last-child {
   padding-bottom: 0;
 }
 /* line 9, sass/vendors/bourbon/addons/_clearfix.scss */

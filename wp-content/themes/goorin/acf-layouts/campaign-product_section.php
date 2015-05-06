@@ -1,7 +1,7 @@
 <section class="cat-product-block">
 	<div class="container">
-		<hgroup><h3><?php echo $field['heading']; ?></h3></hgroup>
-		<?php echo $field['products_count']; ?>
+		<hgroup><?php echo $field['heading']; ?></hgroup>
+		<?php // echo $field['products_count']; ?>
 		<div class="category-products">
 			<ul class="products-grid">
 				<li class="item">
