@@ -705,13 +705,8 @@ body, .site-header .submenu .colbox ul li a, .site-header .submenu figure p, .ca
 }
 
 /* line 117, sass/base/_typography.scss */
-.btn, .cart-dropdown .cart-list-loop article h6, .banner article p, .site-header .saletext, .site-footer h6, .hollyday-content-block .hollyday-product-block .hollyday-box article h4, .spring-preview-block .spring-preview-content .spring-related-feature h5 {
+.btn, .cart-dropdown .cart-list-loop article h6, .site-header .menu, .banner article p, .site-header .saletext, .site-footer h6, .hollyday-content-block .hollyday-product-block .hollyday-box article h4, .spring-preview-block .spring-preview-content .spring-related-feature h5 {
   font-family: 'sweet_sansmedium';
-}
-
-/* line 120, sass/base/_typography.scss */
-.site-header .menu {
-  font-family: 'sweet_sansbold';
 }
 
 /* line 124, sass/base/_typography.scss */
