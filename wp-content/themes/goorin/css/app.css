@@ -1718,7 +1718,7 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
 }
 /* line 211, sass/components/_navigation.scss */
 .site-header .menu a {
-  color: #a88f37;
+  color: #a78f37;
 }
 /* line 214, sass/components/_navigation.scss */
 .site-header .menu a:hover, .site-header .menu a.is_active {
@@ -2253,7 +2253,7 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
 }
 /* line 132, sass/layout/_header.scss */
 .site-header .saletext {
-  color: #a88f37;
+  color: #a78f37;
   letter-spacing: 1px;
   position: absolute;
   top: 27px;
@@ -2261,7 +2261,7 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
 }
 /* line 140, sass/layout/_header.scss */
 .site-header .saletext a {
-  color: #a88f37;
+  color: #a78f37;
   letter-spacing: 0;
 }
 /* line 145, sass/layout/_header.scss */
