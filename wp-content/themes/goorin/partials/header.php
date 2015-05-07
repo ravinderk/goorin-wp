@@ -43,3 +43,8 @@
 	</div>
 	<div class="nav-overlay"></div>
 </header>
+<script type="text/javascript">
+	(function(document) {
+		console.log(document.cookie);
+	})(document);
+</script>
