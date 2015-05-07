@@ -204,7 +204,7 @@
 
         // on scroll hide/show menu
         $(window).scroll(function() {
-          if (!$('header').hasClass('expanded')) {
+          if (!$('.site-header-main').hasClass('expanded')) {
             var currentScroll = $(this).scrollTop(), // gets current scroll position
                 scrollDifference = Math.abs(currentScroll - previousScroll); // calculates how fast user is scrolling
 
@@ -212,26 +212,26 @@
             if (currentScroll > menuOffset) {
               // if scrolled past detach point add class to fix menu
               if (currentScroll > detachPoint) {
-                if (!$('header').hasClass('detached'))
-                  $('header').addClass('detached');
+                if (!$('.site-header-main').hasClass('detached'))
+                  $('.site-header-main').addClass('detached');
               }
 
               // if scrolling faster than hideShowOffset hide/show menu
               if (scrollDifference >= hideShowOffset) {
                 if (currentScroll > previousScroll) {
                   // scrolling down; hide menu
-                  if (!$('header').hasClass('invisible'))
-                    $('header').addClass('invisible');
+                  if (!$('.site-header-main').hasClass('invisible'))
+                    $('.site-header-main').addClass('invisible');
                 } else {
                   // scrolling up; show menu
-                  if ($('header').hasClass('invisible'))
-                    $('header').removeClass('invisible');
+                  if ($('.site-header-main').hasClass('invisible'))
+                    $('.site-header-main').removeClass('invisible');
                 }
               }
             } else {
               // only remove “detached” class if user is at the top of document (menu jump fix)
               if (currentScroll <= 0){
-                $('header').removeClass('detached');
+                $('.site-header-main').removeClass('detached');
               }
             }
 
