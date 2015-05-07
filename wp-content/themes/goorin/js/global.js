@@ -237,7 +237,7 @@
 
             // if user is at the bottom of document show menu
             if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-              $('header').removeClass('invisible');
+              $('.site-header-main').removeClass('invisible');
             }
 
             // replace previous scroll position with new one
