@@ -239,7 +239,7 @@
 			$('.menu-account-link').hide().next().hide();
 
 		// number of items in the cart
-		var cartCount = 0;
+		var cartCount = cookie.items ? cookie.items.length : 0;
 		$('.menu-cart-link .cart-count-icon, .cart-dropdown .cart-count').text(cartCount);
 
 		// cart and checkout links
