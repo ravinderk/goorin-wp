@@ -250,5 +250,21 @@
 		$('.cart-dropdown .cart-total .cart-subtotal .amount').text(cookie.subtotal);
 
 		// loop the items in the cart
+		var decode = function(string) {
+			if('string' == $.type(string))
+				return decodeURIComponent(string.replace('+', '%20'));
+			return string;
+		};
+		var items = $.map(cookie.items, function(item) {
+			var options = (item.options && item.options.length) ? $.map(item.options, function(option) {
+				return decode(option.label) + ': ' + decode(option.value);
+			}).join('<br/>') : '';
+			return $('<div class="cart-list-loop"><figure><img src="'+item.thumbnail+'"></figure><article><h6>'+decode(item.name)+'</h6><p>'+decode(item.price)+'<br/>'+options+'<br/>Qty: '+decode(item.qty)+'</p></article><a href="'+decode(item.removeUrl)+'" class="cart-delete"><span></span></a></div>');
+		});
+		$('.cart-dropdown .cart-list').empty();
+		while(items.length) {
+			var row = $('<div class="cart-list-row"></div>').append(items.splice(0, 2));
+			$('.cart-dropdown .cart-list').append(row);
+		}
 	});
 </script>
