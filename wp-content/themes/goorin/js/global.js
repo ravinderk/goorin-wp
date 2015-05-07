@@ -139,6 +139,7 @@
             $(this).toggleClass('is_mobile_menu_open');
             $('body').toggleClass('bodyhidden');
             $(".nav-primary").toggleClass('is_nav_open');
+            $('.nav-primary').height($(document).height());
             if ($(this).hasClass('is_mobile_menu_open')) {
                 $('body').addClass('bodyhidden');
             }
@@ -165,7 +166,7 @@
         $(window).on("load resize", function(e) {
             if ($(window).width() >= 640) {
                 var window_size = $(window).height();
-                $('.banner-item').height(window_size - 225);
+                $('.banner-item').height(window_size - 170);
             } else {
                 $('.banner-item').height(380);
             }
@@ -173,7 +174,7 @@
         window.goorin = window.goorin || {};
         window.goorin.bannerSlide = $('.banner-carousel').slick({
             dots: true,
-            infinite: false,
+            infinite: true,
             speed: 500,
             fade: true,
             autoplay: true,
