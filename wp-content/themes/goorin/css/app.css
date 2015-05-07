@@ -675,12 +675,12 @@ table {
   font-style: normal;
 }
 /* line 93, sass/base/_typography.scss */
-body, .site-header .submenu .colbox ul li a, .site-header .submenu figure p, .cart-dropdown .cart-list-loop article p, .banner article h2, .site-search .site-search-form input[type="text"], .site-footer .footer-col-right .col ul li a, input, textarea, select, .hollyday-content-block .hollyday-product-block .hollyday-box article h6 span, .category-campaign .cat-product-block hgroup em {
+body, .site-header .submenu .colbox ul li a, .site-header .submenu figure p, .cart-dropdown .cart-list-loop article p, .banner article h2, .site-search .site-search-form input[type="text"], .site-footer .footer-col-right .col ul li a, input, textarea, select, .hollyday-content-block .hollyday-product-block .hollyday-box article h6 span {
   font-family: 'baskerville';
 }
 
 /* line 96, sass/base/_typography.scss */
-.cat-bottom-col a.backtotop, .banner article p i, .banner article p em, .site-header .saletext a, .home-content-block .post-box article small, .hollyday-content-block .hollyday-product-block .hollyday-box article .hollyday-product-content p i, .hollyday-content-block .hollyday-product-block .hollyday-box article .hollyday-product-content p em, .category-campaign .cat-hero-block .cat-sub-head em {
+.cat-bottom-col a.backtotop, .banner article p i, .banner article p em, .site-header .saletext a, .home-content-block .post-box article small, .hollyday-content-block .hollyday-product-block .hollyday-box article .hollyday-product-content p i, .hollyday-content-block .hollyday-product-block .hollyday-box article .hollyday-product-content p em, .category-campaign .cat-hero-block .cat-sub-head em, .category-campaign .cat-product-block hgroup em {
   font-family: 'baskerville_italic';
 }
 
@@ -690,7 +690,7 @@ body, .site-header .submenu .colbox ul li a, .site-header .submenu figure p, .ca
 }
 
 /* line 105, sass/base/_typography.scss */
-.cart-dropdown .cart-total .cart-message span, .category-campaign .cat-product-block .category-products ul.products-grid li.item .product-name {
+.cart-dropdown .cart-total .cart-message span {
   font-family: 'baskerville_bold';
 }
 
@@ -705,7 +705,7 @@ body, .site-header .submenu .colbox ul li a, .site-header .submenu figure p, .ca
 }
 
 /* line 117, sass/base/_typography.scss */
-.btn, .cart-dropdown .cart-list-loop article h6, .site-header .menu, .banner article p, .site-header .saletext, .site-footer h6, .spring-preview-block .spring-preview-content .spring-related-feature h5, .category-campaign .cat-hero-block .cat-sub-head, .category-campaign .cat-product-block hgroup {
+.btn, .cart-dropdown .cart-list-loop article h6, .site-header .menu, .banner article p, .site-header .saletext, .site-footer h6, .spring-preview-block .spring-preview-content .spring-related-feature h5, .category-campaign .cat-hero-block .cat-sub-head, .category-campaign .cat-product-block hgroup, .category-campaign .cat-product-block .category-products ul.products-grid li.item .product-name {
   font-family: 'sweet_sansmedium';
 }
 
@@ -715,7 +715,7 @@ body, .site-header .submenu .colbox ul li a, .site-header .submenu figure p, .ca
 }
 
 /* line 124, sass/base/_typography.scss */
-.category-campaign .cat-hero-block .cat-hero-content p, .category-campaign .cat-showcase-block .post-box article p, .category-campaign .cat-featured-block article .cat-featured-content {
+.category-campaign .cat-hero-block .cat-hero-content p, .category-campaign .cat-showcase-block .post-box article p, .category-campaign .cat-featured-block article h6, .category-campaign .cat-featured-block article .cat-featured-content {
   font-family: "Courier";
 }
 
@@ -769,13 +769,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 167, sass/base/_typography.scss */
-.breadcrumbs, .cat-bottom-col a.backtotop, .category-campaign .cat-product-block .category-products .toolbar div.block-layered-nav dt {
+.breadcrumbs, .cat-bottom-col a.backtotop, .category-campaign .cat-product-block .category-products .toolbar div.block-layered-nav dt, .category-campaign .cat-product-block .category-products ul.products-grid li.item .product-name {
   font-size: 13px;
   line-height: normal;
 }
 
 /* line 170, sass/base/_typography.scss */
-.btn, .cart-dropdown .cart-list-loop article h6, .cart-dropdown .cart-list-loop article p, .banner article h6, .site-footer .copyright, .home-content-block .post-box article small span, .hollyday-content-block .hollyday-product-block .hollyday-box article .hollyday-product-content p, .category-campaign .cat-product-block .category-products .toolbar .filter-menu li, .category-campaign .cat-product-block .category-products ul.products-grid li.item .product-name {
+.btn, .cart-dropdown .cart-list-loop article h6, .cart-dropdown .cart-list-loop article p, .banner article h6, .site-footer .copyright, .home-content-block .post-box article small span, .hollyday-content-block .hollyday-product-block .hollyday-box article .hollyday-product-content p, .category-campaign .cat-product-block .category-products .toolbar .filter-menu li {
   font-size: 12px;
   line-height: normal;
 }
@@ -4187,7 +4187,6 @@ input {
 }
 /* line 240, sass/pages/_category_campaign.scss */
 .category-campaign .cat-product-block hgroup em {
-  font-style: italic;
   font-weight: normal;
   text-transform: none;
 }
@@ -4199,7 +4198,7 @@ input {
   }
 }
 @media only screen and (min-width: 1024px) {
-  /* line 251, sass/pages/_category_campaign.scss */
+  /* line 250, sass/pages/_category_campaign.scss */
   .category-campaign .cat-product-block .category-products .toolbar {
     padding: 0 95px 0 0;
     display: block;
@@ -4211,7 +4210,7 @@ input {
     display: table;
   }
 }
-/* line 264, sass/pages/_category_campaign.scss */
+/* line 263, sass/pages/_category_campaign.scss */
 .category-campaign .cat-product-block .category-products .toolbar div.block-layered-nav dt {
   min-width: 140px;
   padding: 0 18px 10px 0;
@@ -4219,7 +4218,7 @@ input {
   background: url("../images/filter-arrow-img.jpg") right 5px no-repeat;
   background: url("../images/filter-arrow-img.jpg") right 5px no-repeat;
 }
-/* line 274, sass/pages/_category_campaign.scss */
+/* line 273, sass/pages/_category_campaign.scss */
 .category-campaign .cat-product-block .category-products .toolbar div.block-layered-nav dd {
   width: 100%;
   position: absolute;
@@ -4227,30 +4226,30 @@ input {
   left: 0;
   margin: 0;
 }
-/* line 280, sass/pages/_category_campaign.scss */
+/* line 279, sass/pages/_category_campaign.scss */
 .category-campaign .cat-product-block .category-products .toolbar .filter-menu {
   list-style: none;
   background: #000000 !important;
   margin: 0;
   padding: 10px;
 }
-/* line 285, sass/pages/_category_campaign.scss */
+/* line 284, sass/pages/_category_campaign.scss */
 .category-campaign .cat-product-block .category-products .toolbar .filter-menu li {
   padding: 0 0 5px;
 }
-/* line 289, sass/pages/_category_campaign.scss */
+/* line 288, sass/pages/_category_campaign.scss */
 .category-campaign .cat-product-block .category-products .toolbar .filter-menu li a {
   color: #ffffff;
 }
-/* line 291, sass/pages/_category_campaign.scss */
+/* line 290, sass/pages/_category_campaign.scss */
 .category-campaign .cat-product-block .category-products .toolbar .filter-menu li a:hover {
   text-decoration: underline;
 }
-/* line 295, sass/pages/_category_campaign.scss */
+/* line 294, sass/pages/_category_campaign.scss */
 .category-campaign .cat-product-block .category-products .toolbar .filter-menu li:last-child {
   padding: 0;
 }
-/* line 301, sass/pages/_category_campaign.scss */
+/* line 300, sass/pages/_category_campaign.scss */
 .category-campaign .cat-product-block .category-products ul.products-grid {
   list-style: none;
   margin: 0;
@@ -4262,26 +4261,27 @@ input {
   content: "";
   display: table;
 }
-/* line 306, sass/pages/_category_campaign.scss */
+/* line 305, sass/pages/_category_campaign.scss */
 .category-campaign .cat-product-block .category-products ul.products-grid li.item {
   width: 50%;
   min-height: 200px;
   padding: 0 10px;
 }
 @media only screen and (min-width: 1024px) {
-  /* line 306, sass/pages/_category_campaign.scss */
+  /* line 305, sass/pages/_category_campaign.scss */
   .category-campaign .cat-product-block .category-products ul.products-grid li.item {
     width: 25%;
     min-height: 285px;
   }
 }
-/* line 320, sass/pages/_category_campaign.scss */
+/* line 319, sass/pages/_category_campaign.scss */
 .category-campaign .cat-product-block .category-products ul.products-grid li.item .product-name {
   text-transform: uppercase;
   margin: 0;
+  font-weight: 400;
 }
 @media only screen and (min-width: 1024px) {
-  /* line 320, sass/pages/_category_campaign.scss */
+  /* line 319, sass/pages/_category_campaign.scss */
   .category-campaign .cat-product-block .category-products ul.products-grid li.item .product-name {
     font-size: 13px;
     line-height: normal;
@@ -4373,49 +4373,49 @@ input {
     margin: 0 0 20px;
   }
 }
-/* line 396, sass/pages/_category_campaign.scss */
+/* line 397, sass/pages/_category_campaign.scss */
 .category-campaign .cat-featured-block article .cat-featured-content {
   font-size: 12.5px;
   line-height: 17.5px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 396, sass/pages/_category_campaign.scss */
+  /* line 397, sass/pages/_category_campaign.scss */
   .category-campaign .cat-featured-block article .cat-featured-content {
     font-size: 14px;
     line-height: 20px;
   }
 }
-/* line 402, sass/pages/_category_campaign.scss */
+/* line 403, sass/pages/_category_campaign.scss */
 .category-campaign .cat-featured-block article .cat-featured-content a {
   text-decoration: underline;
 }
-/* line 404, sass/pages/_category_campaign.scss */
+/* line 405, sass/pages/_category_campaign.scss */
 .category-campaign .cat-featured-block article .cat-featured-content a:hover {
   text-decoration: none;
 }
-/* line 409, sass/pages/_category_campaign.scss */
+/* line 410, sass/pages/_category_campaign.scss */
 .category-campaign .cat-featured-block article p {
   padding: 0 0 25px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 409, sass/pages/_category_campaign.scss */
+  /* line 410, sass/pages/_category_campaign.scss */
   .category-campaign .cat-featured-block article p {
     padding: 0 50px 20px;
   }
 }
 @media only screen and (min-width: 1024px) {
-  /* line 409, sass/pages/_category_campaign.scss */
+  /* line 410, sass/pages/_category_campaign.scss */
   .category-campaign .cat-featured-block article p {
     padding: 0 0 25px;
   }
 }
-/* line 418, sass/pages/_category_campaign.scss */
+/* line 419, sass/pages/_category_campaign.scss */
 .category-campaign .cat-featured-block article ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 422, sass/pages/_category_campaign.scss */
+/* line 423, sass/pages/_category_campaign.scss */
 .category-campaign .cat-featured-block article ul li {
   padding: 0 0 2px;
 }
