@@ -700,13 +700,18 @@ body, .site-header .submenu .colbox ul li a, .site-header .submenu figure p, .ca
 }
 
 /* line 114, sass/base/_typography.scss */
-.site-header .submenu .colbox h6, .site-header .menu .cart-count-icon, .banner article h6, .site-header .cart-count, .home-content-block .post-box article h6, .home-content-block .post-box article small span, .hollyday-content-block hgroup h6, .hollyday-content-block .hollyday-product-block .hollyday-box article h3, .hollyday-content-block .hollyday-product-block .hollyday-box article h6, .hollyday-content-block .hollyday-product-block .hollyday-box article .hollyday-product-content p, .spring-preview-block .spring-preview-content .related-feature-box h6, .category-campaign .cat-product-block .category-products ul.products-grid li.item {
+.site-header .submenu .colbox h6, .site-header .menu .cart-count-icon, .banner article h6, .site-header .cart-count, .home-content-block .post-box article h6, .home-content-block .post-box article small span, .hollyday-content-block hgroup h6, .hollyday-content-block .hollyday-product-block .hollyday-box article h6, .hollyday-content-block .hollyday-product-block .hollyday-box article .hollyday-product-content p, .spring-preview-block .spring-preview-content .related-feature-box h6, .category-campaign .cat-product-block .category-products ul.products-grid li.item {
   font-family: 'sweet_sansregular';
 }
 
 /* line 117, sass/base/_typography.scss */
-.btn, .cart-dropdown .cart-list-loop article h6, .site-header .menu, .banner article p, .site-header .saletext, .site-footer h6, .hollyday-content-block .hollyday-product-block .hollyday-box article h4, .spring-preview-block .spring-preview-content .spring-related-feature h5, .category-campaign .cat-hero-block .cat-sub-head, .category-campaign .cat-product-block hgroup {
+.btn, .cart-dropdown .cart-list-loop article h6, .site-header .menu, .banner article p, .site-header .saletext, .site-footer h6, .spring-preview-block .spring-preview-content .spring-related-feature h5, .category-campaign .cat-hero-block .cat-sub-head, .category-campaign .cat-product-block hgroup {
   font-family: 'sweet_sansmedium';
+}
+
+/* line 120, sass/base/_typography.scss */
+.hollyday-content-block .hollyday-product-block .hollyday-box article h3, .hollyday-content-block .hollyday-product-block .hollyday-box article h4 {
+  font-family: 'sweet_sansbold';
 }
 
 /* line 124, sass/base/_typography.scss */
@@ -719,12 +724,6 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 10px;
   padding: 0;
   font-weight: normal;
-}
-
-/* line 135, sass/base/_typography.scss */
-.hollyday-content-block hgroup h2 {
-  font-size: 40px;
-  line-height: normal;
 }
 
 /* line 138, sass/base/_typography.scss */
@@ -740,25 +739,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 147, sass/base/_typography.scss */
-.spring-preview-block .spring-preview-content .related-feature-box h4 {
+.hollyday-content-block .hollyday-product-block .hollyday-box article h4, .spring-preview-block .spring-preview-content .related-feature-box h4 {
   font-size: 22px;
   line-height: normal;
 }
 
 /* line 155, sass/base/_typography.scss */
-.site-header .submenu .colbox ul li a, .site-header .submenu figure p, .site-footer .footer-col-left article p, .hollyday-content-block .hollyday-product-block .hollyday-box article h4 {
+.site-header .submenu .colbox ul li a, .site-header .submenu figure p, .site-footer .footer-col-left article p {
   font-size: 18px;
   line-height: normal;
 }
 
 /* line 158, sass/base/_typography.scss */
-.site-header .submenu .colbox h6, .cart-dropdown h2, .site-header .saletext a, .hollyday-content-block .hollyday-product-block .hollyday-left-block .hollyday-box p {
+.site-header .submenu .colbox h6, .cart-dropdown h2, .site-header .saletext a {
   font-size: 16px;
   line-height: normal;
 }
 
 /* line 161, sass/base/_typography.scss */
-.home-content-block .post-box article p, .spring-preview-block .spring-preview-content hgroup p, .spring-preview-block .spring-preview-content .spring-related-feature h5 {
+.home-content-block .post-box article p, .spring-preview-block .spring-preview-content hgroup p {
   font-size: 15px;
   line-height: normal;
 }
@@ -776,7 +775,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 170, sass/base/_typography.scss */
-.btn, .cart-dropdown .cart-list-loop article h6, .cart-dropdown .cart-list-loop article p, .banner article h6, .site-footer .copyright, .home-content-block .post-box article h6, .home-content-block .post-box article small span, .hollyday-content-block hgroup h6, .hollyday-content-block .hollyday-product-block .hollyday-box article h6, .hollyday-content-block .hollyday-product-block .hollyday-box article .hollyday-product-content p, .category-campaign .cat-product-block .category-products .toolbar .filter-menu li, .category-campaign .cat-product-block .category-products ul.products-grid li.item .product-name {
+.btn, .cart-dropdown .cart-list-loop article h6, .cart-dropdown .cart-list-loop article p, .banner article h6, .site-footer .copyright, .home-content-block .post-box article small span, .hollyday-content-block .hollyday-product-block .hollyday-box article .hollyday-product-content p, .category-campaign .cat-product-block .category-products .toolbar .filter-menu li, .category-campaign .cat-product-block .category-products ul.products-grid li.item .product-name {
   font-size: 12px;
   line-height: normal;
 }
@@ -788,7 +787,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 176, sass/base/_typography.scss */
-.banner article p, .category-campaign .cat-hero-block .cat-sub-head {
+.banner article p, .home-content-block .post-box article h6, .hollyday-content-block hgroup h6, .hollyday-content-block .hollyday-product-block .hollyday-box article h6, .category-campaign .cat-hero-block .cat-sub-head {
   font-size: 10px;
   line-height: normal;
 }
@@ -1403,7 +1402,21 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   }
 }
 
-/* line 2, sass/components/_navigation.scss */
+@media only screen and (min-width: 1140px) {
+  /* line 2, sass/components/_navigation.scss */
+  .site-header .container {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  /* line 2, sass/components/_navigation.scss */
+  .site-header .container {
+    padding-right: 45px;
+    padding-left: 45px;
+  }
+}
+/* line 10, sass/components/_navigation.scss */
 .site-header .nav-primary {
   z-index: 999;
   width: 0;
@@ -1423,7 +1436,7 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   left: -100%;
 }
 @media only screen and (min-width: 1140px) {
-  /* line 2, sass/components/_navigation.scss */
+  /* line 10, sass/components/_navigation.scss */
   .site-header .nav-primary {
     position: static;
     margin: 0 auto;
@@ -1444,7 +1457,7 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   }
 }
 @media only screen and (min-width: 1140px) {
-  /* line 23, sass/components/_navigation.scss */
+  /* line 31, sass/components/_navigation.scss */
   .site-header .nav-primary.is_hover .submenu {
     position: absolute;
     top: 70px;
@@ -1454,7 +1467,7 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
     height: 380px;
   }
 }
-/* line 30, sass/components/_navigation.scss */
+/* line 38, sass/components/_navigation.scss */
 .site-header .nav-primary.is_nav_open {
   left: 0;
   width: 100%;
@@ -1462,7 +1475,7 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   -moz-transition: all 400ms ease 0s;
   transition: all 400ms ease 0s;
 }
-/* line 34, sass/components/_navigation.scss */
+/* line 42, sass/components/_navigation.scss */
 .site-header .nav-primary.is_nav_open ul li {
   opacity: 1;
   left: 0;
@@ -1472,56 +1485,56 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   -o-transform: translateX(0);
   transform: translateX(0);
 }
-/* line 38, sass/components/_navigation.scss */
+/* line 46, sass/components/_navigation.scss */
 .site-header .nav-primary.is_nav_open ul li.nav-1 {
   -webkit-transition-delay: 0.2s;
   -moz-transition-delay: 0.2s;
   transition-delay: 0.2s;
 }
-/* line 41, sass/components/_navigation.scss */
+/* line 49, sass/components/_navigation.scss */
 .site-header .nav-primary.is_nav_open ul li.nav-2 {
   -webkit-transition-delay: 0.3s;
   -moz-transition-delay: 0.3s;
   transition-delay: 0.3s;
 }
-/* line 44, sass/components/_navigation.scss */
+/* line 52, sass/components/_navigation.scss */
 .site-header .nav-primary.is_nav_open ul li.nav-4 {
   -webkit-transition-delay: 0.4s;
   -moz-transition-delay: 0.4s;
   transition-delay: 0.4s;
 }
-/* line 47, sass/components/_navigation.scss */
+/* line 55, sass/components/_navigation.scss */
 .site-header .nav-primary.is_nav_open ul li.nav-5 {
   -webkit-transition-delay: 0.5s;
   -moz-transition-delay: 0.5s;
   transition-delay: 0.5s;
 }
 @media only screen and (min-width: 1140px) {
-  /* line 30, sass/components/_navigation.scss */
+  /* line 38, sass/components/_navigation.scss */
   .site-header .nav-primary.is_nav_open {
     width: auto;
   }
 }
-/* line 55, sass/components/_navigation.scss */
+/* line 63, sass/components/_navigation.scss */
 .site-header .nav-primary ul {
   list-style: none;
   padding: 24px 20px;
   margin: 0;
 }
 @media only screen and (min-width: 640px) {
-  /* line 55, sass/components/_navigation.scss */
+  /* line 63, sass/components/_navigation.scss */
   .site-header .nav-primary ul {
     padding: 24px 45px;
   }
 }
 @media only screen and (min-width: 1140px) {
-  /* line 55, sass/components/_navigation.scss */
+  /* line 63, sass/components/_navigation.scss */
   .site-header .nav-primary ul {
     padding: 0;
     margin: 0;
   }
 }
-/* line 68, sass/components/_navigation.scss */
+/* line 76, sass/components/_navigation.scss */
 .site-header .nav-primary ul li {
   padding: 0 0 12px;
   opacity: 0;
@@ -1536,7 +1549,7 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   transition: transform 400ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s, opacity 300ms ease-in 300ms;
 }
 @media only screen and (min-width: 1140px) {
-  /* line 68, sass/components/_navigation.scss */
+  /* line 76, sass/components/_navigation.scss */
   .site-header .nav-primary ul li {
     float: left;
     left: 0;
@@ -1552,24 +1565,24 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
     transition: inherit;
     padding: 0;
   }
-  /* line 84, sass/components/_navigation.scss */
+  /* line 92, sass/components/_navigation.scss */
   .site-header .nav-primary ul li.nav-primary-item {
     padding: 0 6px;
   }
 }
-/* line 89, sass/components/_navigation.scss */
+/* line 97, sass/components/_navigation.scss */
 .site-header .nav-primary ul li a {
   color: #707070;
   font-size: 32px;
   line-height: normal;
 }
 @media only screen and (min-width: 1140px) {
-  /* line 89, sass/components/_navigation.scss */
+  /* line 97, sass/components/_navigation.scss */
   .site-header .nav-primary ul li a {
     font-size: 12px;
     line-height: normal;
   }
-  /* line 94, sass/components/_navigation.scss */
+  /* line 102, sass/components/_navigation.scss */
   .site-header .nav-primary ul li a.nav-primary-item-link {
     color: #a88f37;
     text-transform: uppercase;
@@ -1578,9 +1591,9 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
     font-weight: 400;
     display: block;
     letter-spacing: 0.5px;
-    padding: 34px 0 27px;
+    padding: 32px 0 29px;
   }
-  /* line 103, sass/components/_navigation.scss */
+  /* line 111, sass/components/_navigation.scss */
   .site-header .nav-primary ul li a.nav-primary-item-link:after {
     content: '';
     position: absolute;
@@ -1595,13 +1608,13 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   }
 }
 @media only screen and (min-width: 1140px) and (min-width: 1140px) {
-  /* line 112, sass/components/_navigation.scss */
+  /* line 120, sass/components/_navigation.scss */
   .site-header .nav-primary ul li a.nav-primary-item-link:hover {
     text-decoration: underline;
   }
 }
 
-/* line 119, sass/components/_navigation.scss */
+/* line 127, sass/components/_navigation.scss */
 .site-header .nav-primary ul li a span {
   top: -4px;
   left: 5px;
@@ -1614,37 +1627,37 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   background: url("../images/dropmenu-arrow.png") 0 0 no-repeat;
 }
 @media only screen and (min-width: 1140px) {
-  /* line 119, sass/components/_navigation.scss */
+  /* line 127, sass/components/_navigation.scss */
   .site-header .nav-primary ul li a span {
     background: none;
     background: none;
     display: none;
   }
 }
-/* line 133, sass/components/_navigation.scss */
+/* line 141, sass/components/_navigation.scss */
 .site-header .nav-primary ul li.nav-3 {
   padding: 0;
 }
 @media only screen and (min-width: 1140px) {
-  /* line 133, sass/components/_navigation.scss */
+  /* line 141, sass/components/_navigation.scss */
   .site-header .nav-primary ul li.nav-3 {
     display: inline-block;
   }
 }
 @media only screen and (min-width: 1140px) {
-  /* line 143, sass/components/_navigation.scss */
+  /* line 151, sass/components/_navigation.scss */
   .site-header .nav-primary ul li.current-menu-item a.nav-primary-item-link {
     text-decoration: underline;
     color: #d1a401;
   }
 }
 @media only screen and (min-width: 1140px) {
-  /* line 152, sass/components/_navigation.scss */
+  /* line 160, sass/components/_navigation.scss */
   .site-header .nav-primary ul li.active .submenu {
     opacity: 1;
     z-index: 99999;
   }
-  /* line 155, sass/components/_navigation.scss */
+  /* line 163, sass/components/_navigation.scss */
   .site-header .nav-primary ul li.active .submenu .colbox {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
@@ -1655,68 +1668,74 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   }
 }
 @media only screen and (min-width: 1140px) {
-  /* line 163, sass/components/_navigation.scss */
+  /* line 171, sass/components/_navigation.scss */
   .site-header .nav-primary ul li.active a.nav-primary-item-link {
     text-decoration: underline;
     color: #d1a401;
   }
 }
-/* line 172, sass/components/_navigation.scss */
+/* line 180, sass/components/_navigation.scss */
 .site-header .nav-primary ul li.is_mobile_active a.nav-primary-item-link {
   color: #ffffff;
 }
 @media only screen and (min-width: 1140px) {
-  /* line 172, sass/components/_navigation.scss */
+  /* line 180, sass/components/_navigation.scss */
   .site-header .nav-primary ul li.is_mobile_active a.nav-primary-item-link {
     color: #a88f37;
   }
 }
-/* line 179, sass/components/_navigation.scss */
+/* line 187, sass/components/_navigation.scss */
 .site-header .nav-primary ul li.is_mobile_active span {
   background-position: 0 -15px;
 }
 @media only screen and (min-width: 1140px) {
-  /* line 179, sass/components/_navigation.scss */
+  /* line 187, sass/components/_navigation.scss */
   .site-header .nav-primary ul li.is_mobile_active span {
     background: none;
     background: none;
   }
 }
-/* line 189, sass/components/_navigation.scss */
+/* line 197, sass/components/_navigation.scss */
 .site-header .menu {
   text-transform: uppercase;
   color: #a88f37;
   margin: 0;
   position: absolute;
-  top: 35px;
-  right: 45px;
+  top: 34px;
+  right: 30px;
 }
 @media only screen and (min-width: 1140px) {
-  /* line 189, sass/components/_navigation.scss */
+  /* line 197, sass/components/_navigation.scss */
   .site-header .menu {
     display: block;
   }
 }
-/* line 201, sass/components/_navigation.scss */
+@media only screen and (min-width: 1440px) {
+  /* line 197, sass/components/_navigation.scss */
+  .site-header .menu {
+    right: 35px;
+  }
+}
+/* line 211, sass/components/_navigation.scss */
 .site-header .menu a {
   color: #a88f37;
 }
-/* line 204, sass/components/_navigation.scss */
+/* line 214, sass/components/_navigation.scss */
 .site-header .menu a:hover, .site-header .menu a.is_active {
   color: #d1a401;
   text-decoration: underline;
 }
-/* line 207, sass/components/_navigation.scss */
+/* line 217, sass/components/_navigation.scss */
 .site-header .menu a:hover .cart-count-icon, .site-header .menu a.is_active .cart-count-icon {
   color: #000000;
   background: #d1a401;
   background: #d1a401;
 }
-/* line 212, sass/components/_navigation.scss */
+/* line 222, sass/components/_navigation.scss */
 .site-header .menu a.menu-cart-link {
   padding: 0 35px 0 0;
 }
-/* line 216, sass/components/_navigation.scss */
+/* line 226, sass/components/_navigation.scss */
 .site-header .menu span {
   color: #726b67;
   font-size: 8px;
@@ -1724,7 +1743,7 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   padding-right: 4px;
   padding-left: 4px;
 }
-/* line 222, sass/components/_navigation.scss */
+/* line 232, sass/components/_navigation.scss */
 .site-header .menu .cart-count-icon {
   position: absolute;
   top: -7px;
@@ -2231,7 +2250,7 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   color: #a88f37;
   letter-spacing: 1px;
   position: absolute;
-  top: 29px;
+  top: 27px;
   font-weight: 400;
 }
 /* line 137, sass/layout/_header.scss */
@@ -2544,13 +2563,13 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
 @media only screen and (min-width: 768px) {
   /* line 1, sass/layout/_footer.scss */
   .site-footer {
-    padding: 70px 0 40px;
+    padding: 50px 0 40px;
   }
 }
 @media only screen and (min-width: 1024px) {
   /* line 1, sass/layout/_footer.scss */
   .site-footer {
-    padding: 60px 0 30px;
+    padding: 40px 0 30px;
   }
 }
 /* line 9, sass/vendors/bourbon/addons/_clearfix.scss */
@@ -2712,7 +2731,7 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   /* line 129, sass/layout/_footer.scss */
   .site-footer .footer-col-right {
     float: right;
-    width: 473px;
+    width: 492px;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -2775,7 +2794,7 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   /* line 180, sass/layout/_footer.scss */
   .site-footer .footer-social-col {
     float: right;
-    width: 473px;
+    width: 492px;
     padding: 0;
     margin: -7px 0 0;
   }
@@ -3204,7 +3223,7 @@ input {
 @media only screen and (min-width: 1140px) {
   /* line 100, sass/pages/_home.scss */
   .home-content-block .post-box figure {
-    margin: 0 0 10px;
+    margin: 0 0 14px;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -3223,7 +3242,7 @@ input {
 .home-content-block .post-box article h6 {
   text-transform: uppercase;
   word-spacing: 3px;
-  margin: 0 0 5px;
+  margin: 0;
 }
 @media only screen and (min-width: 768px) {
   /* line 127, sass/pages/_home.scss */
@@ -3302,7 +3321,7 @@ input {
 }
 /* line 185, sass/pages/_home.scss */
 .home-content-block .post-box article p {
-  padding: 8px 0;
+  padding: 12px 0 8px;
   line-height: 21px;
 }
 @media only screen and (min-width: 980px) {
@@ -3387,7 +3406,7 @@ input {
 .hollyday-content-block hgroup h6 {
   letter-spacing: 1px;
   text-transform: uppercase;
-  margin: 0 0 8px;
+  margin: 0;
 }
 @media only screen and (min-width: 768px) {
   /* line 250, sass/pages/_home.scss */
@@ -3408,11 +3427,13 @@ input {
 .hollyday-content-block hgroup h2 {
   letter-spacing: 4px;
   text-transform: uppercase;
+  font-size: 35.63px;
+  line-height: normal;
 }
 @media only screen and (min-width: 980px) {
   /* line 266, sass/pages/_home.scss */
   .hollyday-content-block hgroup h2 {
-    font-size: 35px;
+    font-size: 37.41px;
     line-height: normal;
     letter-spacing: 4px;
   }
@@ -3453,16 +3474,9 @@ input {
 }
 /* line 301, sass/pages/_home.scss */
 .hollyday-content-block .hollyday-product-block .hollyday-left-block .hollyday-box p {
+  font-size: 15px;
   line-height: 22px;
   padding: 11px 13px 0;
-}
-@media only screen and (min-width: 768px) {
-  /* line 301, sass/pages/_home.scss */
-  .hollyday-content-block .hollyday-product-block .hollyday-left-block .hollyday-box p {
-    font-size: 18px;
-    line-height: 24px;
-    padding: 18px 85px 0;
-  }
 }
 @media only screen and (min-width: 768px) {
   /* line 301, sass/pages/_home.scss */
@@ -3472,11 +3486,11 @@ input {
     padding: 18px 45px 0;
   }
 }
-/* line 314, sass/pages/_home.scss */
+/* line 308, sass/pages/_home.scss */
 .hollyday-content-block .hollyday-product-block .hollyday-left-block .hollyday-box p a {
   text-decoration: underline;
 }
-/* line 316, sass/pages/_home.scss */
+/* line 310, sass/pages/_home.scss */
 .hollyday-content-block .hollyday-product-block .hollyday-left-block .hollyday-box p a:hover {
   text-decoration: none;
 }
@@ -3505,37 +3519,37 @@ input {
   display: table;
 }
 @media only screen and (min-width: 980px) {
-  /* line 334, sass/pages/_home.scss */
+  /* line 328, sass/pages/_home.scss */
   .hollyday-content-block .hollyday-product-block .hollyday-right-block {
     float: right;
     width: 280px;
   }
 }
 @media only screen and (min-width: 1140px) {
-  /* line 334, sass/pages/_home.scss */
+  /* line 328, sass/pages/_home.scss */
   .hollyday-content-block .hollyday-product-block .hollyday-right-block {
     margin-right: 20px;
   }
 }
-/* line 343, sass/pages/_home.scss */
+/* line 337, sass/pages/_home.scss */
 .hollyday-content-block .hollyday-product-block .hollyday-right-block .hollyday-box {
   width: 50%;
   padding: 0 5px;
 }
 @media only screen and (min-width: 320px) {
-  /* line 343, sass/pages/_home.scss */
+  /* line 337, sass/pages/_home.scss */
   .hollyday-content-block .hollyday-product-block .hollyday-right-block .hollyday-box {
     padding: 0 10px;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 343, sass/pages/_home.scss */
+  /* line 337, sass/pages/_home.scss */
   .hollyday-content-block .hollyday-product-block .hollyday-right-block .hollyday-box {
     padding: 0 25px;
   }
 }
 @media only screen and (min-width: 980px) {
-  /* line 343, sass/pages/_home.scss */
+  /* line 337, sass/pages/_home.scss */
   .hollyday-content-block .hollyday-product-block .hollyday-right-block .hollyday-box {
     float: none;
     width: 100%;
@@ -3544,106 +3558,114 @@ input {
   }
 }
 @media only screen and (min-width: 1140px) {
-  /* line 343, sass/pages/_home.scss */
+  /* line 337, sass/pages/_home.scss */
   .hollyday-content-block .hollyday-product-block .hollyday-right-block .hollyday-box {
     margin-bottom: 52px;
     padding: 0 15px;
   }
 }
-/* line 367, sass/pages/_home.scss */
+/* line 361, sass/pages/_home.scss */
 .hollyday-content-block .hollyday-product-block .hollyday-right-block .hollyday-box figure {
   margin: 0 0 10px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 367, sass/pages/_home.scss */
+  /* line 361, sass/pages/_home.scss */
   .hollyday-content-block .hollyday-product-block .hollyday-right-block .hollyday-box figure {
     margin: 0 0 15px;
   }
 }
 @media only screen and (min-width: 1140px) {
-  /* line 367, sass/pages/_home.scss */
+  /* line 361, sass/pages/_home.scss */
   .hollyday-content-block .hollyday-product-block .hollyday-right-block .hollyday-box figure {
     margin: 0 0 20px;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 377, sass/pages/_home.scss */
+  /* line 371, sass/pages/_home.scss */
   .hollyday-content-block .hollyday-product-block .hollyday-right-block .hollyday-box h4 {
     margin: 0 0 6px;
   }
 }
-/* line 387, sass/pages/_home.scss */
+/* line 381, sass/pages/_home.scss */
 .hollyday-content-block .hollyday-product-block .hollyday-box article h3 {
   text-transform: uppercase;
   margin: 0;
-  font-size: 28px;
+  font-size: 32.41px;
   line-height: normal;
   font-weight: 400;
 }
 @media only screen and (min-width: 768px) {
-  /* line 387, sass/pages/_home.scss */
+  /* line 381, sass/pages/_home.scss */
   .hollyday-content-block .hollyday-product-block .hollyday-box article h3 {
-    font-size: 38px;
+    letter-spacing: 2px;
+    font-size: 41.32px;
     line-height: normal;
   }
 }
-/* line 397, sass/pages/_home.scss */
+/* line 392, sass/pages/_home.scss */
 .hollyday-content-block .hollyday-product-block .hollyday-box article h4 {
   letter-spacing: 1px;
   text-transform: uppercase;
   font-weight: 400;
 }
-/* line 404, sass/pages/_home.scss */
+@media only screen and (min-width: 768px) {
+  /* line 392, sass/pages/_home.scss */
+  .hollyday-content-block .hollyday-product-block .hollyday-box article h4 {
+    font-size: 16px;
+    line-height: normal;
+  }
+}
+/* line 402, sass/pages/_home.scss */
 .hollyday-content-block .hollyday-product-block .hollyday-box article h6 {
   text-transform: uppercase;
   margin: 0 0 3px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 404, sass/pages/_home.scss */
+  /* line 402, sass/pages/_home.scss */
   .hollyday-content-block .hollyday-product-block .hollyday-box article h6 {
-    font-size: 12px;
+    font-size: 13px;
     line-height: normal;
     letter-spacing: 1px;
     margin: 0 0 3px;
   }
 }
 @media only screen and (min-width: 980px) {
-  /* line 404, sass/pages/_home.scss */
+  /* line 402, sass/pages/_home.scss */
   .hollyday-content-block .hollyday-product-block .hollyday-box article h6 {
     font-size: 12px;
     line-height: normal;
   }
 }
-/* line 419, sass/pages/_home.scss */
+/* line 417, sass/pages/_home.scss */
 .hollyday-content-block .hollyday-product-block .hollyday-box article h6 span {
   text-transform: none;
   font-style: italic;
 }
-/* line 427, sass/pages/_home.scss */
+/* line 425, sass/pages/_home.scss */
 .hollyday-content-block .hollyday-product-block .hollyday-box article .hollyday-product-content p {
   text-transform: uppercase;
   margin: 0 0 3px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 427, sass/pages/_home.scss */
+  /* line 425, sass/pages/_home.scss */
   .hollyday-content-block .hollyday-product-block .hollyday-box article .hollyday-product-content p {
-    font-size: 12px;
+    font-size: 13px;
     line-height: normal;
     margin: 0 0 3px;
   }
 }
 @media only screen and (min-width: 980px) {
-  /* line 427, sass/pages/_home.scss */
+  /* line 425, sass/pages/_home.scss */
   .hollyday-content-block .hollyday-product-block .hollyday-box article .hollyday-product-content p {
     font-size: 12px;
     line-height: normal;
   }
 }
-/* line 441, sass/pages/_home.scss */
+/* line 439, sass/pages/_home.scss */
 .hollyday-content-block .hollyday-product-block .hollyday-box article .hollyday-product-content p i, .hollyday-content-block .hollyday-product-block .hollyday-box article .hollyday-product-content p em {
   text-transform: none;
 }
-/* line 448, sass/pages/_home.scss */
+/* line 446, sass/pages/_home.scss */
 .hollyday-content-block .hollyday-product-block .hollyday-box article hr {
   border: none;
   margin-top: 14px;
@@ -3655,35 +3677,35 @@ input {
 }
 
 @media only screen and (min-width: 1024px) {
-  /* line 460, sass/pages/_home.scss */
+  /* line 458, sass/pages/_home.scss */
   .spring-preview-block {
     padding: 0 0 82px;
   }
 }
-/* line 468, sass/pages/_home.scss */
+/* line 466, sass/pages/_home.scss */
 .spring-preview-block .spring-preview-image {
   margin: 0 0 15px;
 }
 @media only screen and (min-width: 980px) {
-  /* line 468, sass/pages/_home.scss */
+  /* line 466, sass/pages/_home.scss */
   .spring-preview-block .spring-preview-image {
     width: 50%;
     padding-right: 4.1%;
     float: left;
   }
 }
-/* line 476, sass/pages/_home.scss */
+/* line 474, sass/pages/_home.scss */
 .spring-preview-block .spring-preview-image img {
   width: 100%;
 }
-/* line 480, sass/pages/_home.scss */
+/* line 478, sass/pages/_home.scss */
 .spring-preview-block .spring-preview-content {
   padding: 40px 0 0;
   background: url("../images/castle-img.png") center top no-repeat;
   background: url("../images/castle-img.png") center top no-repeat;
 }
 @media only screen and (min-width: 980px) {
-  /* line 480, sass/pages/_home.scss */
+  /* line 478, sass/pages/_home.scss */
   .spring-preview-block .spring-preview-content {
     width: 50%;
     float: right;
@@ -3691,50 +3713,52 @@ input {
     margin: 18px 0 0;
   }
 }
-/* line 489, sass/pages/_home.scss */
+/* line 487, sass/pages/_home.scss */
 .spring-preview-block .spring-preview-content hgroup {
   margin: 0 0 50px;
 }
 @media only screen and (min-width: 1140px) {
-  /* line 489, sass/pages/_home.scss */
+  /* line 487, sass/pages/_home.scss */
   .spring-preview-block .spring-preview-content hgroup {
     padding: 0 10%;
     margin: 0 0 78px;
   }
 }
-/* line 497, sass/pages/_home.scss */
+/* line 495, sass/pages/_home.scss */
 .spring-preview-block .spring-preview-content hgroup h2 {
   text-transform: uppercase;
   margin: 0 0 25px;
   line-height: 31px;
 }
 @media only screen and (min-width: 1140px) {
-  /* line 497, sass/pages/_home.scss */
+  /* line 495, sass/pages/_home.scss */
   .spring-preview-block .spring-preview-content hgroup h2 {
-    font-size: 30px;
+    font-size: 30.58px;
     line-height: 36px;
     margin: 0 0 20px;
   }
 }
 @media only screen and (min-width: 1140px) {
-  /* line 507, sass/pages/_home.scss */
+  /* line 505, sass/pages/_home.scss */
   .spring-preview-block .spring-preview-content hgroup p {
     font-size: 16px;
     line-height: normal;
   }
 }
-/* line 512, sass/pages/_home.scss */
+/* line 510, sass/pages/_home.scss */
 .spring-preview-block .spring-preview-content hgroup p a {
   text-decoration: underline;
 }
-/* line 514, sass/pages/_home.scss */
+/* line 512, sass/pages/_home.scss */
 .spring-preview-block .spring-preview-content hgroup p a:hover {
   text-decoration: none;
 }
-/* line 521, sass/pages/_home.scss */
+/* line 519, sass/pages/_home.scss */
 .spring-preview-block .spring-preview-content .spring-related-feature h5 {
   text-transform: uppercase;
   margin: 0 0 24px;
+  font-size: 14.24px;
+  line-height: normal;
   font-weight: 400;
 }
 /* line 9, sass/vendors/bourbon/addons/_clearfix.scss */
@@ -3743,82 +3767,82 @@ input {
   content: "";
   display: table;
 }
-/* line 533, sass/pages/_home.scss */
+/* line 531, sass/pages/_home.scss */
 .spring-preview-block .spring-preview-content .related-feature-box {
   margin: 0 0 55px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 533, sass/pages/_home.scss */
+  /* line 531, sass/pages/_home.scss */
   .spring-preview-block .spring-preview-content .related-feature-box {
     width: 46%;
     text-align: left;
     float: left;
   }
-  /* line 540, sass/pages/_home.scss */
+  /* line 538, sass/pages/_home.scss */
   .spring-preview-block .spring-preview-content .related-feature-box:nth-child(2n) {
     float: right;
   }
 }
-/* line 545, sass/pages/_home.scss */
+/* line 543, sass/pages/_home.scss */
 .spring-preview-block .spring-preview-content .related-feature-box figure {
   margin: 0 0 10px;
 }
 @media only screen and (min-width: 1140px) {
-  /* line 545, sass/pages/_home.scss */
+  /* line 543, sass/pages/_home.scss */
   .spring-preview-block .spring-preview-content .related-feature-box figure {
     margin: 0 0 17px;
   }
 }
-/* line 550, sass/pages/_home.scss */
+/* line 548, sass/pages/_home.scss */
 .spring-preview-block .spring-preview-content .related-feature-box figure img {
   width: 100%;
 }
-/* line 554, sass/pages/_home.scss */
+/* line 552, sass/pages/_home.scss */
 .spring-preview-block .spring-preview-content .related-feature-box article {
   padding: 0 5%;
 }
 @media only screen and (min-width: 768px) {
-  /* line 554, sass/pages/_home.scss */
+  /* line 552, sass/pages/_home.scss */
   .spring-preview-block .spring-preview-content .related-feature-box article {
     padding: 0;
   }
 }
-/* line 560, sass/pages/_home.scss */
+/* line 558, sass/pages/_home.scss */
 .spring-preview-block .spring-preview-content .related-feature-box h6 {
   text-transform: uppercase;
   margin: 0 0 3px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 560, sass/pages/_home.scss */
+  /* line 558, sass/pages/_home.scss */
   .spring-preview-block .spring-preview-content .related-feature-box h6 {
     font-size: 13px;
     line-height: normal;
     text-align: left;
   }
 }
-/* line 571, sass/pages/_home.scss */
+/* line 569, sass/pages/_home.scss */
 .spring-preview-block .spring-preview-content .related-feature-box h4 {
   text-transform: uppercase;
   line-height: 26px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 571, sass/pages/_home.scss */
+  /* line 569, sass/pages/_home.scss */
   .spring-preview-block .spring-preview-content .related-feature-box h4 {
-    font-size: 21px;
-    line-height: 24px;
+    font-size: 21.24px;
+    line-height: 23.51px;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 579, sass/pages/_home.scss */
+  /* line 577, sass/pages/_home.scss */
   .spring-preview-block .spring-preview-content .related-feature-box p {
     display: block;
   }
 }
-/* line 585, sass/pages/_home.scss */
+/* line 583, sass/pages/_home.scss */
 .spring-preview-block .spring-preview-content .related-feature-box p a {
   text-decoration: underline;
 }
-/* line 587, sass/pages/_home.scss */
+/* line 585, sass/pages/_home.scss */
 .spring-preview-block .spring-preview-content .related-feature-box p a:hover {
   text-decoration: none;
 }
