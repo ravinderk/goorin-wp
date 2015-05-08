@@ -41,7 +41,6 @@
 					<li><a href="<?php echo get_theme_mod('twitter_link', '#'); ?>" class="twitter"><span></span></a></li>
 					<li><a href="<?php echo get_theme_mod('facebook_link', '#'); ?>" class="facebook"><span></span></a></li>
 					<li><a href="<?php echo get_theme_mod('instagram_link', '#'); ?>" class="instagram"><span></span></a></li>
-					<br/>
 					<li><a href="<?php echo get_theme_mod('pinterest_link', '#'); ?>" class="pinterest"><span></span></a></li>
 					<li><a href="<?php echo get_theme_mod('tumblr_link', '#'); ?>" class="tumbler"><span></span></a></li>
 				</ul>

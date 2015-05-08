@@ -159,7 +159,7 @@
         	</div>
         	<!--cart-total-->
         	<div class="cart-checkout">
-        		<a href="#" class="btn btn-n">View Cart</a>
+        		<a href="#" class="btn btn-n"><span>View Cart</span></a>
         		<a href="#" class="btn">CHECKOUT</a>
         	</div>
         	<!--cart-total-->
