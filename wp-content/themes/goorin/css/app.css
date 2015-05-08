@@ -682,7 +682,7 @@ input {
   font-style: normal;
 }
 /* line 93, sass/base/_typography.scss */
-body, .site-header .submenu .colbox ul li a, .site-header .submenu figure p, .cart-dropdown .cart-list-loop article p, .banner article h2, .site-search .site-search-form input[type="text"], .site-footer .footer-col-right .col ul li a, input, textarea, select, .hollyday-content-block .hollyday-product-block .hollyday-box article h6 span {
+body, .site-header .submenu .colbox ul li a, .cart-dropdown .cart-list-loop article p, .banner article h2, .site-search .site-search-form input[type="text"], .site-footer .footer-col-right .col ul li a, input, textarea, select, .hollyday-content-block .hollyday-product-block .hollyday-box article h6 span {
   font-family: 'baskerville';
 }
 
@@ -752,7 +752,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 155, sass/base/_typography.scss */
-.site-header .submenu .colbox ul li a, .site-header .submenu figure p, .site-footer .footer-col-left article p {
+.site-header .submenu .colbox ul li a, .site-footer .footer-col-left article p {
   font-size: 18px;
   line-height: normal;
 }
@@ -1206,13 +1206,17 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
 .site-header .submenu figure img {
   margin-bottom: 15px;
 }
-/* line 114, sass/components/_dropdown.scss */
-.site-header .submenu figure p {
+/* line 115, sass/components/_dropdown.scss */
+.site-header .submenu figure p a {
+  font-size: 17px !important;
   color: #707070;
+  border-bottom: 1px solid Black;
 }
-/* line 121, sass/components/_dropdown.scss */
-.site-header .submenu figure a:hover {
-  text-decoration: underline;
+/* line 119, sass/components/_dropdown.scss */
+.site-header .submenu figure p a:hover {
+  text-decoration: none;
+  border-bottom: 1px solid white;
+  color: white;
 }
 
 /* line 130, sass/components/_dropdown.scss */

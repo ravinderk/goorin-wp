@@ -168,7 +168,7 @@
                 var window_size = $(window).height();
                 $('.banner-item').height(window_size - 170);
             } else {
-                $('.banner-item').height(445);
+                $('.banner-item').height(380);
             }
         });
         window.goorin = window.goorin || {};
