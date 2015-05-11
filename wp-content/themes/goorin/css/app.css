@@ -682,7 +682,7 @@ input {
   font-style: normal;
 }
 /* line 93, sass/base/_typography.scss */
-body, .site-header .submenu .colbox ul li a, .cart-dropdown .cart-list-loop article p, .banner article h2, .site-search .site-search-form input[type="text"], .site-footer .footer-col-right .col ul li a, input, textarea, select, .hollyday-content-block .hollyday-product-block .hollyday-box article h6 span {
+body, .site-header .submenu .colbox ul li a, .site-header .submenu figure p, .cart-dropdown .cart-list-loop article p, .banner article h2, .site-search .site-search-form input[type="text"], .site-footer .footer-col-right .col ul li a, input, textarea, select, .hollyday-content-block .hollyday-product-block .hollyday-box article h6 span {
   font-family: 'baskerville';
 }
 
@@ -752,7 +752,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 155, sass/base/_typography.scss */
-.site-header .submenu .colbox ul li a, .site-footer .footer-col-left article p {
+.site-header .submenu .colbox ul li a, .site-header .submenu figure p, .site-footer .footer-col-left article p {
   font-size: 18px;
   line-height: normal;
 }
@@ -1206,17 +1206,13 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
 .site-header .submenu figure img {
   margin-bottom: 15px;
 }
-/* line 115, sass/components/_dropdown.scss */
-.site-header .submenu figure p a {
-  font-size: 17px !important;
+/* line 114, sass/components/_dropdown.scss */
+.site-header .submenu figure p {
   color: #707070;
-  border-bottom: 1px solid Black;
 }
-/* line 119, sass/components/_dropdown.scss */
-.site-header .submenu figure p a:hover {
-  text-decoration: none;
-  border-bottom: 1px solid white;
-  color: white;
+/* line 121, sass/components/_dropdown.scss */
+.site-header .submenu figure a:hover {
+  text-decoration: underline;
 }
 
 /* line 130, sass/components/_dropdown.scss */
@@ -2947,37 +2943,57 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   transition: all 0.3s ease;
 }
 /* line 215, sass/layout/_footer.scss */
-.site-footer .footer-social-col ul li a:hover {
-  background: #201e1d;
-  background: #201e1d;
-}
-/* line 218, sass/layout/_footer.scss */
 .site-footer .footer-social-col ul li a span {
   height: 34px;
   width: 34px;
   background: url("../images/social-icons.png") 0 0 no-repeat;
   background: url("../images/social-icons.png") 0 0 no-repeat;
-  background-size: auto 18px;
+  background-size: auto 45px;
 }
-/* line 225, sass/layout/_footer.scss */
+/* line 222, sass/layout/_footer.scss */
 .site-footer .footer-social-col ul li a.twitter span {
   background-position: 9px 8px;
 }
-/* line 230, sass/layout/_footer.scss */
+/* line 227, sass/layout/_footer.scss */
 .site-footer .footer-social-col ul li a.facebook span {
   background-position: -50px 8px;
 }
-/* line 235, sass/layout/_footer.scss */
+/* line 232, sass/layout/_footer.scss */
 .site-footer .footer-social-col ul li a.instagram span {
   background-position: -113px 8px;
 }
-/* line 240, sass/layout/_footer.scss */
+/* line 237, sass/layout/_footer.scss */
 .site-footer .footer-social-col ul li a.pinterest span {
   background-position: -175px 8px;
 }
-/* line 245, sass/layout/_footer.scss */
+/* line 242, sass/layout/_footer.scss */
 .site-footer .footer-social-col ul li a.tumbler span {
   background-position: -236px 8px;
+}
+/* line 246, sass/layout/_footer.scss */
+.site-footer .footer-social-col ul li a:hover {
+  background: #ffffff;
+  background: #ffffff;
+}
+/* line 249, sass/layout/_footer.scss */
+.site-footer .footer-social-col ul li a:hover.twitter span {
+  background-position: 9px -19px;
+}
+/* line 254, sass/layout/_footer.scss */
+.site-footer .footer-social-col ul li a:hover.facebook span {
+  background-position: -50px -19px;
+}
+/* line 259, sass/layout/_footer.scss */
+.site-footer .footer-social-col ul li a:hover.instagram span {
+  background-position: -113px -19px;
+}
+/* line 264, sass/layout/_footer.scss */
+.site-footer .footer-social-col ul li a:hover.pinterest span {
+  background-position: -175px -19px;
+}
+/* line 269, sass/layout/_footer.scss */
+.site-footer .footer-social-col ul li a:hover.tumbler span {
+  background-position: -236px -19px;
 }
 
 /* line 1, sass/layout/_forms.scss */
