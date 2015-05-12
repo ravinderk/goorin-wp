@@ -1210,19 +1210,29 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
 .site-header .submenu figure p {
   color: #707070;
 }
-/* line 121, sass/components/_dropdown.scss */
-.site-header .submenu figure a:hover {
-  text-decoration: underline;
+/* line 119, sass/components/_dropdown.scss */
+.site-header .submenu figure a {
+  display: block;
+}
+/* line 122, sass/components/_dropdown.scss */
+.site-header .submenu figure a p {
+  display: inline;
+  border-bottom: 1px solid Black;
+}
+/* line 128, sass/components/_dropdown.scss */
+.site-header .submenu figure a:hover p {
+  border-bottom: 1px solid white;
+  color: white;
 }
 
-/* line 130, sass/components/_dropdown.scss */
+/* line 138, sass/components/_dropdown.scss */
 .cart-dropdown {
   width: 100%;
   background: #edf0e8;
   border: 1px solid #d7d7d7;
 }
 @media only screen and (min-width: 768px) {
-  /* line 130, sass/components/_dropdown.scss */
+  /* line 138, sass/components/_dropdown.scss */
   .cart-dropdown {
     width: 565px;
     z-index: 9999;
@@ -1231,7 +1241,7 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
     right: 20px;
   }
 }
-/* line 141, sass/components/_dropdown.scss */
+/* line 149, sass/components/_dropdown.scss */
 .cart-dropdown h2 {
   font-weight: normal;
   text-transform: uppercase;
@@ -1239,7 +1249,7 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   padding: 15px 0;
 }
 @media only screen and (min-width: 768px) {
-  /* line 150, sass/components/_dropdown.scss */
+  /* line 158, sass/components/_dropdown.scss */
   .cart-dropdown .cart-list {
     max-height: 300px;
     overflow-y: scroll;
@@ -1251,12 +1261,12 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   content: "";
   display: table;
 }
-/* line 160, sass/components/_dropdown.scss */
+/* line 168, sass/components/_dropdown.scss */
 .cart-dropdown .cart-list-loop {
   margin: 0 0 15px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 160, sass/components/_dropdown.scss */
+  /* line 168, sass/components/_dropdown.scss */
   .cart-dropdown .cart-list-loop {
     float: left;
     width: 50%;
@@ -1264,7 +1274,7 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
     margin: 0;
   }
 }
-/* line 170, sass/components/_dropdown.scss */
+/* line 178, sass/components/_dropdown.scss */
 .cart-dropdown .cart-list-loop a.cart-delete {
   height: 15px;
   width: 15px;
@@ -1272,7 +1282,7 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   top: 18px;
   right: 10px;
 }
-/* line 174, sass/components/_dropdown.scss */
+/* line 182, sass/components/_dropdown.scss */
 .cart-dropdown .cart-list-loop a.cart-delete span:before, .cart-dropdown .cart-list-loop a.cart-delete span:after {
   top: 20px;
   content: '';
@@ -1284,7 +1294,7 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   background: #4d4d4d;
   background: #4d4d4d;
 }
-/* line 183, sass/components/_dropdown.scss */
+/* line 191, sass/components/_dropdown.scss */
 .cart-dropdown .cart-list-loop a.cart-delete span:before {
   -webkit-transform: rotate(135deg);
   -moz-transform: rotate(135deg);
@@ -1292,7 +1302,7 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   -o-transform: rotate(135deg);
   transform: rotate(135deg);
 }
-/* line 186, sass/components/_dropdown.scss */
+/* line 194, sass/components/_dropdown.scss */
 .cart-dropdown .cart-list-loop a.cart-delete span:after {
   -webkit-transform: rotate(-135deg);
   -moz-transform: rotate(-135deg);
@@ -1300,19 +1310,19 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   -o-transform: rotate(-135deg);
   transform: rotate(-135deg);
 }
-/* line 190, sass/components/_dropdown.scss */
+/* line 198, sass/components/_dropdown.scss */
 .cart-dropdown .cart-list-loop figure {
   height: 80px;
   width: 40%;
 }
 @media only screen and (min-width: 768px) {
-  /* line 190, sass/components/_dropdown.scss */
+  /* line 198, sass/components/_dropdown.scss */
   .cart-dropdown .cart-list-loop figure {
     height: 80px;
     width: 55%;
   }
 }
-/* line 197, sass/components/_dropdown.scss */
+/* line 205, sass/components/_dropdown.scss */
 .cart-dropdown .cart-list-loop figure img {
   max-width: 80px;
   top: 50%;
@@ -1324,37 +1334,37 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 202, sass/components/_dropdown.scss */
+/* line 210, sass/components/_dropdown.scss */
 .cart-dropdown .cart-list-loop article {
   width: 60%;
 }
 @media only screen and (min-width: 768px) {
-  /* line 202, sass/components/_dropdown.scss */
+  /* line 210, sass/components/_dropdown.scss */
   .cart-dropdown .cart-list-loop article {
     width: 35%;
   }
 }
-/* line 209, sass/components/_dropdown.scss */
+/* line 217, sass/components/_dropdown.scss */
 .cart-dropdown .cart-list-loop article h6 {
   color: #000000;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin: 0 0 4px;
 }
-/* line 217, sass/components/_dropdown.scss */
+/* line 225, sass/components/_dropdown.scss */
 .cart-dropdown .cart-list-loop article p {
   color: gray;
   line-height: 15px;
 }
-/* line 225, sass/components/_dropdown.scss */
+/* line 233, sass/components/_dropdown.scss */
 .cart-dropdown .cart-list-loop:hover a.cart-delete {
   display: inline-block;
 }
-/* line 228, sass/components/_dropdown.scss */
+/* line 236, sass/components/_dropdown.scss */
 .cart-dropdown .cart-list-loop:hover article p {
   color: #1a1a1a;
 }
-/* line 233, sass/components/_dropdown.scss */
+/* line 241, sass/components/_dropdown.scss */
 .cart-dropdown .cart-total {
   border-top: 1px solid #d7d7d7;
   border-bottom: 1px solid #d7d7d7;
@@ -1363,60 +1373,60 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   background: #e5eadf;
   background: #e5eadf;
 }
-/* line 240, sass/components/_dropdown.scss */
+/* line 248, sass/components/_dropdown.scss */
 .cart-dropdown .cart-total .cart-message {
   color: #676964;
 }
 @media only screen and (min-width: 768px) {
-  /* line 240, sass/components/_dropdown.scss */
+  /* line 248, sass/components/_dropdown.scss */
   .cart-dropdown .cart-total .cart-message {
     float: left;
     width: 45%;
   }
 }
-/* line 249, sass/components/_dropdown.scss */
+/* line 257, sass/components/_dropdown.scss */
 .cart-dropdown .cart-total .cart-message span {
   color: #000000;
 }
-/* line 254, sass/components/_dropdown.scss */
+/* line 262, sass/components/_dropdown.scss */
 .cart-dropdown .cart-total .cart-subtotal {
   color: #000000;
   padding: 10px 0 0;
 }
 @media only screen and (min-width: 768px) {
-  /* line 254, sass/components/_dropdown.scss */
+  /* line 262, sass/components/_dropdown.scss */
   .cart-dropdown .cart-total .cart-subtotal {
     float: left;
     width: 55%;
   }
 }
-/* line 266, sass/components/_dropdown.scss */
+/* line 274, sass/components/_dropdown.scss */
 .cart-dropdown .cart-checkout {
   padding: 18px;
 }
-/* line 269, sass/components/_dropdown.scss */
+/* line 277, sass/components/_dropdown.scss */
 .cart-dropdown .cart-checkout .btn {
   width: 100%;
 }
 @media only screen and (min-width: 768px) {
-  /* line 269, sass/components/_dropdown.scss */
+  /* line 277, sass/components/_dropdown.scss */
   .cart-dropdown .cart-checkout .btn {
     width: 55%;
     float: left;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 276, sass/components/_dropdown.scss */
+  /* line 284, sass/components/_dropdown.scss */
   .cart-dropdown .cart-checkout .btn-n {
     width: 45%;
   }
 }
-/* line 280, sass/components/_dropdown.scss */
+/* line 288, sass/components/_dropdown.scss */
 .cart-dropdown .cart-checkout .btn-n span {
   border-bottom: 1px solid #f5f6f1;
   padding-bottom: 2px;
 }
-/* line 283, sass/components/_dropdown.scss */
+/* line 291, sass/components/_dropdown.scss */
 .cart-dropdown .cart-checkout .btn-n span:hover {
   border-color: #000000;
 }

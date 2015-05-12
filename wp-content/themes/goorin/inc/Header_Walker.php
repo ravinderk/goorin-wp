@@ -190,11 +190,12 @@ class Goorin_Header_Walker extends Walker_Nav_Menu {
 									<a href="'.$item->url.'">
 										'.get_the_post_thumbnail($item->object_id, 'full').'
 									</a>
-									<p>
-										<a href="'.$item->url.'">
-											'.$args->link_before . apply_filters( 'the_title', $item->title, $item->ID ) . $args->link_after.'
-										</a>
-									</p>';
+									
+									<a href="'.$item->url.'">
+										<p>
+										'.$args->link_before . apply_filters( 'the_title', $item->title, $item->ID ) . $args->link_after.'
+										</p>
+									</a>';
 		} else {
 			$output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
 		}
