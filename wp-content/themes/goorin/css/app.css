@@ -2297,7 +2297,7 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   /* line 119, sass/layout/_header.scss */
   .site-header .logo, .site-header .logo-li a {
     background-image: url("../images/logo_mobile_2x.png");
-    background-size: 100% 100%;
+    background-size: 40px 35px;
   }
 }
 @media only screen and (min-width: 640px) {
@@ -2305,6 +2305,7 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   .site-header .logo, .site-header .logo-li a {
     height: 42px;
     width: 45px;
+    background-size: 45px 42px;
   }
 }
 @media only screen and (min-width: 1140px) {
