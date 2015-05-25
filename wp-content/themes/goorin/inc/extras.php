@@ -69,3 +69,30 @@ if ( version_compare( $GLOBALS['wp_version'], '4.1', '<' ) ) :
 	}
 	add_action( 'wp_head', 'goorin_render_title' );
 endif;
+
+function get_magento_products( $category_id, $limit ) {
+	if ( ! ( $products = get_transient( 'saved_magento_products' ) ) ) {
+		$wp_server_name = $_SERVER['SERVER_NAME'];
+		//make a curl request to fetch the products from magento
+		$curl = curl_init();
+		curl_setopt_array($curl, array(
+			CURLOPT_RETURNTRANSFER => 1,
+			CURLOPT_URL => 'http://store.' . $wp_server_name . '/index.php/product/list/index/category_id/'. $category_id . '/limit/' . $limit
+		));
+
+		$products = curl_exec($curl);
+
+		// set transient for 4 hours
+		set_transient( 'saved_magento_products', $products, ( 60 * 60 * 4 ) );
+	}
+	delete_transient( 'saved_magento_products' );
+
+	return $products;
+}
+
+function delete_transient_magento_product( $post_id ) {
+	if ( get_page_template_slug( $post_id ) == 'page-campaign.php' ) {
+		delete_transient( 'saved_magento_products' );
+	}
+}
+add_action( 'save_post', 'delete_transient_magento_product' );

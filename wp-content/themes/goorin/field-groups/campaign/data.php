@@ -514,10 +514,47 @@ $group = array (
                 4 => 4,
                 8 => 8,
                 12 => 12,
+                16 => 16,
+                20 => 20,
               ),
               'default_value' => 8,
               'allow_null' => 0,
               'multiple' => 0,
+            ),
+            2 => 
+            array (
+              'key' => 'field_55630f287658c',
+              'label' => 'Category ID',
+              'name' => 'category_id',
+              '_name' => 'category_id',
+              'type' => 'number',
+              'order_no' => 2,
+              'instructions' => 'Please give the category id of magento. Ex:- 234',
+              'required' => 0,
+              'id' => 'acf-field-category_id',
+              'class' => 'number',
+              'conditional_logic' => 
+              array (
+                'status' => 0,
+                'rules' => 
+                array (
+                  0 => 
+                  array (
+                    'field' => 'field_5549f1ea86565',
+                    'operator' => '==',
+                    'value' => '4',
+                  ),
+                ),
+                'allorany' => 'all',
+              ),
+              'column_width' => '',
+              'default_value' => '',
+              'placeholder' => 'Magento Category ID',
+              'prepend' => '',
+              'append' => '',
+              'min' => '',
+              'max' => '',
+              'step' => '',
             ),
           ),
         ),

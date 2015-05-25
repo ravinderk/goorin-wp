@@ -1,7 +1,14 @@
-<section class="cat-product-block">
-	<div class="container">
-		<hgroup><?php echo $field['heading']; ?></hgroup>
-		<?php // echo $field['products_count']; ?>
-		<!-- Add the product code here-->
-	</div>
-</section>
+<?php
+	$heading = isset( $field['heading'] ) ? $field['heading'] : '' ;
+	$category_id = isset( $field['category_id'] ) ? $field['category_id'] : 0 ;
+	$limit = isset( $field['product_count'] ) ? $field['product_count'] : 4 ;
+	$products = get_magento_products( $category_id, $limit );
+?>
+<?php if ( $category_id === 0 ) { ?>
+	<section class="cat-product-block">
+		<div class="container">
+			<hgroup><?php echo $heading; ?></hgroup>
+			<div><?php echo $products ?></div>
+		</div>
+	</section>
+<?php } ?>
