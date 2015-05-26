@@ -73,11 +73,15 @@ endif;
 function get_magento_products( $category_id, $limit ) {
 	if ( ! ( $products = get_transient( 'saved_magento_products' ) ) ) {
 		$wp_server_name = $_SERVER['SERVER_NAME'];
+		// if server is production and files are protected then
+		if ( ! WP_LOCAL_SERVER && ! WP_DEV_SERVER && ! WP_STAGING_SERVER ) {
+			$access_credential = 'anattadesign:Secure2015!@';
+		}
 		//make a curl request to fetch the products from magento
 		$curl = curl_init();
 		curl_setopt_array($curl, array(
 			CURLOPT_RETURNTRANSFER => 1,
-			CURLOPT_URL => 'http://store.' . $wp_server_name . '/index.php/product/list/index/category_id/'. $category_id . '/limit/' . $limit
+			CURLOPT_URL => 'http://' . $access_credential . 'store.' . $wp_server_name . '/index.php/product/list/index/category_id/'. $category_id . '/limit/' . $limit
 		));
 
 		$products = curl_exec($curl);
