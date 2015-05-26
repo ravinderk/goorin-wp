@@ -4,7 +4,7 @@
 	$limit = isset( $field['product_count'] ) ? $field['product_count'] : 4 ;
 	$products = get_magento_products( $category_id, $limit );
 ?>
-<?php if ( $category_id === 0 ) { ?>
+<?php if ( $category_id !== 0 ) { ?>
 	<section class="cat-product-block">
 		<div class="container">
 			<hgroup><?php echo $heading; ?></hgroup>

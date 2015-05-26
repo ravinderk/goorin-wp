@@ -85,7 +85,6 @@ function get_magento_products( $category_id, $limit ) {
 		// set transient for 4 hours
 		set_transient( 'saved_magento_products', $products, ( 60 * 60 * 4 ) );
 	}
-	delete_transient( 'saved_magento_products' );
 
 	return $products;
 }
