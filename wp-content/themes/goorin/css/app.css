@@ -846,7 +846,7 @@ img {
 }
 
 /* line 36, sass/components/_components.scss */
-.cat-bottom-col a.backtotop, .site-header .submenu, .site-header .submenu figure, .cart-dropdown, .cart-dropdown .cart-list-loop a.cart-delete, .site-header .nav-primary ul li.nav-3, .site-header .menu, .site-header .saletext, .site-search .search-close, .site-footer .hidden-mobile, .spring-preview-block .spring-preview-content .related-feature-box p, .category-campaign .cat-product-block .category-products .item .old-price {
+.cat-bottom-col a.backtotop, .popup-overlay, .site-header .submenu, .site-header .submenu figure, .cart-dropdown, .cart-dropdown .cart-list-loop a.cart-delete, .site-header .nav-primary ul li.nav-3, .site-header .menu, .site-header .saletext, .site-search .search-close, .site-footer .hidden-mobile, .spring-preview-block .spring-preview-content .related-feature-box p, .category-campaign .cat-product-block .category-products .item .old-price {
   display: none;
 }
 
@@ -1152,6 +1152,35 @@ body.bodyhidden, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdow
   border-bottom: none;
   float: left;
   width: 40px;
+}
+
+/* line 155, sass/components/_common.scss */
+.popup-overlay {
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+/* line 160, sass/components/_common.scss */
+.popup-overlay .popup-close {
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  background: url("../images/popup-close.png") right center no-repeat;
+  background: url("../images/popup-close.png") right center no-repeat;
+  background-size: 16px 16px;
+}
+@media only screen and (min-width: 768px) {
+  /* line 160, sass/components/_common.scss */
+  .popup-overlay .popup-close {
+    height: 25px;
+    width: 25px;
+    background-size: 25px 25px;
+  }
 }
 
 /* line 2, sass/components/_dropdown.scss */
@@ -4502,14 +4531,14 @@ input {
   }
 }
 /* line 296, sass/pages/_category_campaign.scss */
-.category-campaign .cat-product-block .category-products .item .regular-price {
+.category-campaign .cat-product-block .category-products .item .special-price {
   font-size: 11px;
   line-height: normal;
 }
 @media only screen and (min-width: 1024px) {
   /* line 296, sass/pages/_category_campaign.scss */
-  .category-campaign .cat-product-block .category-products .item .regular-price {
-    font-size: 13px;
+  .category-campaign .cat-product-block .category-products .item .special-price {
+    font-size: 13.5px;
     line-height: normal;
   }
 }
