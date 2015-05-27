@@ -139,11 +139,7 @@
                     $('.site-header').removeClass('nav_hovered');
                 }, function() {
                     return false;
-                });
-
-                // Mage functions
-                $('.cat-left-col').css('display' , 'block');    
-
+                });   
             });
         $('.menu-toggle').click(function() {
             $(this).toggleClass('is_mobile_menu_open');
