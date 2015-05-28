@@ -1,22 +1,24 @@
 <section class="home-content-block spring-preview-block">
     <div class="container">
-    	<div class="spring-preview-main">
-    		<?php if ( isset( $field['main_image'] ) ) { ?>
-	    		<figure class="spring-preview-image">
-	                 <img src="<?php echo $field['main_image']['url']; ?>" />  
-	            </figure>
-	        <?php } ?>
-	        <div class="spring-preview-content">
-                <hgroup>
+    	<h1>News <span>&</span> Features</h1>
+        <div class="spring-preview-main">
+        	<div class="spring-image-content">	
+                <?php if ( isset( $field['main_image'] ) ) { ?>
+    	    		<figure class="spring-preview-image">
+    	                 <img src="<?php echo $field['main_image']['url']; ?>" />  
+    	            </figure>
+    	        <?php } ?>
+                <article>
                     <?php if ( $field['heading'] ) { ?>
-                    	<h2><?php echo $field['heading']; ?></h2>
-                    <?php } ?>	
+                        <h4><?php echo $field['heading']; ?></h4>
+                    <?php } ?>  
                     <?php if ( $field['content'] ) { ?>
-                    	<div class="heading-content"><?php echo $field['content']; ?></div>
-                    <?php } ?>	
-                </hgroup>
+                        <div class="heading-content"><?php echo $field['content']; ?></div>
+                    <?php } ?>     
+                </article> 
+             </div>      
+	        <div class="spring-preview-content">
                 <div class="spring-related-feature">
-                	<h5>RELATED Features</h5>
                 	<div class="related-feature-content">
                 		<?php foreach ( $field['related_features'] as $related_feature ) { ?>
 							<div class="related-feature-box">
@@ -27,7 +29,7 @@
                                 <?php } ?>
                                 <article>
                                     <?php if ( $related_feature['pre-heading_text'] ) { ?>
-										<h6><?php echo $related_feature['pre-heading_text']; ?></h6>
+										<!--h6><?php //echo $related_feature['pre-heading_text']; ?></h6-->
 									<?php } ?>
                                     <?php if ( $related_feature['heading'] ) { ?>
 										<h4><a href="<?php echo $related_feature['link']; ?>"><?php echo $related_feature['heading']; ?></a></h4>

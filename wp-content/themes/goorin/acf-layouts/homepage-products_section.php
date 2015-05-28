@@ -1,15 +1,7 @@
 <section class="home-content-block hollyday-content-block">
     <div class="container">
     	<div class="hollyday-content-main">
-			<hgroup class="hide-desktop">
-                <h6>Just in time For the </h6>
-                <h2>Holiday</h2>
-            </hgroup>
-            <hgroup class="hide-mobile">
-                <h6>Just in time For</h6>
-                <h2>the holidays</h2>
-            </hgroup>
-            <div class="hollyday-product-block">
+			<div class="hollyday-product-block">
             	<div class="hollyday-left-block">
             		<?php foreach ( $field['featured_product'] as $featured_product ) { ?>
 	                    <div class="hollyday-box">

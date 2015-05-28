@@ -214,7 +214,7 @@
         window.goorin.bannerSlide = $('.banner-carousel').slick({
             dots: true,
             infinite: true,
-            speed: 500,
+            speed: 800,
             fade: true,
             autoplay: true,
             autoplaySpeed: 4000,
