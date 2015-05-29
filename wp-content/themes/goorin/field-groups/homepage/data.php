@@ -61,6 +61,7 @@ $group = array (
                   array (
                     'field' => 'null',
                     'operator' => '==',
+                    'value' => '',
                   ),
                 ),
                 'allorany' => 'all',
@@ -89,6 +90,7 @@ $group = array (
                       array (
                         'field' => 'null',
                         'operator' => '==',
+                        'value' => '',
                       ),
                     ),
                     'allorany' => 'all',
@@ -1034,12 +1036,44 @@ $group = array (
           array (
             0 => 
             array (
+              'key' => 'field_5568929a1e370',
+              'label' => 'Main Heading',
+              'name' => 'main_heading',
+              '_name' => 'main_heading',
+              'type' => 'textarea',
+              'order_no' => 0,
+              'instructions' => '',
+              'required' => 0,
+              'id' => 'acf-field-main_heading',
+              'class' => 'textarea',
+              'conditional_logic' => 
+              array (
+                'status' => 0,
+                'rules' => 
+                array (
+                  0 => 
+                  array (
+                    'field' => 'null',
+                    'operator' => '==',
+                  ),
+                ),
+                'allorany' => 'all',
+              ),
+              'column_width' => '',
+              'default_value' => '',
+              'placeholder' => '',
+              'maxlength' => '',
+              'rows' => '',
+              'formatting' => 'html',
+            ),
+            1 => 
+            array (
               'key' => 'field_553e4e1d90090',
               'label' => 'Heading',
               'name' => 'heading',
               '_name' => 'heading',
               'type' => 'text',
-              'order_no' => 0,
+              'order_no' => 1,
               'instructions' => '',
               'required' => 0,
               'id' => 'acf-field-heading',
@@ -1066,14 +1100,14 @@ $group = array (
               'formatting' => 'html',
               'maxlength' => '',
             ),
-            1 => 
+            2 => 
             array (
               'key' => 'field_553e4e2990091',
               'label' => 'Content',
               'name' => 'content',
               '_name' => 'content',
               'type' => 'wysiwyg',
-              'order_no' => 1,
+              'order_no' => 2,
               'instructions' => '',
               'required' => 0,
               'id' => 'acf-field-content',
@@ -1097,14 +1131,14 @@ $group = array (
               'toolbar' => 'basic',
               'media_upload' => 'no',
             ),
-            2 => 
+            3 => 
             array (
               'key' => 'field_553e4e3490092',
               'label' => 'Main Image',
               'name' => 'main_image',
               '_name' => 'main_image',
               'type' => 'image',
-              'order_no' => 2,
+              'order_no' => 3,
               'instructions' => '',
               'required' => 0,
               'id' => 'acf-field-main_image',
@@ -1128,14 +1162,14 @@ $group = array (
               'preview_size' => 'thumbnail',
               'library' => 'all',
             ),
-            3 => 
+            4 => 
             array (
               'key' => 'field_553e4e4e90093',
               'label' => 'Related Features',
               'name' => 'related_features',
               '_name' => 'related_features',
               'type' => 'repeater',
-              'order_no' => 3,
+              'order_no' => 4,
               'instructions' => '',
               'required' => 0,
               'id' => 'acf-field-related_features',
