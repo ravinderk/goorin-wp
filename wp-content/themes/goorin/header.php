@@ -21,6 +21,8 @@
 </head>
 <body <?php body_class(); ?>>
 <div id="page" class="main">
-	<?php goorin_header(); ?>
+	<div class="site-header-main">
+        <?php goorin_header(); ?>
+    </div>    
     <!--header-->
 	<div id="content" class="site-content">
