@@ -5,7 +5,7 @@
 			<span></span>
 		</a>
 		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo logo-mobile"></a>
-		<span class="cart-count">0</span>
+		<span class="cart-count cart-count-mobile">0</span>
 		<nav class="nav-primary">
 			<div class="site-search">
 				<div class="container">
@@ -123,7 +123,7 @@
 
 		// number of items in the cart
 		var cartCount = cookie.items ? cookie.items.length : 0;
-		$('.menu-cart-link .cart-count-icon, .cart-dropdown .cart-count').text(cartCount);
+		$('.menu-cart-link .cart-count-icon, .cart-dropdown .cart-count , .cart-count-mobile').text(cartCount);
 
 		// show the items div if applicable
 		if(cartCount) {
