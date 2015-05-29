@@ -47,143 +47,24 @@
 </header>
 <div class="cart-dropdown">
 	<h2>Your Cart (<span class="cart-count">0</span>)</h2>
-	<div class="cart-list">
-		<div class="cart-list-row">
-			<div class="cart-list-loop">
-				<figure><img src="<?php echo get_template_directory_uri(); ?>/images/hat-men.png"></figure>
-				<article>
-					<h6>Smitty</h6>
-					<p>
-						$145<br/>
-						Color: Grey<br/>
-						Size: Large <br/>
-						Qty: 2
-					</p>
-				</article>
-				<a href="#" class="cart-delete"><span></span></a>
-			</div>
-			<!--cart-list-loop-->
-			<div class="cart-list-loop">
-				<figure><img src="<?php echo get_template_directory_uri(); ?>/images/hat-women.png"></figure>
-				<article>
-					<h6>Smitty</h6>
-					<p>
-						$145<br/>
-						Color: Grey<br/>
-						Size: Large <br/>
-						Qty: 2
-					</p>
-				</article>
-				<a href="#" class="cart-delete"><span></span></a>
-			</div>
-			<!--cart-list-loop-->
-		</div>
-		<!--cart-list-row-->
-		<div class="cart-list-row">
-			<div class="cart-list-loop">
-				<figure><img src="<?php echo get_template_directory_uri(); ?>/images/hat-men.png"></figure>
-				<article>
-					<h6>Smitty</h6>
-					<p>
-						$145<br/>
-						Color: Grey<br/>
-						Size: Large <br/>
-						Qty: 2
-					</p>
-				</article>
-				<a href="#" class="cart-delete"><span></span></a>
-			</div>
-			<!--cart-list-loop-->
-			<div class="cart-list-loop">
-				<figure><img src="<?php echo get_template_directory_uri(); ?>/images/hat-women.png"></figure>
-				<article>
-					<h6>Smitty</h6>
-					<p>
-						$145<br/>
-						Color: Grey<br/>
-						Size: Large <br/>
-						Qty: 2
-					</p>
-				</article>
-				<a href="#" class="cart-delete"><span></span></a>
-			</div>
-			<!--cart-list-loop-->
-		</div>
-		<!--cart-list-row-->
-		<div class="cart-list-row">
-			<div class="cart-list-loop">
-				<figure><img src="<?php echo get_template_directory_uri(); ?>/images/hat-men.png"></figure>
-				<article>
-					<h6>VINNIE THE BRAINS</h6>
-					<p>
-						$145<br/>
-						Color: Grey<br/>
-						Size: Large <br/>
-						Qty: 2
-					</p>
-				</article>
-				<a href="#" class="cart-delete"><span></span></a>
-			</div>
-			<!--cart-list-loop-->
-			<div class="cart-list-loop">
-				<figure><img src="<?php echo get_template_directory_uri(); ?>/images/hat-women.png"></figure>
-				<article>
-					<h6>Smitty</h6>
-					<p>
-						$145<br/>
-						Color: Grey<br/>
-						Size: Large <br/>
-						Qty: 2
-					</p>
-				</article>
-				<a href="#" class="cart-delete"><span></span></a>
-			</div>
-			<!--cart-list-loop-->
-		</div>
-		<!--cart-list-row-->
-		<div class="cart-list-row">
-			<div class="cart-list-loop">
-				<figure><img src="<?php echo get_template_directory_uri(); ?>/images/hat-men.png"></figure>
-				<article>
-					<h6>VINNIE THE BRAINS</h6>
-					<p>
-						$145<br/>
-						Color: Grey<br/>
-						Size: Large <br/>
-						Qty: 2
-					</p>
-				</article>
-				<a href="#" class="cart-delete"><span></span></a>
-			</div>
-			<!--cart-list-loop-->
-			<div class="cart-list-loop">
-				<figure><img src="<?php echo get_template_directory_uri(); ?>/images/hat-women.png"></figure>
-				<article>
-					<h6>Smitty</h6>
-					<p>
-						$145<br/>
-						Color: Grey<br/>
-						Size: Large <br/>
-						Qty: 2
-					</p>
-				</article>
-				<a href="#" class="cart-delete"><span></span></a>
-			</div>
-			<!--cart-list-loop-->
-		</div>
-		<!--cart-list-row-->
+	<div class="no-items">
+		<p>You don't have any items in your cart.</p>
 	</div>
-	<!--cart-list-->
-	<div class="cart-total">
-		<div class="cart-message">Enjoy <span>free ground shipping</span> on all <br/>orders as our gift for you!</div>
-		<div class="cart-subtotal">Subtotal <span class="amount">$458.00</span></div>
+	<div class="have-items" style="display: none">
+		<div class="cart-list">
+		</div>
+		<!--cart-list-->
+		<div class="cart-total">
+			<div class="cart-message">Enjoy <span>free ground shipping</span> on all <br/>orders as our gift for you!</div>
+			<div class="cart-subtotal">Subtotal <span class="amount">$458.00</span></div>
+		</div>
+		<!--cart-total-->
+		<div class="cart-checkout">
+			<a href="#" class="btn btn-n cart-page-link">View Cart</a>
+			<a href="#" class="btn checkout-page-link">CHECKOUT</a>
+		</div>
+		<!--cart-total-->
 	</div>
-	<!--cart-total-->
-	<div class="cart-checkout">
-		<a href="#" class="btn btn-n cart-page-link">View Cart</a>
-		<a href="#" class="btn checkout-page-link">CHECKOUT</a>
-	</div>
-	<!--cart-total-->
 </div>
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
@@ -243,6 +124,12 @@
 		// number of items in the cart
 		var cartCount = cookie.items ? cookie.items.length : 0;
 		$('.menu-cart-link .cart-count-icon, .cart-dropdown .cart-count').text(cartCount);
+
+		// show the items div if applicable
+		if(cartCount) {
+			$('.no-items').hide();
+			$('.have-items').show();
+		}
 
 		// cart and checkout links
 		$('.cart-dropdown .cart-checkout .cart-page-link').attr('href', cookie.cartUrl);
