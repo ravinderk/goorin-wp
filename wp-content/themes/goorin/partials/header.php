@@ -230,7 +230,7 @@
 
 		// verify the cookie
 		if(!docCookies.hasItem('hello_world'))
-			return;
+			return $('.menu-login-link').hide().next().hide();
 		var cookie = docCookies.getItem('hello_world');
 		cookie = JSON.parse(cookie);
 
