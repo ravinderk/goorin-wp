@@ -2723,6 +2723,7 @@ body.bodyhidden, body.noscroll, .site-header .submenu, .cart-dropdown .cart-list
 @media only screen and (min-width: 768px) {
   /* line 302, sass/layout/_header.scss */
   .site-search .site-search-form input[type="text"] {
+    height: 43px;
     font-size: 43px;
     line-height: normal;
   }
@@ -2734,7 +2735,7 @@ body.bodyhidden, body.noscroll, .site-header .submenu, .cart-dropdown .cart-list
     line-height: normal;
   }
 }
-/* line 323, sass/layout/_header.scss */
+/* line 325, sass/layout/_header.scss */
 .site-search .site-search-form input[type="submit"] {
   border: none;
   height: 20px;
@@ -2749,7 +2750,7 @@ body.bodyhidden, body.noscroll, .site-header .submenu, .cart-dropdown .cart-list
   background-size: 11px auto;
 }
 @media only screen and (min-width: 768px) {
-  /* line 323, sass/layout/_header.scss */
+  /* line 325, sass/layout/_header.scss */
   .site-search .site-search-form input[type="submit"] {
     background-size: 14px auto;
     height: 25px;
@@ -2758,7 +2759,7 @@ body.bodyhidden, body.noscroll, .site-header .submenu, .cart-dropdown .cart-list
   }
 }
 @media only screen and (min-width: 1140px) {
-  /* line 323, sass/layout/_header.scss */
+  /* line 325, sass/layout/_header.scss */
   .site-search .site-search-form input[type="submit"] {
     background-size: 18px auto;
     height: 32px;
@@ -2766,7 +2767,7 @@ body.bodyhidden, body.noscroll, .site-header .submenu, .cart-dropdown .cart-list
     margin: 25px 0 0;
   }
 }
-/* line 346, sass/layout/_header.scss */
+/* line 348, sass/layout/_header.scss */
 .site-search:hover input[type="text"] {
   color: #ffffff;
 }
@@ -2786,18 +2787,18 @@ body.bodyhidden, body.noscroll, .site-header .submenu, .cart-dropdown .cart-list
 .site-search:hover input[type="text"]:-ms-input-placeholder {
   color: #ffffff;
 }
-/* line 352, sass/layout/_header.scss */
+/* line 354, sass/layout/_header.scss */
 .site-search:hover input[type="submit"] {
   background-position: 0 -21px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 352, sass/layout/_header.scss */
+  /* line 354, sass/layout/_header.scss */
   .site-search:hover input[type="submit"] {
     background-position: 0 -26px;
   }
 }
 @media only screen and (min-width: 1140px) {
-  /* line 352, sass/layout/_header.scss */
+  /* line 354, sass/layout/_header.scss */
   .site-search:hover input[type="submit"] {
     background-position: 0 -34px;
   }
