@@ -1,6 +1,10 @@
 <section class="home-content-block spring-preview-block">
     <div class="container">
-    	<h1>News <span>&</span> Features</h1>
+	    <?php if ( ! empty( $field['main_heading'] ) ) { ?>
+		    <h1>
+			    <?php echo $field['main_heading'] ?>
+		    </h1>
+	    <?php } ?>
         <div class="spring-preview-main">
         	<div class="spring-image-content">	
                 <?php if ( isset( $field['main_image'] ) ) { ?>
