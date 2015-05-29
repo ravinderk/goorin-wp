@@ -45,10 +45,10 @@
             $('.cart-count').removeClass('is_active');
             $('.menu-cart-link').removeClass('is_active');
         };
-        /*var cart_trigger_mobile = function() {
+        var cart_trigger_mobile = function() {
             $('.cart-dropdown').slideToggle();
             $(this).toggleClass('is_active');
-        };*/
+        };
         var cart_trigger_tablet = function() {
              $('.cart-dropdown').fadeToggle();
              $(this).toggleClass('is_active');
