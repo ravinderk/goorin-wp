@@ -45,10 +45,10 @@
             $('.cart-count').removeClass('is_active');
             $('.menu-cart-link').removeClass('is_active');
         };
-        var cart_trigger_mobile = function() {
+        /*var cart_trigger_mobile = function() {
             $('.cart-dropdown').slideToggle();
             $(this).toggleClass('is_active');
-        };
+        };*/
         var cart_trigger_tablet = function() {
              $('.cart-dropdown').fadeToggle();
              $(this).toggleClass('is_active');
@@ -58,8 +58,8 @@
                 $('.site-search').css('display' , 'block');
                 $('.cart-dropdown').css('display' , 'none');
                 $('.cart-count').off('click', cart_trigger_tablet);
-                $('.cart-count').on('click', cart_trigger_mobile);
-                $('.cart-dropdown').off('mouseleave', cart_mouseleave);
+                //$('.cart-count').on('click', cart_trigger_mobile);
+                //$('.cart-dropdown').off('mouseleave', cart_mouseleave);
             }) 
             .register("screen and (max-width:1023)", function() {
                 // Mage functions    
