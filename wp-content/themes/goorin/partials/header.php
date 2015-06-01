@@ -1,11 +1,15 @@
 <header class="site-header">
 	<div class="container">
+		<?php
+			$sourceUrl = parse_url(home_url('/'));
+			$sourceUrl = $sourceUrl['host'];
+		?>
 		<span class="saletext">SEE OUR <a href="<?php echo get_theme_mod('sale_link', '#'); ?>"><?php echo get_theme_mod('sale_text', 'Fall Sample Sale!'); ?></a></span>
 		<a href="#" class="menu-toggle">
 			<span></span>
 		</a>
 		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo logo-mobile"></a>
-		<span class="cart-count cart-count-mobile">0</span>
+		<a  href="http://store.<?php echo $sourceUrl; ?>/checkout/cart/" class="cart-count cart-count-mobile">0</a>
 		<nav class="nav-primary">
 			<div class="site-search">
 				<div class="container">
@@ -29,8 +33,6 @@
 			                'menu_class'     => ''
 					)
 			);
-			$sourceUrl = parse_url(home_url('/'));
-			$sourceUrl = $sourceUrl['host'];
 			?>
 		</nav>
 		<menu class="menu">
