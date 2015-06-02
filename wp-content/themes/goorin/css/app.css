@@ -2731,6 +2731,7 @@ body.bodyhidden, body.noscroll, .site-header .submenu, .cart-dropdown .cart-list
 @media only screen and (min-width: 1140px) {
   /* line 302, sass/layout/_header.scss */
   .site-search .site-search-form input[type="text"] {
+    height: 90px;
     font-size: 62px;
     line-height: normal;
   }
