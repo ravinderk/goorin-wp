@@ -53,6 +53,21 @@ get_header(); ?>
             </div>    
         </div>
     </section>
+    <section class="experience-cat-block">
+        <div class="container">
+            <div class="experience-cat-list">
+                <a href="#" class="experience-cat-toggle"><span>All Features</span></a>
+                <ul>
+                    <li class="active"><a href="#">All</a></li>
+                    <li><a href="#">Style</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">From the Hatshop</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Product news</a></li>        
+                </ul>
+            </div>
+        </div>
+    </section>
     <div id="primary" class="content-area">
         <main id="main" class="site-main" role="main">
 
