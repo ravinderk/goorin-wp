@@ -682,7 +682,7 @@ input {
   font-style: normal;
 }
 /* line 93, sass/base/_typography.scss */
-body, .site-header .submenu .colbox ul li a, .site-header .submenu figure p, .cart-dropdown .cart-list-loop article p, .banner article h2, .site-search .site-search-form input[type="text"], .site-footer .footer-col-right .col ul li a, input, textarea, select, .hollyday-content-block .hollyday-product-block .hollyday-box article h6 span {
+body, .site-header .submenu .colbox ul li a, .site-header .submenu figure p, .cart-dropdown .cart-list-loop article p, input, textarea, select, .banner article h2, .site-search .site-search-form input[type="text"], .site-footer .footer-col-right .col ul li a, .hollyday-content-block .hollyday-product-block .hollyday-box article h6 span {
   font-family: 'baskerville';
 }
 
@@ -764,7 +764,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 164, sass/base/_typography.scss */
-.gender-box span, .cart-dropdown .cart-total .cart-message, .cart-dropdown .cart-total .cart-subtotal, .site-footer h6, .site-footer .footer-col-left .subscribe-form input[type="text"], .site-footer .footer-col-left .subscribe-form .submit-btn, .home-content-block .post-box article small, .hollyday-content-block .hollyday-product-block .hollyday-box article h6 span {
+.gender-box span, .cart-dropdown .cart-total .cart-message, .cart-dropdown .cart-total .cart-subtotal, input[type="text"], input[type="password"],
+input[type="email"], textarea, .select-dropmenu select, .field-select .input-box select,
+.login-gender .input-box select, .confirm-select select,
+.product-options .selector select, .site-footer h6, .site-footer .footer-col-left .subscribe-form input[type="text"], .site-footer .footer-col-left .subscribe-form .submit-btn, .home-content-block .post-box article small, .hollyday-content-block .hollyday-product-block .hollyday-box article h6 span {
   font-size: 14px;
   line-height: normal;
 }
@@ -880,7 +883,9 @@ img {
 }
 
 /* line 66, sass/components/_components.scss */
-body.bodyhidden, body.noscroll, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdown .cart-list-loop, .cart-dropdown .cart-total, .cart-dropdown .cart-checkout, .site-header .nav-primary, .banner .slick-slider, .banner .banner-item, .site-search .site-search-form, .site-footer .footer-social-col, .hollyday-content-block .hollyday-product-block .hollyday-box article hr, .spring-preview-block .spring-preview-main {
+body.bodyhidden, body.noscroll, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdown .cart-list-loop, .cart-dropdown .cart-total, .cart-dropdown .cart-checkout, .site-header .nav-primary, .select-dropmenu, .field-select .input-box,
+.login-gender .input-box, .confirm-select,
+.product-options .selector, .banner .slick-slider, .banner .banner-item, .site-search .site-search-form, .site-footer .footer-social-col, .hollyday-content-block .hollyday-product-block .hollyday-box article hr, .spring-preview-block .spring-preview-main {
   overflow: hidden;
 }
 
@@ -1965,6 +1970,59 @@ body.bodyhidden, body.noscroll, .site-header .submenu, .cart-dropdown .cart-list
   margin: 0 0 0 6px;
 }
 
+/* line 1, sass/components/_form.scss */
+input[type="text"], input[type="password"],
+input[type="email"] {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+
+/* line 10, sass/components/_form.scss */
+input[type="text"], input[type="password"],
+input[type="email"], textarea {
+  border: 1px solid #c4c2bf;
+  height: 36px;
+  width: 100%;
+  padding-right: 10px;
+  padding-left: 10px;
+  background: none;
+  background: none;
+}
+
+/* line 18, sass/components/_form.scss */
+textarea {
+  resize: none;
+}
+
+/* line 21, sass/components/_form.scss */
+.select-dropmenu, .field-select .input-box,
+.login-gender .input-box, .confirm-select,
+.product-options .selector {
+  border: 1px solid #c4c2bf;
+  height: 36px;
+  width: 100%;
+  background: url("../images/sidebar-filter-arrow-img.jpg") 98% center no-repeat;
+  background: url("../images/sidebar-filter-arrow-img.jpg") 98% center no-repeat;
+  background-color: none;
+}
+/* line 29, sass/components/_form.scss */
+.select-dropmenu select, .field-select .input-box select,
+.login-gender .input-box select, .confirm-select select,
+.product-options .selector select {
+  background: transparent;
+  outline: none;
+  border: 0;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  height: 36px;
+  width: 108%;
+  padding: 2px 10px 5px 5px;
+}
+
 /* line 1, sass/components/_banner.scss */
 .banner {
   z-index: 1;
@@ -2040,7 +2098,7 @@ body.bodyhidden, body.noscroll, .site-header .submenu, .cart-dropdown .cart-list
     margin-bottom: 14px;
     font-size: 17px;
     line-height: normal;
-    letter-spacing: 0px;
+    letter-spacing: 0;
   }
 }
 /* line 50, sass/components/_banner.scss */
@@ -3170,15 +3228,6 @@ body.bodyhidden, body.noscroll, .site-header .submenu, .cart-dropdown .cart-list
 /* line 282, sass/layout/_footer.scss */
 .site-footer .footer-social-col ul li a:hover.tumbler span {
   background-position: -236px -19px;
-}
-
-/* line 1, sass/layout/_forms.scss */
-input[type="text"], input[type="password"],
-input[type="email"] {
-  -webkit-appearance: none;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
 }
 
 /* Slider */
