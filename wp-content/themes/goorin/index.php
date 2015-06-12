@@ -57,7 +57,7 @@ get_header(); ?>
         <div class="container">
             <div class="experience-cat-list">
                 <a href="#" class="experience-cat-toggle"><span>All Features</span></a>
-                <ul>
+                <ul class="experience-list-toggle">
                     <li class="active"><a href="#">All</a></li>
                     <li><a href="#">Style</a></li>
                     <li><a href="#">Press</a></li>

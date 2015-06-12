@@ -169,6 +169,18 @@
             $('.site-search').slideUp();
             return false
         });
+        $('.experience-cat-toggle').click(function() {
+            $('.experience-list-toggle').slideToggle();
+            return false
+        });
+        $('.experience-list-toggle li a').click(function() {
+            var catlistText = $(this).text();
+            $('.experience-cat-toggle').find('span').text(catlistText);
+            $('.experience-list-toggle').slideUp();
+            return false
+        });
+
+        
 
         // Mage functions
         $('.sort-btn a').click(function() {

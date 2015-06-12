@@ -4448,7 +4448,14 @@ textarea {
     display: none;
   }
 }
-/* line 138, sass/pages/_experience.scss */
+/* line 137, sass/pages/_experience.scss */
+.experience-page .experience-cat-list .experience-cat-toggle span {
+  background: url("../images/cat-list-arrow.png") right center no-repeat;
+  background: url("../images/cat-list-arrow.png") right center no-repeat;
+  display: inline-block;
+  padding: 0 15px 0 0;
+}
+/* line 143, sass/pages/_experience.scss */
 .experience-page .experience-cat-list ul {
   list-style: none;
   padding: 0;
@@ -4456,39 +4463,39 @@ textarea {
   display: none;
 }
 @media only screen and (min-width: 768px) {
-  /* line 138, sass/pages/_experience.scss */
+  /* line 143, sass/pages/_experience.scss */
   .experience-page .experience-cat-list ul {
     display: table;
     margin: 0 auto;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 147, sass/pages/_experience.scss */
+  /* line 152, sass/pages/_experience.scss */
   .experience-page .experience-cat-list ul li {
     float: left;
     margin: 0 9px;
   }
 }
-/* line 153, sass/pages/_experience.scss */
+/* line 158, sass/pages/_experience.scss */
 .experience-page .experience-cat-list ul li.active a {
   color: #000000;
 }
-/* line 157, sass/pages/_experience.scss */
+/* line 162, sass/pages/_experience.scss */
 .experience-page .experience-cat-list ul li a {
   text-transform: uppercase;
   color: #898989;
   font-size: 12px;
   line-height: normal;
   display: block;
-  padding: 5px 0;
+  padding: 10px 0;
   font-weight: 400;
 }
-/* line 166, sass/pages/_experience.scss */
+/* line 171, sass/pages/_experience.scss */
 .experience-page .experience-cat-list ul li a:hover {
   color: #000000;
 }
 @media only screen and (min-width: 768px) {
-  /* line 157, sass/pages/_experience.scss */
+  /* line 162, sass/pages/_experience.scss */
   .experience-page .experience-cat-list ul li a {
     padding: 0;
   }
