@@ -848,7 +848,7 @@ img {
 }
 
 /* line 39, sass/components/_components.scss */
-.breadcrumbs ul li, .gender-box span, .cart-dropdown .cart-list-loop figure, .cart-dropdown .cart-list-loop article, .banner .slick-dots li button, .site-header .menu-toggle, .site-search .site-search-form input[type="text"], .site-footer .footer-social-col ul li, .site-footer .footer-social-col ul li a, .hollyday-content-block .hollyday-product-block .hollyday-right-block .hollyday-box, .category-campaign .cat-product-block .category-products .item {
+.breadcrumbs ul li, .gender-box span, .cart-dropdown .cart-list-loop figure, .cart-dropdown .cart-list-loop article, .banner .slick-dots li button, .site-header .menu-toggle, .site-search .site-search-form input[type="text"], .site-footer .footer-social-col ul li, .site-footer .footer-social-col ul li a, .hollyday-content-block .hollyday-product-block .hollyday-right-block .hollyday-box, .experience-page .experience-hero-block .slick-dots li button, .category-campaign .cat-product-block .category-products .item {
   float: left;
 }
 
@@ -885,12 +885,12 @@ img {
 /* line 66, sass/components/_components.scss */
 body.bodyhidden, body.noscroll, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdown .cart-list-loop, .cart-dropdown .cart-total, .cart-dropdown .cart-checkout, .site-header .nav-primary, .select-dropmenu, .field-select .input-box,
 .login-gender .input-box, .confirm-select,
-.product-options .selector, .banner .slick-slider, .banner .banner-item, .site-search .site-search-form, .site-footer .footer-social-col, .hollyday-content-block .hollyday-product-block .hollyday-box article hr, .spring-preview-block .spring-preview-main {
+.product-options .selector, .banner .slick-slider, .banner .banner-item, .site-search .site-search-form, .site-footer .footer-social-col, .hollyday-content-block .hollyday-product-block .hollyday-box article hr, .spring-preview-block .spring-preview-main, .experience-page .experience-hero-block .slick-dots li {
   overflow: hidden;
 }
 
 /* line 69, sass/components/_components.scss */
-.cart-dropdown .cart-list-loop a.cart-delete span:before, .cart-dropdown .cart-list-loop a.cart-delete span:after, .banner .slick-prev, .banner .slick-next, .site-header .menu-toggle span, .site-header .menu-toggle span:before, .site-header .menu-toggle span:after, .site-search .search-close span:before, .site-search .search-close span:after {
+.cart-dropdown .cart-list-loop a.cart-delete span:before, .cart-dropdown .cart-list-loop a.cart-delete span:after, .banner .slick-prev, .banner .slick-next, .site-header .menu-toggle span, .site-header .menu-toggle span:before, .site-header .menu-toggle span:after, .site-search .search-close span:before, .site-search .search-close span:after, .experience-page .experience-hero-block .slick-prev, .experience-page .experience-hero-block .slick-next {
   position: absolute;
 }
 
@@ -4266,11 +4266,28 @@ textarea {
     padding: 0 0 30px;
   }
 }
-/* line 14, sass/pages/_experience.scss */
+@media only screen and (min-width: 1140px) {
+  /* line 13, sass/pages/_experience.scss */
+  .experience-page .experience-hero-block figure {
+    height: 470px;
+    overflow: hidden;
+  }
+}
+/* line 19, sass/pages/_experience.scss */
 .experience-page .experience-hero-block figure img {
   width: 100%;
 }
-/* line 18, sass/pages/_experience.scss */
+@media only screen and (min-width: 1140px) {
+  /* line 19, sass/pages/_experience.scss */
+  .experience-page .experience-hero-block figure img {
+    min-height: 470px;
+  }
+}
+/* line 26, sass/pages/_experience.scss */
+.experience-page .experience-hero-block .slick-slider {
+  margin: 0;
+}
+/* line 29, sass/pages/_experience.scss */
 .experience-page .experience-hero-block article {
   width: 80%;
   position: relative;
@@ -4281,7 +4298,7 @@ textarea {
   padding: 18px 20px 0;
 }
 @media only screen and (min-width: 768px) {
-  /* line 18, sass/pages/_experience.scss */
+  /* line 29, sass/pages/_experience.scss */
   .experience-page .experience-hero-block article {
     top: -60px;
     width: 85%;
@@ -4289,13 +4306,13 @@ textarea {
   }
 }
 @media only screen and (min-width: 980px) {
-  /* line 18, sass/pages/_experience.scss */
+  /* line 29, sass/pages/_experience.scss */
   .experience-page .experience-hero-block article {
     width: 648px;
     padding: 35px 30px 0;
   }
 }
-/* line 35, sass/pages/_experience.scss */
+/* line 46, sass/pages/_experience.scss */
 .experience-page .experience-hero-block h6 {
   text-transform: uppercase;
   font-size: 10px;
@@ -4305,25 +4322,106 @@ textarea {
   margin: 0 0 10px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 35, sass/pages/_experience.scss */
+  /* line 46, sass/pages/_experience.scss */
   .experience-page .experience-hero-block h6 {
     font-size: 12px;
     line-height: normal;
     margin: 0 0 20px;
   }
 }
-/* line 47, sass/pages/_experience.scss */
+/* line 58, sass/pages/_experience.scss */
 .experience-page .experience-hero-block h1 {
   margin: 0 0 15px;
   font-size: 27px;
   line-height: 28px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 47, sass/pages/_experience.scss */
+  /* line 58, sass/pages/_experience.scss */
   .experience-page .experience-hero-block h1 {
     font-size: 38px;
     line-height: 38px;
   }
+}
+/* line 65, sass/pages/_experience.scss */
+.experience-page .experience-hero-block .slick-dots {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+@media only screen and (min-width: 768px) {
+  /* line 65, sass/pages/_experience.scss */
+  .experience-page .experience-hero-block .slick-dots {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+  }
+}
+/* line 73, sass/pages/_experience.scss */
+.experience-page .experience-hero-block .slick-dots li {
+  margin: 0 auto;
+  height: auto;
+  width: auto;
+}
+/* line 77, sass/pages/_experience.scss */
+.experience-page .experience-hero-block .slick-dots li button {
+  height: 4px;
+  width: 4px;
+  padding: 3px;
+  margin-right: 3px;
+  margin-left: 3px;
+  background: #898989;
+  background: #898989;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+/* line 86, sass/pages/_experience.scss */
+.experience-page .experience-hero-block .slick-dots li.slick-active button {
+  background: #362f2d;
+  background: #362f2d;
+}
+/* line 92, sass/pages/_experience.scss */
+.experience-page .experience-hero-block .slick-prev, .experience-page .experience-hero-block .slick-next {
+  top: 50%;
+  font-size: 0;
+  border: none;
+  z-index: 9999;
+  display: none !important;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  height: 57px;
+  width: 60px;
+  background: none;
+  background: none;
+  margin-top: -29px;
+}
+/* line 104, sass/pages/_experience.scss */
+.experience-page .experience-hero-block .slick-prev {
+  left: 45px;
+  opacity: 0.5;
+  background: url("../images/slider-prev.png") right 0 no-repeat;
+  background: url("../images/slider-prev.png") right 0 no-repeat;
+}
+/* line 108, sass/pages/_experience.scss */
+.experience-page .experience-hero-block .slick-prev:hover {
+  opacity: 1;
+  left: 35px;
+}
+/* line 113, sass/pages/_experience.scss */
+.experience-page .experience-hero-block .slick-next {
+  right: 45px;
+  opacity: 0.5;
+  background: url("../images/slider-next.png") 0 0 no-repeat;
+  background: url("../images/slider-next.png") 0 0 no-repeat;
+}
+/* line 117, sass/pages/_experience.scss */
+.experience-page .experience-hero-block .slick-next:hover {
+  opacity: 1;
+  right: 35px;
 }
 
 /* line 3, sass/pages/_category_campaign.scss */

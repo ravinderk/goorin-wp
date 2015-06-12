@@ -29,13 +29,28 @@ get_header(); ?>
     <!--breadcrumbs-->
     <section class="experience-hero-block">
         <div class="container">
-            <figure>
-                <img src="<?php echo get_template_directory_uri(); ?>/images/exp-main-img.jpg">
-            </figure>
-            <article>
-                <h6>Fashion News</h6>
-                <h1>Artist Profile: Danny Barber</h1>
-            </article>
+            <div class="experience-hero-slider">
+                <div class="item">
+                    <figure>
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/exp-main-img.jpg">
+                    </figure>
+                    <article>
+                        <h6>Fashion News</h6>
+                        <h1>Artist Profile: Danny Barber</h1>
+                    </article>
+                </div>
+                <!--experience-hero-item-->
+                <div class="item">
+                    <figure>
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/cat-featured-img.jpg">
+                    </figure>
+                    <article>
+                        <h6>Goorin History</h6>
+                        <h1>The Legend of Ted Goorin</h1>
+                    </article>
+                </div>
+                <!--experience-hero-item-->
+            </div>    
         </div>
     </section>
     <div id="primary" class="content-area">

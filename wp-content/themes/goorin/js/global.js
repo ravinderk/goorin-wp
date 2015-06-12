@@ -237,6 +237,29 @@
                 window.goorin.bannerSlide.slickPause();
             },1000);
         });
+
+        $('.experience-hero-slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 800,
+            fade: true,
+            autoplay: true,
+            autoplaySpeed: 4000,
+            slide: '.item',
+            cssEase: 'linear',
+            responsive: [
+                {
+                  breakpoint: 480,
+                  settings: {
+                    fade: false,
+                    speed: 500,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                  }
+                }
+              ]
+        });
+
         var previousScroll = 0, // previous scroll position
         menuOffset = 76, // height of menu (once scroll passed it, menu is hidden)
         detachPoint = 650, // point of detach (after scroll passed it, menu is fixed)
