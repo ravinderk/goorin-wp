@@ -12,7 +12,32 @@
  */
 
 get_header(); ?>
-
+<div class="experience-page">
+    <section class="breadcrumbs">
+        <div class="container">
+            <ul>
+                <li class="home">
+                    <a title="Go to Home Page" href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a>
+                    <span>/ </span>
+                </li>
+                <li>
+                    <strong>Features</strong>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!--breadcrumbs-->
+    <section class="experience-hero-block">
+        <div class="container">
+            <figure>
+                <img src="<?php echo get_template_directory_uri(); ?>/images/exp-main-img.jpg">
+            </figure>
+            <article>
+                <h6>Fashion News</h6>
+                <h1>Artist Profile: Danny Barber</h1>
+            </article>
+        </div>
+    </section>
     <div id="primary" class="content-area">
         <main id="main" class="site-main" role="main">
 
@@ -41,6 +66,6 @@ get_header(); ?>
 
         </main><!-- #main -->
     </div><!-- #primary -->
-
+</div>
 <?//php get_sidebar(); ?>
 <?php get_footer(); ?>
