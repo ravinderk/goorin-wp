@@ -68,34 +68,75 @@ get_header(); ?>
             </div>
         </div>
     </section>
-    <div id="primary" class="content-area">
-        <main id="main" class="site-main" role="main">
-
-        <?php if ( have_posts() ) : ?>
-
-            <?php /* Start the Loop */ ?>
-            <?php while ( have_posts() ) : the_post(); ?>
-
-                <?php
-                    /* Include the Post-Format-specific template for the content.
-                     * If you want to override this in a child theme, then include a file
-                     * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-                     */
-                    get_template_part( 'content', get_post_format() );
-                ?>
-
-            <?php endwhile; ?>
-
-            <?php the_posts_navigation(); ?>
-
-        <?php else : ?>
-
-            <?php get_template_part( 'content', 'none' ); ?>
-
-        <?php endif; ?>
-
-        </main><!-- #main -->
-    </div><!-- #primary -->
+    <section class="experience-blog-block">
+        <div class="container">
+            <div class="experience-blog-main">
+                <div class="experience-blog-row">
+                    <div class="experience-blog-list">
+                        <figure>
+                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/feture-shop-img.jpg"></a>
+                        </figure>
+                        <article>
+                            <h6><a href="#">Shops</a></h6>
+                            <h4><a href="#">Williamsburg Opening</a></h4>
+                        </article>
+                    </div>
+                    <!--experience-blog-list-->
+                    <div class="experience-blog-list">
+                        <figure>
+                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/feture-style-img.jpg"></a>
+                        </figure>
+                        <article>
+                            <h6><a href="#">Fashion News</a></h6>
+                            <h4><a href="#">SXSW + Coachella + You</a></h4>
+                        </article>
+                    </div>
+                    <!--experience-blog-list-->
+                    <div class="experience-blog-list">
+                        <figure>
+                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/feture-shop-img.jpg"></a>
+                        </figure>
+                        <article>
+                            <h6><a href="#">from your hatshop</a></h6>
+                            <h4><a href="#">Savannah Grand Opening Bash</a></h4>
+                        </article>
+                    </div>
+                    <!--experience-blog-list-->
+                    <div class="experience-blog-list">
+                        <figure>
+                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/feture-shop-img.jpg"></a>
+                        </figure>
+                        <article>
+                            <h6><a href="#">Shops</a></h6>
+                            <h4><a href="#">Williamsburg Opening</a></h4>
+                        </article>
+                    </div>
+                    <!--experience-blog-list-->
+                    <div class="experience-blog-list">
+                        <figure>
+                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/feture-style-img.jpg"></a>
+                        </figure>
+                        <article>
+                            <h6><a href="#">Fashion News</a></h6>
+                            <h4><a href="#">SXSW + Coachella + You</a></h4>
+                        </article>
+                    </div>
+                    <!--experience-blog-list-->
+                    <div class="experience-blog-list">
+                        <figure>
+                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/feture-shop-img.jpg"></a>
+                        </figure>
+                        <article>
+                            <h6><a href="#">from your hatshop</a></h6>
+                            <h4><a href="#">Savannah Grand Opening Bash</a></h4>
+                        </article>
+                    </div>
+                    <!--experience-blog-list-->
+                </div>
+                <!--experience-blog-row-->
+            </div>
+        </div>
+    </section>
 </div>
 <?//php get_sidebar(); ?>
 <?php get_footer(); ?>
