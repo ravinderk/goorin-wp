@@ -53,11 +53,24 @@
              $('.cart-dropdown').fadeToggle();
              $(this).toggleClass('is_active');
         };
+        var experience_cat_trigger = function() {
+            $('.experience-list-toggle').slideToggle();
+            return false
+        };
+        var experience_list_trigger = function() {
+            var catlistText = $(this).text();
+            $('.experience-cat-toggle').find('span').text(catlistText);
+            $('.experience-list-toggle').slideUp();
+            return false
+        };
         enquire
             .register("screen and (max-width:767px)", function() {
                 $('.site-search').css('display' , 'block');
                 $('.cart-dropdown').css('display' , 'none');
                 $('.cart-count').off('click', cart_trigger_tablet);
+                $('.experience-list-toggle').css('display' , 'none');
+                $('.experience-cat-toggle').on('click', experience_cat_trigger);
+                $('.experience-list-toggle li a').on('click', experience_list_trigger);
                 //$('.cart-count').on('click', cart_trigger_mobile);
                 //$('.cart-dropdown').off('mouseleave', cart_mouseleave);
             }) 
@@ -78,6 +91,9 @@
                 $('.cart-count').on('click', cart_trigger_tablet);
                 $('.cart-dropdown').off('mouseleave', cart_mouseleave);
                 $('.cart-dropdown').on('mouseleave', cart_mouseleave);
+                $('.experience-list-toggle').css('display' , 'table');
+                $('.experience-list-toggle li a').off('click', experience_list_trigger);
+
             })    
             .register("screen and (max-width:1139px)", function() {
                 $('.nav-overlay').removeClass('is_open');
@@ -169,19 +185,6 @@
             $('.site-search').slideUp();
             return false
         });
-        $('.experience-cat-toggle').click(function() {
-            $('.experience-list-toggle').slideToggle();
-            return false
-        });
-        $('.experience-list-toggle li a').click(function() {
-            var catlistText = $(this).text();
-            $('.experience-cat-toggle').find('span').text(catlistText);
-            $('.experience-list-toggle').slideUp();
-            return false
-        });
-
-        
-
         // Mage functions
         $('.sort-btn a').click(function() {
             $(this).toggleClass('active');
