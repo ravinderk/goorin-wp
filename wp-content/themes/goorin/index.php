@@ -132,6 +132,102 @@ get_header(); ?>
                         </article>
                     </div>
                     <!--experience-blog-list-->
+                    <div class="blog-one-row">
+                        <div class="blog-image-content">
+                            <figure class="spring-preview-image">
+                                <img src="http://goorin.dev/wp-content/uploads/2015/05/home-feture-img.jpg">
+                            </figure>
+                            <article>
+                                <h4>Fashion News</h4>
+                                <div class="heading-content"><p>Fashion Week in London Part 1</p></div>
+                            </article>
+                        </div>
+                        <div class="blog-preview-content">
+                            <div class="experience-blog-list">
+                                <figure>
+                                    <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/feture-shop-img.jpg"></a>
+                                </figure>
+                                <article>
+                                    <h6><a href="#">from your hatshop</a></h6>
+                                    <h4><a href="#">Savannah Grand Opening Bash</a></h4>
+                                </article>
+                            </div>
+                            <!--experience-blog-list-->
+                            <div class="experience-blog-list">
+                                <figure>
+                                    <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/feture-shop-img.jpg"></a>
+                                </figure>
+                                <article>
+                                    <h6><a href="#">from your hatshop</a></h6>
+                                    <h4><a href="#">Savannah Grand Opening Bash</a></h4>
+                                </article>
+                            </div>
+                            <!--experience-blog-list-->
+                        </div>
+                    </div>
+                    <!--blog-one-row-->
+                    <!--experience-blog-list-->
+                    <div class="experience-blog-list">
+                        <figure>
+                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/feture-shop-img.jpg"></a>
+                        </figure>
+                        <article>
+                            <h6><a href="#">Shops</a></h6>
+                            <h4><a href="#">Williamsburg Opening</a></h4>
+                        </article>
+                    </div>
+                    <!--experience-blog-list-->
+                    <div class="experience-blog-list">
+                        <figure>
+                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/feture-style-img.jpg"></a>
+                        </figure>
+                        <article>
+                            <h6><a href="#">Fashion News</a></h6>
+                            <h4><a href="#">SXSW + Coachella + You</a></h4>
+                        </article>
+                    </div>
+                    <!--experience-blog-list-->
+                    <div class="experience-blog-list">
+                        <figure>
+                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/feture-shop-img.jpg"></a>
+                        </figure>
+                        <article>
+                            <h6><a href="#">from your hatshop</a></h6>
+                            <h4><a href="#">Savannah Grand Opening Bash</a></h4>
+                        </article>
+                    </div>
+                    <!--experience-blog-list-->
+                    <!--experience-blog-list-->
+                    <div class="experience-blog-list">
+                        <figure>
+                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/feture-shop-img.jpg"></a>
+                        </figure>
+                        <article>
+                            <h6><a href="#">Shops</a></h6>
+                            <h4><a href="#">Williamsburg Opening</a></h4>
+                        </article>
+                    </div>
+                    <!--experience-blog-list-->
+                    <div class="experience-blog-list">
+                        <figure>
+                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/feture-style-img.jpg"></a>
+                        </figure>
+                        <article>
+                            <h6><a href="#">Fashion News</a></h6>
+                            <h4><a href="#">SXSW + Coachella + You</a></h4>
+                        </article>
+                    </div>
+                    <!--experience-blog-list-->
+                    <div class="experience-blog-list">
+                        <figure>
+                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/feture-shop-img.jpg"></a>
+                        </figure>
+                        <article>
+                            <h6><a href="#">from your hatshop</a></h6>
+                            <h4><a href="#">Savannah Grand Opening Bash</a></h4>
+                        </article>
+                    </div>
+                    <!--experience-blog-list-->
                 </div>
                 <!--experience-blog-row-->
             </div>
