@@ -322,7 +322,7 @@
             previousScroll = currentScroll;
           }
         });
-	    if ($('body').hasClass('blog')) {
+	    if ($('body').hasClass('blog') || $('body').hasClass('category') ) {
 		    var is_loading = false; // initialize is_loading by false to accept new loading
 		    var page = 2;
 		    $(function() {
@@ -337,7 +337,7 @@
 						    $.ajax({
 							    url: '/wp-admin/admin-ajax.php',
 							    type: 'POST',
-							    data: {action:'get_more_blog_post', page:page},
+							    data: {action:'get_more_blog_post', page:page, category_id: ( $('#category-id').length ? $('#category-id').data('category_id') : false)},
 							    success:function(response){
 								    if( response.status && response.html ) {
 									    // now we have the response, so hide the loader

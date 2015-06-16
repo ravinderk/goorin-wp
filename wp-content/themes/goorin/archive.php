@@ -9,41 +9,69 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<div class="experience-page categories-page">
+	<section class="breadcrumbs">
+		<div class="container">
+			<ul>
+				<li class="home">
+					<a title="Go to Home Page" href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a>
+					<span>/ </span>
+				</li>
+				<li class="home">
+					<a href="<?php echo get_site_url( '', 'experience/' ); ?>">Features</a>
+					<span>/ </span>
+				</li>
+				<li>
+					<strong>Style</strong>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section class="experience-cat-block">
+		<hgroup>
+			<h1 id="category-id" data-category_id="<?php echo get_the_category()[0]->cat_ID ?>"><?php the_category() ?></h1>
+		</hgroup>
+		<div class="container">
+			<div class="experience-cat-list">
+				<a href="#" class="experience-cat-toggle"><span>All Features</span></a>
+				<ul class="experience-list-toggle">
+					<li><a href="<?php echo get_site_url( '', 'experience/' ); ?>">All</a></li>
+					<?php foreach( get_categories( array( 'hide_empty' => 0 ) ) as $category ) { ?>
+						<li class="<?php if ( $category->cat_ID == get_the_category()[0]->cat_ID ) { ?>active<?php } ?>"><a href="<?php echo get_category_link( $category ) ?>"><?php echo $category->name ?></a></li>
+					<?php } ?>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section class="categories-blog-block">
+		<div class="container">
+			<div class="categories-blog-main">
+				<div class="categories-blog-row">
+					<?php if ( have_posts() ) { ?>
+						<?php while ( have_posts() ) { the_post(); ?>
 
-		<?php if ( have_posts() ) : ?>
+							<div class="categories-blog-list">
+								<figure>
+									<a href="<?php the_permalink() ?>"><?php the_post_thumbnail() ?></a>
+								</figure>
+								<article>
+									<h6><a href="<?php the_permalink() ?>"><?php the_category() ?></a></h6>
+									<h4><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h4>
+									<p><?php the_excerpt() ?></p>
+								</article>
+							</div>
 
-			<header class="page-header">
-				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				?>
-			</header><!-- .page-header -->
+						<?php } ?>
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+					<?php } else { ?>
 
-				<?php
-					/* Include the Post-Format-specific template for the content.
-					 * If you want to override this in a child theme, then include a file
-					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-					 */
-					get_template_part( 'content', get_post_format() );
-				?>
+						<?php get_template_part( 'content', 'none' ); ?>
 
-			<?php endwhile; ?>
+					<?php } ?>
+				</div>
+			</div>
+		</div><!-- #primary -->
+	</section>
 
-			<?php the_posts_navigation(); ?>
-
-		<?php else : ?>
-
-			<?php get_template_part( 'content', 'none' ); ?>
-
-		<?php endif; ?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
+<?php //get_sidebar(); ?>
 <?php get_footer(); ?>

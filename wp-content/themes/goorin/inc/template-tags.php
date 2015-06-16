@@ -282,14 +282,16 @@ function magento_url() {
  */
 function goorin_get_more_blog_post() {
 	$paged = $_POST['page'];
-	$query = new WP_Query(
-		array(
-			'post_type' => 'POST',
-			'posts_per_page' => 15,
-			'paged' => $paged,
-			'order' => 'DESC'
-		)
+	$args = array(
+		'post_type' => 'POST',
+		'posts_per_page' => 15,
+		'paged' => $paged,
+		'order' => 'DESC'
 	);
+	if ( ! empty( $_POST['category_id'] ) ) {
+		$args['cat'] = ( is_integer( $_POST['category_id'] ) ? $_POST['category_id'] : 0 );
+	}
+	$query = new WP_Query( $args );
 	$html = '';
 	try {
 		while( $query->have_posts() ) {
