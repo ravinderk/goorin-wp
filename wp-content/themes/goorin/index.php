@@ -29,27 +29,21 @@ get_header(); ?>
     <!--breadcrumbs-->
     <section class="experience-hero-block">
         <div class="container">
+	        <?php $query = new WP_Query( 'tag=featured' ); ?>
             <div class="experience-hero-slider">
-                <div class="item">
-                    <figure>
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/exp-main-img.jpg">
-                    </figure>
-                    <article>
-                        <h6>Fashion News</h6>
-                        <h1>Artist Profile: Danny Barber</h1>
-                    </article>
-                </div>
-                <!--experience-hero-item-->
-                <div class="item">
-                    <figure>
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/cat-featured-img.jpg">
-                    </figure>
-                    <article>
-                        <h6>Goorin History</h6>
-                        <h1>The Legend of Ted Goorin</h1>
-                    </article>
-                </div>
-                <!--experience-hero-item-->
+	            <?php while( $query->have_posts() ) { ?>
+		            <?php $query->the_post(); ?>
+	                <div class="item">
+	                    <figure>
+		                    <a href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?></a>
+	                    </figure>
+	                    <article>
+	                        <h6><a href="<?php the_permalink() ?>"><?php the_category() ?></a></h6>
+	                        <h1><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h1>
+	                    </article>
+	                </div>
+	            <?php } ?>
+	            <?php $query->reset_postdata() ?>
             </div>    
         </div>
     </section>
@@ -73,27 +67,26 @@ get_header(); ?>
 				    <?php if ( have_posts() ) { ?>
 					    <?php $index = 1; // use for matching the design as we have a different design after 6 post?>
 					    <?php while( have_posts() ) { the_post() ?>
-						    <?php $cat_link = get_category_link( get_the_category( get_the_ID() )[0]->cat_ID ) ?>
 						    <?php if ( $index == 7 ) { ?>
 							    <div class="blog-one-row">
 								    <div class="blog-image-content">
 									    <figure class="spring-preview-image">
-										    <a href="<?php echo $cat_link ?>"><?php the_post_thumbnail() ?></a>
+										    <a href="<?php the_permalink() ?>"><?php the_post_thumbnail() ?></a>
 									    </figure>
 									    <article>
-										    <h4><a href="<?php echo $cat_link ?>"><?php the_category() ?></a></h4>
-										    <div class="heading-content"><p><?php the_title() ?></p></div>
+										    <h4><a href="<?php the_permalink() ?>"><?php the_category() ?></a></h4>
+										    <div class="heading-content"><p><a href="<?php the_permalink() ?>"><?php the_title() ?></a></p></div>
 									    </article>
 								    </div>
 								    <div class="blog-preview-content">
 							<?php } else if ( $index == 9 ) { ?>
 									    <div class="experience-blog-list">
 										    <figure>
-											    <a href="<?php echo $cat_link ?>"><?php the_post_thumbnail() ?></a>
+											    <a href="<?php the_permalink() ?>"><?php the_post_thumbnail() ?></a>
 										    </figure>
 										    <article>
-											    <h6><a href="<?php echo $cat_link ?>"><?php the_category() ?></a></h6>
-											    <h4><a href="<?php echo $cat_link ?>"><?php the_title() ?></a></h4>
+											    <h6><a href="<?php the_permalink() ?>"><?php the_category() ?></a></h6>
+											    <h4><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h4>
 										    </article>
 									    </div>
 							        </div>
@@ -101,11 +94,11 @@ get_header(); ?>
 							<?php } else { ?>
 							    <div class="experience-blog-list">
 								    <figure>
-									    <a href="<?php echo $cat_link ?>"><?php the_post_thumbnail() ?></a>
+									    <a href="<?php echo the_permalink() ?>"><?php the_post_thumbnail() ?></a>
 								    </figure>
 								    <article>
-									    <h6><a href="<?php echo $cat_link ?>"><?php the_category() ?></a></h6>
-									    <h4><a href="<?php echo $cat_link ?>"><?php the_title() ?></a></h4>
+									    <h6><a href="<?php the_permalink() ?>"><?php the_category() ?></a></h6>
+									    <h4><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h4>
 								    </article>
 							    </div>
 							<?php } ?>

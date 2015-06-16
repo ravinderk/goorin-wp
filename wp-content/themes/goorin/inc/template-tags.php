@@ -294,14 +294,13 @@ function goorin_get_more_blog_post() {
 	try {
 		while( $query->have_posts() ) {
 			$query->the_post();
-			$cat_link = get_category_link( get_the_category( get_the_ID() )[0]->cat_ID );
 			$html .=    '<div class="experience-blog-list">
 					    <figure>
-						    <a href="' . $cat_link . '">' . get_the_post_thumbnail() . '</a>
+						    <a href="' . get_the_permalink() . '">' . get_the_post_thumbnail() . '</a>
 						</figure>
 						<article>
-							<h6><a href="' . $cat_link . '">' . get_the_category_list() . '</a></h6>
-							<h4><a href="' . $cat_link . '">' . get_the_title() . '</a></h4>
+							<h6><a href="' . get_the_permalink() . '">' . get_the_category_list() . '</a></h6>
+							<h4><a href="' . get_the_permalink() . '">' . get_the_title() . '</a></h4>
 						</article>
 					</div>';
 		}
