@@ -276,3 +276,52 @@ function goorin_footer() {
 function magento_url() {
 	return 'http://stage.goorin.com/';
 }
+
+/**
+ * get blog post on page scroll
+ */
+function goorin_get_more_blog_post() {
+	$paged = $_POST['page'];
+	$query = new WP_Query(
+		array(
+			'post_type' => 'POST',
+			'posts_per_page' => 15,
+			'paged' => $paged,
+			'order' => 'DESC'
+		)
+	);
+	$html = '';
+	try {
+		while( $query->have_posts() ) {
+			$query->the_post();
+			$cat_link = get_category_link( get_the_category( get_the_ID() )[0]->cat_ID );
+			$html .=    '<div class="experience-blog-list">
+					    <figure>
+						    <a href="' . $cat_link . '">' . get_the_post_thumbnail() . '</a>
+						</figure>
+						<article>
+							<h6><a href="' . $cat_link . '">' . get_the_category_list() . '</a></h6>
+							<h4><a href="' . $cat_link . '">' . get_the_title() . '</a></h4>
+						</article>
+					</div>';
+		}
+
+		echo json_encode(
+			array(
+				'status' => 1,
+				'html' => ( !empty( $html ) ? $html : 0 )
+			)
+		);
+
+	} catch ( Exception $e ) {
+		echo json_encode(
+			array(
+				'status' => 0
+			)
+		);
+	}
+
+	die;
+}
+add_action( 'wp_ajax_get_more_blog_post', 'goorin_get_more_blog_post' );
+add_action( 'wp_ajax_nopriv_get_more_blog_post', 'goorin_get_more_blog_post' );

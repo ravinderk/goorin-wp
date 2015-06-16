@@ -60,7 +60,7 @@ get_header(); ?>
                 <ul class="experience-list-toggle">
                     <li class="active"><a href="#">All</a></li>
 	                <?php foreach( get_categories( array( 'hide_empty' => 0 ) ) as $category ) { ?>
-	                    <li><a href="#"><?php echo $category->name ?></a></li>
+	                    <li><a href="<?php echo get_category_link( $category ) ?>"><?php echo $category->name ?></a></li>
 	                <?php } ?>
                 </ul>
             </div>
@@ -73,14 +73,15 @@ get_header(); ?>
 				    <?php if ( have_posts() ) { ?>
 					    <?php $index = 1; // use for matching the design as we have a different design after 6 post?>
 					    <?php while( have_posts() ) { the_post() ?>
+						    <?php $cat_link = get_category_link( get_the_category( get_the_ID() )[0]->cat_ID ) ?>
 						    <?php if ( $index == 7 ) { ?>
 							    <div class="blog-one-row">
 								    <div class="blog-image-content">
 									    <figure class="spring-preview-image">
-										    <a href="#"><?php the_post_thumbnail() ?></a>
+										    <a href="<?php echo $cat_link ?>"><?php the_post_thumbnail() ?></a>
 									    </figure>
 									    <article>
-										    <h4><?php the_category() ?></h4>
+										    <h4><a href="<?php echo $cat_link ?>"><?php the_category() ?></a></h4>
 										    <div class="heading-content"><p><?php the_title() ?></p></div>
 									    </article>
 								    </div>
@@ -88,11 +89,11 @@ get_header(); ?>
 							<?php } else if ( $index == 9 ) { ?>
 									    <div class="experience-blog-list">
 										    <figure>
-											    <a href="#"><?php the_post_thumbnail() ?></a>
+											    <a href="<?php echo $cat_link ?>"><?php the_post_thumbnail() ?></a>
 										    </figure>
 										    <article>
-											    <h6><a href="#"><?php the_category() ?></a></h6>
-											    <h4><a href="#"><?php the_title() ?></a></h4>
+											    <h6><a href="<?php echo $cat_link ?>"><?php the_category() ?></a></h6>
+											    <h4><a href="<?php echo $cat_link ?>"><?php the_title() ?></a></h4>
 										    </article>
 									    </div>
 							        </div>
@@ -100,20 +101,25 @@ get_header(); ?>
 							<?php } else { ?>
 							    <div class="experience-blog-list">
 								    <figure>
-									    <a href="#"><?php the_post_thumbnail() ?></a>
+									    <a href="<?php echo $cat_link ?>"><?php the_post_thumbnail() ?></a>
 								    </figure>
 								    <article>
-									    <h6><a href="#"><?php the_category() ?></a></h6>
-									    <h4><a href="#"><?php the_title() ?></a></h4>
+									    <h6><a href="<?php echo $cat_link ?>"><?php the_category() ?></a></h6>
+									    <h4><a href="<?php echo $cat_link ?>"><?php the_title() ?></a></h4>
 								    </article>
 							    </div>
 							<?php } ?>
 					    <?php $index++; } ?>
+					    <?php if ( $index > 7 && $index <= 9 ) { ?>
+							    </div>
+						    </div>
+						<?php } ?>
 				    <?php } ?>
 				</div>
 			</div>
 		</div>
     </section>
+	<div id="loader" style="display: none">Loading more post...</div>
 </div>
 <?//php get_sidebar(); ?>
 <?php get_footer(); ?>
