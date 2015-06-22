@@ -113,7 +113,7 @@ get_header(); ?>
 			</div>
 		</div>
     </section>
-	<div id="loader" style="display: none">Loading more post...</div>
+	<div id="loader"  class="loader" style="display: none">Loading more post...</div>
 </div>
 <?//php get_sidebar(); ?>
 <?php get_footer(); ?>

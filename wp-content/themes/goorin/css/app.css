@@ -712,7 +712,7 @@ body, .site-header .submenu .colbox ul li a, .site-header .submenu figure p, .ca
 }
 
 /* line 117, sass/base/_typography.scss */
-.btn, .site-header .menu, .banner article p, .site-header .saletext, .site-footer h6, .spring-preview-block h1, .spring-preview-block .spring-image-content article h4, .spring-preview-block .spring-preview-content .related-feature-box h4, .experience-page .experience-hero-block h6, .experience-page .experience-cat-list ul li a, .experience-page .experience-blog-list article h6, .experience-page .categories-blog-list article h6, .experience-page .blog-one-row .blog-image-content article h4, .category-campaign .cat-hero-block .cat-sub-head, .category-campaign .cat-product-block hgroup, .category-campaign .cat-product-block .category-products .item .product-name {
+.btn, .loader, .site-header .menu, .banner article p, .site-header .saletext, .site-footer h6, .spring-preview-block h1, .spring-preview-block .spring-image-content article h4, .spring-preview-block .spring-preview-content .related-feature-box h4, .experience-page .experience-hero-block h6, .experience-page .experience-cat-list ul li a, .experience-page .experience-blog-list article h6, .experience-page .categories-blog-list article h6, .experience-page .blog-one-row .blog-image-content article h4, .category-campaign .cat-hero-block .cat-sub-head, .category-campaign .cat-product-block hgroup, .category-campaign .cat-product-block .category-products .item .product-name {
   font-family: 'sweet_sansmedium';
 }
 
@@ -863,7 +863,7 @@ img {
 }
 
 /* line 48, sass/components/_components.scss */
-.btn, .page-title h1, .gender-box span, .item-qty a, .item-qty input, .cart-dropdown h2, .cart-dropdown .cart-list-loop figure, .cart-dropdown .cart-list-loop article, .cart-dropdown .cart-total .cart-message, .cart-dropdown .cart-total .cart-subtotal, .site-header .menu .cart-count-icon, .banner article, .site-header .cart-count, .site-footer h6, .site-footer .copyright, .site-footer .footer-col-left article, .site-footer .footer-col-left .subscribe-form input[type="text"], .site-footer .footer-col-left .subscribe-form .submit-btn, .site-footer .footer-col-right .col ul li, .hollyday-content-block hgroup, .hollyday-content-block .hollyday-product-block .hollyday-box, .spring-preview-block h1, .spring-preview-block .spring-image-content article, .spring-preview-block .spring-preview-content .related-feature-box, .experience-page .experience-hero-block article, .experience-page .experience-cat-block hgroup h1, .experience-page .experience-cat-list .experience-cat-toggle, .experience-page .experience-cat-list ul li a, .experience-page .blog-one-row .blog-image-content article, .category-campaign .cat-hero-block article, .category-campaign .cat-product-block hgroup, .category-campaign .cat-product-block .category-products .item, .category-campaign .cat-featured-block article {
+.btn, .page-title h1, .gender-box span, .item-qty a, .item-qty input, .loader, .cart-dropdown h2, .cart-dropdown .cart-list-loop figure, .cart-dropdown .cart-list-loop article, .cart-dropdown .cart-total .cart-message, .cart-dropdown .cart-total .cart-subtotal, .site-header .menu .cart-count-icon, .banner article, .site-header .cart-count, .site-footer h6, .site-footer .copyright, .site-footer .footer-col-left article, .site-footer .footer-col-left .subscribe-form input[type="text"], .site-footer .footer-col-left .subscribe-form .submit-btn, .site-footer .footer-col-right .col ul li, .hollyday-content-block hgroup, .hollyday-content-block .hollyday-product-block .hollyday-box, .spring-preview-block h1, .spring-preview-block .spring-image-content article, .spring-preview-block .spring-preview-content .related-feature-box, .experience-page .experience-hero-block article, .experience-page .experience-cat-block hgroup h1, .experience-page .experience-cat-list .experience-cat-toggle, .experience-page .experience-cat-list ul li a, .experience-page .blog-one-row .blog-image-content article, .category-campaign .cat-hero-block article, .category-campaign .cat-product-block hgroup, .category-campaign .cat-product-block .category-products .item, .category-campaign .cat-featured-block article {
   text-align: center;
 }
 
@@ -1187,6 +1187,17 @@ body.bodyhidden, body.noscroll, .site-header .submenu, .cart-dropdown .cart-list
 .validation-advice {
   color: #fb3f35;
   margin: 4px 0 0;
+}
+
+/* line 178, sass/components/_common.scss */
+.loader {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: none;
+  margin: 20px 0;
+  font-size: 12px;
+  line-height: normal;
+  font-weight: 400;
 }
 
 /* line 2, sass/components/_dropdown.scss */
