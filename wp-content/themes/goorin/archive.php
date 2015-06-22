@@ -30,7 +30,7 @@ get_header(); ?>
 	<section class="experience-cat-block">
 		<?php $_category = get_the_category(); ?>
 		<hgroup>
-			<h1 id="category-id" data-category_id="<?php echo $_category[0]->cat_ID ?>"><?php the_category() ?></h1>
+			<h1 id="category-id" data-category_id="<?php echo $_category[0]->cat_ID ?>"><?php echo $_category[0]->name; ?></h1>
 		</hgroup>
 		<div class="container">
 			<div class="experience-cat-list">
