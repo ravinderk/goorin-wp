@@ -28,8 +28,9 @@ get_header(); ?>
 		</div>
 	</section>
 	<section class="experience-cat-block">
+		<?php $_category = get_the_category(); ?>
 		<hgroup>
-			<h1 id="category-id" data-category_id="<?php echo get_the_category()[0]->cat_ID ?>"><?php the_category() ?></h1>
+			<h1 id="category-id" data-category_id="<?php echo $_category[0]->cat_ID ?>"><?php the_category() ?></h1>
 		</hgroup>
 		<div class="container">
 			<div class="experience-cat-list">
@@ -37,7 +38,7 @@ get_header(); ?>
 				<ul class="experience-list-toggle">
 					<li><a href="<?php echo get_site_url( '', 'experience/' ); ?>">All</a></li>
 					<?php foreach( get_categories( array( 'hide_empty' => 0 ) ) as $category ) { ?>
-						<li class="<?php if ( $category->cat_ID == get_the_category()[0]->cat_ID ) { ?>active<?php } ?>"><a href="<?php echo get_category_link( $category ) ?>"><?php echo $category->name ?></a></li>
+						<li class="<?php if ( $category->cat_ID == $_category[0]->cat_ID ) { ?>active<?php } ?>"><a href="<?php echo get_category_link( $category ) ?>"><?php echo $category->name ?></a></li>
 					<?php } ?>
 				</ul>
 			</div>
