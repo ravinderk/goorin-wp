@@ -33,12 +33,13 @@ get_header(); ?>
             <div class="experience-hero-slider">
 	            <?php while( $query->have_posts() ) { ?>
 		            <?php $query->the_post(); ?>
+		            <?php $_category = get_the_category(); ?>
 	                <div class="item">
 	                    <figure>
 		                    <a href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?></a>
 	                    </figure>
 	                    <article>
-	                        <h6><a href="<?php the_permalink() ?>"><?php the_category() ?></a></h6>
+	                        <h6><a href="<?php the_permalink() ?>"><?php echo $_category[0]->name ?></a></h6>
 	                        <h1><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h1>
 	                    </article>
 	                </div>
