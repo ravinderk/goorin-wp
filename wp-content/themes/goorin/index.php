@@ -84,7 +84,7 @@ get_header(); ?>
 							<?php } else if ( $index == 9 ) { ?>
 									    <div class="experience-blog-list">
 										    <figure>
-											    <a href="<?php the_permalink() ?>"><?php the_post_thumbnail() ?></a>
+											    <a href="<?php the_permalink() ?>"><?php the_post_thumbnail( 'post_custom_size' ) ?></a>
 										    </figure>
 										    <article>
 											    <h6><a href="<?php the_permalink() ?>"><?php echo $_category[0]->name ?></a></h6>
@@ -96,7 +96,7 @@ get_header(); ?>
 							<?php } else { ?>
 							    <div class="experience-blog-list">
 								    <figure>
-									    <a href="<?php echo the_permalink() ?>"><?php the_post_thumbnail() ?></a>
+									    <a href="<?php echo the_permalink() ?>"><?php the_post_thumbnail( 'post_custom_size' ) ?></a>
 								    </figure>
 								    <article>
 									    <h6><a href="<?php the_permalink() ?>"><?php echo $_category[0]->name ?></a></h6>

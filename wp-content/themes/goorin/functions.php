@@ -221,3 +221,8 @@ function goorin_api_handler() {
 }
 
 add_action( 'template_redirect', 'goorin_api_handler' );
+
+function goorin_setup() {
+	add_image_size( 'post_custom_size', 296, 212, true );
+}
+add_action( 'after_setup_theme', 'goorin_setup' );
