@@ -8,7 +8,7 @@
  */
 
 get_header(); ?>
-
+<?php $_category = get_the_category(); ?>
 <div class="experience-page categories-page">
 	<section class="breadcrumbs">
 		<div class="container">
@@ -22,13 +22,12 @@ get_header(); ?>
 					<span>/ </span>
 				</li>
 				<li>
-					<strong>Style</strong>
+					<strong><?php echo $_category[0]->name; ?></strong>
 				</li>
 			</ul>
 		</div>
 	</section>
 	<section class="experience-cat-block">
-		<?php $_category = get_the_category(); ?>
 		<hgroup>
 			<h1 id="category-id" data-category_id="<?php echo $_category[0]->cat_ID ?>"><?php echo $_category[0]->name; ?></h1>
 		</hgroup>
