@@ -62,17 +62,26 @@ get_header(); ?>
 							</div>
 
 						<?php } ?>
-
+						<div id="loader" class="loader"  style="display: none">Loading more post...</div>
 					<?php } else { ?>
-
-						<?php get_template_part( 'content', 'none' ); ?>
+						<div class="no-categories-main">
+							<div class="no-categories">
+								<h2>
+									No results found for <?php echo $_category[0]->name; ?> 
+									<a href="#" class="btn btnsearch">Search</a>
+								</h2>	
+							</div>
+							<div class="no-categories-search">	
+								<?php get_template_part( 'content', 'none' ); ?>
+							</div>
+						</div>	
 
 					<?php } ?>
 				</div>
 			</div>
 		</div><!-- #primary -->
 	</section>
-	<div id="loader" style="display: none">Loading more post...</div>
+	
 
 <?php //get_sidebar(); ?>
 <?php get_footer(); ?>

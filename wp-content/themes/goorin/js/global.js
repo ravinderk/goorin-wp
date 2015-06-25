@@ -185,6 +185,11 @@
             $('.site-search').slideUp();
             return false
         });
+        $('.no-categories .btnsearch').click(function() {
+            $(this).hide();
+            $('.no-categories-search').show();
+            return false
+        });
         // Mage functions
         $('.sort-btn a').click(function() {
             $(this).toggleClass('active');
