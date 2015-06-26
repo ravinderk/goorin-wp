@@ -54,7 +54,7 @@ get_header(); ?>
                 <a href="#" class="experience-cat-toggle"><span>All Features</span></a>
                 <ul class="experience-list-toggle">
                     <li class="active"><a href="#">All</a></li>
-	                <?php foreach( get_categories( array( 'hide_empty' => 0 ) ) as $category ) { ?>
+	                <?php foreach( get_categories() as $category ) { ?>
 	                    <li><a href="<?php echo get_category_link( $category ) ?>"><?php echo $category->name ?></a></li>
 	                <?php } ?>
                 </ul>
