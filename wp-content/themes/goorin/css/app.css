@@ -2070,6 +2070,7 @@ textarea {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  max-height: 850px;
 }
 @media only screen and (min-width: 768px) {
   /* line 8, sass/components/_banner.scss */
@@ -2085,7 +2086,7 @@ textarea {
     width: 100%;
   }
 }
-/* line 22, sass/components/_banner.scss */
+/* line 23, sass/components/_banner.scss */
 .banner article {
   width: 100%;
   color: #ffffff;
@@ -2094,7 +2095,7 @@ textarea {
   left: 0;
 }
 @media only screen and (min-width: 768px) {
-  /* line 22, sass/components/_banner.scss */
+  /* line 23, sass/components/_banner.scss */
   .banner article {
     position: absolute;
     bottom: 106px;
@@ -2102,30 +2103,30 @@ textarea {
   }
 }
 @media only screen and (min-width: 1140px) {
-  /* line 22, sass/components/_banner.scss */
+  /* line 23, sass/components/_banner.scss */
   .banner article {
     position: absolute;
     bottom: 80px;
     left: 0;
   }
 }
-/* line 33, sass/components/_banner.scss */
+/* line 34, sass/components/_banner.scss */
 .banner article .banner-content {
   margin: 0 0 10px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 33, sass/components/_banner.scss */
+  /* line 34, sass/components/_banner.scss */
   .banner article .banner-content {
     margin: 0 0 13px;
   }
 }
-/* line 39, sass/components/_banner.scss */
+/* line 40, sass/components/_banner.scss */
 .banner article h6 {
   text-transform: uppercase;
   font-weight: normal;
 }
 @media only screen and (min-width: 768px) {
-  /* line 39, sass/components/_banner.scss */
+  /* line 40, sass/components/_banner.scss */
   .banner article h6 {
     margin-bottom: 14px;
     font-size: 17px;
@@ -2133,7 +2134,7 @@ textarea {
     letter-spacing: 0;
   }
 }
-/* line 50, sass/components/_banner.scss */
+/* line 51, sass/components/_banner.scss */
 .banner article h2 {
   letter-spacing: 1px;
   font-weight: normal;
@@ -2143,7 +2144,7 @@ textarea {
   line-height: 30px;
 }
 @media only screen and (min-width: 1024px) {
-  /* line 50, sass/components/_banner.scss */
+  /* line 51, sass/components/_banner.scss */
   .banner article h2 {
     padding: 0;
     margin-bottom: 20px;
@@ -2151,20 +2152,20 @@ textarea {
     line-height: 58px;
   }
 }
-/* line 64, sass/components/_banner.scss */
+/* line 65, sass/components/_banner.scss */
 .banner article p {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: .5px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 64, sass/components/_banner.scss */
+  /* line 65, sass/components/_banner.scss */
   .banner article p {
     font-size: 13.68px;
     line-height: normal;
   }
 }
-/* line 73, sass/components/_banner.scss */
+/* line 74, sass/components/_banner.scss */
 .banner article p i, .banner article p em {
   text-transform: none;
   font-weight: normal;
@@ -2174,13 +2175,13 @@ textarea {
   letter-spacing: 1px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 73, sass/components/_banner.scss */
+  /* line 74, sass/components/_banner.scss */
   .banner article p i, .banner article p em {
     font-size: 13px;
     line-height: normal;
   }
 }
-/* line 85, sass/components/_banner.scss */
+/* line 86, sass/components/_banner.scss */
 .banner article .btn, .banner article .no-categories-main .no-categories-search .search-submit, .no-categories-main .no-categories-search .banner article .search-submit {
   border: 2px solid #ffffff;
   font-size: 8px;
@@ -2189,21 +2190,21 @@ textarea {
   background: none;
   background: none;
 }
-/* line 90, sass/components/_banner.scss */
+/* line 91, sass/components/_banner.scss */
 .banner article .btn:hover, .banner article .no-categories-main .no-categories-search .search-submit:hover, .no-categories-main .no-categories-search .banner article .search-submit:hover {
   color: #000000;
   background: #ffffff;
   background: #ffffff;
 }
 @media only screen and (min-width: 768px) {
-  /* line 85, sass/components/_banner.scss */
+  /* line 86, sass/components/_banner.scss */
   .banner article .btn, .banner article .no-categories-main .no-categories-search .search-submit, .no-categories-main .no-categories-search .banner article .search-submit {
     font-size: 13px;
     line-height: normal;
     padding: 13px 55px;
   }
 }
-/* line 100, sass/components/_banner.scss */
+/* line 101, sass/components/_banner.scss */
 .banner .slick-dots {
   margin: 0;
   padding: 0;
@@ -2213,20 +2214,20 @@ textarea {
   left: 0;
 }
 @media only screen and (min-width: 768px) {
-  /* line 100, sass/components/_banner.scss */
+  /* line 101, sass/components/_banner.scss */
   .banner .slick-dots {
     position: absolute;
     bottom: 30px;
     left: 0;
   }
 }
-/* line 108, sass/components/_banner.scss */
+/* line 109, sass/components/_banner.scss */
 .banner .slick-dots li {
   margin: 0 auto;
   height: auto;
   width: auto;
 }
-/* line 111, sass/components/_banner.scss */
+/* line 112, sass/components/_banner.scss */
 .banner .slick-dots li button {
   height: 4px;
   width: 4px;
@@ -2240,7 +2241,7 @@ textarea {
   border-radius: 50%;
 }
 @media only screen and (min-width: 768px) {
-  /* line 111, sass/components/_banner.scss */
+  /* line 112, sass/components/_banner.scss */
   .banner .slick-dots li button {
     height: 8px;
     width: 8px;
@@ -2249,12 +2250,12 @@ textarea {
     margin-left: 7px;
   }
 }
-/* line 125, sass/components/_banner.scss */
+/* line 126, sass/components/_banner.scss */
 .banner .slick-dots li.slick-active button {
   background: #ffffff;
   background: #ffffff;
 }
-/* line 131, sass/components/_banner.scss */
+/* line 132, sass/components/_banner.scss */
 .banner .slick-prev, .banner .slick-next {
   top: 50%;
   font-size: 0;
@@ -2270,32 +2271,32 @@ textarea {
   background: none;
   margin-top: -29px;
 }
-/* line 143, sass/components/_banner.scss */
+/* line 144, sass/components/_banner.scss */
 .banner .slick-prev {
   left: 45px;
   opacity: 0.5;
   background: url("../images/slider-prev.png") right 0 no-repeat;
   background: url("../images/slider-prev.png") right 0 no-repeat;
 }
-/* line 147, sass/components/_banner.scss */
+/* line 148, sass/components/_banner.scss */
 .banner .slick-prev:hover {
   opacity: 1;
   left: 35px;
 }
-/* line 152, sass/components/_banner.scss */
+/* line 153, sass/components/_banner.scss */
 .banner .slick-next {
   right: 45px;
   opacity: 0.5;
   background: url("../images/slider-next.png") 0 0 no-repeat;
   background: url("../images/slider-next.png") 0 0 no-repeat;
 }
-/* line 156, sass/components/_banner.scss */
+/* line 157, sass/components/_banner.scss */
 .banner .slick-next:hover {
   opacity: 1;
   right: 35px;
 }
 @media only screen and (min-width: 1140px) {
-  /* line 163, sass/components/_banner.scss */
+  /* line 164, sass/components/_banner.scss */
   .banner:hover .slick-prev, .banner:hover .slick-next {
     display: block !important;
   }
