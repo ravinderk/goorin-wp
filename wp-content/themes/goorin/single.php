@@ -6,7 +6,7 @@
  */
 
 get_header(); ?>
-<div class="experience-page">
+<div class="experience-page experience-detail-page">
     <section class="breadcrumbs">
         <div class="container">
             <ul>
@@ -31,9 +31,7 @@ get_header(); ?>
     <!--breadcrumbs-->
     <section class="experience-hero-block">
         <div class="container">
-	        <?php $query = new WP_Query( 'tag=featured' ); ?>
-            <div class="experience-hero-detail">
-	            
+	        <div class="experience-hero-detail">
 	                <div class="item">
 	                    <figure>
 		                    <a href="<?php the_permalink() ?>"><img src="<?php bloginfo('template_url'); ?>/images/detail-hero-image.jpg"></a>
@@ -44,6 +42,11 @@ get_header(); ?>
 	                    </article>
 	                </div>
             </div>    
+        </div>
+    </section>
+    <section class="experience-detail-content">
+        <div class="container">
+            <div class="experience-content-main"></div>
         </div>
     </section>
 	<div id="primary" class="content-area">

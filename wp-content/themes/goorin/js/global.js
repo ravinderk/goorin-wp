@@ -282,7 +282,7 @@
 
         var previousScroll = 0, // previous scroll position
         menuOffset = 76, // height of menu (once scroll passed it, menu is hidden)
-        detachPoint = 650, // point of detach (after scroll passed it, menu is fixed)
+        detachPoint = 400, // point of detach (after scroll passed it, menu is fixed)
         hideShowOffset = 1; // scrolling value after which triggers hide/show menu
 
         // on scroll hide/show menu
