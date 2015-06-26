@@ -22,22 +22,22 @@ get_header(); ?>
 					<span>/ </span>
 				</li>
 				<li>
-					<strong><?php echo $_category[0]->name; ?></strong>
+					<strong><?php echo isset( $_category[0] ) ? $_category[0]->name : ''; ?></strong>
 				</li>
 			</ul>
 		</div>
 	</section>
 	<section class="experience-cat-block">
 		<hgroup>
-			<h1 id="category-id" data-category_id="<?php echo $_category[0]->cat_ID ?>"><?php echo $_category[0]->name; ?></h1>
+			<h1 id="category-id" data-category_id="<?php echo isset( $_category[0] ) ? $_category[0]->cat_ID : 0 ?>"><?php echo isset( $_category[0] ) ? $_category[0]->name : 0; ?></h1>
 		</hgroup>
 		<div class="container">
 			<div class="experience-cat-list">
 				<a href="#" class="experience-cat-toggle"><span>All Features</span></a>
 				<ul class="experience-list-toggle">
 					<li><a href="<?php echo get_site_url( '', 'experience/' ); ?>">All</a></li>
-					<?php foreach( get_categories( array( 'hide_empty' => 0 ) ) as $category ) { ?>
-						<li class="<?php if ( $category->cat_ID == $_category[0]->cat_ID ) { ?>active<?php } ?>"><a href="<?php echo get_category_link( $category ) ?>"><?php echo $category->name ?></a></li>
+					<?php foreach( get_categories() as $category ) { ?>
+						<li class="<?php if ( $category->cat_ID == ( isset( $_category[0] ) ? $_category[0]->cat_ID : 0 ) ) { ?>active<?php } ?>"><a href="<?php echo get_category_link( $category ) ?>"><?php echo $category->name ?></a></li>
 					<?php } ?>
 				</ul>
 			</div>
