@@ -46,28 +46,30 @@ get_header(); ?>
     </section>
     <section class="experience-detail-content">
         <div class="container">
-            <div class="experience-content-main"></div>
+            <div class="experience-content-main">
+                <div class="exp-top-heading">
+                    <p>The “most exciting two minutes in sports” deserves an equally exciting celebration, don’t you think? Here’s how we’re gearing up for the big day.</p>
+                    <span>08 / 02 / 2015 <em>by</em> kendra collins</span>
+                </div>
+                <div class="exp-content">
+                    <?php while ( have_posts() ) : the_post(); ?>
+
+                        <?php get_template_part( 'content', 'single' ); ?>
+
+                        <?php //the_post_navigation(); ?>
+
+                        <?php /*
+                            // If comments are open or we have at least one comment, load up the comment template
+                            if ( comments_open() || get_comments_number() ) :
+                                comments_template();
+                            endif;
+                        */?>
+
+                    <?php endwhile; // end of the loop. ?>
+
+                </div>
+            </div>
         </div>
     </section>
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-
-		<?php while ( have_posts() ) : the_post(); ?>
-
-			<?php get_template_part( 'content', 'single' ); ?>
-
-			<?php the_post_navigation(); ?>
-
-			<?php
-				// If comments are open or we have at least one comment, load up the comment template
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-			?>
-
-		<?php endwhile; // end of the loop. ?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
 </div>
 <?php get_footer(); ?>
