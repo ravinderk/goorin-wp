@@ -49,7 +49,7 @@ get_header(); ?>
             <div class="experience-content-main">
                 <div class="exp-top-heading">
                     <p>The “most exciting two minutes in sports” deserves an equally exciting celebration, don’t you think? Here’s how we’re gearing up for the big day.</p>
-                    <span>08 / 02 / 2015 <em>by</em> kendra collins</span>
+                    <div class="exp-posted">08 / 02 / 2015 <em>by</em> kendra collins</div>
                 </div>
                 <div class="exp-content">
                     <?php while ( have_posts() ) : the_post(); ?>

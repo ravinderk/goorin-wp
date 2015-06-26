@@ -687,7 +687,7 @@ body, .site-header .submenu .colbox ul li a, .site-header .submenu figure p, .ca
 }
 
 /* line 96, sass/base/_typography.scss */
-.cat-bottom-col a.backtotop, .banner article p i, .banner article p em, .site-header .saletext a, .home-content-block .post-box article small, .hollyday-content-block .hollyday-product-block .hollyday-box article .hollyday-product-content p i, .hollyday-content-block .hollyday-product-block .hollyday-box article .hollyday-product-content p em, .spring-preview-block h1 span, .category-campaign .cat-hero-block .cat-sub-head em, .category-campaign .cat-product-block hgroup em {
+.cat-bottom-col a.backtotop, .banner article p i, .banner article p em, .site-header .saletext a, .home-content-block .post-box article small, .hollyday-content-block .hollyday-product-block .hollyday-box article .hollyday-product-content p i, .hollyday-content-block .hollyday-product-block .hollyday-box article .hollyday-product-content p em, .spring-preview-block h1 span, .experience-detail-content .exp-top-heading .exp-posted em, .category-campaign .cat-hero-block .cat-sub-head em, .category-campaign .cat-product-block hgroup em {
   font-family: 'baskerville_italic';
 }
 
@@ -707,7 +707,7 @@ body, .site-header .submenu .colbox ul li a, .site-header .submenu figure p, .ca
 }
 
 /* line 114, sass/base/_typography.scss */
-.site-header .submenu .colbox h6, .site-header .menu .cart-count-icon, .banner article h6, .site-header .cart-count, .home-content-block .post-box article h6, .home-content-block .post-box article small span, .hollyday-content-block hgroup h6, .hollyday-content-block .hollyday-product-block .hollyday-box article h6, .hollyday-content-block .hollyday-product-block .hollyday-box article .hollyday-product-content p, .category-campaign .cat-product-block .category-products .item {
+.site-header .submenu .colbox h6, .site-header .menu .cart-count-icon, .banner article h6, .site-header .cart-count, .home-content-block .post-box article h6, .home-content-block .post-box article small span, .hollyday-content-block hgroup h6, .hollyday-content-block .hollyday-product-block .hollyday-box article h6, .hollyday-content-block .hollyday-product-block .hollyday-box article .hollyday-product-content p, .experience-detail-content .exp-top-heading .exp-posted, .category-campaign .cat-product-block .category-products .item {
   font-family: 'sweet_sansregular';
 }
 
@@ -5107,6 +5107,7 @@ textarea {
 }
 /* line 567, sass/pages/_experience.scss */
 .experience-detail-content .experience-content-main {
+  position: relative;
   padding: 20px 0 0;
   border-top: 4px solid #ebece8;
 }
@@ -5115,6 +5116,181 @@ textarea {
   .experience-detail-content .experience-content-main {
     border-width: 7px;
     padding: 50px 0 0;
+  }
+}
+@media only screen and (min-width: 980px) {
+  /* line 567, sass/pages/_experience.scss */
+  .experience-detail-content .experience-content-main {
+    padding: 50px 0 0 250px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* line 567, sass/pages/_experience.scss */
+  .experience-detail-content .experience-content-main {
+    padding: 50px 0 0 380px;
+  }
+}
+/* line 582, sass/pages/_experience.scss */
+.experience-detail-content .exp-top-heading {
+  padding: 0 0 20px;
+}
+@media only screen and (min-width: 980px) {
+  /* line 582, sass/pages/_experience.scss */
+  .experience-detail-content .exp-top-heading {
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 250px;
+    padding: 0 50px 0 0;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* line 582, sass/pages/_experience.scss */
+  .experience-detail-content .exp-top-heading {
+    width: 380px;
+    padding: 0 80px 0 0;
+  }
+}
+/* line 593, sass/pages/_experience.scss */
+.experience-detail-content .exp-top-heading p {
+  font-size: 16px;
+  line-height: 24px;
+  padding: 0 0 20px;
+}
+@media only screen and (min-width: 980px) {
+  /* line 593, sass/pages/_experience.scss */
+  .experience-detail-content .exp-top-heading p {
+    font-size: 24px;
+    line-height: 34px;
+  }
+}
+/* line 600, sass/pages/_experience.scss */
+.experience-detail-content .exp-top-heading .exp-posted {
+  border-bottom: 1px solid #ebece8;
+  color: #898989;
+  text-transform: uppercase;
+  font-size: 10px;
+  line-height: normal;
+  padding: 0 0 20px;
+}
+@media only screen and (min-width: 980px) {
+  /* line 600, sass/pages/_experience.scss */
+  .experience-detail-content .exp-top-heading .exp-posted {
+    border: none;
+    border-top: 1px solid #ebece8;
+    font-size: 11px;
+    line-height: normal;
+    padding: 25px 0 0;
+  }
+}
+/* line 613, sass/pages/_experience.scss */
+.experience-detail-content .exp-top-heading .exp-posted em {
+  text-transform: lowercase;
+}
+/* line 620, sass/pages/_experience.scss */
+.experience-detail-content .exp-content p {
+  color: #6f6f6d;
+  font-size: 15px;
+  line-height: 24px;
+  padding: 0 0 30px;
+}
+/* line 624, sass/pages/_experience.scss */
+.experience-detail-content .exp-content p a {
+  color: #6f6f6d;
+  border-bottom: 1px solid #6f6f6d;
+}
+/* line 627, sass/pages/_experience.scss */
+.experience-detail-content .exp-content p a:hover {
+  border: none;
+}
+/* line 632, sass/pages/_experience.scss */
+.experience-detail-content .exp-content img {
+  margin: 0 0 25px;
+}
+@media only screen and (min-width: 980px) {
+  /* line 635, sass/pages/_experience.scss */
+  .experience-detail-content .exp-content .alignleft {
+    float: left;
+    margin: 0 15px 25px 0;
+  }
+}
+@media only screen and (min-width: 980px) {
+  /* line 641, sass/pages/_experience.scss */
+  .experience-detail-content .exp-content .alignright {
+    float: right;
+    margin: 0 0 25px 15px;
+  }
+}
+/* line 647, sass/pages/_experience.scss */
+.experience-detail-content .exp-content ul {
+  padding: 0 0 15px 16px;
+}
+/* line 650, sass/pages/_experience.scss */
+.experience-detail-content .exp-content ol {
+  padding: 0 0 15px 20px;
+}
+/* line 654, sass/pages/_experience.scss */
+.experience-detail-content .exp-content ul li, .experience-detail-content .exp-content ol li {
+  color: #6f6f6d;
+  font-size: 15px;
+  line-height: 24px;
+  padding: 0 0 15px;
+}
+/* line 658, sass/pages/_experience.scss */
+.experience-detail-content .exp-content ul li a, .experience-detail-content .exp-content ol li a {
+  color: #6f6f6d;
+  border-bottom: 1px solid #6f6f6d;
+}
+/* line 661, sass/pages/_experience.scss */
+.experience-detail-content .exp-content ul li a:hover, .experience-detail-content .exp-content ol li a:hover {
+  border: none;
+}
+/* line 667, sass/pages/_experience.scss */
+.experience-detail-content .exp-content h2 {
+  font-size: 22px;
+  line-height: normal;
+}
+@media only screen and (min-width: 768px) {
+  /* line 667, sass/pages/_experience.scss */
+  .experience-detail-content .exp-content h2 {
+    font-size: 25px;
+    line-height: normal;
+  }
+}
+/* line 673, sass/pages/_experience.scss */
+.experience-detail-content .exp-content h3 {
+  font-size: 20px;
+  line-height: normal;
+}
+@media only screen and (min-width: 768px) {
+  /* line 673, sass/pages/_experience.scss */
+  .experience-detail-content .exp-content h3 {
+    font-size: 22px;
+    line-height: normal;
+  }
+}
+/* line 679, sass/pages/_experience.scss */
+.experience-detail-content .exp-content h4 {
+  font-size: 18px;
+  line-height: normal;
+}
+@media only screen and (min-width: 768px) {
+  /* line 679, sass/pages/_experience.scss */
+  .experience-detail-content .exp-content h4 {
+    font-size: 20px;
+    line-height: normal;
+  }
+}
+/* line 685, sass/pages/_experience.scss */
+.experience-detail-content .exp-content h5 {
+  font-size: 16px;
+  line-height: normal;
+}
+@media only screen and (min-width: 768px) {
+  /* line 685, sass/pages/_experience.scss */
+  .experience-detail-content .exp-content h5 {
+    font-size: 18px;
+    line-height: normal;
   }
 }
 
