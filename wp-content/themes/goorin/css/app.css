@@ -815,7 +815,7 @@ html {
 body {
   font-size: 16px;
   color: #000000;
-  background: #f5f6f1;
+  background: #6f6c67;
 }
 
 /* line 19, sass/components/_components.scss */
@@ -2304,10 +2304,12 @@ textarea {
 /* line 1, sass/layout/_layout.scss */
 .main, .main-page-container {
   max-width: 1750px;
+  background: #f5f6f1;
+  background: #f5f6f1;
   margin: 0 auto;
 }
 
-/* line 6, sass/layout/_layout.scss */
+/* line 7, sass/layout/_layout.scss */
 .container {
   padding: 0 20px;
 }
@@ -2318,7 +2320,7 @@ textarea {
   display: table;
 }
 @media only screen and (min-width: 640px) {
-  /* line 6, sass/layout/_layout.scss */
+  /* line 7, sass/layout/_layout.scss */
   .container {
     padding: 0 45px;
   }
