@@ -2184,15 +2184,17 @@ textarea {
 /* line 86, sass/components/_banner.scss */
 .banner article .btn, .banner article .no-categories-main .no-categories-search .search-submit, .no-categories-main .no-categories-search .banner article .search-submit {
   border: 2px solid #ffffff;
+  opacity: 0.65;
   font-size: 8px;
   line-height: normal;
   padding: 8px 40px;
   background: none;
   background: none;
 }
-/* line 91, sass/components/_banner.scss */
+/* line 92, sass/components/_banner.scss */
 .banner article .btn:hover, .banner article .no-categories-main .no-categories-search .search-submit:hover, .no-categories-main .no-categories-search .banner article .search-submit:hover {
   color: #000000;
+  opacity: 1;
   background: #ffffff;
   background: #ffffff;
 }
@@ -2204,7 +2206,7 @@ textarea {
     padding: 13px 55px;
   }
 }
-/* line 101, sass/components/_banner.scss */
+/* line 103, sass/components/_banner.scss */
 .banner .slick-dots {
   margin: 0;
   padding: 0;
@@ -2214,20 +2216,20 @@ textarea {
   left: 0;
 }
 @media only screen and (min-width: 768px) {
-  /* line 101, sass/components/_banner.scss */
+  /* line 103, sass/components/_banner.scss */
   .banner .slick-dots {
     position: absolute;
     bottom: 30px;
     left: 0;
   }
 }
-/* line 109, sass/components/_banner.scss */
+/* line 111, sass/components/_banner.scss */
 .banner .slick-dots li {
   margin: 0 auto;
   height: auto;
   width: auto;
 }
-/* line 112, sass/components/_banner.scss */
+/* line 114, sass/components/_banner.scss */
 .banner .slick-dots li button {
   height: 4px;
   width: 4px;
@@ -2241,7 +2243,7 @@ textarea {
   border-radius: 50%;
 }
 @media only screen and (min-width: 768px) {
-  /* line 112, sass/components/_banner.scss */
+  /* line 114, sass/components/_banner.scss */
   .banner .slick-dots li button {
     height: 8px;
     width: 8px;
@@ -2250,12 +2252,12 @@ textarea {
     margin-left: 7px;
   }
 }
-/* line 126, sass/components/_banner.scss */
+/* line 128, sass/components/_banner.scss */
 .banner .slick-dots li.slick-active button {
   background: #ffffff;
   background: #ffffff;
 }
-/* line 132, sass/components/_banner.scss */
+/* line 134, sass/components/_banner.scss */
 .banner .slick-prev, .banner .slick-next {
   top: 50%;
   font-size: 0;
@@ -2271,32 +2273,32 @@ textarea {
   background: none;
   margin-top: -29px;
 }
-/* line 144, sass/components/_banner.scss */
+/* line 146, sass/components/_banner.scss */
 .banner .slick-prev {
   left: 45px;
   opacity: 0.5;
   background: url("../images/slider-prev.png") right 0 no-repeat;
   background: url("../images/slider-prev.png") right 0 no-repeat;
 }
-/* line 148, sass/components/_banner.scss */
+/* line 150, sass/components/_banner.scss */
 .banner .slick-prev:hover {
   opacity: 1;
   left: 35px;
 }
-/* line 153, sass/components/_banner.scss */
+/* line 155, sass/components/_banner.scss */
 .banner .slick-next {
   right: 45px;
   opacity: 0.5;
   background: url("../images/slider-next.png") 0 0 no-repeat;
   background: url("../images/slider-next.png") 0 0 no-repeat;
 }
-/* line 157, sass/components/_banner.scss */
+/* line 159, sass/components/_banner.scss */
 .banner .slick-next:hover {
   opacity: 1;
   right: 35px;
 }
 @media only screen and (min-width: 1140px) {
-  /* line 164, sass/components/_banner.scss */
+  /* line 166, sass/components/_banner.scss */
   .banner:hover .slick-prev, .banner:hover .slick-next {
     display: block !important;
   }
