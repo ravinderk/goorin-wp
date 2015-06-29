@@ -57,12 +57,12 @@
             $('.experience-list-toggle').slideToggle();
             return false
         };
-        var experience_list_trigger = function() {
+        /*var experience_list_trigger = function() {
             var catlistText = $(this).text();
             $('.experience-cat-toggle').find('span').text(catlistText);
             $('.experience-list-toggle').slideUp();
             return false
-        };
+        };*/
         enquire
             .register("screen and (max-width:767px)", function() {
                 $('.site-search').css('display' , 'block');
@@ -70,7 +70,7 @@
                 $('.cart-count').off('click', cart_trigger_tablet);
                 $('.experience-list-toggle').css('display' , 'none');
                 $('.experience-cat-toggle').on('click', experience_cat_trigger);
-                $('.experience-list-toggle li a').on('click', experience_list_trigger);
+                //$('.experience-list-toggle li a').on('click', experience_list_trigger);
                 //$('.cart-count').on('click', cart_trigger_mobile);
                 //$('.cart-dropdown').off('mouseleave', cart_mouseleave);
             }) 

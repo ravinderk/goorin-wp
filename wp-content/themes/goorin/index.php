@@ -53,7 +53,7 @@ get_header(); ?>
             <div class="experience-cat-list">
                 <a href="#" class="experience-cat-toggle"><span>All Features</span></a>
                 <ul class="experience-list-toggle">
-                    <li class="active"><a href="#">All</a></li>
+                    <li class="active"><a href="<?php echo get_site_url( '', 'experience/' ); ?>">All</a></li>
 	                <?php foreach( get_categories() as $category ) { ?>
 	                    <li><a href="<?php echo get_category_link( $category ) ?>"><?php echo $category->name ?></a></li>
 	                <?php } ?>
