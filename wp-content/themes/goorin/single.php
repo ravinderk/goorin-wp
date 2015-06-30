@@ -73,7 +73,7 @@ get_header(); ?>
     </section>
     <section class="experience-detail-related">
         <div class="container">
-            <h1>News &amp; Stories</h1>
+            <h1>You might <span>also</span> like</h1>
             <div class="experience-preview-main">
                 <div class="experience-image-content">
                     <figure class="experience-preview-image">
@@ -94,17 +94,17 @@ get_header(); ?>
                                     <a href="http://redesign.goorin.com/mens/"><img src="http://redesign.goorin.com/wp-content/uploads/2015/04/f2.png"></a>
                                 </figure>
                                 <article>
-                                    <h4><a href="http://redesign.goorin.com/mens/">Shops</a></h4>
-                                    <div class="box-content"><p>Savannah Grand Opening Party</p></div>
+                                    <h6><a href="http://redesign.goorin.com/mens/">Shops</a></h6>
+                                    <h4>Savannah Grand Opening Party</h4>
                                 </article>
                             </div>
-                            <div class="related-feature-box">
+                            <div class="experience-feature-box">
                                 <figure>
-                                    <a href="http://redesign.goorin.com/mens/"><img src="http://redesign.goorin.com/wp-content/uploads/2015/04/f3.png"></a>
+                                    <a href="http://redesign.goorin.com/mens/"><img src="http://redesign.goorin.com/wp-content/uploads/2015/04/f2.png"></a>
                                 </figure>
                                 <article>
-                                    <h4><a href="http://redesign.goorin.com/mens/">How to Style</a></h4>
-                                    <div class="box-content"><p>Kentucky Derby</p></div>
+                                    <h6><a href="http://redesign.goorin.com/mens/">Shops</a></h6>
+                                    <h4>Savannah Grand Opening Party</h4>
                                 </article>
                             </div>
                         </div>
