@@ -71,5 +71,50 @@ get_header(); ?>
             </div>
         </div>
     </section>
+    <section class="experience-detail-related">
+        <div class="container">
+            <h1>News &amp; Stories</h1>
+            <div class="experience-preview-main">
+                <div class="experience-image-content">
+                    <figure class="experience-preview-image">
+                        <img src="http://redesign.goorin.com/wp-content/uploads/2015/04/f1.png">
+                    </figure>
+                    <article>
+                        <h4>Fashion News / Goorin Stories</h4>
+                        <div class="heading-content"><p>Fashion Week in London Part 1</p></div>
+                    
+                    </article>
+                </div>
+                <!--experience-image-content-->
+                <div class="experience-preview-content">
+                    <div class="experience-related-feature">
+                        <div class="experience-feature-content">
+                            <div class="experience-feature-box">
+                                <figure>
+                                    <a href="http://redesign.goorin.com/mens/"><img src="http://redesign.goorin.com/wp-content/uploads/2015/04/f2.png"></a>
+                                </figure>
+                                <article>
+                                    <h4><a href="http://redesign.goorin.com/mens/">Shops</a></h4>
+                                    <div class="box-content"><p>Savannah Grand Opening Party</p></div>
+                                </article>
+                            </div>
+                            <div class="related-feature-box">
+                                <figure>
+                                    <a href="http://redesign.goorin.com/mens/"><img src="http://redesign.goorin.com/wp-content/uploads/2015/04/f3.png"></a>
+                                </figure>
+                                <article>
+                                    <h4><a href="http://redesign.goorin.com/mens/">How to Style</a></h4>
+                                    <div class="box-content"><p>Kentucky Derby</p></div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--experience-preview-content-->
+            </div>
+            <!--experience-preview-main-->
+        </div>
+    </section>
+    <!--experience-detail-related-->
 </div>
 <?php get_footer(); ?>
