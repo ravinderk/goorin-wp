@@ -5310,6 +5310,7 @@ textarea {
 }
 /* line 690, sass/pages/_experience.scss */
 .experience-detail-content .exp-content blockquote {
+  position: relative;
   border-top: 1px solid #938e8e;
   border-bottom: 1px solid #938e8e;
   margin: 0;
@@ -5320,6 +5321,31 @@ textarea {
   .experience-detail-content .exp-content blockquote {
     padding: 35px 30px;
     margin: 20px 0 0;
+    border-color: #dcddd8;
+  }
+  /* line 700, sass/pages/_experience.scss */
+  .experience-detail-content .exp-content blockquote:before {
+    background: none;
+    border-top: 1px solid #dcddd8;
+    content: "";
+    display: block;
+    position: absolute;
+    top: -6px;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+  }
+  /* line 711, sass/pages/_experience.scss */
+  .experience-detail-content .exp-content blockquote:after {
+    background: none;
+    border-top: 1px solid #dcddd8;
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -6px;
+    pointer-events: none;
   }
 }
 @media only screen and (min-width: 980px) {
@@ -5332,10 +5358,10 @@ textarea {
 @media only screen and (min-width: 1024px) {
   /* line 690, sass/pages/_experience.scss */
   .experience-detail-content .exp-content blockquote {
-    margin: 20px 0 0 -380px;
+    margin: 30px 0 60px -380px;
   }
 }
-/* line 706, sass/pages/_experience.scss */
+/* line 730, sass/pages/_experience.scss */
 .experience-detail-content .exp-content blockquote p {
   color: #000000;
   padding: 0;
@@ -5343,7 +5369,7 @@ textarea {
   line-height: 31px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 706, sass/pages/_experience.scss */
+  /* line 730, sass/pages/_experience.scss */
   .experience-detail-content .exp-content blockquote p {
     font-size: 35px;
     line-height: 45px;
@@ -5351,11 +5377,19 @@ textarea {
   }
 }
 @media only screen and (min-width: 980px) {
-  /* line 706, sass/pages/_experience.scss */
+  /* line 730, sass/pages/_experience.scss */
   .experience-detail-content .exp-content blockquote p {
     font-size: 45px;
     line-height: 57px;
   }
+}
+/* line 741, sass/pages/_experience.scss */
+.experience-detail-content .exp-content blockquote p:before {
+  content: "“";
+}
+/* line 744, sass/pages/_experience.scss */
+.experience-detail-content .exp-content blockquote p:after {
+  content: "”";
 }
 
 /* line 3, sass/pages/_category_campaign.scss */
