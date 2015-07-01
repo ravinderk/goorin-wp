@@ -47,7 +47,7 @@ get_header(); ?>
 								<a href="<?php the_permalink() ?>"><?php the_post_thumbnail() ?></a>
 							</figure>
 						<?php } ?>
-						<article>
+						<article <?php if ( ! has_post_thumbnail() ) { ?>class="no-image-content"<?php } ?>>
 							<h6><?php the_category( ', ' ) ?></h6>
 
 							<h1><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h1>
