@@ -60,8 +60,10 @@ get_header(); ?>
 			<div class="container">
 				<div class="experience-content-main">
 					<div class="exp-top-heading">
-						<?php the_excerpt() ?>
-						<div class="exp-posted"><?php goorin_posted_on(); ?></div>
+						<div class="exp-top-content">
+							<?php the_excerpt() ?>
+							<div class="exp-posted"><?php goorin_posted_on(); ?></div>
+						</div>	
 					</div>
 					<div class="exp-content">
 						<?php get_template_part( 'content', 'single' ); ?>
