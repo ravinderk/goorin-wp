@@ -1610,7 +1610,7 @@ body.bodyhidden, body.noscroll, .site-header .submenu, .cart-dropdown .cart-list
 }
 /* line 294, sass/components/_dropdown.scss */
 .cart-dropdown .cart-checkout .btn-n span {
-  border-bottom: 1px solid #f5f6f1;
+  border-bottom: 1px solid transparent;
   padding-bottom: 2px;
 }
 /* line 297, sass/components/_dropdown.scss */
