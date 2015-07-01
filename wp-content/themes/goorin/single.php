@@ -68,7 +68,7 @@ get_header(); ?>
 					$namespace = $author_recommended_posts->namespace;
 					$recommended_ids = get_post_meta( $post->ID, $namespace, true );
 					?>
-					<h1><?php $author_recommended_posts->get_option( "{$namespace}_title" ); ?></h1>
+					<h1><?php echo $author_recommended_posts->get_option( "{$namespace}_title" ); ?></h1>
 					<div class="experience-preview-main">
 						<?php foreach ( $recommended_ids as $key => $id ) { ?>
 							<?php if ( $key == 0 ) { ?>
