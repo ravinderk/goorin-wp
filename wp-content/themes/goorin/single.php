@@ -42,9 +42,11 @@ get_header(); ?>
 			<div class="container">
 				<div class="experience-hero-detail">
 					<div class="item">
-						<figure>
-							<a href="<?php the_permalink() ?>"><?php the_post_thumbnail() ?></a>
-						</figure>
+						<?php if ( has_post_thumbnail() ) { ?>
+							<figure>
+								<a href="<?php the_permalink() ?>"><?php the_post_thumbnail() ?></a>
+							</figure>
+						<?php } ?>
 						<article>
 							<h6><?php the_category( ', ' ) ?></h6>
 
