@@ -83,7 +83,7 @@ function goorin_posted_on() {
 	);
 
 	$posted_on = sprintf(
-		_x( 'Posted on %s', 'post date', 'goorin' ),
+		_x( '%s', 'post date', 'goorin' ),
 		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 	);
 
