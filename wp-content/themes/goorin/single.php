@@ -59,7 +59,6 @@ get_header(); ?>
 				<div class="experience-content-main">
 					<div class="exp-top-heading">
 						<p><?php the_excerpt() ?></p>
-
 						<div class="exp-posted"><?php goorin_posted_on(); ?></div>
 					</div>
 					<div class="exp-content">
