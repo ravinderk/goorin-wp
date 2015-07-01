@@ -33,13 +33,12 @@ get_header(); ?>
             <div class="experience-hero-slider">
 	            <?php while( $query->have_posts() ) { ?>
 		            <?php $query->the_post(); ?>
-		            <?php $_category = get_the_category(); ?>
 	                <div class="item">
 	                    <figure>
 		                    <a href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?></a>
 	                    </figure>
 	                    <article>
-	                        <h6><a href="<?php the_permalink() ?>"><?php echo $_category[0]->name ?></a></h6>
+	                        <h6><?php the_category( ', ' ) ?></h6>
 	                        <h1><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h1>
 	                    </article>
 	                </div>
@@ -68,7 +67,6 @@ get_header(); ?>
 				    <?php if ( have_posts() ) { ?>
 					    <?php $index = 1; // use for matching the design as we have a different design after 6 post?>
 					    <?php while( have_posts() ) { the_post() ?>
-						    <?php $_category = get_the_category(); ?>
 						    <?php if ( $index == 7 ) { ?>
 							    <div class="blog-one-row">
 								    <div class="blog-image-content">
@@ -76,7 +74,7 @@ get_header(); ?>
 										    <a href="<?php the_permalink() ?>"><?php the_post_thumbnail() ?></a>
 									    </figure>
 									    <article>
-										    <h4><a href="<?php the_permalink() ?>"><?php echo $_category[0]->name ?></a></h4>
+										    <h4><?php the_category( ', ' ) ?></h4>
 										    <div class="heading-content"><p><a href="<?php the_permalink() ?>"><?php the_title() ?></a></p></div>
 									    </article>
 								    </div>
@@ -87,7 +85,7 @@ get_header(); ?>
 											    <a href="<?php the_permalink() ?>"><?php the_post_thumbnail( 'post_custom_size' ) ?></a>
 										    </figure>
 										    <article>
-											    <h6><a href="<?php the_permalink() ?>"><?php echo $_category[0]->name ?></a></h6>
+											    <h6><?php the_category( ', ' ) ?></h6>
 											    <h4><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h4>
 										    </article>
 									    </div>
@@ -96,10 +94,10 @@ get_header(); ?>
 							<?php } else { ?>
 							    <div class="experience-blog-list">
 								    <figure>
-									    <a href="<?php echo the_permalink() ?>"><?php the_post_thumbnail( 'post_custom_size' ) ?></a>
+									    <a href="<?php the_permalink() ?>"><?php the_post_thumbnail( 'post_custom_size' ) ?></a>
 								    </figure>
 								    <article>
-									    <h6><a href="<?php the_permalink() ?>"><?php echo $_category[0]->name ?></a></h6>
+									    <h6><?php the_category( ', ' ) ?></h6>
 									    <h4><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h4>
 								    </article>
 							    </div>
