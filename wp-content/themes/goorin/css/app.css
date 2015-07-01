@@ -5216,16 +5216,18 @@ textarea {
 @media only screen and (min-width: 980px) {
   /* line 634, sass/pages/_experience.scss */
   .experience-detail-content .exp-top-heading {
-    float: left;
+    position: absolute;
+    top: 75px;
+    left: 0;
     width: 250px;
-    padding: 20px 50px 0 0;
+    padding: 0 50px 0 0;
   }
 }
 @media only screen and (min-width: 1024px) {
   /* line 634, sass/pages/_experience.scss */
   .experience-detail-content .exp-top-heading {
     width: 380px;
-    padding: 20px 80px 0 0;
+    padding: 0 80px 0 0;
   }
 }
 /* line 645, sass/pages/_experience.scss */
@@ -5241,19 +5243,7 @@ textarea {
     line-height: 34px;
   }
 }
-@media only screen and (min-width: 980px) {
-  /* line 652, sass/pages/_experience.scss */
-  .experience-detail-content .exp-top-heading .exp-top-content {
-    margin: 0 0 0 -250px;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  /* line 652, sass/pages/_experience.scss */
-  .experience-detail-content .exp-top-heading .exp-top-content {
-    margin: 0 0 0 -380px;
-  }
-}
-/* line 660, sass/pages/_experience.scss */
+/* line 652, sass/pages/_experience.scss */
 .experience-detail-content .exp-top-heading .exp-posted {
   border-bottom: 1px solid #ebece8;
   color: #898989;
@@ -5263,7 +5253,7 @@ textarea {
   padding: 0 0 20px;
 }
 @media only screen and (min-width: 980px) {
-  /* line 660, sass/pages/_experience.scss */
+  /* line 652, sass/pages/_experience.scss */
   .experience-detail-content .exp-top-heading .exp-posted {
     border: none;
     border-top: 1px solid #ebece8;
@@ -5272,143 +5262,148 @@ textarea {
     padding: 25px 0 0;
   }
 }
-/* line 673, sass/pages/_experience.scss */
+/* line 665, sass/pages/_experience.scss */
 .experience-detail-content .exp-top-heading .exp-posted time {
   font-size: 10px;
   line-height: normal;
   color: #898989;
 }
 @media only screen and (min-width: 980px) {
-  /* line 673, sass/pages/_experience.scss */
+  /* line 665, sass/pages/_experience.scss */
   .experience-detail-content .exp-top-heading .exp-posted time {
     font-size: 11px;
     line-height: normal;
   }
 }
-/* line 680, sass/pages/_experience.scss */
+/* line 672, sass/pages/_experience.scss */
 .experience-detail-content .exp-top-heading .exp-posted em {
   text-transform: lowercase;
 }
-/* line 684, sass/pages/_experience.scss */
+/* line 676, sass/pages/_experience.scss */
 .experience-detail-content .exp-top-heading .exp-posted a {
   color: #898989;
 }
-/* line 687, sass/pages/_experience.scss */
+/* line 679, sass/pages/_experience.scss */
 .experience-detail-content .exp-top-heading .exp-posted .author {
   margin: 0 0 0 2px;
 }
-/* line 693, sass/pages/_experience.scss */
+@media only screen and (min-width: 980px) {
+  /* line 684, sass/pages/_experience.scss */
+  .experience-detail-content .exp-content {
+    min-height: 500px;
+  }
+}
+/* line 688, sass/pages/_experience.scss */
 .experience-detail-content .exp-content p {
   color: #6f6f6d;
   font-size: 15px;
   line-height: 24px;
   padding: 0 0 30px;
 }
-/* line 697, sass/pages/_experience.scss */
+/* line 692, sass/pages/_experience.scss */
 .experience-detail-content .exp-content p a {
   color: #6f6f6d;
   border-bottom: 1px solid #6f6f6d;
 }
-/* line 700, sass/pages/_experience.scss */
+/* line 695, sass/pages/_experience.scss */
 .experience-detail-content .exp-content p a:hover {
   border: none;
 }
-/* line 705, sass/pages/_experience.scss */
+/* line 700, sass/pages/_experience.scss */
 .experience-detail-content .exp-content img {
   display: block;
-  height: auto;
 }
 @media only screen and (min-width: 980px) {
-  /* line 709, sass/pages/_experience.scss */
+  /* line 703, sass/pages/_experience.scss */
   .experience-detail-content .exp-content .alignleft {
     float: left;
     margin: 0 15px 0 0;
   }
 }
 @media only screen and (min-width: 980px) {
-  /* line 715, sass/pages/_experience.scss */
+  /* line 709, sass/pages/_experience.scss */
   .experience-detail-content .exp-content .alignright {
     float: right;
     margin: 0 0 0 15px;
   }
 }
-/* line 721, sass/pages/_experience.scss */
+/* line 715, sass/pages/_experience.scss */
 .experience-detail-content .exp-content ul {
   padding: 0 0 15px 16px;
 }
-/* line 724, sass/pages/_experience.scss */
+/* line 718, sass/pages/_experience.scss */
 .experience-detail-content .exp-content ol {
   padding: 0 0 15px 20px;
 }
-/* line 728, sass/pages/_experience.scss */
+/* line 722, sass/pages/_experience.scss */
 .experience-detail-content .exp-content ul li, .experience-detail-content .exp-content ol li {
   color: #6f6f6d;
   font-size: 15px;
   line-height: 24px;
   padding: 0 0 15px;
 }
-/* line 732, sass/pages/_experience.scss */
+/* line 726, sass/pages/_experience.scss */
 .experience-detail-content .exp-content ul li a, .experience-detail-content .exp-content ol li a {
   color: #6f6f6d;
   border-bottom: 1px solid #6f6f6d;
 }
-/* line 735, sass/pages/_experience.scss */
+/* line 729, sass/pages/_experience.scss */
 .experience-detail-content .exp-content ul li a:hover, .experience-detail-content .exp-content ol li a:hover {
   border: none;
 }
-/* line 741, sass/pages/_experience.scss */
+/* line 735, sass/pages/_experience.scss */
 .experience-detail-content .exp-content h2, .experience-detail-content .exp-content h3, .experience-detail-content .exp-content h4, .experience-detail-content .exp-content h5 {
   margin: 0 0 20px;
 }
-/* line 744, sass/pages/_experience.scss */
+/* line 738, sass/pages/_experience.scss */
 .experience-detail-content .exp-content h2 {
   font-size: 22px;
   line-height: normal;
 }
 @media only screen and (min-width: 768px) {
-  /* line 744, sass/pages/_experience.scss */
+  /* line 738, sass/pages/_experience.scss */
   .experience-detail-content .exp-content h2 {
     font-size: 25px;
     line-height: normal;
   }
 }
-/* line 750, sass/pages/_experience.scss */
+/* line 744, sass/pages/_experience.scss */
 .experience-detail-content .exp-content h3 {
   font-size: 20px;
   line-height: normal;
 }
 @media only screen and (min-width: 768px) {
-  /* line 750, sass/pages/_experience.scss */
+  /* line 744, sass/pages/_experience.scss */
   .experience-detail-content .exp-content h3 {
     font-size: 22px;
     line-height: normal;
   }
 }
-/* line 756, sass/pages/_experience.scss */
+/* line 750, sass/pages/_experience.scss */
 .experience-detail-content .exp-content h4 {
   font-size: 18px;
   line-height: normal;
 }
 @media only screen and (min-width: 768px) {
-  /* line 756, sass/pages/_experience.scss */
+  /* line 750, sass/pages/_experience.scss */
   .experience-detail-content .exp-content h4 {
     font-size: 20px;
     line-height: normal;
   }
 }
-/* line 762, sass/pages/_experience.scss */
+/* line 756, sass/pages/_experience.scss */
 .experience-detail-content .exp-content h5 {
   font-size: 16px;
   line-height: normal;
 }
 @media only screen and (min-width: 768px) {
-  /* line 762, sass/pages/_experience.scss */
+  /* line 756, sass/pages/_experience.scss */
   .experience-detail-content .exp-content h5 {
     font-size: 18px;
     line-height: normal;
   }
 }
-/* line 768, sass/pages/_experience.scss */
+/* line 762, sass/pages/_experience.scss */
 .experience-detail-content .exp-content blockquote {
   position: relative;
   border-top: 1px solid #938e8e;
@@ -5417,13 +5412,13 @@ textarea {
   padding: 25px 0;
 }
 @media only screen and (min-width: 768px) {
-  /* line 768, sass/pages/_experience.scss */
+  /* line 762, sass/pages/_experience.scss */
   .experience-detail-content .exp-content blockquote {
     padding: 35px 30px;
     margin: 20px 0 0;
     border-color: #dcddd8;
   }
-  /* line 778, sass/pages/_experience.scss */
+  /* line 772, sass/pages/_experience.scss */
   .experience-detail-content .exp-content blockquote:before {
     background: none;
     border-top: 1px solid #dcddd8;
@@ -5435,7 +5430,7 @@ textarea {
     right: 0;
     pointer-events: none;
   }
-  /* line 789, sass/pages/_experience.scss */
+  /* line 783, sass/pages/_experience.scss */
   .experience-detail-content .exp-content blockquote:after {
     background: none;
     border-top: 1px solid #dcddd8;
@@ -5449,19 +5444,19 @@ textarea {
   }
 }
 @media only screen and (min-width: 980px) {
-  /* line 768, sass/pages/_experience.scss */
+  /* line 762, sass/pages/_experience.scss */
   .experience-detail-content .exp-content blockquote {
     padding: 50px 45px;
     margin: 20px 0 0 -250px;
   }
 }
 @media only screen and (min-width: 1024px) {
-  /* line 768, sass/pages/_experience.scss */
+  /* line 762, sass/pages/_experience.scss */
   .experience-detail-content .exp-content blockquote {
     margin: 30px 0 60px -380px;
   }
 }
-/* line 808, sass/pages/_experience.scss */
+/* line 802, sass/pages/_experience.scss */
 .experience-detail-content .exp-content blockquote p {
   color: #000000;
   padding: 0;
@@ -5469,7 +5464,7 @@ textarea {
   line-height: 31px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 808, sass/pages/_experience.scss */
+  /* line 802, sass/pages/_experience.scss */
   .experience-detail-content .exp-content blockquote p {
     font-size: 35px;
     line-height: 45px;
@@ -5477,22 +5472,22 @@ textarea {
   }
 }
 @media only screen and (min-width: 980px) {
-  /* line 808, sass/pages/_experience.scss */
+  /* line 802, sass/pages/_experience.scss */
   .experience-detail-content .exp-content blockquote p {
     font-size: 45px;
     line-height: 57px;
   }
 }
-/* line 819, sass/pages/_experience.scss */
+/* line 813, sass/pages/_experience.scss */
 .experience-detail-content .exp-content blockquote p:before {
   content: "“";
 }
-/* line 822, sass/pages/_experience.scss */
+/* line 816, sass/pages/_experience.scss */
 .experience-detail-content .exp-content blockquote p:after {
   content: "”";
 }
 
-/* line 829, sass/pages/_experience.scss */
+/* line 823, sass/pages/_experience.scss */
 .experience-detail-related {
   border-top: 1px solid #dcddd9;
   background: #eef0e8;
@@ -5501,20 +5496,20 @@ textarea {
   margin: 50px 0 0;
 }
 @media only screen and (min-width: 768px) {
-  /* line 829, sass/pages/_experience.scss */
+  /* line 823, sass/pages/_experience.scss */
   .experience-detail-related {
     padding: 55px 0 20px;
     margin: 60px 0 0;
   }
 }
 @media only screen and (min-width: 1140px) {
-  /* line 838, sass/pages/_experience.scss */
+  /* line 832, sass/pages/_experience.scss */
   .experience-detail-related .container {
     max-width: 1024px;
     padding: 0;
   }
 }
-/* line 844, sass/pages/_experience.scss */
+/* line 838, sass/pages/_experience.scss */
 .experience-detail-related h1 {
   font-size: 12.5px;
   line-height: normal;
@@ -5522,39 +5517,39 @@ textarea {
   text-transform: uppercase;
 }
 @media only screen and (min-width: 768px) {
-  /* line 844, sass/pages/_experience.scss */
+  /* line 838, sass/pages/_experience.scss */
   .experience-detail-related h1 {
     font-size: 16px;
     line-height: normal;
     margin: 0 0 42px;
   }
 }
-/* line 854, sass/pages/_experience.scss */
+/* line 848, sass/pages/_experience.scss */
 .experience-detail-related h1 span {
   text-transform: lowercase;
 }
-/* line 859, sass/pages/_experience.scss */
+/* line 853, sass/pages/_experience.scss */
 .experience-detail-related .experience-image-content {
   margin: 0 0 15px;
 }
 @media only screen and (min-width: 980px) {
-  /* line 859, sass/pages/_experience.scss */
+  /* line 853, sass/pages/_experience.scss */
   .experience-detail-related .experience-image-content {
     width: 60%;
     float: left;
   }
 }
 @media only screen and (min-width: 1140px) {
-  /* line 859, sass/pages/_experience.scss */
+  /* line 853, sass/pages/_experience.scss */
   .experience-detail-related .experience-image-content {
     width: 666px;
   }
 }
-/* line 868, sass/pages/_experience.scss */
+/* line 862, sass/pages/_experience.scss */
 .experience-detail-related .experience-image-content img {
   width: 100%;
 }
-/* line 871, sass/pages/_experience.scss */
+/* line 865, sass/pages/_experience.scss */
 .experience-detail-related .experience-image-content article {
   width: 70%;
   top: -30px;
@@ -5564,14 +5559,14 @@ textarea {
   margin: 0 auto;
 }
 @media only screen and (min-width: 768px) {
-  /* line 871, sass/pages/_experience.scss */
+  /* line 865, sass/pages/_experience.scss */
   .experience-detail-related .experience-image-content article {
     width: 505px;
     top: -45px;
     padding: 30px 50px 0;
   }
 }
-/* line 884, sass/pages/_experience.scss */
+/* line 878, sass/pages/_experience.scss */
 .experience-detail-related .experience-image-content article h4 {
   text-transform: uppercase;
   color: #898989;
@@ -5581,34 +5576,34 @@ textarea {
   font-weight: 400;
 }
 @media only screen and (min-width: 768px) {
-  /* line 884, sass/pages/_experience.scss */
+  /* line 878, sass/pages/_experience.scss */
   .experience-detail-related .experience-image-content article h4 {
     font-size: 11px;
     line-height: normal;
   }
 }
-/* line 894, sass/pages/_experience.scss */
+/* line 888, sass/pages/_experience.scss */
 .experience-detail-related .experience-image-content article h4 a {
   color: #898989;
 }
-/* line 898, sass/pages/_experience.scss */
+/* line 892, sass/pages/_experience.scss */
 .experience-detail-related .experience-image-content article p {
   font-size: 22.83px;
   line-height: 24.29px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 898, sass/pages/_experience.scss */
+  /* line 892, sass/pages/_experience.scss */
   .experience-detail-related .experience-image-content article p {
     font-size: 35.46px;
     line-height: 41.93px;
   }
 }
-/* line 906, sass/pages/_experience.scss */
+/* line 900, sass/pages/_experience.scss */
 .experience-detail-related .experience-preview-content {
   margin: 30px 0 0;
 }
 @media only screen and (min-width: 980px) {
-  /* line 906, sass/pages/_experience.scss */
+  /* line 900, sass/pages/_experience.scss */
   .experience-detail-related .experience-preview-content {
     width: 32%;
     float: right;
@@ -5617,7 +5612,7 @@ textarea {
   }
 }
 @media only screen and (min-width: 1140px) {
-  /* line 906, sass/pages/_experience.scss */
+  /* line 900, sass/pages/_experience.scss */
   .experience-detail-related .experience-preview-content {
     width: 296px;
   }
@@ -5628,55 +5623,55 @@ textarea {
   content: "";
   display: table;
 }
-/* line 920, sass/pages/_experience.scss */
+/* line 914, sass/pages/_experience.scss */
 .experience-detail-related .experience-preview-content .experience-feature-box {
   width: 48%;
   text-align: left;
   float: left;
 }
 @media only screen and (min-width: 980px) {
-  /* line 920, sass/pages/_experience.scss */
+  /* line 914, sass/pages/_experience.scss */
   .experience-detail-related .experience-preview-content .experience-feature-box {
     margin: 0 0 55px;
     width: auto;
     float: none;
   }
 }
-/* line 930, sass/pages/_experience.scss */
+/* line 924, sass/pages/_experience.scss */
 .experience-detail-related .experience-preview-content .experience-feature-box:nth-child(2n) {
   float: right;
 }
 @media only screen and (min-width: 980px) {
-  /* line 930, sass/pages/_experience.scss */
+  /* line 924, sass/pages/_experience.scss */
   .experience-detail-related .experience-preview-content .experience-feature-box:nth-child(2n) {
     float: none;
   }
 }
-/* line 936, sass/pages/_experience.scss */
+/* line 930, sass/pages/_experience.scss */
 .experience-detail-related .experience-preview-content .experience-feature-box figure {
   margin: 0 0 10px;
 }
 @media only screen and (min-width: 1140px) {
-  /* line 936, sass/pages/_experience.scss */
+  /* line 930, sass/pages/_experience.scss */
   .experience-detail-related .experience-preview-content .experience-feature-box figure {
     margin: 0 0 8px;
   }
 }
-/* line 941, sass/pages/_experience.scss */
+/* line 935, sass/pages/_experience.scss */
 .experience-detail-related .experience-preview-content .experience-feature-box figure img {
   width: 100%;
 }
-/* line 945, sass/pages/_experience.scss */
+/* line 939, sass/pages/_experience.scss */
 .experience-detail-related .experience-preview-content .experience-feature-box article {
   padding: 0 5%;
 }
 @media only screen and (min-width: 768px) {
-  /* line 945, sass/pages/_experience.scss */
+  /* line 939, sass/pages/_experience.scss */
   .experience-detail-related .experience-preview-content .experience-feature-box article {
     padding: 0;
   }
 }
-/* line 951, sass/pages/_experience.scss */
+/* line 945, sass/pages/_experience.scss */
 .experience-detail-related .experience-preview-content .experience-feature-box h6 {
   text-transform: uppercase;
   color: #898989;
@@ -5686,23 +5681,23 @@ textarea {
   font-weight: 400;
 }
 @media only screen and (min-width: 768px) {
-  /* line 951, sass/pages/_experience.scss */
+  /* line 945, sass/pages/_experience.scss */
   .experience-detail-related .experience-preview-content .experience-feature-box h6 {
     font-size: 11px;
     line-height: normal;
   }
 }
-/* line 961, sass/pages/_experience.scss */
+/* line 955, sass/pages/_experience.scss */
 .experience-detail-related .experience-preview-content .experience-feature-box h6 a {
   color: #898989;
 }
-/* line 965, sass/pages/_experience.scss */
+/* line 959, sass/pages/_experience.scss */
 .experience-detail-related .experience-preview-content .experience-feature-box h4 {
   font-size: 14.43px;
   line-height: 23px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 965, sass/pages/_experience.scss */
+  /* line 959, sass/pages/_experience.scss */
   .experience-detail-related .experience-preview-content .experience-feature-box h4 {
     font-size: 17.23px;
     line-height: normal;
