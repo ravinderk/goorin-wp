@@ -28,5 +28,6 @@
     </div>
     <div id="recommended-posts-settings">
         <p>Post type not showing up? <a href="<?php echo $author_recommended_posts_options_url; ?>">Change Settings</a></p>
+	    <p>Select Only 3 Posts</p>
     </div>
 </div>
