@@ -34,7 +34,7 @@ get_header(); ?>
 					<li class="facebook"><a target="_blank" href="http://www.facebook.com/sharer.php?u=<?php echo rawurlencode( get_permalink() ) ; ?>">Facebook</a></li>
 					<li class="instagram"><a target="_blank" href="">Instagram</a></li>
 					<li class="pinterest"><a target="_blank" href="https://www.pinterest.com/pin/create/button/?url=<?php echo rawurlencode( get_permalink() ); ?>&media=<?php echo rawurlencode( wp_get_attachment_url( get_post_thumbnail_id() ) ); ?>&description=<?php echo rawurlencode( get_the_title() ); ?>">Pinterest</a></li>
-					<li class="tumbler"><a target="_blank" href="">Tumbler</a></li>
+					<li class="tumbler"><a target="_blank" href="http://www.tumblr.com/share?v=3&u=<?php echo rawurlencode( get_permalink() ); ?>&t=<?php echo rawurlencode( get_the_title() ); ?>">Tumbler</a></li>
 				</ul>
 			</div>
 		</section>
