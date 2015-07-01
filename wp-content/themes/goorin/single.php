@@ -69,14 +69,16 @@ get_header(); ?>
 				</div>
 			</div>
 		</section>
-		<section class="experience-detail-related">
-			<div class="container">
-				<?php if ( class_exists( 'AuthorRecommendedPosts' ) ) { ?>
-					<?php
-					$author_recommended_posts = new AuthorRecommendedPosts();
-					$namespace = $author_recommended_posts->namespace;
-					$recommended_ids = get_post_meta( $post->ID, $namespace, true );
-					?>
+		<?php if ( class_exists( 'AuthorRecommendedPosts' ) ) { ?>
+			<?php
+			$author_recommended_posts = new AuthorRecommendedPosts();
+			$namespace = $author_recommended_posts->namespace;
+			$recommended_ids = get_post_meta( $post->ID, $namespace, true );
+
+			if ( count( $recommended_ids ) > 0 ) {
+			?>
+			<section class="experience-detail-related">
+				<div class="container">
 					<h1><?php echo $author_recommended_posts->get_option( "{$namespace}_title" ); ?></h1>
 					<div class="experience-preview-main">
 						<?php foreach ( $recommended_ids as $key => $id ) { ?>
@@ -120,9 +122,11 @@ get_header(); ?>
 						<?php } ?>
 					</div>
 					<!--experience-preview-main-->
-				<?php } ?>
-			</div>
-		</section>
+
+				</div>
+			</section>
+			<?php } ?>
+		<?php } ?>
 		<!--experience-detail-related-->
 	<?php endwhile; // end of the loop. ?>
 </div>
