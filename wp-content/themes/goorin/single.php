@@ -27,14 +27,14 @@ get_header(); ?>
 						<strong><?php the_title() ?></strong>
 					</li>
 				</ul>
-			</div>
-			<div class="social-links">
-				<ul>
-					<li class="twitter"><a target="_blank" href="https://twitter.com/intent/tweet?url=<?php echo rawurlencode( get_permalink() ); ?>&text=<?php echo rawurlencode( get_the_title() ); ?>&via=mitm">Twitter</a></li>
-					<li class="facebook"><a target="_blank" href="http://www.facebook.com/sharer.php?u=<?php echo rawurlencode( get_permalink() ) ; ?>">Facebook</a></li>
-					<li class="pinterest"><a target="_blank" href="https://www.pinterest.com/pin/create/button/?url=<?php echo rawurlencode( get_permalink() ); ?>&media=<?php echo rawurlencode( wp_get_attachment_url( get_post_thumbnail_id() ) ); ?>&description=<?php echo rawurlencode( get_the_title() ); ?>">Pinterest</a></li>
-					<li class="tumbler"><a target="_blank" href="http://www.tumblr.com/share?v=3&u=<?php echo rawurlencode( get_permalink() ); ?>&t=<?php echo rawurlencode( get_the_title() ); ?>">Tumbler</a></li>
-				</ul>
+				<div class="social-links">
+					<ul>
+						<li><a class="twitter" target="_blank" href="https://twitter.com/intent/tweet?url=<?php echo rawurlencode( get_permalink() ); ?>&text=<?php echo rawurlencode( get_the_title() ); ?>&via=mitm">Twitter</a></li>
+						<li><a class="facebook" target="_blank" href="http://www.facebook.com/sharer.php?u=<?php echo rawurlencode( get_permalink() ) ; ?>">Facebook</a></li>
+						<li><a class="pinterest" target="_blank" href="https://www.pinterest.com/pin/create/button/?url=<?php echo rawurlencode( get_permalink() ); ?>&media=<?php echo rawurlencode( wp_get_attachment_url( get_post_thumbnail_id() ) ); ?>&description=<?php echo rawurlencode( get_the_title() ); ?>">Pinterest</a></li>
+						<li><a class="tumbler" target="_blank" href="http://www.tumblr.com/share?v=3&u=<?php echo rawurlencode( get_permalink() ); ?>&t=<?php echo rawurlencode( get_the_title() ); ?>">Tumbler</a></li>
+					</ul>
+				</div>
 			</div>
 		</section>
 		<!--breadcrumbs-->

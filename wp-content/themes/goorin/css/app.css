@@ -853,12 +853,12 @@ img {
 }
 
 /* line 36, sass/components/_components.scss */
-.cat-bottom-col a.backtotop, .popup-overlay, .site-header .submenu, .site-header .submenu figure, .cart-dropdown, .cart-dropdown .cart-list-loop a.cart-delete, .site-header .nav-primary ul li.nav-3, .site-header .menu, .site-header .saletext, .site-search .search-close, .site-footer .hidden-mobile, .no-categories-main .no-categories-search header, .no-categories-main .no-categories-search .screen-reader-text, .category-campaign .cat-product-block .category-products .item .upsellShortDescription, .category-campaign .cat-product-block .category-products .item .actions, .category-campaign .cat-product-block .category-products .item .old-price {
+.cat-bottom-col a.backtotop, .popup-overlay, .site-header .submenu, .site-header .submenu figure, .cart-dropdown, .cart-dropdown .cart-list-loop a.cart-delete, .site-header .nav-primary ul li.nav-3, .site-header .menu, .site-header .saletext, .site-search .search-close, .site-footer .hidden-mobile, .experience-page .social-links, .no-categories-main .no-categories-search header, .no-categories-main .no-categories-search .screen-reader-text, .category-campaign .cat-product-block .category-products .item .upsellShortDescription, .category-campaign .cat-product-block .category-products .item .actions, .category-campaign .cat-product-block .category-products .item .old-price {
   display: none;
 }
 
 /* line 39, sass/components/_components.scss */
-.breadcrumbs ul li, .gender-box span, .cart-dropdown .cart-list-loop figure, .cart-dropdown .cart-list-loop article, .banner .slick-dots li button, .site-header .menu-toggle, .site-search .site-search-form input[type="text"], .site-footer .footer-social-col ul li, .site-footer .footer-social-col ul li a, .hollyday-content-block .hollyday-product-block .hollyday-right-block .hollyday-box, .experience-page .experience-hero-block .slick-dots li button, .category-campaign .cat-product-block .category-products .item {
+.breadcrumbs ul li, .gender-box span, .cart-dropdown .cart-list-loop figure, .cart-dropdown .cart-list-loop article, .banner .slick-dots li button, .site-header .menu-toggle, .site-search .site-search-form input[type="text"], .site-footer .footer-social-col ul li, .site-footer .footer-social-col ul li a, .hollyday-content-block .hollyday-product-block .hollyday-right-block .hollyday-box, .experience-page .social-links ul li a, .experience-page .experience-hero-block .slick-dots li button, .category-campaign .cat-product-block .category-products .item {
   float: left;
 }
 
@@ -4330,29 +4330,84 @@ textarea {
     padding: 0 0 30px;
   }
 }
+@media only screen and (min-width: 980px) {
+  /* line 19, sass/pages/_experience.scss */
+  .experience-page .breadcrumbs ul {
+    float: left;
+  }
+}
+@media only screen and (min-width: 980px) {
+  /* line 25, sass/pages/_experience.scss */
+  .experience-page .social-links {
+    float: right;
+    display: block;
+  }
+}
+/* line 31, sass/pages/_experience.scss */
+.experience-page .social-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 35, sass/pages/_experience.scss */
+.experience-page .social-links ul li {
+  margin: 0 0 0 20px;
+}
+/* line 37, sass/pages/_experience.scss */
+.experience-page .social-links ul li a {
+  font-size: 0;
+  height: 30px;
+  width: 30px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: url("../images/social-links.png") 0 center no-repeat;
+  background: url("../images/social-links.png") 0 center no-repeat;
+  background-color: #efefeb;
+}
+/* line 44, sass/pages/_experience.scss */
+.experience-page .social-links ul li a.twitter {
+  background-position: 8px center;
+}
+/* line 47, sass/pages/_experience.scss */
+.experience-page .social-links ul li a.facebook {
+  background-position: -40px center;
+}
+/* line 50, sass/pages/_experience.scss */
+.experience-page .social-links ul li a.pinterest {
+  background-position: -140px center;
+}
+/* line 53, sass/pages/_experience.scss */
+.experience-page .social-links ul li a.tumbler {
+  background-position: -191px center;
+}
+/* line 56, sass/pages/_experience.scss */
+.experience-page .social-links ul li a:hover {
+  background-color: #d8d8cf;
+}
 @media only screen and (min-width: 1140px) {
-  /* line 21, sass/pages/_experience.scss */
+  /* line 65, sass/pages/_experience.scss */
   .experience-page .experience-hero-block figure {
     height: 470px;
     overflow: hidden;
   }
 }
-/* line 26, sass/pages/_experience.scss */
+/* line 70, sass/pages/_experience.scss */
 .experience-page .experience-hero-block figure img {
   width: 100%;
   height: auto;
 }
 @media only screen and (min-width: 1140px) {
-  /* line 26, sass/pages/_experience.scss */
+  /* line 70, sass/pages/_experience.scss */
   .experience-page .experience-hero-block figure img {
     min-height: 470px;
   }
 }
-/* line 34, sass/pages/_experience.scss */
+/* line 78, sass/pages/_experience.scss */
 .experience-page .experience-hero-block .slick-slider {
   margin: 0;
 }
-/* line 37, sass/pages/_experience.scss */
+/* line 81, sass/pages/_experience.scss */
 .experience-page .experience-hero-block article {
   width: 80%;
   position: relative;
@@ -4363,7 +4418,7 @@ textarea {
   padding: 18px 20px 0;
 }
 @media only screen and (min-width: 768px) {
-  /* line 37, sass/pages/_experience.scss */
+  /* line 81, sass/pages/_experience.scss */
   .experience-page .experience-hero-block article {
     top: -60px;
     width: 85%;
@@ -4371,13 +4426,13 @@ textarea {
   }
 }
 @media only screen and (min-width: 980px) {
-  /* line 37, sass/pages/_experience.scss */
+  /* line 81, sass/pages/_experience.scss */
   .experience-page .experience-hero-block article {
     width: 648px;
     padding: 35px 30px 0;
   }
 }
-/* line 54, sass/pages/_experience.scss */
+/* line 98, sass/pages/_experience.scss */
 .experience-page .experience-hero-block h6 {
   text-transform: uppercase;
   font-size: 10px;
@@ -4387,37 +4442,37 @@ textarea {
   margin: 0 0 10px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 54, sass/pages/_experience.scss */
+  /* line 98, sass/pages/_experience.scss */
   .experience-page .experience-hero-block h6 {
     font-size: 12px;
     line-height: normal;
     margin: 0 0 20px;
   }
 }
-/* line 65, sass/pages/_experience.scss */
+/* line 109, sass/pages/_experience.scss */
 .experience-page .experience-hero-block h6 ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-/* line 70, sass/pages/_experience.scss */
+/* line 114, sass/pages/_experience.scss */
 .experience-page .experience-hero-block h6 a {
   color: #898989;
 }
-/* line 74, sass/pages/_experience.scss */
+/* line 118, sass/pages/_experience.scss */
 .experience-page .experience-hero-block h1 {
   margin: 0 0 15px;
   font-size: 27px;
   line-height: 28px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 74, sass/pages/_experience.scss */
+  /* line 118, sass/pages/_experience.scss */
   .experience-page .experience-hero-block h1 {
     font-size: 38px;
     line-height: 38px;
   }
 }
-/* line 81, sass/pages/_experience.scss */
+/* line 125, sass/pages/_experience.scss */
 .experience-page .experience-hero-block .slick-dots {
   margin: 0;
   padding: 0;
@@ -4427,20 +4482,20 @@ textarea {
   left: 0;
 }
 @media only screen and (min-width: 768px) {
-  /* line 81, sass/pages/_experience.scss */
+  /* line 125, sass/pages/_experience.scss */
   .experience-page .experience-hero-block .slick-dots {
     position: absolute;
     bottom: 40px;
     left: 0;
   }
 }
-/* line 89, sass/pages/_experience.scss */
+/* line 133, sass/pages/_experience.scss */
 .experience-page .experience-hero-block .slick-dots li {
   margin: 0 auto;
   height: auto;
   width: auto;
 }
-/* line 93, sass/pages/_experience.scss */
+/* line 137, sass/pages/_experience.scss */
 .experience-page .experience-hero-block .slick-dots li button {
   height: 4px;
   width: 4px;
@@ -4453,12 +4508,12 @@ textarea {
   -moz-border-radius: 50%;
   border-radius: 50%;
 }
-/* line 102, sass/pages/_experience.scss */
+/* line 146, sass/pages/_experience.scss */
 .experience-page .experience-hero-block .slick-dots li.slick-active button {
   background: #362f2d;
   background: #362f2d;
 }
-/* line 108, sass/pages/_experience.scss */
+/* line 152, sass/pages/_experience.scss */
 .experience-page .experience-hero-block .slick-prev, .experience-page .experience-hero-block .slick-next {
   top: 50%;
   font-size: 0;
@@ -4474,61 +4529,61 @@ textarea {
   background: none;
   margin-top: -29px;
 }
-/* line 120, sass/pages/_experience.scss */
+/* line 164, sass/pages/_experience.scss */
 .experience-page .experience-hero-block .slick-prev {
   left: 45px;
   opacity: 0.5;
   background: url("../images/slider-prev.png") right 0 no-repeat;
   background: url("../images/slider-prev.png") right 0 no-repeat;
 }
-/* line 124, sass/pages/_experience.scss */
+/* line 168, sass/pages/_experience.scss */
 .experience-page .experience-hero-block .slick-prev:hover {
   opacity: 1;
   left: 35px;
 }
-/* line 129, sass/pages/_experience.scss */
+/* line 173, sass/pages/_experience.scss */
 .experience-page .experience-hero-block .slick-next {
   right: 45px;
   opacity: 0.5;
   background: url("../images/slider-next.png") 0 0 no-repeat;
   background: url("../images/slider-next.png") 0 0 no-repeat;
 }
-/* line 133, sass/pages/_experience.scss */
+/* line 177, sass/pages/_experience.scss */
 .experience-page .experience-hero-block .slick-next:hover {
   opacity: 1;
   right: 35px;
 }
-/* line 141, sass/pages/_experience.scss */
+/* line 185, sass/pages/_experience.scss */
 .experience-page .experience-cat-block .container, .experience-page .experience-blog-block .container, .experience-page .categories-blog-block .container {
   max-width: 1024px;
 }
 @media only screen and (min-width: 1140px) {
-  /* line 141, sass/pages/_experience.scss */
+  /* line 185, sass/pages/_experience.scss */
   .experience-page .experience-cat-block .container, .experience-page .experience-blog-block .container, .experience-page .categories-blog-block .container {
     padding: 0;
   }
 }
-/* line 149, sass/pages/_experience.scss */
+/* line 193, sass/pages/_experience.scss */
 .experience-page .experience-cat-block hgroup h1 {
   font-size: 27px;
   line-height: normal;
 }
 @media only screen and (min-width: 768px) {
-  /* line 149, sass/pages/_experience.scss */
+  /* line 193, sass/pages/_experience.scss */
   .experience-page .experience-cat-block hgroup h1 {
     font-size: 42px;
     line-height: normal;
   }
 }
 @media only screen and (min-width: 1024px) {
-  /* line 149, sass/pages/_experience.scss */
+  /* line 193, sass/pages/_experience.scss */
   .experience-page .experience-cat-block hgroup h1 {
     margin: 0 0 25px;
     font-size: 59px;
     line-height: normal;
   }
 }
-/* line 161, sass/pages/_experience.scss */
+/* line 205, sass/pages/_experience.scss */
 .experience-page .experience-cat-list {
   margin: 20px 0 0;
   padding: 18px 0 16px;
@@ -4536,31 +4591,31 @@ textarea {
   background: #eaebe4;
 }
 @media only screen and (min-width: 768px) {
-  /* line 161, sass/pages/_experience.scss */
+  /* line 205, sass/pages/_experience.scss */
   .experience-page .experience-cat-list {
     margin: 0;
   }
 }
-/* line 168, sass/pages/_experience.scss */
+/* line 212, sass/pages/_experience.scss */
 .experience-page .experience-cat-list .experience-cat-toggle {
   display: block;
   font-size: 16.87px;
   line-height: normal;
 }
 @media only screen and (min-width: 768px) {
-  /* line 168, sass/pages/_experience.scss */
+  /* line 212, sass/pages/_experience.scss */
   .experience-page .experience-cat-list .experience-cat-toggle {
     display: none;
   }
 }
-/* line 175, sass/pages/_experience.scss */
+/* line 219, sass/pages/_experience.scss */
 .experience-page .experience-cat-list .experience-cat-toggle span {
   background: url("../images/cat-list-arrow.png") right center no-repeat;
   background: url("../images/cat-list-arrow.png") right center no-repeat;
   display: inline-block;
   padding: 0 15px 0 0;
 }
-/* line 181, sass/pages/_experience.scss */
+/* line 225, sass/pages/_experience.scss */
 .experience-page .experience-cat-list ul {
   list-style: none;
   padding: 0;
@@ -4568,24 +4623,24 @@ textarea {
   display: none;
 }
 @media only screen and (min-width: 768px) {
-  /* line 181, sass/pages/_experience.scss */
+  /* line 225, sass/pages/_experience.scss */
   .experience-page .experience-cat-list ul {
     display: table;
     margin: 0 auto;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 190, sass/pages/_experience.scss */
+  /* line 234, sass/pages/_experience.scss */
   .experience-page .experience-cat-list ul li {
     float: left;
     margin: 0 9px;
   }
 }
-/* line 196, sass/pages/_experience.scss */
+/* line 240, sass/pages/_experience.scss */
 .experience-page .experience-cat-list ul li.active a {
   color: #000000;
 }
-/* line 200, sass/pages/_experience.scss */
+/* line 244, sass/pages/_experience.scss */
 .experience-page .experience-cat-list ul li a {
   text-transform: uppercase;
   color: #898989;
@@ -4595,22 +4650,22 @@ textarea {
   padding: 10px 0;
   font-weight: 400;
 }
-/* line 209, sass/pages/_experience.scss */
+/* line 253, sass/pages/_experience.scss */
 .experience-page .experience-cat-list ul li a:hover {
   color: #000000;
 }
 @media only screen and (min-width: 768px) {
-  /* line 200, sass/pages/_experience.scss */
+  /* line 244, sass/pages/_experience.scss */
   .experience-page .experience-cat-list ul li a {
     padding: 0;
   }
 }
-/* line 219, sass/pages/_experience.scss */
+/* line 263, sass/pages/_experience.scss */
 .experience-page .experience-blog-block, .experience-page .categories-blog-block {
   padding: 15px 0 0;
 }
 @media only screen and (min-width: 768px) {
-  /* line 219, sass/pages/_experience.scss */
+  /* line 263, sass/pages/_experience.scss */
   .experience-page .experience-blog-block, .experience-page .categories-blog-block {
     padding: 58px 0 0;
   }
@@ -4622,18 +4677,18 @@ textarea {
   display: table;
 }
 @media only screen and (min-width: 768px) {
-  /* line 225, sass/pages/_experience.scss */
+  /* line 269, sass/pages/_experience.scss */
   .experience-page .experience-blog-row {
     margin: 0 -20px;
   }
 }
 @media only screen and (min-width: 1024px) {
-  /* line 225, sass/pages/_experience.scss */
+  /* line 269, sass/pages/_experience.scss */
   .experience-page .experience-blog-row {
     margin: 0 -33px;
   }
 }
-/* line 234, sass/pages/_experience.scss */
+/* line 278, sass/pages/_experience.scss */
 .experience-page .experience-blog-list {
   width: 48%;
   min-height: 195px;
@@ -4641,57 +4696,57 @@ textarea {
   float: left;
   padding-bottom: 25px;
 }
-/* line 240, sass/pages/_experience.scss */
+/* line 284, sass/pages/_experience.scss */
 .experience-page .experience-blog-list:nth-child(2n) {
   float: right;
 }
 @media only screen and (min-width: 640px) {
-  /* line 234, sass/pages/_experience.scss */
+  /* line 278, sass/pages/_experience.scss */
   .experience-page .experience-blog-list {
     min-height: 265px;
     padding-bottom: 0;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 234, sass/pages/_experience.scss */
+  /* line 278, sass/pages/_experience.scss */
   .experience-page .experience-blog-list {
     width: 33.333%;
     padding: 0 20px;
   }
-  /* line 250, sass/pages/_experience.scss */
+  /* line 294, sass/pages/_experience.scss */
   .experience-page .experience-blog-list:nth-child(2n) {
     float: left;
   }
 }
 @media only screen and (min-width: 980px) {
-  /* line 234, sass/pages/_experience.scss */
+  /* line 278, sass/pages/_experience.scss */
   .experience-page .experience-blog-list {
     min-height: 280px;
   }
 }
 @media only screen and (min-width: 1024px) {
-  /* line 234, sass/pages/_experience.scss */
+  /* line 278, sass/pages/_experience.scss */
   .experience-page .experience-blog-list {
     min-height: 300px;
     padding: 0 33px;
   }
 }
-/* line 261, sass/pages/_experience.scss */
+/* line 305, sass/pages/_experience.scss */
 .experience-page .experience-blog-list figure {
   margin: 0 0 5px;
 }
-/* line 263, sass/pages/_experience.scss */
+/* line 307, sass/pages/_experience.scss */
 .experience-page .experience-blog-list figure img {
   width: 100%;
   height: auto;
 }
 @media only screen and (min-width: 1024px) {
-  /* line 263, sass/pages/_experience.scss */
+  /* line 307, sass/pages/_experience.scss */
   .experience-page .experience-blog-list figure img {
     max-height: 212px;
   }
 }
-/* line 272, sass/pages/_experience.scss */
+/* line 316, sass/pages/_experience.scss */
 .experience-page .experience-blog-list article h6 {
   text-transform: uppercase;
   color: #898989;
@@ -4701,39 +4756,39 @@ textarea {
   font-weight: 400;
 }
 @media only screen and (min-width: 768px) {
-  /* line 272, sass/pages/_experience.scss */
+  /* line 316, sass/pages/_experience.scss */
   .experience-page .experience-blog-list article h6 {
     font-size: 11px;
     line-height: normal;
   }
 }
-/* line 282, sass/pages/_experience.scss */
+/* line 326, sass/pages/_experience.scss */
 .experience-page .experience-blog-list article h6 a {
   color: #898989;
 }
-/* line 285, sass/pages/_experience.scss */
+/* line 329, sass/pages/_experience.scss */
 .experience-page .experience-blog-list article h6 ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 289, sass/pages/_experience.scss */
+/* line 333, sass/pages/_experience.scss */
 .experience-page .experience-blog-list article h6 ul li {
   list-style: none;
 }
-/* line 294, sass/pages/_experience.scss */
+/* line 338, sass/pages/_experience.scss */
 .experience-page .experience-blog-list article h4 {
   font-size: 16px;
   line-height: 21.26px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 294, sass/pages/_experience.scss */
+  /* line 338, sass/pages/_experience.scss */
   .experience-page .experience-blog-list article h4 {
     font-size: 17.23px;
     line-height: normal;
   }
 }
-/* line 302, sass/pages/_experience.scss */
+/* line 346, sass/pages/_experience.scss */
 .experience-page .categories-blog-list {
   width: 48%;
   min-height: 195px;
@@ -4741,19 +4796,19 @@ textarea {
   float: left;
   padding-bottom: 25px;
 }
-/* line 308, sass/pages/_experience.scss */
+/* line 352, sass/pages/_experience.scss */
 .experience-page .categories-blog-list:nth-child(2n) {
   float: right;
 }
 @media only screen and (min-width: 640px) {
-  /* line 302, sass/pages/_experience.scss */
+  /* line 346, sass/pages/_experience.scss */
   .experience-page .categories-blog-list {
     min-height: 265px;
     padding-bottom: 0;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 302, sass/pages/_experience.scss */
+  /* line 346, sass/pages/_experience.scss */
   .experience-page .categories-blog-list {
     width: auto;
     float: none;
@@ -4761,17 +4816,17 @@ textarea {
     overflow: hidden;
     padding: 0 0 45px;
   }
-  /* line 321, sass/pages/_experience.scss */
+  /* line 365, sass/pages/_experience.scss */
   .experience-page .categories-blog-list:nth-child(2n) {
     float: none;
   }
 }
-/* line 326, sass/pages/_experience.scss */
+/* line 370, sass/pages/_experience.scss */
 .experience-page .categories-blog-list figure {
   margin: 0 0 10px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 326, sass/pages/_experience.scss */
+  /* line 370, sass/pages/_experience.scss */
   .experience-page .categories-blog-list figure {
     float: left;
     margin: 0;
@@ -4779,7 +4834,7 @@ textarea {
   }
 }
 @media only screen and (min-width: 980px) {
-  /* line 326, sass/pages/_experience.scss */
+  /* line 370, sass/pages/_experience.scss */
   .experience-page .categories-blog-list figure {
     float: left;
     margin: 0;
@@ -4787,40 +4842,40 @@ textarea {
   }
 }
 @media only screen and (min-width: 1140px) {
-  /* line 326, sass/pages/_experience.scss */
+  /* line 370, sass/pages/_experience.scss */
   .experience-page .categories-blog-list figure {
     width: 300px;
   }
 }
-/* line 341, sass/pages/_experience.scss */
+/* line 385, sass/pages/_experience.scss */
 .experience-page .categories-blog-list figure img {
   width: 100%;
   height: auto;
   display: block;
 }
 @media only screen and (min-width: 768px) {
-  /* line 347, sass/pages/_experience.scss */
+  /* line 391, sass/pages/_experience.scss */
   .experience-page .categories-blog-list article {
     float: right;
     width: 62%;
   }
 }
 @media only screen and (min-width: 980px) {
-  /* line 347, sass/pages/_experience.scss */
+  /* line 391, sass/pages/_experience.scss */
   .experience-page .categories-blog-list article {
     float: right;
     width: 72%;
   }
 }
 @media only screen and (min-width: 1140px) {
-  /* line 347, sass/pages/_experience.scss */
+  /* line 391, sass/pages/_experience.scss */
   .experience-page .categories-blog-list article {
     width: 665px;
     float: left;
     padding: 22px 0 0 25px;
   }
 }
-/* line 361, sass/pages/_experience.scss */
+/* line 405, sass/pages/_experience.scss */
 .experience-page .categories-blog-list article h6 {
   text-transform: uppercase;
   color: #898989;
@@ -4830,29 +4885,29 @@ textarea {
   font-weight: 400;
 }
 @media only screen and (min-width: 768px) {
-  /* line 361, sass/pages/_experience.scss */
+  /* line 405, sass/pages/_experience.scss */
   .experience-page .categories-blog-list article h6 {
     font-size: 11px;
     line-height: normal;
   }
 }
-/* line 371, sass/pages/_experience.scss */
+/* line 415, sass/pages/_experience.scss */
 .experience-page .categories-blog-list article h6 a {
   color: #898989;
 }
-/* line 375, sass/pages/_experience.scss */
+/* line 419, sass/pages/_experience.scss */
 .experience-page .categories-blog-list article h4 {
   font-size: 16px;
   line-height: 21.26px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 375, sass/pages/_experience.scss */
+  /* line 419, sass/pages/_experience.scss */
   .experience-page .categories-blog-list article h4 {
     font-size: 26.32px;
     line-height: normal;
   }
 }
-/* line 381, sass/pages/_experience.scss */
+/* line 425, sass/pages/_experience.scss */
 .experience-page .categories-blog-list article p {
   color: #4d4d4d;
   font-size: 14px;
@@ -4860,19 +4915,19 @@ textarea {
   display: none;
 }
 @media only screen and (min-width: 768px) {
-  /* line 381, sass/pages/_experience.scss */
+  /* line 425, sass/pages/_experience.scss */
   .experience-page .categories-blog-list article p {
     display: block;
   }
 }
 @media only screen and (min-width: 1024px) {
-  /* line 381, sass/pages/_experience.scss */
+  /* line 425, sass/pages/_experience.scss */
   .experience-page .categories-blog-list article p {
     font-size: 16px;
     line-height: 25.27px;
   }
 }
-/* line 394, sass/pages/_experience.scss */
+/* line 438, sass/pages/_experience.scss */
 .experience-page .blog-one-row {
   clear: both;
 }
@@ -4883,7 +4938,7 @@ textarea {
   display: table;
 }
 @media only screen and (min-width: 768px) {
-  /* line 394, sass/pages/_experience.scss */
+  /* line 438, sass/pages/_experience.scss */
   .experience-page .blog-one-row {
     max-width: 768px;
     margin: 0 auto;
@@ -4891,36 +4946,36 @@ textarea {
   }
 }
 @media only screen and (min-width: 980px) {
-  /* line 394, sass/pages/_experience.scss */
+  /* line 438, sass/pages/_experience.scss */
   .experience-page .blog-one-row {
     max-width: inherit;
     padding: 0;
   }
 }
-/* line 407, sass/pages/_experience.scss */
+/* line 451, sass/pages/_experience.scss */
 .experience-page .blog-one-row figure img {
   width: 100%;
 }
 @media only screen and (min-width: 768px) {
-  /* line 411, sass/pages/_experience.scss */
+  /* line 455, sass/pages/_experience.scss */
   .experience-page .blog-one-row .blog-image-content {
     padding: 0 20px;
   }
 }
 @media only screen and (min-width: 980px) {
-  /* line 411, sass/pages/_experience.scss */
+  /* line 455, sass/pages/_experience.scss */
   .experience-page .blog-one-row .blog-image-content {
     float: left;
     width: 66.3333%;
   }
 }
 @media only screen and (min-width: 1024px) {
-  /* line 411, sass/pages/_experience.scss */
+  /* line 455, sass/pages/_experience.scss */
   .experience-page .blog-one-row .blog-image-content {
     padding: 0 33px;
   }
 }
-/* line 422, sass/pages/_experience.scss */
+/* line 466, sass/pages/_experience.scss */
 .experience-page .blog-one-row .blog-image-content article {
   width: 70%;
   top: -30px;
@@ -4930,14 +4985,14 @@ textarea {
   margin: 0 auto;
 }
 @media only screen and (min-width: 768px) {
-  /* line 422, sass/pages/_experience.scss */
+  /* line 466, sass/pages/_experience.scss */
   .experience-page .blog-one-row .blog-image-content article {
     width: 505px;
     top: -45px;
     padding: 30px 50px 0;
   }
 }
-/* line 435, sass/pages/_experience.scss */
+/* line 479, sass/pages/_experience.scss */
 .experience-page .blog-one-row .blog-image-content article h4 {
   text-transform: uppercase;
   color: #898989;
@@ -4947,102 +5002,102 @@ textarea {
   font-weight: 400;
 }
 @media only screen and (min-width: 768px) {
-  /* line 435, sass/pages/_experience.scss */
+  /* line 479, sass/pages/_experience.scss */
   .experience-page .blog-one-row .blog-image-content article h4 {
     font-size: 11px;
     line-height: normal;
   }
 }
-/* line 445, sass/pages/_experience.scss */
+/* line 489, sass/pages/_experience.scss */
 .experience-page .blog-one-row .blog-image-content article h4 a {
   color: #898989;
 }
-/* line 449, sass/pages/_experience.scss */
+/* line 493, sass/pages/_experience.scss */
 .experience-page .blog-one-row .blog-image-content article p {
   font-size: 22.83px;
   line-height: 24.29px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 449, sass/pages/_experience.scss */
+  /* line 493, sass/pages/_experience.scss */
   .experience-page .blog-one-row .blog-image-content article p {
     font-size: 36px;
     line-height: 42px;
   }
 }
-/* line 454, sass/pages/_experience.scss */
+/* line 498, sass/pages/_experience.scss */
 .experience-page .blog-one-row .blog-image-content article p a {
   text-decoration: underline;
 }
-/* line 456, sass/pages/_experience.scss */
+/* line 500, sass/pages/_experience.scss */
 .experience-page .blog-one-row .blog-image-content article p a:hover {
   text-decoration: none;
 }
 @media only screen and (min-width: 980px) {
-  /* line 463, sass/pages/_experience.scss */
+  /* line 507, sass/pages/_experience.scss */
   .experience-page .blog-one-row .blog-preview-content {
     float: left;
     width: 33.3333%;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 468, sass/pages/_experience.scss */
+  /* line 512, sass/pages/_experience.scss */
   .experience-page .blog-one-row .blog-preview-content .experience-blog-list {
     width: 48%;
     padding: 0 20px;
   }
 }
 @media only screen and (min-width: 980px) {
-  /* line 468, sass/pages/_experience.scss */
+  /* line 512, sass/pages/_experience.scss */
   .experience-page .blog-one-row .blog-preview-content .experience-blog-list {
     min-height: 280px;
     width: 100%;
     padding: 0 33px;
   }
 }
-/* line 478, sass/pages/_experience.scss */
+/* line 522, sass/pages/_experience.scss */
 .experience-page .blog-one-row .blog-preview-content .experience-blog-list:nth-child(2n) {
   float: right;
 }
 @media only screen and (min-width: 980px) {
-  /* line 478, sass/pages/_experience.scss */
+  /* line 522, sass/pages/_experience.scss */
   .experience-page .blog-one-row .blog-preview-content .experience-blog-list:nth-child(2n) {
     float: none;
   }
 }
-/* line 489, sass/pages/_experience.scss */
+/* line 533, sass/pages/_experience.scss */
 .experience-page .experience-hero-detail article h1 {
-  margin: 0 0 15px;
+  margin: 0;
   font-size: 27px;
   line-height: 28px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 489, sass/pages/_experience.scss */
+  /* line 533, sass/pages/_experience.scss */
   .experience-page .experience-hero-detail article h1 {
     font-size: 38px;
     line-height: 38px;
   }
 }
 @media only screen and (min-width: 1024px) {
-  /* line 489, sass/pages/_experience.scss */
+  /* line 533, sass/pages/_experience.scss */
   .experience-page .experience-hero-detail article h1 {
     font-size: 58px;
     line-height: 58px;
   }
 }
 
-/* line 504, sass/pages/_experience.scss */
+/* line 548, sass/pages/_experience.scss */
 .no-categories-main .no-categories h2 {
   font-size: 24px;
   line-height: normal;
 }
 @media only screen and (min-width: 768px) {
-  /* line 504, sass/pages/_experience.scss */
+  /* line 548, sass/pages/_experience.scss */
   .no-categories-main .no-categories h2 {
     font-size: 30px;
     line-height: normal;
   }
 }
-/* line 510, sass/pages/_experience.scss */
+/* line 554, sass/pages/_experience.scss */
 .no-categories-main .no-categories h2 .btn, .no-categories-main .no-categories h2 .no-categories-search .search-submit, .no-categories-main .no-categories-search .no-categories h2 .search-submit {
   margin: 0 0 0 10px;
   padding: 10px 20px;
@@ -5050,63 +5105,63 @@ textarea {
   line-height: normal;
 }
 @media only screen and (min-width: 768px) {
-  /* line 510, sass/pages/_experience.scss */
+  /* line 554, sass/pages/_experience.scss */
   .no-categories-main .no-categories h2 .btn, .no-categories-main .no-categories h2 .no-categories-search .search-submit, .no-categories-main .no-categories-search .no-categories h2 .search-submit {
     position: relative;
     top: -5px;
   }
 }
-/* line 521, sass/pages/_experience.scss */
+/* line 565, sass/pages/_experience.scss */
 .no-categories-main .no-categories-search {
   display: none;
 }
 @media only screen and (min-width: 768px) {
-  /* line 526, sass/pages/_experience.scss */
+  /* line 570, sass/pages/_experience.scss */
   .no-categories-main .no-categories-search .page-content {
     display: table;
     margin: 20px auto;
     text-align: left;
   }
 }
-/* line 534, sass/pages/_experience.scss */
+/* line 578, sass/pages/_experience.scss */
 .no-categories-main .no-categories-search .search-form {
   overflow: hidden;
 }
-/* line 537, sass/pages/_experience.scss */
+/* line 581, sass/pages/_experience.scss */
 .no-categories-main .no-categories-search p {
   font-size: 14px;
   line-height: normal;
   padding: 0 0 10px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 537, sass/pages/_experience.scss */
+  /* line 581, sass/pages/_experience.scss */
   .no-categories-main .no-categories-search p {
     font-size: 16px;
     line-height: normal;
   }
 }
-/* line 544, sass/pages/_experience.scss */
+/* line 588, sass/pages/_experience.scss */
 .no-categories-main .no-categories-search input[type="search"] {
   box-sizing: inherit;
 }
-/* line 547, sass/pages/_experience.scss */
+/* line 591, sass/pages/_experience.scss */
 .no-categories-main .no-categories-search label {
   display: block;
 }
 @media only screen and (min-width: 768px) {
-  /* line 547, sass/pages/_experience.scss */
+  /* line 591, sass/pages/_experience.scss */
   .no-categories-main .no-categories-search label {
     width: 400px;
     float: left;
   }
 }
-/* line 554, sass/pages/_experience.scss */
+/* line 598, sass/pages/_experience.scss */
 .no-categories-main .no-categories-search .search-submit {
   width: 100%;
   margin: 10px 0 0;
 }
 @media only screen and (min-width: 768px) {
-  /* line 554, sass/pages/_experience.scss */
+  /* line 598, sass/pages/_experience.scss */
   .no-categories-main .no-categories-search .search-submit {
     width: auto;
     margin: 0 0 0 10px;
@@ -5115,41 +5170,51 @@ textarea {
   }
 }
 
-/* line 568, sass/pages/_experience.scss */
+/* line 611, sass/pages/_experience.scss */
+.experience-detail-content {
+  position: relative;
+}
+@media only screen and (min-width: 768px) {
+  /* line 611, sass/pages/_experience.scss */
+  .experience-detail-content {
+    top: -22px;
+  }
+}
+/* line 616, sass/pages/_experience.scss */
 .experience-detail-content .container {
   max-width: 1114px;
 }
-/* line 571, sass/pages/_experience.scss */
+/* line 619, sass/pages/_experience.scss */
 .experience-detail-content .experience-content-main {
   position: relative;
   padding: 20px 0 0;
   border-top: 4px solid #ebece8;
 }
 @media only screen and (min-width: 768px) {
-  /* line 571, sass/pages/_experience.scss */
+  /* line 619, sass/pages/_experience.scss */
   .experience-detail-content .experience-content-main {
     border-width: 7px;
     padding: 50px 0 0;
   }
 }
 @media only screen and (min-width: 980px) {
-  /* line 571, sass/pages/_experience.scss */
+  /* line 619, sass/pages/_experience.scss */
   .experience-detail-content .experience-content-main {
     padding: 50px 0 0 250px;
   }
 }
 @media only screen and (min-width: 1024px) {
-  /* line 571, sass/pages/_experience.scss */
+  /* line 619, sass/pages/_experience.scss */
   .experience-detail-content .experience-content-main {
     padding: 50px 0 0 380px;
   }
 }
-/* line 586, sass/pages/_experience.scss */
+/* line 634, sass/pages/_experience.scss */
 .experience-detail-content .exp-top-heading {
   padding: 0 0 20px;
 }
 @media only screen and (min-width: 980px) {
-  /* line 586, sass/pages/_experience.scss */
+  /* line 634, sass/pages/_experience.scss */
   .experience-detail-content .exp-top-heading {
     position: absolute;
     top: 75px;
@@ -5159,26 +5224,26 @@ textarea {
   }
 }
 @media only screen and (min-width: 1024px) {
-  /* line 586, sass/pages/_experience.scss */
+  /* line 634, sass/pages/_experience.scss */
   .experience-detail-content .exp-top-heading {
     width: 380px;
     padding: 0 80px 0 0;
   }
 }
-/* line 597, sass/pages/_experience.scss */
+/* line 645, sass/pages/_experience.scss */
 .experience-detail-content .exp-top-heading p {
   font-size: 16px;
   line-height: 24px;
   padding: 0 0 20px;
 }
 @media only screen and (min-width: 980px) {
-  /* line 597, sass/pages/_experience.scss */
+  /* line 645, sass/pages/_experience.scss */
   .experience-detail-content .exp-top-heading p {
     font-size: 24px;
     line-height: 34px;
   }
 }
-/* line 604, sass/pages/_experience.scss */
+/* line 652, sass/pages/_experience.scss */
 .experience-detail-content .exp-top-heading .exp-posted {
   border-bottom: 1px solid #ebece8;
   color: #898989;
@@ -5188,7 +5253,7 @@ textarea {
   padding: 0 0 20px;
 }
 @media only screen and (min-width: 980px) {
-  /* line 604, sass/pages/_experience.scss */
+  /* line 652, sass/pages/_experience.scss */
   .experience-detail-content .exp-top-heading .exp-posted {
     border: none;
     border-top: 1px solid #ebece8;
@@ -5197,134 +5262,142 @@ textarea {
     padding: 25px 0 0;
   }
 }
-/* line 617, sass/pages/_experience.scss */
+/* line 665, sass/pages/_experience.scss */
 .experience-detail-content .exp-top-heading .exp-posted time {
   font-size: 10px;
   line-height: normal;
   color: #898989;
 }
 @media only screen and (min-width: 980px) {
-  /* line 617, sass/pages/_experience.scss */
+  /* line 665, sass/pages/_experience.scss */
   .experience-detail-content .exp-top-heading .exp-posted time {
     font-size: 11px;
     line-height: normal;
   }
 }
-/* line 624, sass/pages/_experience.scss */
+/* line 672, sass/pages/_experience.scss */
 .experience-detail-content .exp-top-heading .exp-posted em {
   text-transform: lowercase;
 }
-/* line 631, sass/pages/_experience.scss */
+/* line 676, sass/pages/_experience.scss */
+.experience-detail-content .exp-top-heading .exp-posted a {
+  color: #898989;
+}
+/* line 679, sass/pages/_experience.scss */
+.experience-detail-content .exp-top-heading .exp-posted .author {
+  margin: 0 0 0 2px;
+}
+/* line 685, sass/pages/_experience.scss */
 .experience-detail-content .exp-content p {
   color: #6f6f6d;
   font-size: 15px;
   line-height: 24px;
   padding: 0 0 30px;
 }
-/* line 635, sass/pages/_experience.scss */
+/* line 689, sass/pages/_experience.scss */
 .experience-detail-content .exp-content p a {
   color: #6f6f6d;
   border-bottom: 1px solid #6f6f6d;
 }
-/* line 638, sass/pages/_experience.scss */
+/* line 692, sass/pages/_experience.scss */
 .experience-detail-content .exp-content p a:hover {
   border: none;
 }
-/* line 643, sass/pages/_experience.scss */
+/* line 697, sass/pages/_experience.scss */
 .experience-detail-content .exp-content img {
   display: block;
 }
 @media only screen and (min-width: 980px) {
-  /* line 646, sass/pages/_experience.scss */
+  /* line 700, sass/pages/_experience.scss */
   .experience-detail-content .exp-content .alignleft {
     float: left;
     margin: 0 15px 0 0;
   }
 }
 @media only screen and (min-width: 980px) {
-  /* line 652, sass/pages/_experience.scss */
+  /* line 706, sass/pages/_experience.scss */
   .experience-detail-content .exp-content .alignright {
     float: right;
     margin: 0 0 0 15px;
   }
 }
-/* line 658, sass/pages/_experience.scss */
+/* line 712, sass/pages/_experience.scss */
 .experience-detail-content .exp-content ul {
   padding: 0 0 15px 16px;
 }
-/* line 661, sass/pages/_experience.scss */
+/* line 715, sass/pages/_experience.scss */
 .experience-detail-content .exp-content ol {
   padding: 0 0 15px 20px;
 }
-/* line 665, sass/pages/_experience.scss */
+/* line 719, sass/pages/_experience.scss */
 .experience-detail-content .exp-content ul li, .experience-detail-content .exp-content ol li {
   color: #6f6f6d;
   font-size: 15px;
   line-height: 24px;
   padding: 0 0 15px;
 }
-/* line 669, sass/pages/_experience.scss */
+/* line 723, sass/pages/_experience.scss */
 .experience-detail-content .exp-content ul li a, .experience-detail-content .exp-content ol li a {
   color: #6f6f6d;
   border-bottom: 1px solid #6f6f6d;
 }
-/* line 672, sass/pages/_experience.scss */
+/* line 726, sass/pages/_experience.scss */
 .experience-detail-content .exp-content ul li a:hover, .experience-detail-content .exp-content ol li a:hover {
   border: none;
 }
-/* line 678, sass/pages/_experience.scss */
+/* line 732, sass/pages/_experience.scss */
 .experience-detail-content .exp-content h2, .experience-detail-content .exp-content h3, .experience-detail-content .exp-content h4, .experience-detail-content .exp-content h5 {
   margin: 0 0 20px;
 }
-/* line 681, sass/pages/_experience.scss */
+/* line 735, sass/pages/_experience.scss */
 .experience-detail-content .exp-content h2 {
   font-size: 22px;
   line-height: normal;
 }
 @media only screen and (min-width: 768px) {
-  /* line 681, sass/pages/_experience.scss */
+  /* line 735, sass/pages/_experience.scss */
   .experience-detail-content .exp-content h2 {
     font-size: 25px;
     line-height: normal;
   }
 }
-/* line 687, sass/pages/_experience.scss */
+/* line 741, sass/pages/_experience.scss */
 .experience-detail-content .exp-content h3 {
   font-size: 20px;
   line-height: normal;
 }
 @media only screen and (min-width: 768px) {
-  /* line 687, sass/pages/_experience.scss */
+  /* line 741, sass/pages/_experience.scss */
   .experience-detail-content .exp-content h3 {
     font-size: 22px;
     line-height: normal;
   }
 }
-/* line 693, sass/pages/_experience.scss */
+/* line 747, sass/pages/_experience.scss */
 .experience-detail-content .exp-content h4 {
   font-size: 18px;
   line-height: normal;
 }
 @media only screen and (min-width: 768px) {
-  /* line 693, sass/pages/_experience.scss */
+  /* line 747, sass/pages/_experience.scss */
   .experience-detail-content .exp-content h4 {
     font-size: 20px;
     line-height: normal;
   }
 }
-/* line 699, sass/pages/_experience.scss */
+/* line 753, sass/pages/_experience.scss */
 .experience-detail-content .exp-content h5 {
   font-size: 16px;
   line-height: normal;
 }
 @media only screen and (min-width: 768px) {
-  /* line 699, sass/pages/_experience.scss */
+  /* line 753, sass/pages/_experience.scss */
   .experience-detail-content .exp-content h5 {
     font-size: 18px;
     line-height: normal;
   }
 }
-/* line 705, sass/pages/_experience.scss */
+/* line 759, sass/pages/_experience.scss */
 .experience-detail-content .exp-content blockquote {
   position: relative;
   border-top: 1px solid #938e8e;
@@ -5333,13 +5406,13 @@ textarea {
   padding: 25px 0;
 }
 @media only screen and (min-width: 768px) {
-  /* line 705, sass/pages/_experience.scss */
+  /* line 759, sass/pages/_experience.scss */
   .experience-detail-content .exp-content blockquote {
     padding: 35px 30px;
     margin: 20px 0 0;
     border-color: #dcddd8;
   }
-  /* line 715, sass/pages/_experience.scss */
+  /* line 769, sass/pages/_experience.scss */
   .experience-detail-content .exp-content blockquote:before {
     background: none;
     border-top: 1px solid #dcddd8;
@@ -5351,7 +5424,7 @@ textarea {
     right: 0;
     pointer-events: none;
   }
-  /* line 726, sass/pages/_experience.scss */
+  /* line 780, sass/pages/_experience.scss */
   .experience-detail-content .exp-content blockquote:after {
     background: none;
     border-top: 1px solid #dcddd8;
@@ -5365,19 +5438,19 @@ textarea {
   }
 }
 @media only screen and (min-width: 980px) {
-  /* line 705, sass/pages/_experience.scss */
+  /* line 759, sass/pages/_experience.scss */
   .experience-detail-content .exp-content blockquote {
     padding: 50px 45px;
     margin: 20px 0 0 -250px;
   }
 }
 @media only screen and (min-width: 1024px) {
-  /* line 705, sass/pages/_experience.scss */
+  /* line 759, sass/pages/_experience.scss */
   .experience-detail-content .exp-content blockquote {
     margin: 30px 0 60px -380px;
   }
 }
-/* line 745, sass/pages/_experience.scss */
+/* line 799, sass/pages/_experience.scss */
 .experience-detail-content .exp-content blockquote p {
   color: #000000;
   padding: 0;
@@ -5385,7 +5458,7 @@ textarea {
   line-height: 31px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 745, sass/pages/_experience.scss */
+  /* line 799, sass/pages/_experience.scss */
   .experience-detail-content .exp-content blockquote p {
     font-size: 35px;
     line-height: 45px;
@@ -5393,22 +5466,22 @@ textarea {
   }
 }
 @media only screen and (min-width: 980px) {
-  /* line 745, sass/pages/_experience.scss */
+  /* line 799, sass/pages/_experience.scss */
   .experience-detail-content .exp-content blockquote p {
     font-size: 45px;
     line-height: 57px;
   }
 }
-/* line 756, sass/pages/_experience.scss */
+/* line 810, sass/pages/_experience.scss */
 .experience-detail-content .exp-content blockquote p:before {
   content: "“";
 }
-/* line 759, sass/pages/_experience.scss */
+/* line 813, sass/pages/_experience.scss */
 .experience-detail-content .exp-content blockquote p:after {
   content: "”";
 }
 
-/* line 766, sass/pages/_experience.scss */
+/* line 820, sass/pages/_experience.scss */
 .experience-detail-related {
   border-top: 1px solid #dcddd9;
   background: #eef0e8;
@@ -5417,20 +5490,20 @@ textarea {
   margin: 50px 0 0;
 }
 @media only screen and (min-width: 768px) {
-  /* line 766, sass/pages/_experience.scss */
+  /* line 820, sass/pages/_experience.scss */
   .experience-detail-related {
     padding: 55px 0 20px;
-    margin: 80px 0 0;
+    margin: 60px 0 0;
   }
 }
 @media only screen and (min-width: 1140px) {
-  /* line 775, sass/pages/_experience.scss */
+  /* line 829, sass/pages/_experience.scss */
   .experience-detail-related .container {
     max-width: 1024px;
     padding: 0;
   }
 }
-/* line 781, sass/pages/_experience.scss */
+/* line 835, sass/pages/_experience.scss */
 .experience-detail-related h1 {
   font-size: 12.5px;
   line-height: normal;
@@ -5438,39 +5511,39 @@ textarea {
   text-transform: uppercase;
 }
 @media only screen and (min-width: 768px) {
-  /* line 781, sass/pages/_experience.scss */
+  /* line 835, sass/pages/_experience.scss */
   .experience-detail-related h1 {
     font-size: 16px;
     line-height: normal;
     margin: 0 0 42px;
   }
 }
-/* line 791, sass/pages/_experience.scss */
+/* line 845, sass/pages/_experience.scss */
 .experience-detail-related h1 span {
   text-transform: lowercase;
 }
-/* line 796, sass/pages/_experience.scss */
+/* line 850, sass/pages/_experience.scss */
 .experience-detail-related .experience-image-content {
   margin: 0 0 15px;
 }
 @media only screen and (min-width: 980px) {
-  /* line 796, sass/pages/_experience.scss */
+  /* line 850, sass/pages/_experience.scss */
   .experience-detail-related .experience-image-content {
     width: 60%;
     float: left;
   }
 }
 @media only screen and (min-width: 1140px) {
-  /* line 796, sass/pages/_experience.scss */
+  /* line 850, sass/pages/_experience.scss */
   .experience-detail-related .experience-image-content {
     width: 666px;
   }
 }
-/* line 805, sass/pages/_experience.scss */
+/* line 859, sass/pages/_experience.scss */
 .experience-detail-related .experience-image-content img {
   width: 100%;
 }
-/* line 808, sass/pages/_experience.scss */
+/* line 862, sass/pages/_experience.scss */
 .experience-detail-related .experience-image-content article {
   width: 70%;
   top: -30px;
@@ -5480,14 +5553,14 @@ textarea {
   margin: 0 auto;
 }
 @media only screen and (min-width: 768px) {
-  /* line 808, sass/pages/_experience.scss */
+  /* line 862, sass/pages/_experience.scss */
   .experience-detail-related .experience-image-content article {
     width: 505px;
     top: -45px;
     padding: 30px 50px 0;
   }
 }
-/* line 821, sass/pages/_experience.scss */
+/* line 875, sass/pages/_experience.scss */
 .experience-detail-related .experience-image-content article h4 {
   text-transform: uppercase;
   color: #898989;
@@ -5497,42 +5570,34 @@ textarea {
   font-weight: 400;
 }
 @media only screen and (min-width: 768px) {
-  /* line 821, sass/pages/_experience.scss */
+  /* line 875, sass/pages/_experience.scss */
   .experience-detail-related .experience-image-content article h4 {
     font-size: 11px;
     line-height: normal;
   }
 }
-/* line 831, sass/pages/_experience.scss */
+/* line 885, sass/pages/_experience.scss */
 .experience-detail-related .experience-image-content article h4 a {
   color: #898989;
 }
-/* line 835, sass/pages/_experience.scss */
+/* line 889, sass/pages/_experience.scss */
 .experience-detail-related .experience-image-content article p {
   font-size: 22.83px;
   line-height: 24.29px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 835, sass/pages/_experience.scss */
+  /* line 889, sass/pages/_experience.scss */
   .experience-detail-related .experience-image-content article p {
-    font-size: 36px;
-    line-height: 42px;
+    font-size: 35.46px;
+    line-height: 41.93px;
   }
 }
-/* line 840, sass/pages/_experience.scss */
-.experience-detail-related .experience-image-content article p a {
-  text-decoration: underline;
-}
-/* line 842, sass/pages/_experience.scss */
-.experience-detail-related .experience-image-content article p a:hover {
-  text-decoration: none;
-}
-/* line 849, sass/pages/_experience.scss */
+/* line 897, sass/pages/_experience.scss */
 .experience-detail-related .experience-preview-content {
   margin: 30px 0 0;
 }
 @media only screen and (min-width: 980px) {
-  /* line 849, sass/pages/_experience.scss */
+  /* line 897, sass/pages/_experience.scss */
   .experience-detail-related .experience-preview-content {
     width: 32%;
     float: right;
@@ -5541,7 +5606,7 @@ textarea {
   }
 }
 @media only screen and (min-width: 1140px) {
-  /* line 849, sass/pages/_experience.scss */
+  /* line 897, sass/pages/_experience.scss */
   .experience-detail-related .experience-preview-content {
     width: 296px;
   }
@@ -5552,55 +5617,55 @@ textarea {
   content: "";
   display: table;
 }
-/* line 863, sass/pages/_experience.scss */
+/* line 911, sass/pages/_experience.scss */
 .experience-detail-related .experience-preview-content .experience-feature-box {
   width: 48%;
   text-align: left;
   float: left;
 }
 @media only screen and (min-width: 980px) {
-  /* line 863, sass/pages/_experience.scss */
+  /* line 911, sass/pages/_experience.scss */
   .experience-detail-related .experience-preview-content .experience-feature-box {
     margin: 0 0 55px;
     width: auto;
     float: none;
   }
 }
-/* line 873, sass/pages/_experience.scss */
+/* line 921, sass/pages/_experience.scss */
 .experience-detail-related .experience-preview-content .experience-feature-box:nth-child(2n) {
   float: right;
 }
 @media only screen and (min-width: 980px) {
-  /* line 873, sass/pages/_experience.scss */
+  /* line 921, sass/pages/_experience.scss */
   .experience-detail-related .experience-preview-content .experience-feature-box:nth-child(2n) {
     float: none;
   }
 }
-/* line 879, sass/pages/_experience.scss */
+/* line 927, sass/pages/_experience.scss */
 .experience-detail-related .experience-preview-content .experience-feature-box figure {
   margin: 0 0 10px;
 }
 @media only screen and (min-width: 1140px) {
-  /* line 879, sass/pages/_experience.scss */
+  /* line 927, sass/pages/_experience.scss */
   .experience-detail-related .experience-preview-content .experience-feature-box figure {
     margin: 0 0 8px;
   }
 }
-/* line 884, sass/pages/_experience.scss */
+/* line 932, sass/pages/_experience.scss */
 .experience-detail-related .experience-preview-content .experience-feature-box figure img {
   width: 100%;
 }
-/* line 888, sass/pages/_experience.scss */
+/* line 936, sass/pages/_experience.scss */
 .experience-detail-related .experience-preview-content .experience-feature-box article {
   padding: 0 5%;
 }
 @media only screen and (min-width: 768px) {
-  /* line 888, sass/pages/_experience.scss */
+  /* line 936, sass/pages/_experience.scss */
   .experience-detail-related .experience-preview-content .experience-feature-box article {
     padding: 0;
   }
 }
-/* line 894, sass/pages/_experience.scss */
+/* line 942, sass/pages/_experience.scss */
 .experience-detail-related .experience-preview-content .experience-feature-box h6 {
   text-transform: uppercase;
   color: #898989;
@@ -5610,23 +5675,23 @@ textarea {
   font-weight: 400;
 }
 @media only screen and (min-width: 768px) {
-  /* line 894, sass/pages/_experience.scss */
+  /* line 942, sass/pages/_experience.scss */
   .experience-detail-related .experience-preview-content .experience-feature-box h6 {
     font-size: 11px;
     line-height: normal;
   }
 }
-/* line 904, sass/pages/_experience.scss */
+/* line 952, sass/pages/_experience.scss */
 .experience-detail-related .experience-preview-content .experience-feature-box h6 a {
   color: #898989;
 }
-/* line 908, sass/pages/_experience.scss */
+/* line 956, sass/pages/_experience.scss */
 .experience-detail-related .experience-preview-content .experience-feature-box h4 {
   font-size: 14.43px;
   line-height: 23px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 908, sass/pages/_experience.scss */
+  /* line 956, sass/pages/_experience.scss */
   .experience-detail-related .experience-preview-content .experience-feature-box h4 {
     font-size: 17.23px;
     line-height: normal;
