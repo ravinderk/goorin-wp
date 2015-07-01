@@ -80,6 +80,9 @@ get_header(); ?>
 					<h1><?php echo $author_recommended_posts->get_option( "{$namespace}_title" ); ?></h1>
 					<div class="experience-preview-main">
 						<?php foreach ( $recommended_ids as $key => $id ) { ?>
+							<?php if ( $key == 3 ) {
+								break; //we just need to show 3 related product here
+							} ?>
 							<?php if ( $key == 0 ) { ?>
 								<div class="experience-image-content">
 									<figure class="experience-preview-image">
