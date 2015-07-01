@@ -73,9 +73,9 @@ get_header(); ?>
 			<?php
 			$author_recommended_posts = new AuthorRecommendedPosts();
 			$namespace = $author_recommended_posts->namespace;
-			$recommended_ids = get_post_meta( $post->ID, $namespace, true );
+			$recommended_ids = (array) get_post_meta( $post->ID, $namespace, true );
 
-			if ( count( $recommended_ids ) > 0 ) {
+			if ( count( array_filter( $recommended_ids ) ) > 0 ) {
 			?>
 			<section class="experience-detail-related">
 				<div class="container">
