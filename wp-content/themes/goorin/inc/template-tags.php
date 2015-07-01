@@ -326,3 +326,22 @@ function goorin_get_more_blog_post() {
 }
 add_action( 'wp_ajax_get_more_blog_post', 'goorin_get_more_blog_post' );
 add_action( 'wp_ajax_nopriv_get_more_blog_post', 'goorin_get_more_blog_post' );
+
+function excerpt_count_js(){
+	if ('page' != get_post_type()) {
+		echo '<script>
+				jQuery(document).ready(function(){
+					jQuery("#postexcerpt .handlediv").after("<div style=\"position:absolute;top:12px;right:34px;color:#666;\"><small>Excerpt length: </small><span id=\"excerpt_counter\"></span><span style=\"font-weight:bold; padding-left:7px;\">/ 500</span><small><span style=\"font-weight:bold; padding-left:7px;\">character(s).</span></small></div>");
+					jQuery("span#excerpt_counter").text(jQuery("#excerpt").val().length);
+					jQuery("#excerpt").keyup( function() {
+						if(jQuery(this).val().length > 400){
+							jQuery(this).val(jQuery(this).val().substr(0, 400));
+						}
+						jQuery("span#excerpt_counter").text(jQuery("#excerpt").val().length);
+					});
+				});
+			</script>';
+	}
+}
+add_action( 'admin_head-post.php', 'excerpt_count_js');
+add_action( 'admin_head-post-new.php', 'excerpt_count_js');
