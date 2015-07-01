@@ -88,7 +88,7 @@ function goorin_posted_on() {
 	);
 
 	$byline = sprintf(
-		_x( 'by %s', 'post author', 'goorin' ),
+		_x( '<em>by</em> %s', 'post author', 'goorin' ),
 		'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 	);
 
