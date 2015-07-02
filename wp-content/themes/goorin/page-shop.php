@@ -35,6 +35,18 @@ get_header();?>
     				<li><a href="#">Shop Listing</a></li>
     			</ul>	
     		</div>
+    		<div class="shop-content-area">
+    			<div class="shop-content findshop">
+    				<div class="shop-top-content">
+    					<h4>Our Neighborhood Hat Shops</h4>
+    				</div>
+    			</div>
+    			<div class="shop-content shoplisting" style="display:block;">
+    				<div class="shop-top-content">
+    					<h4>Our Neighborhood Hat Shops</h4>
+    				</div>
+    			</div>
+    		</div>
     	</div>
     </section>
     <!--shop-tab-block-->

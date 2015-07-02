@@ -721,7 +721,7 @@ body, .site-header .submenu .colbox ul li a, .site-header .submenu figure p, .ca
 }
 
 /* line 128, sass/base/_typography.scss */
-.btn, .no-categories-main .no-categories-search .search-submit, .loader, .related-item-main h1, .related-item-main .related-image-content article h4, .related-item-main .related-preview-content .related-feature-box h6, .site-header .menu, .banner article p, .site-header .saletext, .site-footer h6, .spring-preview-block h1, .spring-preview-block .spring-image-content article h4, .spring-preview-block .spring-preview-content .related-feature-box h4, .experience-page .experience-hero-block h6, .experience-page .experience-cat-list ul li a, .experience-page .experience-blog-list article h6, .experience-page .categories-blog-list article h6, .experience-page .blog-one-row .blog-image-content article h4, .shoppage .shop-content-block .shop-tab-main li a, .category-campaign .cat-hero-block .cat-sub-head, .category-campaign .cat-product-block hgroup, .category-campaign .cat-product-block .category-products .item .product-name {
+.btn, .no-categories-main .no-categories-search .search-submit, .loader, .related-item-main h1, .related-item-main .related-image-content article h4, .related-item-main .related-preview-content .related-feature-box h6, .site-header .menu, .banner article p, .site-header .saletext, .site-footer h6, .spring-preview-block h1, .spring-preview-block .spring-image-content article h4, .spring-preview-block .spring-preview-content .related-feature-box h4, .experience-page .experience-hero-block h6, .experience-page .experience-cat-list ul li a, .experience-page .experience-blog-list article h6, .experience-page .categories-blog-list article h6, .experience-page .blog-one-row .blog-image-content article h4, .shoppage .shop-tab-main li a, .category-campaign .cat-hero-block .cat-sub-head, .category-campaign .cat-product-block hgroup, .category-campaign .cat-product-block .category-products .item .product-name {
   font-family: 'sweet_sansmedium';
 }
 
@@ -858,7 +858,7 @@ img {
 }
 
 /* line 39, sass/components/_components.scss */
-.breadcrumbs ul li, .gender-box span, .cart-dropdown .cart-list-loop figure, .cart-dropdown .cart-list-loop article, .banner .slick-dots li button, .site-header .menu-toggle, .site-search .site-search-form input[type="text"], .site-footer .footer-social-col ul li, .site-footer .footer-social-col ul li a, .hollyday-content-block .hollyday-product-block .hollyday-right-block .hollyday-box, .experience-page .social-links ul li a, .experience-page .experience-hero-block .slick-dots li button, .shoppage .shop-content-block .shop-tab-main li a, .category-campaign .cat-product-block .category-products .item {
+.breadcrumbs ul li, .gender-box span, .cart-dropdown .cart-list-loop figure, .cart-dropdown .cart-list-loop article, .banner .slick-dots li button, .site-header .menu-toggle, .site-search .site-search-form input[type="text"], .site-footer .footer-social-col ul li, .site-footer .footer-social-col ul li a, .hollyday-content-block .hollyday-product-block .hollyday-right-block .hollyday-box, .experience-page .social-links ul li a, .experience-page .experience-hero-block .slick-dots li button, .shoppage .shop-tab-main li a, .category-campaign .cat-product-block .category-products .item {
   float: left;
 }
 
@@ -873,7 +873,7 @@ img {
 }
 
 /* line 48, sass/components/_components.scss */
-.btn, .no-categories-main .no-categories-search .search-submit, .page-title h1, .gender-box span, .item-qty a, .item-qty input, .loader, .related-item-main h1, .related-item-main .related-image-content article, .related-item-main .related-preview-content .related-feature-box, .cart-dropdown .no-items, .cart-dropdown h2, .cart-dropdown .cart-list-loop figure, .cart-dropdown .cart-list-loop article, .cart-dropdown .cart-total .cart-message, .cart-dropdown .cart-total .cart-subtotal, .site-header .menu .cart-count-icon, .banner article, .site-header .cart-count, .site-footer h6, .site-footer .copyright, .site-footer .footer-col-left article, .site-footer .footer-col-left .subscribe-form input[type="text"], .site-footer .footer-col-left .subscribe-form .submit-btn, .site-footer .footer-col-right .col ul li, .hollyday-content-block hgroup, .hollyday-content-block .hollyday-product-block .hollyday-box, .spring-preview-block h1, .spring-preview-block .spring-image-content article, .spring-preview-block .spring-preview-content .related-feature-box, .experience-page .experience-hero-block article, .experience-page .experience-cat-block hgroup h1, .experience-page .experience-cat-list .experience-cat-toggle, .experience-page .experience-cat-list ul li a, .experience-page .blog-one-row .blog-image-content article, .no-categories-main .no-categories h2, .no-categories-main .no-categories-search .page-content, .shoppage .shop-content-block .shop-tab-main li a, .category-campaign .cat-hero-block article, .category-campaign .cat-product-block hgroup, .category-campaign .cat-product-block .category-products .item, .category-campaign .cat-featured-block article {
+.btn, .no-categories-main .no-categories-search .search-submit, .page-title h1, .gender-box span, .item-qty a, .item-qty input, .loader, .related-item-main h1, .related-item-main .related-image-content article, .related-item-main .related-preview-content .related-feature-box, .cart-dropdown .no-items, .cart-dropdown h2, .cart-dropdown .cart-list-loop figure, .cart-dropdown .cart-list-loop article, .cart-dropdown .cart-total .cart-message, .cart-dropdown .cart-total .cart-subtotal, .site-header .menu .cart-count-icon, .banner article, .site-header .cart-count, .site-footer h6, .site-footer .copyright, .site-footer .footer-col-left article, .site-footer .footer-col-left .subscribe-form input[type="text"], .site-footer .footer-col-left .subscribe-form .submit-btn, .site-footer .footer-col-right .col ul li, .hollyday-content-block hgroup, .hollyday-content-block .hollyday-product-block .hollyday-box, .spring-preview-block h1, .spring-preview-block .spring-image-content article, .spring-preview-block .spring-preview-content .related-feature-box, .experience-page .experience-hero-block article, .experience-page .experience-cat-block hgroup h1, .experience-page .experience-cat-list .experience-cat-toggle, .experience-page .experience-cat-list ul li a, .experience-page .blog-one-row .blog-image-content article, .no-categories-main .no-categories h2, .no-categories-main .no-categories-search .page-content, .shoppage .shop-tab-main li a, .shoppage .shop-top-content h4, .category-campaign .cat-hero-block article, .category-campaign .cat-product-block hgroup, .category-campaign .cat-product-block .category-products .item, .category-campaign .cat-featured-block article {
   text-align: center;
 }
 
@@ -895,7 +895,7 @@ img {
 /* line 66, sass/components/_components.scss */
 body.bodyhidden, body.noscroll, .site-header .submenu, .cart-dropdown .cart-list, .cart-dropdown .cart-list-loop, .cart-dropdown .cart-total, .cart-dropdown .cart-checkout, .site-header .nav-primary, .select-dropmenu, .field-select .input-box,
 .login-gender .input-box, .confirm-select,
-.product-options .selector, .banner .slick-slider, .banner .banner-item, .site-search .site-search-form, .site-footer .footer-social-col, .hollyday-content-block .hollyday-product-block .hollyday-box article hr, .spring-preview-block .spring-preview-main, .experience-page .experience-hero-block .slick-dots li {
+.product-options .selector, .banner .slick-slider, .banner .banner-item, .site-search .site-search-form, .site-footer .footer-social-col, .hollyday-content-block .hollyday-product-block .hollyday-box article hr, .spring-preview-block .spring-preview-main, .experience-page .experience-hero-block .slick-dots li, .shoppage .shop-tab-main ul {
   overflow: hidden;
 }
 
@@ -5793,28 +5793,28 @@ textarea {
     padding: 0 40px;
   }
 }
-/* line 39, sass/pages/_shop.scss */
-.shoppage .shop-content-block .shop-tab-main {
+/* line 40, sass/pages/_shop.scss */
+.shoppage .shop-tab-main {
   position: relative;
 }
-/* line 41, sass/pages/_shop.scss */
-.shoppage .shop-content-block .shop-tab-main ul {
+/* line 42, sass/pages/_shop.scss */
+.shoppage .shop-tab-main ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 @media only screen and (min-width: 768px) {
-  /* line 41, sass/pages/_shop.scss */
-  .shoppage .shop-content-block .shop-tab-main ul {
+  /* line 42, sass/pages/_shop.scss */
+  .shoppage .shop-tab-main ul {
     width: 438px;
-    margin: -55px 0 0 -219px;
+    margin: -54px 0 0 -219px;
     position: absolute;
     top: 0;
     left: 50%;
   }
 }
-/* line 52, sass/pages/_shop.scss */
-.shoppage .shop-content-block .shop-tab-main li a {
+/* line 54, sass/pages/_shop.scss */
+.shoppage .shop-tab-main li a {
   width: 50%;
   text-transform: uppercase;
   color: #ffffff;
@@ -5825,24 +5825,55 @@ textarea {
   background: #000000;
 }
 @media only screen and (min-width: 768px) {
-  /* line 52, sass/pages/_shop.scss */
-  .shoppage .shop-content-block .shop-tab-main li a {
+  /* line 54, sass/pages/_shop.scss */
+  .shoppage .shop-tab-main li a {
     width: 215px;
     font-size: 12px;
     line-height: normal;
     padding: 20px 30px;
   }
 }
-/* line 67, sass/pages/_shop.scss */
-.shoppage .shop-content-block .shop-tab-main li a.active {
+/* line 69, sass/pages/_shop.scss */
+.shoppage .shop-tab-main li a.active {
   color: #000000;
   background: #e3e4dc;
   background: #e3e4dc;
 }
 @media only screen and (min-width: 768px) {
-  /* line 51, sass/pages/_shop.scss */
-  .shoppage .shop-content-block .shop-tab-main li {
+  /* line 53, sass/pages/_shop.scss */
+  .shoppage .shop-tab-main li {
     margin: 0 1px;
+  }
+}
+/* line 79, sass/pages/_shop.scss */
+.shoppage .shop-content {
+  display: none;
+}
+/* line 82, sass/pages/_shop.scss */
+.shoppage .shop-top-content {
+  height: 72px;
+  border-bottom: 1px solid #b6b6b2;
+  background: #e3e4dc;
+  background: #e3e4dc;
+}
+@media only screen and (min-width: 768px) {
+  /* line 82, sass/pages/_shop.scss */
+  .shoppage .shop-top-content {
+    height: 118px;
+  }
+}
+/* line 89, sass/pages/_shop.scss */
+.shoppage .shop-top-content h4 {
+  padding: 24px 0 0;
+  font-size: 16.87px;
+  line-height: normal;
+}
+@media only screen and (min-width: 768px) {
+  /* line 89, sass/pages/_shop.scss */
+  .shoppage .shop-top-content h4 {
+    padding: 48px 0 0;
+    font-size: 26px;
+    line-height: normal;
   }
 }
 
