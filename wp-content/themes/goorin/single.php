@@ -100,10 +100,10 @@ get_header(); ?>
 											</p></div>
 									</article>
 								</div>
-							<?php } else { ?>
 								<!--related-image-content-->
 								<div class="related-preview-content">
 									<div class="related-feature-content">
+							<?php } else { ?>
 										<!-- loop start here-->
 										<div class="related-feature-box">
 											<figure>
@@ -117,11 +117,11 @@ get_header(); ?>
 											</article>
 										</div>
 										<!-- loop End here-->
-									</div>
-								</div>
 								<!--related-preview-content-->
 							<?php } ?>
 						<?php } ?>
+									</div>
+								</div>
 					</div>
 					<!--related-preview-main-->
 				</div>
