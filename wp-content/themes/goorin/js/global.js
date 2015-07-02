@@ -190,6 +190,13 @@
             $('.no-categories-search').show();
             return false
         });
+        $('.shop-tab-main li a').click(function() {
+			$('.active').removeClass('active');
+			$(this).addClass('active');
+			$('.shoppage .shop-content').hide();
+			$('.shoppage .shop-content:eq('+$('.shop-tab-main li a').index(this)+')').show();
+			return false;
+		});
         // Mage functions
         $('.sort-btn a').click(function() {
             $(this).toggleClass('active');

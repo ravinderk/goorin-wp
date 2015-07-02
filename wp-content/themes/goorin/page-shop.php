@@ -36,12 +36,15 @@ get_header();?>
     			</ul>	
     		</div>
     		<div class="shop-content-area">
-    			<div class="shop-content findshop">
+    			<div class="shop-content findshop" style="display:block;">
     				<hgroup class="shop-top-content">
-    					<h4>Our Neighborhood Hat Shops</h4>
+    					<h4>Find a Shop</h4>
     				</hgroup>
+    				<div class="findshop-area">
+    					<!--Add map content here-->
+    				</div>
     			</div>
-    			<div class="shop-content shoplisting" style="display:block;">
+    			<div class="shop-content shoplisting">
     				<hgroup class="shop-top-content">
     					<h4>Our Neighborhood Hat Shops</h4>
     				</hgroup>
