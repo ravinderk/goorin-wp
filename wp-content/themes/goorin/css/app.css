@@ -721,7 +721,7 @@ body, .site-header .submenu .colbox ul li a, .site-header .submenu figure p, .ca
 }
 
 /* line 128, sass/base/_typography.scss */
-.btn, .no-categories-main .no-categories-search .search-submit, .loader, .related-item-main h1, .related-item-main .related-image-content article h4, .related-item-main .related-preview-content .related-feature-box h6, .site-header .menu, .banner article p, .site-header .saletext, .site-footer h6, .spring-preview-block h1, .spring-preview-block .spring-image-content article h4, .spring-preview-block .spring-preview-content .related-feature-box h4, .experience-page .experience-hero-block h6, .experience-page .experience-cat-list ul li a, .experience-page .experience-blog-list article h6, .experience-page .categories-blog-list article h6, .experience-page .blog-one-row .blog-image-content article h4, .shoppage .shop-tab-main li a, .category-campaign .cat-hero-block .cat-sub-head, .category-campaign .cat-product-block hgroup, .category-campaign .cat-product-block .category-products .item .product-name {
+.btn, .no-categories-main .no-categories-search .search-submit, .loader, .related-item-main h1, .related-item-main .related-image-content article h4, .related-item-main .related-preview-content .related-feature-box h6, .site-header .menu, .banner article p, .site-header .saletext, .site-footer h6, .spring-preview-block h1, .spring-preview-block .spring-image-content article h4, .spring-preview-block .spring-preview-content .related-feature-box h4, .experience-page .experience-hero-block h6, .experience-page .experience-cat-list ul li a, .experience-page .experience-blog-list article h6, .experience-page .categories-blog-list article h6, .experience-page .blog-one-row .blog-image-content article h4, .shoppage .shop-tab-main li a, .shoppage .shoplist h6, .category-campaign .cat-hero-block .cat-sub-head, .category-campaign .cat-product-block hgroup, .category-campaign .cat-product-block .category-products .item .product-name {
   font-family: 'sweet_sansmedium';
 }
 
@@ -873,7 +873,7 @@ img {
 }
 
 /* line 48, sass/components/_components.scss */
-.btn, .no-categories-main .no-categories-search .search-submit, .page-title h1, .gender-box span, .item-qty a, .item-qty input, .loader, .related-item-main h1, .related-item-main .related-image-content article, .related-item-main .related-preview-content .related-feature-box, .cart-dropdown .no-items, .cart-dropdown h2, .cart-dropdown .cart-list-loop figure, .cart-dropdown .cart-list-loop article, .cart-dropdown .cart-total .cart-message, .cart-dropdown .cart-total .cart-subtotal, .site-header .menu .cart-count-icon, .banner article, .site-header .cart-count, .site-footer h6, .site-footer .copyright, .site-footer .footer-col-left article, .site-footer .footer-col-left .subscribe-form input[type="text"], .site-footer .footer-col-left .subscribe-form .submit-btn, .site-footer .footer-col-right .col ul li, .hollyday-content-block hgroup, .hollyday-content-block .hollyday-product-block .hollyday-box, .spring-preview-block h1, .spring-preview-block .spring-image-content article, .spring-preview-block .spring-preview-content .related-feature-box, .experience-page .experience-hero-block article, .experience-page .experience-cat-block hgroup h1, .experience-page .experience-cat-list .experience-cat-toggle, .experience-page .experience-cat-list ul li a, .experience-page .blog-one-row .blog-image-content article, .no-categories-main .no-categories h2, .no-categories-main .no-categories-search .page-content, .shoppage .shop-tab-main li a, .shoppage .shop-top-content h4, .category-campaign .cat-hero-block article, .category-campaign .cat-product-block hgroup, .category-campaign .cat-product-block .category-products .item, .category-campaign .cat-featured-block article {
+.btn, .no-categories-main .no-categories-search .search-submit, .page-title h1, .gender-box span, .item-qty a, .item-qty input, .loader, .related-item-main h1, .related-item-main .related-image-content article, .related-item-main .related-preview-content .related-feature-box, .cart-dropdown .no-items, .cart-dropdown h2, .cart-dropdown .cart-list-loop figure, .cart-dropdown .cart-list-loop article, .cart-dropdown .cart-total .cart-message, .cart-dropdown .cart-total .cart-subtotal, .site-header .menu .cart-count-icon, .banner article, .site-header .cart-count, .site-footer h6, .site-footer .copyright, .site-footer .footer-col-left article, .site-footer .footer-col-left .subscribe-form input[type="text"], .site-footer .footer-col-left .subscribe-form .submit-btn, .site-footer .footer-col-right .col ul li, .hollyday-content-block hgroup, .hollyday-content-block .hollyday-product-block .hollyday-box, .spring-preview-block h1, .spring-preview-block .spring-image-content article, .spring-preview-block .spring-preview-content .related-feature-box, .experience-page .experience-hero-block article, .experience-page .experience-cat-block hgroup h1, .experience-page .experience-cat-list .experience-cat-toggle, .experience-page .experience-cat-list ul li a, .experience-page .blog-one-row .blog-image-content article, .no-categories-main .no-categories h2, .no-categories-main .no-categories-search .page-content, .shoppage .shop-tab-main li a, .shoppage .shop-top-content h4, .shoppage .shoplist, .category-campaign .cat-hero-block article, .category-campaign .cat-product-block hgroup, .category-campaign .cat-product-block .category-products .item, .category-campaign .cat-featured-block article {
   text-align: center;
 }
 
@@ -5877,27 +5877,68 @@ textarea {
   }
 }
 /* line 99, sass/pages/_shop.scss */
-.shoppage .shop-list-main {
+.shoppage .shoplist-area {
   padding: 35px 0;
+}
+@media only screen and (min-width: 980px) {
+  /* line 99, sass/pages/_shop.scss */
+  .shoppage .shoplist-area {
+    overflow: hidden;
+    padding: 55px 0 0;
+  }
 }
 @media only screen and (min-width: 1024px) {
   /* line 99, sass/pages/_shop.scss */
-  .shoppage .shop-list-main {
-    padding: 55px 116px;
+  .shoppage .shoplist-area {
+    padding-right: 115px;
+    padding-left: 115px;
   }
 }
 @media only screen and (min-width: 980px) {
-  /* line 104, sass/pages/_shop.scss */
-  .shoppage .shop-list-main .shoplist {
+  /* line 109, sass/pages/_shop.scss */
+  .shoppage .shoplist {
     float: left;
     width: 33.333%;
   }
 }
-/* line 109, sass/pages/_shop.scss */
-.shoppage .shop-list-main .shoplist ul {
+/* line 115, sass/pages/_shop.scss */
+.shoppage .shoplist ul {
   list-style: none;
-  margin: 0;
+  margin: 0 0 18px;
   padding: 0;
+}
+/* line 119, sass/pages/_shop.scss */
+.shoppage .shoplist ul li {
+  color: #7d7d7d;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 0 0 10px;
+}
+/* line 123, sass/pages/_shop.scss */
+.shoppage .shoplist ul li a {
+  color: #7d7d7d;
+}
+@media only screen and (min-width: 768px) {
+  /* line 119, sass/pages/_shop.scss */
+  .shoppage .shoplist ul li {
+    padding: 0 0 8px;
+  }
+}
+/* line 131, sass/pages/_shop.scss */
+.shoppage .shoplist h6 {
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0 0 12px;
+  font-size: 13px;
+  line-height: normal;
+}
+@media only screen and (min-width: 768px) {
+  /* line 131, sass/pages/_shop.scss */
+  .shoppage .shoplist h6 {
+    font-size: 13px;
+    line-height: normal;
+    margin: 0 0 8px;
+  }
 }
 
 /* line 3, sass/pages/_category_campaign.scss */

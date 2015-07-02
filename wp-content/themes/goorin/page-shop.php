@@ -45,7 +45,7 @@ get_header();?>
     				<hgroup class="shop-top-content">
     					<h4>Our Neighborhood Hat Shops</h4>
     				</hgroup>
-    				<div claas="shop-list-main">
+    				<div class="shoplist-area">
     					<article class="shoplist">
     						<h6>CANADA</h6>
     						<ul>
