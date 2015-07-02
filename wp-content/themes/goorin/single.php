@@ -101,9 +101,10 @@ get_header(); ?>
 									</article>
 								</div>
 							<?php } else { ?>
-								<!--experience-image-content-->
+								<!--related-image-content-->
 								<div class="related-preview-content">
 									<div class="related-feature-content">
+										<!-- loop start here-->
 										<div class="related-feature-box">
 											<figure>
 												<a href="<?php echo get_the_permalink( $id ) ?>"><?php echo get_the_post_thumbnail( $id, 'post_custom_size' ) ?></a>
@@ -115,18 +116,19 @@ get_header(); ?>
 												</h4>
 											</article>
 										</div>
+										<!-- loop End here-->
 									</div>
 								</div>
-								<!--experience-preview-content-->
+								<!--related-preview-content-->
 							<?php } ?>
 						<?php } ?>
 					</div>
-					<!--experience-preview-main-->
+					<!--related-preview-main-->
 				</div>
 			</section>
 			<?php } ?>
 		<?php } ?>
-		<!--experience-detail-related-->
+		<!--related-detail-related-->
 	<?php endwhile; // end of the loop. ?>
 </div>
 <?php get_footer(); ?>
