@@ -79,7 +79,7 @@ get_header(); ?>
 
 			if ( count( array_filter( $recommended_ids ) ) > 0 ) {
 			?>
-			<section class="related-item-related">
+			<section class="related-item-main">
 				<div class="container">
 					<h1><?php echo $author_recommended_posts->get_option( "{$namespace}_title" ); ?></h1>
 					<div class="related-preview-main">
@@ -103,19 +103,17 @@ get_header(); ?>
 							<?php } else { ?>
 								<!--experience-image-content-->
 								<div class="related-preview-content">
-									<div class="related-related-feature">
-										<div class="related-feature-content">
-											<div class="related-feature-box">
-												<figure>
-													<a href="<?php echo get_the_permalink( $id ) ?>"><?php echo get_the_post_thumbnail( $id, 'post_custom_size' ) ?></a>
-												</figure>
-												<article>
-													<h6><?php the_category( ', ', '', $id ) ?></h6>
-													<h4>
-														<a href="<?php echo get_the_permalink( $id ) ?>"><?php echo get_the_title( $id ) ?></a>
-													</h4>
-												</article>
-											</div>
+									<div class="related-feature-content">
+										<div class="related-feature-box">
+											<figure>
+												<a href="<?php echo get_the_permalink( $id ) ?>"><?php echo get_the_post_thumbnail( $id, 'post_custom_size' ) ?></a>
+											</figure>
+											<article>
+												<h6><?php the_category( ', ', '', $id ) ?></h6>
+												<h4>
+													<a href="<?php echo get_the_permalink( $id ) ?>"><?php echo get_the_title( $id ) ?></a>
+												</h4>
+											</article>
 										</div>
 									</div>
 								</div>
