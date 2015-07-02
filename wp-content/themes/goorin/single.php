@@ -79,16 +79,16 @@ get_header(); ?>
 
 			if ( count( array_filter( $recommended_ids ) ) > 0 ) {
 			?>
-			<section class="experience-detail-related">
+			<section class="related-item-related">
 				<div class="container">
 					<h1><?php echo $author_recommended_posts->get_option( "{$namespace}_title" ); ?></h1>
-					<div class="experience-preview-main">
+					<div class="related-preview-main">
 						<?php foreach ( $recommended_ids as $key => $id ) { ?>
 							<?php if ( $key == 3 ) {
 								break; //we just need to show 3 related product here
 							} ?>
 							<?php if ( $key == 0 ) { ?>
-								<div class="experience-image-content">
+								<div class="related-image-content">
 									<figure class="experience-preview-image">
 										<a href="<?php echo get_the_permalink( $id ) ?>"><?php echo get_the_post_thumbnail( $id ) ?></a>
 									</figure>
@@ -102,10 +102,10 @@ get_header(); ?>
 								</div>
 							<?php } else { ?>
 								<!--experience-image-content-->
-								<div class="experience-preview-content">
-									<div class="experience-related-feature">
-										<div class="experience-feature-content">
-											<div class="experience-feature-box">
+								<div class="related-preview-content">
+									<div class="related-related-feature">
+										<div class="related-feature-content">
+											<div class="related-feature-box">
 												<figure>
 													<a href="<?php echo get_the_permalink( $id ) ?>"><?php echo get_the_post_thumbnail( $id, 'post_custom_size' ) ?></a>
 												</figure>
@@ -124,7 +124,6 @@ get_header(); ?>
 						<?php } ?>
 					</div>
 					<!--experience-preview-main-->
-
 				</div>
 			</section>
 			<?php } ?>
