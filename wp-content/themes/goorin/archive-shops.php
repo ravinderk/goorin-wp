@@ -22,7 +22,7 @@ get_header(); ?>
 	<section class="shop-hero-block">
         <div class="container">
 	        <figure>
-		        <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/shop-banner-image.jpg"></a>
+		        <a href="#"><?php the_post_thumbnail() ?></a>
 	        </figure>
         </div>
     </section>
@@ -33,12 +33,12 @@ get_header(); ?>
     			<ul>
     				<li><a href="#" class="active">Find a shop</a></li>
     				<li><a href="#">Shop Listing</a></li>
-    			</ul>	
+    			</ul>
     		</div>
     		<div class="shop-content-area">
     			<div class="shop-content findshop" style="display:block;">
     				<hgroup class="shop-top-content">
-    					<h4>Find a Shop</h4>
+    					<h4><?php the_title() ?>git s</h4>
     				</hgroup>
     				<div class="findshop-area">
     					<?php echo do_shortcode('[SLPLUS]');?>
@@ -68,22 +68,22 @@ get_header(); ?>
 								<li><a href="#">San Francisco - Union Square</a></li>
 								<li><a href="#">Santa Barbara - State Street</a></li>
 								<li><a href="#">Santa Monica - Santa Monica Boulevard</a></li>
-							</ul>	
+							</ul>
 							<h6>COLORADO</h6>
 							<ul>
 								<li><a href="#">Denver - Larimer Square</a></li>
 								<li><a href="#">Boulder - West Pearl</a></li>
-							</ul>	
+							</ul>
 							<h6>DISTRICT OF COLUMBIA</h6>
 							<ul>
 								<li><a href="#">Washington, D.C. - Georgetown</a></li>
-							</ul>	
+							</ul>
     					</article>
     					<article class="shoplist">
     						<h6>FLORIDA</h6>
 							<ul>
 								<li><a href="#">Miami Beach - Lincoln Road</a></li>
-							</ul>	
+							</ul>
 							<h6>GEORGIA</h6>
 							<ul>
 								<li><a href="#">Atlanta - Ponce City Market</a></li>
@@ -92,25 +92,25 @@ get_header(); ?>
 							<h6>ILLINOIS</h6>
 							<ul>
 								<li><a href="#">Chicago - Wicker Park</a></li>
-							</ul>	
+							</ul>
 							<h6>LOUISIANA</h6>
 							<ul>
 								<li><a href="#">New Orleans - French Quarter</a></li>
 								<li><a href="#">New Orleans - Magazine Street</a></li>
-							</ul>	
+							</ul>
 							<h6>MASSACHUSETTS</h6>
 							<ul>
 								<li><a href="#">Boston - Newbury</a></li>
 								<li><a href="#">Cambridge - Harvard Square</a></li>
 							</ul>
 							<h6>MINNESOTA</h6>
-							<ul>	
+							<ul>
 								<li><a href="#">Minneapolis - Uptown</a></li>
-							</ul>	
+							</ul>
 							<h6>NEVADA</h6>
 							<ul>
 								<li><a href="#">Las Vegas - The Linq</a></li>
-							</ul>	
+							</ul>
     					</article>
     					<article class="shoplist">
     						<h6>NEW YORK</h6>
@@ -153,49 +153,47 @@ get_header(); ?>
     <!--shop-tab-block-->
 	<section class="related-item-main">
 		<div class="container">
-			<h1>Happening <span>at</span> Our Shops</h1>
+			<h1><?php echo $author_recommended_posts->get_option( "{$namespace}_title" ); ?></h1>
 			<div class="related-preview-main">
+				<?php foreach ( $recommended_ids as $key => $id ) { ?>
+				<?php if ( $key == 3 ) {
+					break; //we just need to show 3 related product here
+				} ?>
+				<?php if ( $key == 0 ) { ?>
 				<div class="related-image-content">
 					<figure class="experience-preview-image">
-						<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/f1.png" /></a>
+						<a href="<?php echo get_the_permalink( $id ) ?>"><?php echo get_the_post_thumbnail( $id ) ?></a>
 					</figure>
 					<article>
-						<h4>Fashion News</h4>
-						<div class="heading-content">
-							<p>
-								<a href="#">Brooklyn Fashion Show</a>
-							</p>
-						</div>
+						<h4><?php the_category( ', ', '', $id ) ?></h4>
+
+						<div class="heading-content"><p>
+								<a href="<?php echo get_the_permalink( $id ) ?>"><?php echo get_the_title( $id ) ?></a>
+							</p></div>
 					</article>
 				</div>
-				<!--experience-image-content-->
+				<!--related-image-content-->
 				<div class="related-preview-content">
 					<div class="related-feature-content">
-						<div class="related-feature-box">
-							<figure>
-								<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/f2.png" /></a>
-							</figure>
-							<article>
-								<h6>Shops</h6>
-								<h4>
-									<a href="#">Williamsburg Grand Opening Party!</a>
-								</h4>
-							</article>
-						</div>
-						<div class="related-feature-box">
-							<figure>
-								<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/f3.png" /></a>
-							</figure>
-							<article>
-								<h6>Shops</h6>
-								<h4>
-									<a href="#">Williamsburg Grand Opening Party!</a>
-								</h4>
-							</article>
-						</div>
+						<?php } else { ?>
+							<!-- loop start here-->
+							<div class="related-feature-box">
+								<figure>
+									<a href="<?php echo get_the_permalink( $id ) ?>"><?php echo get_the_post_thumbnail( $id, 'post_custom_size' ) ?></a>
+								</figure>
+								<article>
+									<h6><?php the_category( ', ', '', $id ) ?></h6>
+									<h4>
+										<a href="<?php echo get_the_permalink( $id ) ?>"><?php echo get_the_title( $id ) ?></a>
+									</h4>
+								</article>
+							</div>
+							<!-- loop End here-->
+							<!--related-preview-content-->
+						<?php } ?>
+						<?php } ?>
 					</div>
 				</div>
-				<!--related-preview-content-->
 			</div>
 			<!--related-preview-main-->
 		</div>
