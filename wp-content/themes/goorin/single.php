@@ -103,25 +103,26 @@ get_header(); ?>
 								<!--related-image-content-->
 								<div class="related-preview-content">
 									<div class="related-feature-content">
-							<?php } else { ?>
-										<!-- loop start here-->
-										<div class="related-feature-box">
-											<figure>
-												<a href="<?php echo get_the_permalink( $id ) ?>"><?php echo get_the_post_thumbnail( $id, 'post_custom_size' ) ?></a>
-											</figure>
-											<article>
-												<h6><?php the_category( ', ', '', $id ) ?></h6>
-												<h4>
-													<a href="<?php echo get_the_permalink( $id ) ?>"><?php echo get_the_title( $id ) ?></a>
-												</h4>
-											</article>
-										</div>
-										<!-- loop End here-->
-								<!--related-preview-content-->
-							<?php } ?>
-						<?php } ?>
+										<?php } else { ?>
+											<!-- loop start here-->
+											<div class="related-feature-box">
+												<figure>
+													<a href="<?php echo get_the_permalink( $id ) ?>"><?php echo get_the_post_thumbnail( $id, 'post_custom_size' ) ?></a>
+												</figure>
+												<article>
+													<h6><?php the_category( ', ', '', $id ) ?></h6>
+													<h4>
+														<a href="<?php echo get_the_permalink( $id ) ?>"><?php echo get_the_title( $id ) ?></a>
+													</h4>
+												</article>
+											</div>
+											<!-- loop End here-->
+											
+										<?php } ?>
+									<?php } ?>
 									</div>
 								</div>
+								<!--related-preview-content-->
 					</div>
 					<!--related-preview-main-->
 				</div>

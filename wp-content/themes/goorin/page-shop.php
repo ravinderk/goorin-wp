@@ -5,9 +5,42 @@ Template Name: Shop Page
 
 get_header();?>
 <div class="shoppage">
+	<section class="breadcrumbs">
+		<div class="container">
+			<ul>
+				<li class="home">
+					<a title="Go to Home Page" href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a>
+					<span>/ </span>
+				</li>
+				<li>
+					<strong><?php the_title() ?></strong>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<!--breadcrumbs-->
+	<section class="shop-hero-block">
+        <div class="container">
+	        <figure>
+		        <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/shop-banner-image.jpg"></a>
+	        </figure>
+        </div>
+    </section>
+    <!--shop-hero-block-->
+    <section class="shop-content-block">
+    	<div class="container">
+    		<div class="shop-tab-main">
+    			<ul>
+    				<li><a href="#" class="active">Find a shop</a></li>
+    				<li><a href="#">Shop Listing</a></li>
+    			</ul>	
+    		</div>
+    	</div>
+    </section>
+    <!--shop-tab-block-->
 	<section class="related-item-main">
 		<div class="container">
-			<h1>Happening <span>in</span> Williamsburg</h1>
+			<h1>Happening <span>at</span> Our Shops</h1>
 			<div class="related-preview-main">
 				<div class="related-image-content">
 					<figure class="experience-preview-image">
