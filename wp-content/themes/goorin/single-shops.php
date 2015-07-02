@@ -6,7 +6,7 @@
  */
 
 get_header(); ?>
-<div class="shoppage">
+<div class="shoppage shopdetail">
 	<section class="breadcrumbs">
 		<div class="container">
 			<ul>
