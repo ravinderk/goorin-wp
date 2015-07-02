@@ -15,6 +15,10 @@ get_header(); ?>
 					<span>/ </span>
 				</li>
 				<li>
+					<a href="#">Shops</a>
+					<span>/ </span>
+				</li>
+				<li>
 					<strong><?php the_title() ?></strong>
 				</li>
 			</ul>
@@ -29,6 +33,28 @@ get_header(); ?>
         </div>
     </section>
     <!--shop-hero-block-->
+    <section class="shop-photos-block">
+    	<div class="container">
+    		<h1>#goorinwilliamsburg</h1>
+    		<div class="shop-photos-area">
+    			<ul>
+    				<li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/shop-photos.jpg"></a></li>
+    				<li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/shop-photos.jpg"></a></li>
+    				<li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/shop-photos.jpg"></a></li>
+    				<li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/shop-photos.jpg"></a></li>
+    				<li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/shop-photos.jpg"></a></li>
+    				<li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/shop-photos.jpg"></a></li>
+    				<li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/shop-photos.jpg"></a></li>
+    				<li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/shop-photos.jpg"></a></li>
+    				<li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/shop-photos.jpg"></a></li>
+    				<li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/shop-photos.jpg"></a></li>
+    				<li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/shop-photos.jpg"></a></li>
+    				<li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/shop-photos.jpg"></a></li>
+    			</ul>
+    		</div>
+    	</div>
+    </section>
+    <!--shop-photos-block-->
     <section class="related-item-main">
 		<div class="container">
 			<h1>Happening <span>at</span> Our Shops</h1>
