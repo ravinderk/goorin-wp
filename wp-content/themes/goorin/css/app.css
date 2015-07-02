@@ -5871,10 +5871,33 @@ textarea {
 @media only screen and (min-width: 768px) {
   /* line 89, sass/pages/_shop.scss */
   .shoppage .shop-top-content h4 {
-    padding: 48px 0 0;
+    padding: 44px 0 0;
     font-size: 26px;
     line-height: normal;
   }
+}
+/* line 99, sass/pages/_shop.scss */
+.shoppage .shop-list-main {
+  padding: 35px 0;
+}
+@media only screen and (min-width: 1024px) {
+  /* line 99, sass/pages/_shop.scss */
+  .shoppage .shop-list-main {
+    padding: 55px 116px;
+  }
+}
+@media only screen and (min-width: 980px) {
+  /* line 104, sass/pages/_shop.scss */
+  .shoppage .shop-list-main .shoplist {
+    float: left;
+    width: 33.333%;
+  }
+}
+/* line 109, sass/pages/_shop.scss */
+.shoppage .shop-list-main .shoplist ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* line 3, sass/pages/_category_campaign.scss */
