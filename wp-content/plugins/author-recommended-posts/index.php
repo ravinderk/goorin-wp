@@ -231,7 +231,7 @@ class AuthorRecommendedPosts {
     
     function author_recommended_posts_search(){
         global $post;
-        $post_id = $post->ID;
+        $post_id = isset( $post ) ? $post->ID : 0;
         $html = '';
         
         // set post_types that get filtered in the search box.
@@ -296,7 +296,7 @@ class AuthorRecommendedPosts {
         global $wpdb;
         
         if ( $title = $wp_query->get('like_title') ) {
-            $where .= " AND " . $wpdb->posts . ".post_title LIKE '%" . esc_sql( like_escape( $title ) ) . "%'";
+            $where .= " AND " . $wpdb->posts . ".post_title LIKE '%" . esc_sql( $wpdb->esc_like( $title ) ) . "%'";
         }
         
         return $where;
