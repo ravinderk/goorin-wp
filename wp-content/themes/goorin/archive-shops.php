@@ -38,10 +38,15 @@ get_header(); ?>
     		<div class="shop-content-area">
     			<div class="shop-content findshop" style="display:block;">
     				<hgroup class="shop-top-content">
-    					<h4><?php the_title() ?>git s</h4>
+    					<h4><?php the_title() ?></h4>
     				</hgroup>
     				<div class="findshop-area">
     					<?php echo do_shortcode('[SLPLUS]');?>
+					    <style type="text/css">
+						    #map, #slp_tagline, #map_sidebar {
+							    display: none;
+						    }
+					    </style>
     				</div>
     			</div>
     			<div class="shop-content shoplisting">
@@ -151,52 +156,62 @@ get_header(); ?>
     	</div>
     </section>
     <!--shop-tab-block-->
-	<section class="related-item-main">
-		<div class="container">
-			<h1><?php echo $author_recommended_posts->get_option( "{$namespace}_title" ); ?></h1>
-			<div class="related-preview-main">
-				<?php foreach ( $recommended_ids as $key => $id ) { ?>
-				<?php if ( $key == 3 ) {
-					break; //we just need to show 3 related product here
-				} ?>
-				<?php if ( $key == 0 ) { ?>
-				<div class="related-image-content">
-					<figure class="experience-preview-image">
-						<a href="<?php echo get_the_permalink( $id ) ?>"><?php echo get_the_post_thumbnail( $id ) ?></a>
-					</figure>
-					<article>
-						<h4><?php the_category( ', ', '', $id ) ?></h4>
+	<?php if ( class_exists( 'AuthorRecommendedPosts' ) ) { ?>
+		<?php
+		$author_recommended_posts = new AuthorRecommendedPosts();
+		$namespace = $author_recommended_posts->namespace;
+		$recommended_ids = (array) get_post_meta( $post->ID, $namespace, true );
 
-						<div class="heading-content"><p>
-								<a href="<?php echo get_the_permalink( $id ) ?>"><?php echo get_the_title( $id ) ?></a>
-							</p></div>
-					</article>
-				</div>
-				<!--related-image-content-->
-				<div class="related-preview-content">
-					<div class="related-feature-content">
-						<?php } else { ?>
-							<!-- loop start here-->
-							<div class="related-feature-box">
-								<figure>
-									<a href="<?php echo get_the_permalink( $id ) ?>"><?php echo get_the_post_thumbnail( $id, 'post_custom_size' ) ?></a>
-								</figure>
-								<article>
-									<h6><?php the_category( ', ', '', $id ) ?></h6>
-									<h4>
-										<a href="<?php echo get_the_permalink( $id ) ?>"><?php echo get_the_title( $id ) ?></a>
-									</h4>
-								</article>
-							</div>
-							<!-- loop End here-->
-							<!--related-preview-content-->
-						<?php } ?>
-						<?php } ?>
+		if ( count( array_filter( $recommended_ids ) ) > 0 ) {
+		?>
+		<section class="related-item-main">
+			<div class="container">
+				<h1>Happening <span>at</span> Our Shops</h1>
+				<div class="related-preview-main">
+					<?php foreach ( $recommended_ids as $key => $id ) { ?>
+					<?php if ( $key == 3 ) {
+						break; //we just need to show 3 related product here
+					} ?>
+					<?php if ( $key == 0 ) { ?>
+					<div class="related-image-content">
+						<figure class="experience-preview-image">
+							<a href="<?php echo get_the_permalink( $id ) ?>"><?php echo get_the_post_thumbnail( $id ) ?></a>
+						</figure>
+						<article>
+							<h4><?php the_category( ', ', '', $id ) ?></h4>
+
+							<div class="heading-content"><p>
+									<a href="<?php echo get_the_permalink( $id ) ?>"><?php echo get_the_title( $id ) ?></a>
+								</p></div>
+						</article>
+					</div>
+					<!--related-image-content-->
+					<div class="related-preview-content">
+						<div class="related-feature-content">
+							<?php } else { ?>
+								<!-- loop start here-->
+								<div class="related-feature-box">
+									<figure>
+										<a href="<?php echo get_the_permalink( $id ) ?>"><?php echo get_the_post_thumbnail( $id, 'post_custom_size' ) ?></a>
+									</figure>
+									<article>
+										<h6><?php the_category( ', ', '', $id ) ?></h6>
+										<h4>
+											<a href="<?php echo get_the_permalink( $id ) ?>"><?php echo get_the_title( $id ) ?></a>
+										</h4>
+									</article>
+								</div>
+								<!-- loop End here-->
+								<!--related-preview-content-->
+							<?php } ?>
+							<?php } ?>
+						</div>
 					</div>
 				</div>
+				<!--related-preview-main-->
 			</div>
-			<!--related-preview-main-->
-		</div>
-	</section>
+		</section>
+		<?php } ?>
+	<?php } ?>
 </div>
 <?php get_footer(); ?>

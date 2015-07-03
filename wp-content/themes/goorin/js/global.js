@@ -374,5 +374,12 @@
 		    });
 	    }
 
+	    if ( $('body').hasClass('page-template-archive-shops') ) {
+			$('#addressSubmit').on('click', function(){
+			    $('#map').css('display', 'block');
+			    $('#slp_tagline').css('display', 'block');
+			    $('#map_sidebar').css('display', 'block');
+			});
+	    }
     });
 })(jQuery); 
