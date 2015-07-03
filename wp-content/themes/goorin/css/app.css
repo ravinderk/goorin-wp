@@ -4537,7 +4537,7 @@ textarea {
 @media only screen and (min-width: 768px) {
   /* line 2, sass/pages/_experience.scss */
   .experience-page {
-    padding: 40px 0 30px;
+    padding: 41px 0 30px;
   }
 }
 @media only screen and (min-width: 1140px) {
@@ -4829,7 +4829,7 @@ textarea {
 @media only screen and (min-width: 1024px) {
   /* line 204, sass/pages/_experience.scss */
   .experience-page .experience-cat-block hgroup h1 {
-    margin: 0 0 25px;
+    margin: 20px 0 25px;
     font-size: 59px;
     line-height: normal;
   }
@@ -4951,7 +4951,7 @@ textarea {
 .experience-page .experience-blog-list:nth-child(2n) {
   float: right;
 }
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 480px) {
   /* line 289, sass/pages/_experience.scss */
   .experience-page .experience-blog-list {
     min-height: 255px;
