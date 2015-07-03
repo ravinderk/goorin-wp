@@ -4555,7 +4555,7 @@ textarea {
 @media only screen and (min-width: 768px) {
   /* line 14, sass/pages/_experience.scss */
   .experience-page.experience-detail-page .experience-hero-block article {
-    top: -43px;
+    top: -42px;
     padding-top: 26px;
   }
 }
@@ -5449,7 +5449,7 @@ textarea {
   /* line 632, sass/pages/_experience.scss */
   .experience-detail-content .exp-top-heading {
     position: absolute;
-    top: 72px;
+    top: 70px;
     left: 0;
     width: 250px;
     padding: 0 50px 0 0;
