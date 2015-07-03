@@ -4852,13 +4852,10 @@ textarea {
 .experience-page .experience-blog-block {
   position: relative;
 }
-/* line 228, sass/pages/_experience.scss */
-.experience-page .experience-cat-block .container, .experience-page .experience-blog-block .container, .experience-page .categories-blog-block .container {
-  max-width: 1024px;
-}
-@media only screen and (min-width: 1140px) {
+@media only screen and (min-width: 1024px) {
   /* line 228, sass/pages/_experience.scss */
   .experience-page .experience-cat-block .container, .experience-page .experience-blog-block .container, .experience-page .categories-blog-block .container {
+    max-width: 1024px;
     padding: 0;
   }
 }
