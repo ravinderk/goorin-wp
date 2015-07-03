@@ -68,7 +68,7 @@ get_header(); ?>
 					    <?php $index = 1; // use for matching the design as we have a different design after 6 post?>
 					    <?php while( have_posts() ) { the_post() ?>
 						    <?php if ( $index == 7 ) { ?>
-							    <div class="blog-one-row">
+							    
 								    <div class="blog-image-content">
 									    <figure class="spring-preview-image">
 										    <a href="<?php the_permalink() ?>"><?php the_post_thumbnail() ?></a>
@@ -78,7 +78,7 @@ get_header(); ?>
 										    <div class="heading-content"><p><a href="<?php the_permalink() ?>"><?php the_title() ?></a></p></div>
 									    </article>
 								    </div>
-								    <div class="blog-preview-content">
+								    
 							<?php } else if ( $index == 9 ) { ?>
 									    <div class="experience-blog-list">
 										    <figure>
@@ -89,8 +89,6 @@ get_header(); ?>
 											    <h4><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h4>
 										    </article>
 									    </div>
-							        </div>
-							    </div>
 							<?php } else { ?>
 							    <div class="experience-blog-list">
 								    <figure>
