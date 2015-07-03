@@ -65,10 +65,10 @@ get_header(); ?>
 		    <div class="experience-blog-main">
 			    <div class="experience-blog-row">
 				    <?php if ( have_posts() ) { ?>
-					    <?php $featured_side_post = 0; // use for matching the design as we have a different design after 6 post?>
+					    <?php $featured_side_post = 0; $index = 0;// use for matching the design as we have a different design after 6 post?>
 					    <?php while( have_posts() ) { the_post(); ?>
-						    <?php $post_tag_names = wp_get_post_terms(get_the_ID(), 'post_tag', array( 'fields' => 'names' )); ?>
-						    <?php if ( in_array( 'featured', $post_tag_names ) && $featured_side_post == 0 ) { $featured_side_post = 2;  ?>
+						    <?php $featured_post_location = explode( ',', get_field('feature_post_location', 'option') ); ?>
+						    <?php if ( in_array( $index, $featured_post_location ) && $featured_side_post == 0 ) { $featured_side_post = 2;  ?>
 							    <div class="blog-one-row">
 								    <div class="blog-image-content">
 									    <figure class="spring-preview-image">
@@ -102,7 +102,7 @@ get_header(); ?>
 								    </article>
 							    </div>
 							<?php } ?>
-					    <?php } ?>
+					    <?php $index ++; } ?>
 					    <?php if ( $featured_side_post != 0 ) { ?>
 							    </div>
 						    </div>
