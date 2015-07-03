@@ -92,7 +92,8 @@
                 $('.cart-dropdown').off('mouseleave', cart_mouseleave);
                 $('.cart-dropdown').on('mouseleave', cart_mouseleave);
                 $('.experience-list-toggle').css('display' , 'table');
-                $('.experience-list-toggle li a').off('click', experience_list_trigger);
+                $('.experience-cat-toggle').off('click', experience_cat_trigger);
+                //$('.experience-list-toggle li a').off('click', experience_list_trigger);
 
             })    
             .register("screen and (max-width:1139px)", function() {
