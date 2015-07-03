@@ -133,6 +133,10 @@
 			$('.have-items').show();
 		}
 
+		if( cartCount == 1 ) {
+			$('.cart-dropdown').addClass('single__item');
+		}
+
 		// cart and checkout links
 		$('.cart-dropdown .cart-checkout .cart-page-link').attr('href', cookie.cartUrl);
 		$('.cart-dropdown .cart-checkout .checkout-page-link').attr('href', cookie.checkoutUrl);
