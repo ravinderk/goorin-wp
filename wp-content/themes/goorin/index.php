@@ -109,6 +109,7 @@ get_header(); ?>
 				</div>
 			</div>
 		</div>
+		<div class="grBg"></div>
     </section>
 	<div id="loader"  class="loader" style="display: none">Loading more post...</div>
 </div>
