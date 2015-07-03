@@ -12,8 +12,8 @@
  */
 
 get_header(); ?>
-<div class="experience-page">
-    <section class="breadcrumbs">
+<div class="experience-page experience-landing">
+    <!--section class="breadcrumbs">
         <div class="container">
             <ul>
                 <li class="home">
@@ -25,7 +25,7 @@ get_header(); ?>
                 </li>
             </ul>
         </div>
-    </section>
+    </section-->
     <!--breadcrumbs-->
     <section class="experience-hero-block">
         <div class="container">
