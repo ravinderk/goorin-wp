@@ -344,8 +344,6 @@
 					    if (is_loading == false) { // stop loading many times for the same page
 						    // set is_loading to true to refuse new loading
 						    is_loading = true;
-						    // display the waiting loader
-						    $('#loader').show();
 						    // execute an ajax query to load more statments
 						    $.ajax({
 							    url: '/wp-admin/admin-ajax.php',
@@ -353,15 +351,13 @@
 							    data: {action:'get_more_blog_post', page:page, category_id: ( $('#category-id').length ? $('#category-id').data('category_id') : false)},
 							    success:function(response){
 								    if( response.status && response.html ) {
-									    // now we have the response, so hide the loader
-									    $('#loader').hide();
 									    // append: add the new statments to the existing data
 									    $('.experience-blog-row').append(response.html);
 									    // set is_loading to false to accept new loading
 									    is_loading = false;
 									    page++;
 								    } else if( response.status && !response.html ) {
-									    $('#loader').html("No more posts available");
+									    // do nothing here after that we don't want to make ajax request because we already got all the post
 								    } else {
 								        $('#loader').hide();
 								        is_loading = false;

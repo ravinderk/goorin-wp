@@ -60,7 +60,6 @@ get_header(); ?>
 							</div>
 
 						<?php } ?>
-						<div id="loader" class="loader"  style="display: none">Loading more post...</div>
 					<?php } else { ?>
 						<div class="no-categories-main">
 							<div class="no-categories">

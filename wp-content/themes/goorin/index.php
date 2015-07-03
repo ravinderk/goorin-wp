@@ -65,10 +65,11 @@ get_header(); ?>
 		    <div class="experience-blog-main">
 			    <div class="experience-blog-row">
 				    <?php if ( have_posts() ) { ?>
-					    <?php $index = 1; // use for matching the design as we have a different design after 6 post?>
-					    <?php while( have_posts() ) { the_post() ?>
-						    <?php if ( $index == 7 ) { ?>
-							    
+					    <?php $featured_side_post = 0; // use for matching the design as we have a different design after 6 post?>
+					    <?php while( have_posts() ) { the_post(); ?>
+						    <?php $post_tag_names = wp_get_post_terms(get_the_ID(), 'post_tag', array( 'fields' => 'names' )); ?>
+						    <?php if ( in_array( 'featured', $post_tag_names ) && $featured_side_post == 0 ) { $featured_side_post = 2;  ?>
+							    <div class="blog-one-row">
 								    <div class="blog-image-content">
 									    <figure class="spring-preview-image">
 										    <a href="<?php the_permalink() ?>"><?php the_post_thumbnail() ?></a>
@@ -78,8 +79,8 @@ get_header(); ?>
 										    <div class="heading-content"><p><a href="<?php the_permalink() ?>"><?php the_title() ?></a></p></div>
 									    </article>
 								    </div>
-								    
-							<?php } else if ( $index == 9 ) { ?>
+								    <div class="blog-preview-content">
+							<?php } else if ( $featured_side_post == 1 ) { $featured_side_post--; ?>
 									    <div class="experience-blog-list">
 										    <figure>
 											    <a href="<?php the_permalink() ?>"><?php the_post_thumbnail( 'post_custom_size' ) ?></a>
@@ -90,6 +91,7 @@ get_header(); ?>
 										    </article>
 									    </div>
 							<?php } else { ?>
+							    <?php if ( $featured_side_post != 0 ) $featured_side_post--; ?>
 							    <div class="experience-blog-list">
 								    <figure>
 									    <a href="<?php the_permalink() ?>"><?php the_post_thumbnail( 'post_custom_size' ) ?></a>
@@ -100,8 +102,8 @@ get_header(); ?>
 								    </article>
 							    </div>
 							<?php } ?>
-					    <?php $index++; } ?>
-					    <?php if ( $index > 7 && $index <= 9 ) { ?>
+					    <?php } ?>
+					    <?php if ( $featured_side_post != 0 ) { ?>
 							    </div>
 						    </div>
 						<?php } ?>
@@ -111,7 +113,6 @@ get_header(); ?>
 		</div>
 		<div class="grBg"></div>
     </section>
-	<div id="loader"  class="loader" style="display: none">Loading more post...</div>
 </div>
 <?//php get_sidebar(); ?>
 <?php get_footer(); ?>
