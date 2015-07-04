@@ -162,12 +162,42 @@ $args = array(
         'title',
         'editor',
         'thumbnail',
+	    'excerpt',
         'comments'
     ),
     'has_archive'        => 'shops'
 );
 
 register_post_type( 'shops', $args );
+
+
+/**
+ * Store
+ */
+$args = array(
+	'label'              => __( 'Stores' ),
+	'singular_label'     => __( 'Store' ),
+	'public'             => true,
+	'publicly_queryable' => true,
+	'show_ui'            => true,
+	'query_var'          => true,
+	'rewrite'            => array(
+		'slug'       => 'store',
+		'with_front' => true
+	),
+	'capability_type'    => 'post',
+	'hierarchical'       => false,
+	'menu_position'      => 5,
+	'supports'           => array(
+		'title',
+		'editor',
+		'thumbnail',
+		'comments'
+	),
+	'has_archive'        => 'stores'
+);
+
+register_post_type( 'store', $args );
 
 $args = array(
     'label'              => __( 'Nav Menu Images' ),
