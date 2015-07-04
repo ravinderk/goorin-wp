@@ -5,7 +5,8 @@
  * @package goorin
  */
 
-get_header(); ?>
+get_header();
+global $post;?>
 <div class="shoppage shopdetail">
 	<section class="breadcrumbs">
 		<div class="container">
@@ -32,6 +33,40 @@ get_header(); ?>
 	        </figure>
         </div>
     </section>
+	<section class="shop-info-block">
+		<style>
+			.acf-map {
+				width: 100%;
+				height: 400px;
+				border: #ccc solid 1px;
+				margin: 20px 0;
+			}
+		</style>
+		<div class="container">
+			<div class="shop-city"><?php echo get_field('city'); ?></div>
+			<div class="shop-title"><?php echo get_the_title(); ?></div>
+			<div class="shop-content"><?php echo do_shortcode( $post->post_content ); ?></div>
+			<div class="shop-address-info">
+				<div class="shop-address-info cols">
+					<div class="col col-1">
+						<?php
+						$location = get_field('address');
+						echo $location['address'];
+						?>
+					</div>
+					<div class="col col-2"><?php echo get_field('hours_of_operation');?></div>
+					<div class="col col-2"><?php echo get_field('phone');?></div>
+				</div>
+				<div class="shop-address-map">
+					<?php if( !empty($location) ): ?>
+						<div class="acf-map">
+							<div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>"></div>
+						</div>
+					<?php endif; ?>
+				</div>
+			</div>
+		</div>
+	</section>
     <!--shop-hero-block-->
     <section class="shop-photos-block">
     	<div class="container">

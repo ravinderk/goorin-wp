@@ -112,6 +112,14 @@ function goorin_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+
+	/**
+	 * Shop page script
+	 */
+	if( is_singular('shops') ){
+		wp_enqueue_script( 'goorin-shop-page-map', get_template_directory_uri().'/js/shop_page_map.js', array('jquery'), '20150704', true );
+		wp_enqueue_script( 'google-map', '//maps.googleapis.com/maps/api/js?v=3.exp&sensor=false' );
+	}
 }
 add_action( 'wp_enqueue_scripts', 'goorin_scripts' );
 
