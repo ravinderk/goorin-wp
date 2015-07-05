@@ -170,7 +170,6 @@ $args = array(
         'title',
         'editor',
         'thumbnail',
-	    'excerpt',
         'comments'
     ),
     'has_archive'        => 'shops'
@@ -261,4 +260,46 @@ function goorin_api_handler() {
 }
 
 add_action( 'template_redirect', 'goorin_api_handler' );
+
+
+/**
+ * print formatted shop address
+ */
+function goorin_formatted_shop_address(){
+	global $post;
+
+	$address = '';
+
+	if( $street1 = get_field('street_line_1', $post->ID ) ){
+		$address =  $street1;
+
+	}
+
+	if( $street2 = get_field('street_line_2', $post->ID ) ){
+		$address .=  '<br/>'.$street2;
+
+	}
+
+	if( $city = get_field('city', $post->ID ) ){
+		$address .=  '<br/>'.$city;
+
+	}
+
+	if( $state = get_field('state', $post->ID ) ){
+		$address .=  ', '.$state;
+
+	}
+
+	if( $country = get_field('country', $post->ID ) ){
+		$address .=  ', '.$country;
+
+	}
+
+	if( $zip = get_field('zip', $post->ID ) ){
+		$address .=  ' '.$zip;
+
+	}
+
+	echo $address;
+}
 

@@ -49,18 +49,16 @@ global $post;?>
 			<div class="shop-address-info">
 				<div class="shop-address-info cols">
 					<div class="col col-1">
-						<?php
-						$location = get_field('address');
-						echo $location['address'];
-						?>
+						<?php goorin_formatted_shop_address(); ?>
 					</div>
 					<div class="col col-2"><?php echo get_field('hours_of_operation');?></div>
 					<div class="col col-2"><?php echo get_field('phone');?></div>
 				</div>
 				<div class="shop-address-map">
-					<?php if( !empty($location) ): ?>
+					<?php echo get_field( 'latitude', $post->ID );?>
+					<?php if( ( $latitude = get_field( 'latitude', $post->ID ) ) && ( $longitude = get_field( 'longitude', $post->ID ) ) ): ?>
 						<div class="acf-map">
-							<div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>"></div>
+							<div class="marker" data-lat="<?php echo $latitude; ?>" data-lng="<?php echo $longitude; ?>"></div>
 						</div>
 					<?php endif; ?>
 				</div>
