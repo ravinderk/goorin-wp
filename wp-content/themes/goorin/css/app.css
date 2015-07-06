@@ -6345,6 +6345,7 @@ textarea {
   background: url("../images/cart-drop-arrow.png") 98% center no-repeat;
   background-size: 8px auto;
   overflow: hidden;
+  text-align: center;
   margin: 0 auto;
   display: table;
   padding-top: 10px;
@@ -6376,36 +6377,48 @@ textarea {
     padding: 12px 0 0;
   }
 }
-/* line 376, sass/pages/_shop.scss */
+/* line 377, sass/pages/_shop.scss */
 .shoppage #sl_div #searchForm #addy_in_radius select {
   border: none;
   text-align: center;
-  width: 106%;
+  width: 110%;
+  display: block;
   padding: 0 15px 0 5px;
   font-size: 16.87px;
   line-height: normal;
 }
+@media only screen and (min-width: 768px) {
+  /* line 377, sass/pages/_shop.scss */
+  .shoppage #sl_div #searchForm #addy_in_radius select {
+    width: 110%;
+  }
+}
 @media only screen and (min-width: 980px) {
-  /* line 376, sass/pages/_shop.scss */
+  /* line 377, sass/pages/_shop.scss */
   .shoppage #sl_div #searchForm #addy_in_radius select {
     font-size: 20px;
     line-height: normal;
   }
 }
 @media only screen and (min-width: 1140px) {
-  /* line 376, sass/pages/_shop.scss */
+  /* line 377, sass/pages/_shop.scss */
   .shoppage #sl_div #searchForm #addy_in_radius select {
     font-size: 26px;
     line-height: normal;
   }
 }
-/* line 390, sass/pages/_shop.scss */
+/* line 393, sass/pages/_shop.scss */
+.shoppage #sl_div #searchForm #addy_in_radius select option {
+  text-align: center;
+  width: 100%;
+}
+/* line 399, sass/pages/_shop.scss */
 .shoppage #sl_div #searchForm #radius_in_submit {
   float: none;
   width: 100%;
 }
 @media only screen and (min-width: 768px) {
-  /* line 390, sass/pages/_shop.scss */
+  /* line 399, sass/pages/_shop.scss */
   .shoppage #sl_div #searchForm #radius_in_submit {
     float: right;
     width: 45%;
@@ -6413,30 +6426,30 @@ textarea {
   }
 }
 @media only screen and (min-width: 1024px) {
-  /* line 390, sass/pages/_shop.scss */
+  /* line 399, sass/pages/_shop.scss */
   .shoppage #sl_div #searchForm #radius_in_submit {
     width: 50%;
     padding: 0 0 0 65px;
   }
 }
-/* line 402, sass/pages/_shop.scss */
+/* line 411, sass/pages/_shop.scss */
 .shoppage #sl_div #searchForm #radius_in_submit .slp_ui_button {
   width: 100%;
   padding-top: 19px;
   padding-bottom: 19px;
 }
 @media only screen and (min-width: 1140px) {
-  /* line 402, sass/pages/_shop.scss */
+  /* line 411, sass/pages/_shop.scss */
   .shoppage #sl_div #searchForm #radius_in_submit .slp_ui_button {
     width: 300px;
   }
 }
-/* line 412, sass/pages/_shop.scss */
+/* line 421, sass/pages/_shop.scss */
 .shoppage #sl_div #slp_tagline {
   display: none;
 }
 @media only screen and (min-width: 980px) {
-  /* line 415, sass/pages/_shop.scss */
+  /* line 424, sass/pages/_shop.scss */
   .shoppage #sl_div #map_sidebar {
     float: left;
     width: 25%;
@@ -6446,28 +6459,28 @@ textarea {
     border-bottom: 1px solid #dedfda;
   }
 }
-/* line 424, sass/pages/_shop.scss */
+/* line 433, sass/pages/_shop.scss */
 .shoppage #sl_div #map_sidebar .results_wrapper {
   border-bottom: 1px solid #dedfda;
   padding: 20px;
 }
 @media only screen and (min-width: 980px) {
-  /* line 424, sass/pages/_shop.scss */
+  /* line 433, sass/pages/_shop.scss */
   .shoppage #sl_div #map_sidebar .results_wrapper {
     padding: 18px 15px 18px 62px;
     background: url("../images/pin-icon.png") 18px 20px no-repeat;
     background: url("../images/pin-icon.png") 18px 20px no-repeat;
   }
 }
-/* line 431, sass/pages/_shop.scss */
+/* line 440, sass/pages/_shop.scss */
 .shoppage #sl_div #map_sidebar .results_wrapper:last-child {
   border: none;
 }
-/* line 434, sass/pages/_shop.scss */
+/* line 443, sass/pages/_shop.scss */
 .shoppage #sl_div #map_sidebar .results_wrapper:hover, .shoppage #sl_div #map_sidebar .results_wrapper.active {
   background-color: #ecede8;
 }
-/* line 438, sass/pages/_shop.scss */
+/* line 447, sass/pages/_shop.scss */
 .shoppage #sl_div #map_sidebar .text_below_map {
   font-weight: normal;
   border-bottom: 1px solid #dedfda;
@@ -6475,37 +6488,37 @@ textarea {
   line-height: normal;
   padding: 20px;
 }
-/* line 446, sass/pages/_shop.scss */
+/* line 455, sass/pages/_shop.scss */
 .shoppage #sl_div #map_sidebar .results_row_left_column, .shoppage #sl_div #map_sidebar .results_row_center_column {
   float: none;
   width: 100%;
 }
-@media only screen and (min-width: 768px) {
-  /* line 446, sass/pages/_shop.scss */
+@media only screen and (min-width: 980px) {
+  /* line 455, sass/pages/_shop.scss */
   .shoppage #sl_div #map_sidebar .results_row_left_column, .shoppage #sl_div #map_sidebar .results_row_center_column {
     text-align: left;
   }
 }
-/* line 454, sass/pages/_shop.scss */
+/* line 463, sass/pages/_shop.scss */
 .shoppage #sl_div #map_sidebar .results_row_right_column {
   display: none;
 }
-/* line 457, sass/pages/_shop.scss */
+/* line 466, sass/pages/_shop.scss */
 .shoppage #sl_div #map_sidebar .results_entry {
   padding: 0;
   display: block;
 }
-/* line 461, sass/pages/_shop.scss */
+/* line 470, sass/pages/_shop.scss */
 .shoppage #sl_div #map_sidebar .results_entry:hover {
   background: none;
 }
-@media only screen and (min-width: 768px) {
-  /* line 457, sass/pages/_shop.scss */
+@media only screen and (min-width: 980px) {
+  /* line 466, sass/pages/_shop.scss */
   .shoppage #sl_div #map_sidebar .results_entry {
     text-align: left;
   }
 }
-/* line 468, sass/pages/_shop.scss */
+/* line 477, sass/pages/_shop.scss */
 .shoppage #sl_div #map_sidebar .location_name {
   color: #000000;
   font-weight: normal;
@@ -6514,38 +6527,38 @@ textarea {
   font-size: 16.87px;
   line-height: normal;
 }
-/* line 476, sass/pages/_shop.scss */
+/* line 485, sass/pages/_shop.scss */
 .shoppage #sl_div #map_sidebar .location_distance {
   font-size: 11.81px;
   line-height: normal;
   color: #898989;
 }
 @media only screen and (min-width: 768px) {
-  /* line 476, sass/pages/_shop.scss */
+  /* line 485, sass/pages/_shop.scss */
   .shoppage #sl_div #map_sidebar .location_distance {
     font-size: 12px;
     line-height: normal;
   }
 }
-/* line 483, sass/pages/_shop.scss */
+/* line 492, sass/pages/_shop.scss */
 .shoppage #sl_div #map_sidebar .results_row_center_column {
   font-size: 11.81px;
   line-height: normal;
   color: #898989;
 }
 @media only screen and (min-width: 768px) {
-  /* line 483, sass/pages/_shop.scss */
+  /* line 492, sass/pages/_shop.scss */
   .shoppage #sl_div #map_sidebar .results_row_center_column {
     font-size: 12px;
     line-height: normal;
   }
 }
-/* line 491, sass/pages/_shop.scss */
+/* line 500, sass/pages/_shop.scss */
 .shoppage #sl_div #map {
   display: none;
 }
 @media only screen and (min-width: 980px) {
-  /* line 491, sass/pages/_shop.scss */
+  /* line 500, sass/pages/_shop.scss */
   .shoppage #sl_div #map {
     display: block;
     float: right;
@@ -6555,7 +6568,7 @@ textarea {
     border-left: none;
   }
 }
-/* line 503, sass/pages/_shop.scss */
+/* line 512, sass/pages/_shop.scss */
 .shoppage .shop-photos-block {
   border-top: 1px solid #dbddd5;
   padding: 35px 0;
@@ -6564,13 +6577,13 @@ textarea {
   background: #eef0e8;
 }
 @media only screen and (min-width: 768px) {
-  /* line 503, sass/pages/_shop.scss */
+  /* line 512, sass/pages/_shop.scss */
   .shoppage .shop-photos-block {
     padding: 60px 0 40px;
     margin: 60px 0 0;
   }
 }
-/* line 512, sass/pages/_shop.scss */
+/* line 521, sass/pages/_shop.scss */
 .shoppage .shop-photos-block h1 {
   text-transform: uppercase;
   font-size: 17px;
@@ -6578,49 +6591,49 @@ textarea {
   margin: 0 0 25px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 512, sass/pages/_shop.scss */
+  /* line 521, sass/pages/_shop.scss */
   .shoppage .shop-photos-block h1 {
     margin: 0 0 35px;
     font-size: 23.91px;
     line-height: normal;
   }
 }
-/* line 522, sass/pages/_shop.scss */
+/* line 531, sass/pages/_shop.scss */
 .shoppage .shop-photos-block .shop-photos-area {
   max-width: 888px;
   margin: 0 auto;
 }
-/* line 525, sass/pages/_shop.scss */
+/* line 534, sass/pages/_shop.scss */
 .shoppage .shop-photos-block .shop-photos-area ul {
   list-style: none;
   margin: 0 -7px;
   padding: 0;
 }
 @media only screen and (min-width: 768px) {
-  /* line 525, sass/pages/_shop.scss */
+  /* line 534, sass/pages/_shop.scss */
   .shoppage .shop-photos-block .shop-photos-area ul {
     margin: 0 -15px;
   }
 }
-/* line 532, sass/pages/_shop.scss */
+/* line 541, sass/pages/_shop.scss */
 .shoppage .shop-photos-block .shop-photos-area ul li {
   width: 50%;
   padding: 7px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 532, sass/pages/_shop.scss */
+  /* line 541, sass/pages/_shop.scss */
   .shoppage .shop-photos-block .shop-photos-area ul li {
     width: 33.333%;
     padding: 16px 15px;
   }
 }
 @media only screen and (min-width: 980px) {
-  /* line 532, sass/pages/_shop.scss */
+  /* line 541, sass/pages/_shop.scss */
   .shoppage .shop-photos-block .shop-photos-area ul li {
     width: 25%;
   }
 }
-/* line 546, sass/pages/_shop.scss */
+/* line 555, sass/pages/_shop.scss */
 .shoppage .shop-photos-block .shop-photos-area ul li img {
   display: block;
 }
