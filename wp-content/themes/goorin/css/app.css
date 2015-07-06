@@ -6221,7 +6221,7 @@ textarea {
   }
 }
 /* line 277, sass/pages/_shop.scss */
-.shoppage #sl_div #address_search {
+.shoppage #sl_div #searchForm {
   overflow: hidden;
   border-bottom: 1px solid #b6b6b2;
   padding: 25px 20px 15px;
@@ -6229,21 +6229,61 @@ textarea {
   background: #e3e4dc;
 }
 /* line 282, sass/pages/_shop.scss */
-.shoppage #sl_div #address_search label {
+.shoppage #sl_div #searchForm label {
   display: none;
 }
 @media only screen and (min-width: 768px) {
   /* line 277, sass/pages/_shop.scss */
-  .shoppage #sl_div #address_search {
+  .shoppage #sl_div #searchForm {
+    padding: 25px 20px;
     margin: 0 0 40px;
   }
 }
-/* line 290, sass/pages/_shop.scss */
+@media only screen and (min-width: 1024px) {
+  /* line 277, sass/pages/_shop.scss */
+  .shoppage #sl_div #searchForm {
+    padding: 35px 50px;
+  }
+}
+/* line 293, sass/pages/_shop.scss */
+.shoppage #sl_div #address_search {
+  max-width: 1260px;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 768px) {
+  /* line 298, sass/pages/_shop.scss */
+  .shoppage #sl_div #searchForm .search_item {
+    clear: unset;
+    float: left;
+    width: 28%;
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 1140px) {
+  /* line 298, sass/pages/_shop.scss */
+  .shoppage #sl_div #searchForm .search_item {
+    width: 30%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 308, sass/pages/_shop.scss */
+  .shoppage #sl_div #searchForm .search_item:last-child {
+    float: right;
+    width: 72%;
+  }
+}
+@media only screen and (min-width: 1140px) {
+  /* line 308, sass/pages/_shop.scss */
+  .shoppage #sl_div #searchForm .search_item:last-child {
+    width: 70%;
+  }
+}
+/* line 318, sass/pages/_shop.scss */
 .shoppage #sl_div #searchForm #addy_in_address {
   margin: 0;
   padding: 0 15px;
 }
-/* line 293, sass/pages/_shop.scss */
+/* line 321, sass/pages/_shop.scss */
 .shoppage #sl_div #searchForm #addy_in_address #addressInput {
   border: none;
   height: auto;
@@ -6271,13 +6311,31 @@ textarea {
   color: #000000;
 }
 @media only screen and (min-width: 768px) {
-  /* line 293, sass/pages/_shop.scss */
+  /* line 321, sass/pages/_shop.scss */
   .shoppage #sl_div #searchForm #addy_in_address #addressInput {
+    border: none;
+    height: 56px;
+    margin: 0;
+    padding: 2px 0 0;
+  }
+}
+@media only screen and (min-width: 980px) {
+  /* line 321, sass/pages/_shop.scss */
+  .shoppage #sl_div #searchForm #addy_in_address #addressInput {
+    font-size: 20px;
+    line-height: normal;
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 1140px) {
+  /* line 321, sass/pages/_shop.scss */
+  .shoppage #sl_div #searchForm #addy_in_address #addressInput {
+    padding: 8px 0 0;
     font-size: 26px;
     line-height: normal;
   }
 }
-/* line 309, sass/pages/_shop.scss */
+/* line 348, sass/pages/_shop.scss */
 .shoppage #sl_div #searchForm #addy_in_radius {
   float: none;
   width: auto;
@@ -6292,39 +6350,93 @@ textarea {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-/* line 320, sass/pages/_shop.scss */
+@media only screen and (min-width: 768px) {
+  /* line 348, sass/pages/_shop.scss */
+  .shoppage #sl_div #searchForm #addy_in_radius {
+    float: left;
+    width: 50%;
+    height: 56px;
+    border-right: 1px solid #c4c2bf;
+    border-left: 1px solid #c4c2bf;
+    background-size: 12px auto;
+    background-position: 90% center;
+    padding: 13px 0 0;
+  }
+}
+@media only screen and (min-width: 980px) {
+  /* line 348, sass/pages/_shop.scss */
+  .shoppage #sl_div #searchForm #addy_in_radius {
+    padding: 13px 0 0;
+    background-position: 90% center;
+  }
+}
+@media only screen and (min-width: 1140px) {
+  /* line 348, sass/pages/_shop.scss */
+  .shoppage #sl_div #searchForm #addy_in_radius {
+    padding: 12px 0 0;
+  }
+}
+/* line 376, sass/pages/_shop.scss */
 .shoppage #sl_div #searchForm #addy_in_radius select {
   border: none;
   text-align: center;
-  width: 120%;
-  padding: 2px 15px 5px 5px;
+  width: 106%;
+  padding: 0 15px 0 5px;
   font-size: 16.87px;
   line-height: normal;
 }
-@media only screen and (min-width: 768px) {
-  /* line 320, sass/pages/_shop.scss */
+@media only screen and (min-width: 980px) {
+  /* line 376, sass/pages/_shop.scss */
+  .shoppage #sl_div #searchForm #addy_in_radius select {
+    font-size: 20px;
+    line-height: normal;
+  }
+}
+@media only screen and (min-width: 1140px) {
+  /* line 376, sass/pages/_shop.scss */
   .shoppage #sl_div #searchForm #addy_in_radius select {
     font-size: 26px;
     line-height: normal;
   }
 }
-/* line 331, sass/pages/_shop.scss */
+/* line 390, sass/pages/_shop.scss */
 .shoppage #sl_div #searchForm #radius_in_submit {
   float: none;
   width: 100%;
 }
-/* line 334, sass/pages/_shop.scss */
+@media only screen and (min-width: 768px) {
+  /* line 390, sass/pages/_shop.scss */
+  .shoppage #sl_div #searchForm #radius_in_submit {
+    float: right;
+    width: 45%;
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* line 390, sass/pages/_shop.scss */
+  .shoppage #sl_div #searchForm #radius_in_submit {
+    width: 50%;
+    padding: 0 0 0 65px;
+  }
+}
+/* line 402, sass/pages/_shop.scss */
 .shoppage #sl_div #searchForm #radius_in_submit .slp_ui_button {
   width: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 19px;
+  padding-bottom: 19px;
 }
-/* line 341, sass/pages/_shop.scss */
+@media only screen and (min-width: 1140px) {
+  /* line 402, sass/pages/_shop.scss */
+  .shoppage #sl_div #searchForm #radius_in_submit .slp_ui_button {
+    width: 300px;
+  }
+}
+/* line 412, sass/pages/_shop.scss */
 .shoppage #sl_div #slp_tagline {
   display: none;
 }
-@media only screen and (min-width: 768px) {
-  /* line 344, sass/pages/_shop.scss */
+@media only screen and (min-width: 980px) {
+  /* line 415, sass/pages/_shop.scss */
   .shoppage #sl_div #map_sidebar {
     float: left;
     width: 25%;
@@ -6334,28 +6446,28 @@ textarea {
     border-bottom: 1px solid #dedfda;
   }
 }
-/* line 353, sass/pages/_shop.scss */
+/* line 424, sass/pages/_shop.scss */
 .shoppage #sl_div #map_sidebar .results_wrapper {
   border-bottom: 1px solid #dedfda;
   padding: 20px;
 }
 @media only screen and (min-width: 980px) {
-  /* line 353, sass/pages/_shop.scss */
+  /* line 424, sass/pages/_shop.scss */
   .shoppage #sl_div #map_sidebar .results_wrapper {
     padding: 18px 15px 18px 62px;
     background: url("../images/pin-icon.png") 18px 20px no-repeat;
     background: url("../images/pin-icon.png") 18px 20px no-repeat;
   }
 }
-/* line 360, sass/pages/_shop.scss */
+/* line 431, sass/pages/_shop.scss */
 .shoppage #sl_div #map_sidebar .results_wrapper:last-child {
   border: none;
 }
-/* line 363, sass/pages/_shop.scss */
+/* line 434, sass/pages/_shop.scss */
 .shoppage #sl_div #map_sidebar .results_wrapper:hover, .shoppage #sl_div #map_sidebar .results_wrapper.active {
   background-color: #ecede8;
 }
-/* line 367, sass/pages/_shop.scss */
+/* line 438, sass/pages/_shop.scss */
 .shoppage #sl_div #map_sidebar .text_below_map {
   font-weight: normal;
   border-bottom: 1px solid #dedfda;
@@ -6363,37 +6475,37 @@ textarea {
   line-height: normal;
   padding: 20px;
 }
-/* line 375, sass/pages/_shop.scss */
+/* line 446, sass/pages/_shop.scss */
 .shoppage #sl_div #map_sidebar .results_row_left_column, .shoppage #sl_div #map_sidebar .results_row_center_column {
   float: none;
   width: 100%;
 }
 @media only screen and (min-width: 768px) {
-  /* line 375, sass/pages/_shop.scss */
+  /* line 446, sass/pages/_shop.scss */
   .shoppage #sl_div #map_sidebar .results_row_left_column, .shoppage #sl_div #map_sidebar .results_row_center_column {
     text-align: left;
   }
 }
-/* line 383, sass/pages/_shop.scss */
+/* line 454, sass/pages/_shop.scss */
 .shoppage #sl_div #map_sidebar .results_row_right_column {
   display: none;
 }
-/* line 386, sass/pages/_shop.scss */
+/* line 457, sass/pages/_shop.scss */
 .shoppage #sl_div #map_sidebar .results_entry {
   padding: 0;
   display: block;
 }
-/* line 390, sass/pages/_shop.scss */
+/* line 461, sass/pages/_shop.scss */
 .shoppage #sl_div #map_sidebar .results_entry:hover {
   background: none;
 }
 @media only screen and (min-width: 768px) {
-  /* line 386, sass/pages/_shop.scss */
+  /* line 457, sass/pages/_shop.scss */
   .shoppage #sl_div #map_sidebar .results_entry {
     text-align: left;
   }
 }
-/* line 397, sass/pages/_shop.scss */
+/* line 468, sass/pages/_shop.scss */
 .shoppage #sl_div #map_sidebar .location_name {
   color: #000000;
   font-weight: normal;
@@ -6402,38 +6514,38 @@ textarea {
   font-size: 16.87px;
   line-height: normal;
 }
-/* line 405, sass/pages/_shop.scss */
+/* line 476, sass/pages/_shop.scss */
 .shoppage #sl_div #map_sidebar .location_distance {
   font-size: 11.81px;
   line-height: normal;
   color: #898989;
 }
 @media only screen and (min-width: 768px) {
-  /* line 405, sass/pages/_shop.scss */
+  /* line 476, sass/pages/_shop.scss */
   .shoppage #sl_div #map_sidebar .location_distance {
     font-size: 12px;
     line-height: normal;
   }
 }
-/* line 412, sass/pages/_shop.scss */
+/* line 483, sass/pages/_shop.scss */
 .shoppage #sl_div #map_sidebar .results_row_center_column {
   font-size: 11.81px;
   line-height: normal;
   color: #898989;
 }
 @media only screen and (min-width: 768px) {
-  /* line 412, sass/pages/_shop.scss */
+  /* line 483, sass/pages/_shop.scss */
   .shoppage #sl_div #map_sidebar .results_row_center_column {
     font-size: 12px;
     line-height: normal;
   }
 }
-/* line 420, sass/pages/_shop.scss */
+/* line 491, sass/pages/_shop.scss */
 .shoppage #sl_div #map {
   display: none;
 }
-@media only screen and (min-width: 768px) {
-  /* line 420, sass/pages/_shop.scss */
+@media only screen and (min-width: 980px) {
+  /* line 491, sass/pages/_shop.scss */
   .shoppage #sl_div #map {
     display: block;
     float: right;
@@ -6443,7 +6555,7 @@ textarea {
     border-left: none;
   }
 }
-/* line 432, sass/pages/_shop.scss */
+/* line 503, sass/pages/_shop.scss */
 .shoppage .shop-photos-block {
   border-top: 1px solid #dbddd5;
   padding: 35px 0;
@@ -6452,13 +6564,13 @@ textarea {
   background: #eef0e8;
 }
 @media only screen and (min-width: 768px) {
-  /* line 432, sass/pages/_shop.scss */
+  /* line 503, sass/pages/_shop.scss */
   .shoppage .shop-photos-block {
     padding: 60px 0 40px;
     margin: 60px 0 0;
   }
 }
-/* line 441, sass/pages/_shop.scss */
+/* line 512, sass/pages/_shop.scss */
 .shoppage .shop-photos-block h1 {
   text-transform: uppercase;
   font-size: 17px;
@@ -6466,49 +6578,49 @@ textarea {
   margin: 0 0 25px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 441, sass/pages/_shop.scss */
+  /* line 512, sass/pages/_shop.scss */
   .shoppage .shop-photos-block h1 {
     margin: 0 0 35px;
     font-size: 23.91px;
     line-height: normal;
   }
 }
-/* line 451, sass/pages/_shop.scss */
+/* line 522, sass/pages/_shop.scss */
 .shoppage .shop-photos-block .shop-photos-area {
   max-width: 888px;
   margin: 0 auto;
 }
-/* line 454, sass/pages/_shop.scss */
+/* line 525, sass/pages/_shop.scss */
 .shoppage .shop-photos-block .shop-photos-area ul {
   list-style: none;
   margin: 0 -7px;
   padding: 0;
 }
 @media only screen and (min-width: 768px) {
-  /* line 454, sass/pages/_shop.scss */
+  /* line 525, sass/pages/_shop.scss */
   .shoppage .shop-photos-block .shop-photos-area ul {
     margin: 0 -15px;
   }
 }
-/* line 461, sass/pages/_shop.scss */
+/* line 532, sass/pages/_shop.scss */
 .shoppage .shop-photos-block .shop-photos-area ul li {
   width: 50%;
   padding: 7px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 461, sass/pages/_shop.scss */
+  /* line 532, sass/pages/_shop.scss */
   .shoppage .shop-photos-block .shop-photos-area ul li {
     width: 33.333%;
     padding: 16px 15px;
   }
 }
 @media only screen and (min-width: 980px) {
-  /* line 461, sass/pages/_shop.scss */
+  /* line 532, sass/pages/_shop.scss */
   .shoppage .shop-photos-block .shop-photos-area ul li {
     width: 25%;
   }
 }
-/* line 475, sass/pages/_shop.scss */
+/* line 546, sass/pages/_shop.scss */
 .shoppage .shop-photos-block .shop-photos-area ul li img {
   display: block;
 }
