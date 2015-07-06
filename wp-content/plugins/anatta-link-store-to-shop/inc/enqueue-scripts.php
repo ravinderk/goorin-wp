@@ -54,12 +54,13 @@ function ltss_head_script(){
 			});
 		</script>
 		<style>
+			#sl_div{position: relative;}
 			.goorin_first_time_user{  position: absolute!important; left: -10000000px;}
 		</style>
 		<?php
 	}
 }
-add_action( 'wp_head', 'ltss_head_script', 999 );
+add_action( 'wp_footer', 'ltss_head_script', 999 );
 
 
 /**
