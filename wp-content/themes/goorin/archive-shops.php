@@ -37,9 +37,6 @@ get_header(); ?>
     		</div>
     		<div class="shop-content-area">
     			<div class="shop-content findshop" style="display:block;">
-    				<hgroup class="shop-top-content">
-    					<h4><?php the_title() ?></h4>
-    				</hgroup>
     				<div class="findshop-area">
 					    <?php
 					       echo do_shortcode('[SLPLUS]');
