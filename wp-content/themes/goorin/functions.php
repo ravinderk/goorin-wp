@@ -345,9 +345,5 @@ function goorin_shop_listing(){
 		'name' => $shop_name,
 		'shops'=> $shops
 	);
-
-	//store shops and shop name in cache and update them when any shop post type post delete or updated
-//	set_transient( 'goorin_shop_listing', $gooring_shop_listing, 365 * 24 * HOUR_IN_SECONDS );
-
 }
 

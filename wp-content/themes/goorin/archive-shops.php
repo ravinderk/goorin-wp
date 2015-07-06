@@ -41,11 +41,6 @@ get_header(); ?>
 					    <?php
 					       echo do_shortcode('[SLPLUS]');
 					    ?>
-					    <style type="text/css">
-						    /*#map, #slp_tagline, #map_sidebar {*/
-							    /*display: none;*/
-						    /*}*/
-					    </style>
     				</div>
     			</div>
     			<div class="shop-content shoplisting">
@@ -55,101 +50,7 @@ get_header(); ?>
     				<div class="shoplist-area">
     					<article class="shoplist">
 						    <?php goorin_shop_listing(); ?>
-    						<h6>CANADA</h6>
-    						<ul>
-    							<li><a href="#">Toronto - Queen St. West</a></li>
-								<li><a href="#">Vancouver - Yaletown</a></li>
-							</ul>
-							<h6>CALIFORNIA</h6>
-							<ul>
-								<li><a href="#">Berkeley - Elmwood</a></li>
-								<li><a href="#">Los Angeles - Larchmont</a></li>
-								<li><a href="#">Los Angeles - Melrose</a></li>
-								<li><a href="#">Los Angeles - Studio City</a></li>
-								<li><a href="#">Pasadena - Old Town</a></li>
-								<li><a href="#">San Diego - Gaslamp</a></li>
-								<li><a href="#">San Francisco - Haight</a></li>
-								<li><a href="#">San Francisco - North Beach</a></li>
-								<li><a href="#">San Francisco - Union Square</a></li>
-								<li><a href="#">Santa Barbara - State Street</a></li>
-								<li><a href="#">Santa Monica - Santa Monica Boulevard</a></li>
-							</ul>
-							<h6>COLORADO</h6>
-							<ul>
-								<li><a href="#">Denver - Larimer Square</a></li>
-								<li><a href="#">Boulder - West Pearl</a></li>
-							</ul>
-							<h6>DISTRICT OF COLUMBIA</h6>
-							<ul>
-								<li><a href="#">Washington, D.C. - Georgetown</a></li>
-							</ul>
-    					</article>
-    					<article class="shoplist">
-    						<h6>FLORIDA</h6>
-							<ul>
-								<li><a href="#">Miami Beach - Lincoln Road</a></li>
-							</ul>
-							<h6>GEORGIA</h6>
-							<ul>
-								<li><a href="#">Atlanta - Ponce City Market</a></li>
-								<li><a href="#">Savannah - Broughton St</a></li>
-							</ul>
-							<h6>ILLINOIS</h6>
-							<ul>
-								<li><a href="#">Chicago - Wicker Park</a></li>
-							</ul>
-							<h6>LOUISIANA</h6>
-							<ul>
-								<li><a href="#">New Orleans - French Quarter</a></li>
-								<li><a href="#">New Orleans - Magazine Street</a></li>
-							</ul>
-							<h6>MASSACHUSETTS</h6>
-							<ul>
-								<li><a href="#">Boston - Newbury</a></li>
-								<li><a href="#">Cambridge - Harvard Square</a></li>
-							</ul>
-							<h6>MINNESOTA</h6>
-							<ul>
-								<li><a href="#">Minneapolis - Uptown</a></li>
-							</ul>
-							<h6>NEVADA</h6>
-							<ul>
-								<li><a href="#">Las Vegas - The Linq</a></li>
-							</ul>
-    					</article>
-    					<article class="shoplist">
-    						<h6>NEW YORK</h6>
-							<ul>
-								<li><a href="#">Brooklyn - Park Slope</a></li>
-								<li><a href="#">Brooklyn - Williamsburg</a></li>
-								<li><a href="#">New York - Nolita</a></li>
-								<li><a href="#">New York - West Village</a></li>
-							</ul>
-							<h6>OREGON</h6>
-							<ul>
-								<li><a href="#">Portland - Nob Hill</a></li>
-							</ul>
-							<h6>PENNSYLVANIA</h6>
-							<ul>
-								<li><a href="#">Philly - Rittenhouse Square</a></li>
-							</ul>
-							<h6>SOUTH CAROLINA</h6>
-							<ul>
-								<li><a href="#">Charleston - King Street</a></li>
-							</ul>
-							<h6>TENNESSEE</h6>
-							<ul>
-								<li><a href="#">Nashville - The District</a></li>
-							</ul>
-							<h6>TEXAS</h6>
-							<ul>
-								<li><a href="#">Austin - South Congress</a></li>
-							</ul>
-							<h6>WASHINGTON</h6>
-							<ul>
-								<li><a href="#">Seattle - Pike Place Market</a></li>
-							</ul>
-    					</article>
+					    </article>
     				</div>
     			</div>
     		</div>
