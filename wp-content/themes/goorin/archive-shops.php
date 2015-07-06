@@ -13,7 +13,7 @@ get_header(); ?>
 					<span>/ </span>
 				</li>
 				<li>
-					<strong><?php the_title() ?></strong>
+					<strong>Shops</strong>
 				</li>
 			</ul>
 		</div>
@@ -41,11 +41,13 @@ get_header(); ?>
     					<h4><?php the_title() ?></h4>
     				</hgroup>
     				<div class="findshop-area">
-    					<?php echo do_shortcode('[SLPLUS]');?>
+					    <?php
+					       echo do_shortcode('[SLPLUS]');
+					    ?>
 					    <style type="text/css">
-						    #map, #slp_tagline, #map_sidebar {
-							    display: none;
-						    }
+						    /*#map, #slp_tagline, #map_sidebar {*/
+							    /*display: none;*/
+						    /*}*/
 					    </style>
     				</div>
     			</div>
