@@ -87,6 +87,14 @@ function ltss_footer_script(){
 					}
 				});
 			});
+
+			//Address field placeholder
+			$('input', '#addy_in_address').attr( 'placeholder', 'Enter Your Zip' );
+
+			//Select field placeholder
+			$( 'option', '#radiusSelect').each( function( i, k ){
+				$(this).text( 'Within ' + $(this).text() );
+			});
 		});
 	</script>
 	<?php
