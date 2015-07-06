@@ -691,7 +691,7 @@ input {
   font-style: normal;
 }
 /* line 104, sass/base/_typography.scss */
-body, .site-header .submenu .colbox ul li a, .site-header .submenu figure p, .cart-dropdown .cart-list-loop article p, input, textarea, select, .banner article h2, .site-search .site-search-form input[type="text"], .site-footer .footer-col-right .col ul li a, .hollyday-content-block .hollyday-product-block .hollyday-box article h6 span, .shoppage #sl_div #map_sidebar .location_name {
+body, .site-header .submenu .colbox ul li a, .site-header .submenu figure p, .cart-dropdown .cart-list-loop article p, input, textarea, select, .banner article h2, .site-search .site-search-form input[type="text"], .site-footer .footer-col-right .col ul li a, .hollyday-content-block .hollyday-product-block .hollyday-box article h6 span, .shoppage #sl_div #map_sidebar .text_below_map, .shoppage #sl_div #map_sidebar .location_name {
   font-family: 'baskerville';
 }
 
@@ -873,7 +873,7 @@ img {
 }
 
 /* line 48, sass/components/_components.scss */
-.btn, .no-categories-main .no-categories-search .search-submit, .shoppage #sl_div #searchForm #radius_in_submit .slp_ui_button, .page-title h1, .gender-box span, .item-qty a, .item-qty input, .loader, .related-item-main h1, .related-item-main .related-image-content article, .related-item-main .related-preview-content .related-feature-box, .cart-dropdown .no-items, .cart-dropdown h2, .cart-dropdown .cart-list-loop figure, .cart-dropdown .cart-list-loop article, .cart-dropdown .cart-total .cart-message, .cart-dropdown .cart-total .cart-subtotal, .site-header .menu .cart-count-icon, .banner article, .site-header .cart-count, .site-footer h6, .site-footer .copyright, .site-footer .footer-col-left article, .site-footer .footer-col-left .subscribe-form input[type="text"], .site-footer .footer-col-left .subscribe-form .submit-btn, .site-footer .footer-col-right .col ul li, .hollyday-content-block hgroup, .hollyday-content-block .hollyday-product-block .hollyday-box, .spring-preview-block h1, .spring-preview-block .spring-image-content article, .spring-preview-block .spring-preview-content .related-feature-box, .experience-page .experience-hero-block article, .experience-page .experience-cat-block hgroup h1, .experience-page .experience-cat-list .experience-cat-toggle, .experience-page .experience-cat-list ul li a, .experience-page .blog-image-content article, .no-categories-main .no-categories h2, .no-categories-main .no-categories-search .page-content, .shoppage .shop-hero-block article, .shoppage .shop-tab-main li a, .shoppage .shop-top-content h4, .shoppage .shoplist, .shoppage #sl_div #map_sidebar .results_row_left_column, .shoppage #sl_div #map_sidebar .results_row_center_column, .shoppage #sl_div #map_sidebar .results_entry, .shoppage .shop-photos-block h1, .category-campaign .cat-hero-block article, .category-campaign .cat-product-block hgroup, .category-campaign .cat-product-block .category-products .item, .category-campaign .cat-featured-block article {
+.btn, .no-categories-main .no-categories-search .search-submit, .shoppage #sl_div #searchForm #radius_in_submit .slp_ui_button, .page-title h1, .gender-box span, .item-qty a, .item-qty input, .loader, .related-item-main h1, .related-item-main .related-image-content article, .related-item-main .related-preview-content .related-feature-box, .cart-dropdown .no-items, .cart-dropdown h2, .cart-dropdown .cart-list-loop figure, .cart-dropdown .cart-list-loop article, .cart-dropdown .cart-total .cart-message, .cart-dropdown .cart-total .cart-subtotal, .site-header .menu .cart-count-icon, .banner article, .site-header .cart-count, .site-footer h6, .site-footer .copyright, .site-footer .footer-col-left article, .site-footer .footer-col-left .subscribe-form input[type="text"], .site-footer .footer-col-left .subscribe-form .submit-btn, .site-footer .footer-col-right .col ul li, .hollyday-content-block hgroup, .hollyday-content-block .hollyday-product-block .hollyday-box, .spring-preview-block h1, .spring-preview-block .spring-image-content article, .spring-preview-block .spring-preview-content .related-feature-box, .experience-page .experience-hero-block article, .experience-page .experience-cat-block hgroup h1, .experience-page .experience-cat-list .experience-cat-toggle, .experience-page .experience-cat-list ul li a, .experience-page .blog-image-content article, .no-categories-main .no-categories h2, .no-categories-main .no-categories-search .page-content, .shoppage .shop-hero-block article, .shoppage .shop-tab-main li a, .shoppage .shop-top-content h4, .shoppage .shoplist, .shoppage #sl_div #map_sidebar .text_below_map, .shoppage #sl_div #map_sidebar .results_row_left_column, .shoppage #sl_div #map_sidebar .results_row_center_column, .shoppage #sl_div #map_sidebar .results_entry, .shoppage .shop-photos-block h1, .category-campaign .cat-hero-block article, .category-campaign .cat-product-block hgroup, .category-campaign .cat-product-block .category-products .item, .category-campaign .cat-featured-block article {
   text-align: center;
 }
 
@@ -6211,9 +6211,16 @@ textarea {
 }
 /* line 271, sass/pages/_shop.scss */
 .shoppage #sl_div {
+  overflow: hidden;
   padding: 0;
 }
-/* line 273, sass/pages/_shop.scss */
+@media only screen and (min-width: 768px) {
+  /* line 271, sass/pages/_shop.scss */
+  .shoppage #sl_div {
+    margin: 0 0 40px;
+  }
+}
+/* line 277, sass/pages/_shop.scss */
 .shoppage #sl_div #address_search {
   overflow: hidden;
   border-bottom: 1px solid #b6b6b2;
@@ -6221,16 +6228,22 @@ textarea {
   background: #e3e4dc;
   background: #e3e4dc;
 }
-/* line 278, sass/pages/_shop.scss */
+/* line 282, sass/pages/_shop.scss */
 .shoppage #sl_div #address_search label {
   display: none;
 }
-/* line 283, sass/pages/_shop.scss */
+@media only screen and (min-width: 768px) {
+  /* line 277, sass/pages/_shop.scss */
+  .shoppage #sl_div #address_search {
+    margin: 0 0 40px;
+  }
+}
+/* line 290, sass/pages/_shop.scss */
 .shoppage #sl_div #searchForm #addy_in_address {
   margin: 0;
   padding: 0 15px;
 }
-/* line 286, sass/pages/_shop.scss */
+/* line 293, sass/pages/_shop.scss */
 .shoppage #sl_div #searchForm #addy_in_address #addressInput {
   border: none;
   height: auto;
@@ -6258,13 +6271,13 @@ textarea {
   color: #000000;
 }
 @media only screen and (min-width: 768px) {
-  /* line 286, sass/pages/_shop.scss */
+  /* line 293, sass/pages/_shop.scss */
   .shoppage #sl_div #searchForm #addy_in_address #addressInput {
     font-size: 26px;
     line-height: normal;
   }
 }
-/* line 302, sass/pages/_shop.scss */
+/* line 309, sass/pages/_shop.scss */
 .shoppage #sl_div #searchForm #addy_in_radius {
   float: none;
   width: auto;
@@ -6279,7 +6292,7 @@ textarea {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-/* line 313, sass/pages/_shop.scss */
+/* line 320, sass/pages/_shop.scss */
 .shoppage #sl_div #searchForm #addy_in_radius select {
   border: none;
   text-align: center;
@@ -6289,82 +6302,148 @@ textarea {
   line-height: normal;
 }
 @media only screen and (min-width: 768px) {
-  /* line 313, sass/pages/_shop.scss */
+  /* line 320, sass/pages/_shop.scss */
   .shoppage #sl_div #searchForm #addy_in_radius select {
     font-size: 26px;
     line-height: normal;
   }
 }
-/* line 324, sass/pages/_shop.scss */
+/* line 331, sass/pages/_shop.scss */
 .shoppage #sl_div #searchForm #radius_in_submit {
   float: none;
   width: 100%;
 }
-/* line 327, sass/pages/_shop.scss */
+/* line 334, sass/pages/_shop.scss */
 .shoppage #sl_div #searchForm #radius_in_submit .slp_ui_button {
   width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
 }
-/* line 334, sass/pages/_shop.scss */
+/* line 341, sass/pages/_shop.scss */
 .shoppage #sl_div #slp_tagline {
   display: none;
 }
-/* line 338, sass/pages/_shop.scss */
+@media only screen and (min-width: 768px) {
+  /* line 344, sass/pages/_shop.scss */
+  .shoppage #sl_div #map_sidebar {
+    float: left;
+    width: 25%;
+    max-height: 665px;
+    overflow-y: scroll;
+    border-top: 1px solid #dedfda;
+    border-bottom: 1px solid #dedfda;
+  }
+}
+/* line 353, sass/pages/_shop.scss */
 .shoppage #sl_div #map_sidebar .results_wrapper {
   border-bottom: 1px solid #dedfda;
   padding: 20px;
 }
-/* line 342, sass/pages/_shop.scss */
+@media only screen and (min-width: 980px) {
+  /* line 353, sass/pages/_shop.scss */
+  .shoppage #sl_div #map_sidebar .results_wrapper {
+    padding: 18px 15px 18px 62px;
+    background: url("../images/pin-icon.png") 18px 20px no-repeat;
+    background: url("../images/pin-icon.png") 18px 20px no-repeat;
+  }
+}
+/* line 360, sass/pages/_shop.scss */
+.shoppage #sl_div #map_sidebar .results_wrapper:last-child {
+  border: none;
+}
+/* line 363, sass/pages/_shop.scss */
+.shoppage #sl_div #map_sidebar .results_wrapper:hover, .shoppage #sl_div #map_sidebar .results_wrapper.active {
+  background-color: #ecede8;
+}
+/* line 367, sass/pages/_shop.scss */
+.shoppage #sl_div #map_sidebar .text_below_map {
+  font-weight: normal;
+  border-bottom: 1px solid #dedfda;
+  font-size: 14px;
+  line-height: normal;
+  padding: 20px;
+}
+/* line 375, sass/pages/_shop.scss */
 .shoppage #sl_div #map_sidebar .results_row_left_column, .shoppage #sl_div #map_sidebar .results_row_center_column {
   float: none;
   width: 100%;
 }
-/* line 347, sass/pages/_shop.scss */
+@media only screen and (min-width: 768px) {
+  /* line 375, sass/pages/_shop.scss */
+  .shoppage #sl_div #map_sidebar .results_row_left_column, .shoppage #sl_div #map_sidebar .results_row_center_column {
+    text-align: left;
+  }
+}
+/* line 383, sass/pages/_shop.scss */
 .shoppage #sl_div #map_sidebar .results_row_right_column {
   display: none;
 }
-/* line 350, sass/pages/_shop.scss */
+/* line 386, sass/pages/_shop.scss */
 .shoppage #sl_div #map_sidebar .results_entry {
   padding: 0;
   display: block;
 }
-/* line 354, sass/pages/_shop.scss */
+/* line 390, sass/pages/_shop.scss */
 .shoppage #sl_div #map_sidebar .results_entry:hover {
   background: none;
 }
-/* line 358, sass/pages/_shop.scss */
+@media only screen and (min-width: 768px) {
+  /* line 386, sass/pages/_shop.scss */
+  .shoppage #sl_div #map_sidebar .results_entry {
+    text-align: left;
+  }
+}
+/* line 397, sass/pages/_shop.scss */
 .shoppage #sl_div #map_sidebar .location_name {
   color: #000000;
   font-weight: normal;
   display: block;
-  margin: 0 0 2px;
+  margin: 0;
   font-size: 16.87px;
   line-height: normal;
 }
-/* line 366, sass/pages/_shop.scss */
+/* line 405, sass/pages/_shop.scss */
 .shoppage #sl_div #map_sidebar .location_distance {
   font-size: 11.81px;
   line-height: normal;
   color: #898989;
 }
-/* line 370, sass/pages/_shop.scss */
+@media only screen and (min-width: 768px) {
+  /* line 405, sass/pages/_shop.scss */
+  .shoppage #sl_div #map_sidebar .location_distance {
+    font-size: 12px;
+    line-height: normal;
+  }
+}
+/* line 412, sass/pages/_shop.scss */
 .shoppage #sl_div #map_sidebar .results_row_center_column {
   font-size: 11.81px;
   line-height: normal;
   color: #898989;
 }
-/* line 375, sass/pages/_shop.scss */
+@media only screen and (min-width: 768px) {
+  /* line 412, sass/pages/_shop.scss */
+  .shoppage #sl_div #map_sidebar .results_row_center_column {
+    font-size: 12px;
+    line-height: normal;
+  }
+}
+/* line 420, sass/pages/_shop.scss */
 .shoppage #sl_div #map {
   display: none;
 }
 @media only screen and (min-width: 768px) {
-  /* line 375, sass/pages/_shop.scss */
+  /* line 420, sass/pages/_shop.scss */
   .shoppage #sl_div #map {
     display: block;
+    float: right;
+    width: 75%;
+    height: 665px;
+    border: 1px solid #dedfda;
+    border-left: none;
   }
 }
-/* line 382, sass/pages/_shop.scss */
+/* line 432, sass/pages/_shop.scss */
 .shoppage .shop-photos-block {
   border-top: 1px solid #dbddd5;
   padding: 35px 0;
@@ -6373,13 +6452,13 @@ textarea {
   background: #eef0e8;
 }
 @media only screen and (min-width: 768px) {
-  /* line 382, sass/pages/_shop.scss */
+  /* line 432, sass/pages/_shop.scss */
   .shoppage .shop-photos-block {
     padding: 60px 0 40px;
     margin: 60px 0 0;
   }
 }
-/* line 391, sass/pages/_shop.scss */
+/* line 441, sass/pages/_shop.scss */
 .shoppage .shop-photos-block h1 {
   text-transform: uppercase;
   font-size: 17px;
@@ -6387,49 +6466,49 @@ textarea {
   margin: 0 0 25px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 391, sass/pages/_shop.scss */
+  /* line 441, sass/pages/_shop.scss */
   .shoppage .shop-photos-block h1 {
     margin: 0 0 35px;
     font-size: 23.91px;
     line-height: normal;
   }
 }
-/* line 401, sass/pages/_shop.scss */
+/* line 451, sass/pages/_shop.scss */
 .shoppage .shop-photos-block .shop-photos-area {
   max-width: 888px;
   margin: 0 auto;
 }
-/* line 404, sass/pages/_shop.scss */
+/* line 454, sass/pages/_shop.scss */
 .shoppage .shop-photos-block .shop-photos-area ul {
   list-style: none;
   margin: 0 -7px;
   padding: 0;
 }
 @media only screen and (min-width: 768px) {
-  /* line 404, sass/pages/_shop.scss */
+  /* line 454, sass/pages/_shop.scss */
   .shoppage .shop-photos-block .shop-photos-area ul {
     margin: 0 -15px;
   }
 }
-/* line 411, sass/pages/_shop.scss */
+/* line 461, sass/pages/_shop.scss */
 .shoppage .shop-photos-block .shop-photos-area ul li {
   width: 50%;
   padding: 7px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 411, sass/pages/_shop.scss */
+  /* line 461, sass/pages/_shop.scss */
   .shoppage .shop-photos-block .shop-photos-area ul li {
     width: 33.333%;
     padding: 16px 15px;
   }
 }
 @media only screen and (min-width: 980px) {
-  /* line 411, sass/pages/_shop.scss */
+  /* line 461, sass/pages/_shop.scss */
   .shoppage .shop-photos-block .shop-photos-area ul li {
     width: 25%;
   }
 }
-/* line 425, sass/pages/_shop.scss */
+/* line 475, sass/pages/_shop.scss */
 .shoppage .shop-photos-block .shop-photos-area ul li img {
   display: block;
 }
