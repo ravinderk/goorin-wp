@@ -57,6 +57,7 @@ get_header(); ?>
     				</hgroup>
     				<div class="shoplist-area">
     					<article class="shoplist">
+						    <?php goorin_shop_listing(); ?>
     						<h6>CANADA</h6>
     						<ul>
     							<li><a href="#">Toronto - Queen St. West</a></li>

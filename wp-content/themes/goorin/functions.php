@@ -303,3 +303,51 @@ function goorin_formatted_shop_address(){
 	echo $address;
 }
 
+
+/**
+ * Shop listing
+ */
+function goorin_shop_listing(){
+	global $wpdb;
+
+	$sql = 'SELECT sl_store, sl_linked_postid, sl_city, sl_url FROM '.$wpdb->prefix.'store_locator';
+
+	$results = $wpdb->get_results( $sql, ARRAY_A );
+
+	if( $results ){
+		$shops = array();
+		foreach( $results as $shop ){
+			$shop_names[ sanitize_title( $shop['sl_city'] ) ] = $shop['sl_city'];
+			$shops[ sanitize_title( $shop['sl_city'] ) ][]= array(
+				'shop_id'   => $shop['sl_linked_postid'],
+				'shop_link' => $shop['sl_url'],
+				'shop_name' => $shop['sl_store']
+			);
+		}
+	}
+
+	//sort shop names
+	ksort($shop_names);
+
+	//render html
+	foreach( $shop_names as $shop_key => $shop_name ){
+		echo '<h6>'.$shop_name.'</h6>';
+
+		echo '<ul>';
+		foreach( $shops[$shop_key] as $shop ){
+			echo '<li><a href="'.$shop['shop_link'].'">'.$shop['shop_name'].'</a></li>';
+		}
+		echo '</ul>';
+
+	}
+
+	$gooring_shop_listing = array(
+		'name' => $shop_name,
+		'shops'=> $shops
+	);
+
+	//store shops and shop name in cache and update them when any shop post type post delete or updated
+//	set_transient( 'goorin_shop_listing', $gooring_shop_listing, 365 * 24 * HOUR_IN_SECONDS );
+
+}
+
