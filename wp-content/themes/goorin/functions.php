@@ -310,7 +310,7 @@ function goorin_formatted_shop_address(){
 function goorin_shop_listing(){
 	global $wpdb;
 
-	$sql = 'SELECT sl_store, sl_linked_postid, sl_city, sl_url FROM '.$wpdb->prefix.'store_locator';
+	$sql = 'SELECT sl_store, sl_linked_postid, sl_city, sl_url FROM '.$wpdb->prefix.'store_locator ORDER BY sl_city';
 
 	$results = $wpdb->get_results( $sql, ARRAY_A );
 
@@ -333,10 +333,6 @@ function goorin_shop_listing(){
 	if( empty( $shops ) || empty( $shop_names ) ){
 		return;
 	}
-
-	//sort shop names
-	//ksort($shop_names);
-	ksort($shops);
 
 	//shops chunks
 	$shop_chunks = partition( $shops, 3 );
@@ -373,7 +369,7 @@ function partition( Array $list, $p ) {
 	$mark = 0;
 
 	for( $px = 0; $px < $p; $px ++ ) {
-		$incr = ($px < $partrem) ? $partlen + 1 : $partlen;
+		$incr = ( $px < $partrem ) ? $partlen + 1 : $partlen;
 		$partition[ $px ] = array_slice( $list, $mark, $incr );
 		$mark += $incr;
 	}
