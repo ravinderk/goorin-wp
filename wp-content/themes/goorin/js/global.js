@@ -265,7 +265,7 @@
             },1000);
         });
 
-        $('.experience-hero-slider').slick({
+        $('.experience-hero-slider , .shop-hero-slider').slick({
             dots: true,
             infinite: true,
             speed: 800,

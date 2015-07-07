@@ -6569,7 +6569,27 @@ textarea {
     border-left: none;
   }
 }
-/* line 513, sass/pages/_shop.scss */
+/* line 514, sass/pages/_shop.scss */
+.shoppage .shop-address-map .acf-map {
+  width: 100%;
+  height: 170px;
+  border: 3px solid #e7e8e3;
+}
+@media only screen and (min-width: 768px) {
+  /* line 514, sass/pages/_shop.scss */
+  .shoppage .shop-address-map .acf-map {
+    border: 6px solid #e7e8e3;
+    height: 335px;
+  }
+}
+@media only screen and (min-width: 980px) {
+  /* line 514, sass/pages/_shop.scss */
+  .shoppage .shop-address-map .acf-map {
+    width: 795px;
+    margin: 0 auto;
+  }
+}
+/* line 528, sass/pages/_shop.scss */
 .shoppage .shop-photos-block {
   border-top: 1px solid #dbddd5;
   padding: 35px 0;
@@ -6578,13 +6598,13 @@ textarea {
   background: #eef0e8;
 }
 @media only screen and (min-width: 768px) {
-  /* line 513, sass/pages/_shop.scss */
+  /* line 528, sass/pages/_shop.scss */
   .shoppage .shop-photos-block {
     padding: 60px 0 40px;
     margin: 60px 0 0;
   }
 }
-/* line 522, sass/pages/_shop.scss */
+/* line 537, sass/pages/_shop.scss */
 .shoppage .shop-photos-block h1 {
   text-transform: uppercase;
   font-size: 17px;
@@ -6592,49 +6612,49 @@ textarea {
   margin: 0 0 25px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 522, sass/pages/_shop.scss */
+  /* line 537, sass/pages/_shop.scss */
   .shoppage .shop-photos-block h1 {
     margin: 0 0 35px;
     font-size: 23.91px;
     line-height: normal;
   }
 }
-/* line 532, sass/pages/_shop.scss */
+/* line 547, sass/pages/_shop.scss */
 .shoppage .shop-photos-block .shop-photos-area {
   max-width: 888px;
   margin: 0 auto;
 }
-/* line 535, sass/pages/_shop.scss */
+/* line 550, sass/pages/_shop.scss */
 .shoppage .shop-photos-block .shop-photos-area ul {
   list-style: none;
   margin: 0 -7px;
   padding: 0;
 }
 @media only screen and (min-width: 768px) {
-  /* line 535, sass/pages/_shop.scss */
+  /* line 550, sass/pages/_shop.scss */
   .shoppage .shop-photos-block .shop-photos-area ul {
     margin: 0 -15px;
   }
 }
-/* line 542, sass/pages/_shop.scss */
+/* line 557, sass/pages/_shop.scss */
 .shoppage .shop-photos-block .shop-photos-area ul li {
   width: 50%;
   padding: 7px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 542, sass/pages/_shop.scss */
+  /* line 557, sass/pages/_shop.scss */
   .shoppage .shop-photos-block .shop-photos-area ul li {
     width: 33.333%;
     padding: 16px 15px;
   }
 }
 @media only screen and (min-width: 980px) {
-  /* line 542, sass/pages/_shop.scss */
+  /* line 557, sass/pages/_shop.scss */
   .shoppage .shop-photos-block .shop-photos-area ul li {
     width: 25%;
   }
 }
-/* line 556, sass/pages/_shop.scss */
+/* line 571, sass/pages/_shop.scss */
 .shoppage .shop-photos-block .shop-photos-area ul li img {
   display: block;
 }

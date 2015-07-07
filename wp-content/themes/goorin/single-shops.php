@@ -28,24 +28,34 @@ global $post;?>
 	<!--breadcrumbs-->
 	<section class="shop-hero-block">
         <div class="container">
-	        <figure>
-		        <a href="<?php echo get_permalink(); ?>"><?php the_post_thumbnail() ?></a>
-	        </figure>
+        	<div class="shop-hero-slider">
+        		<!--item loop-->
+        		<div class="item">
+	                <figure>
+	                    <a href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?></a>
+	                </figure>
+	                <article>
+	                    <h6><?php echo get_field('city'); ?></h6>
+	                    <h1><a href="<?php the_permalink() ?>"><?php echo get_the_title(); ?></a></h1>
+	                </article>
+	            </div>
+	            <!--item loop-->
+	            <div class="item">
+	                <figure>
+	                    <a href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?></a>
+	                </figure>
+	                <article>
+	                    <h6><?php echo get_field('city'); ?></h6>
+	                    <h1><a href="<?php the_permalink() ?>"><?php echo get_the_title(); ?></a></h1>
+	                </article>
+	            </div>  
+	            <!--item loop-->  
+            </div>
         </div>
     </section>
 	<section class="shop-info-block">
-		<style>
-			.acf-map {
-				width: 100%;
-				height: 400px;
-				border: #ccc solid 1px;
-				margin: 20px 0;
-			}
-		</style>
 		<div class="container">
-			<div class="shop-city"><?php echo get_field('city'); ?></div>
-			<div class="shop-title"><?php echo get_the_title(); ?></div>
-			<div class="shop-content"><?php echo do_shortcode( $post->post_content ); ?></div>
+			<?php echo do_shortcode( $post->post_content ); ?>
 			<div class="shop-address-info">
 				<div class="shop-address-info cols">
 					<div class="col col-1">
