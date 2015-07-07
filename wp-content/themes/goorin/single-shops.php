@@ -55,24 +55,35 @@ global $post;?>
     </section>
 	<section class="shop-info-block">
 		<div class="container">
-			<?php echo do_shortcode( $post->post_content ); ?>
-			<div class="shop-address-info">
-				<div class="shop-address-info cols">
-					<div class="col col-1">
-						<?php goorin_formatted_shop_address(); ?>
-					</div>
-					<div class="col col-2"><?php echo get_field('hours_of_operation');?></div>
-					<div class="col col-2"><?php echo get_field('phone');?></div>
-				</div>
-				<div class="shop-address-map">
-					<?php echo get_field( 'latitude', $post->ID );?>
-					<?php if( ( $latitude = get_field( 'latitude', $post->ID ) ) && ( $longitude = get_field( 'longitude', $post->ID ) ) ): ?>
-						<div class="acf-map">
-							<div class="marker" data-lat="<?php echo $latitude; ?>" data-lng="<?php echo $longitude; ?>"></div>
-						</div>
-					<?php endif; ?>
+			<!--copy only "shop-content-main" div if you want to add this section in slider loop-->
+			<div class="shop-content-main">
+				<article class="shop-dec">
+					<?php echo do_shortcode( $post->post_content ); ?>
+				</article>	
+				<div class="shop-address-detail">
+					<article class="col col-1">
+						<h6>Address</h6>
+						<p><?php goorin_formatted_shop_address(); ?></p>
+					</article>
+					<article class="col col-2">
+						<h6>Hours <span>of</span> Operation</h6>
+						<p><?php echo get_field('hours_of_operation');?></p>
+					</article>
+					<article class="col col-3">
+						<h6>Phone</h6>
+						<p><?php echo get_field('phone');?></p>
+					</article>
 				</div>
 			</div>
+			<!--shop-content-main-->
+			<div class="shop-address-map">
+				<?php if( ( $latitude = get_field( 'latitude', $post->ID ) ) && ( $longitude = get_field( 'longitude', $post->ID ) ) ): ?>
+					<div class="acf-map">
+						<div class="marker" data-lat="<?php echo $latitude; ?>" data-lng="<?php echo $longitude; ?>"></div>
+					</div>
+				<?php endif; ?>
+			</div>
+			<!--shop-address-map-->
 		</div>
 	</section>
     <!--shop-hero-block-->

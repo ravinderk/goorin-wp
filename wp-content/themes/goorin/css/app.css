@@ -696,7 +696,7 @@ body, .site-header .submenu .colbox ul li a, .site-header .submenu figure p, .ca
 }
 
 /* line 107, sass/base/_typography.scss */
-.cat-bottom-col a.backtotop, .related-item-main h1 span, .banner article p i, .banner article p em, .site-header .saletext a, .home-content-block .post-box article small, .hollyday-content-block .hollyday-product-block .hollyday-box article .hollyday-product-content p i, .hollyday-content-block .hollyday-product-block .hollyday-box article .hollyday-product-content p em, .spring-preview-block h1 span, .experience-detail-content .exp-top-heading .exp-posted em, .category-campaign .cat-hero-block .cat-sub-head em, .category-campaign .cat-product-block hgroup em {
+.cat-bottom-col a.backtotop, .related-item-main h1 span, .banner article p i, .banner article p em, .site-header .saletext a, .home-content-block .post-box article small, .hollyday-content-block .hollyday-product-block .hollyday-box article .hollyday-product-content p i, .hollyday-content-block .hollyday-product-block .hollyday-box article .hollyday-product-content p em, .spring-preview-block h1 span, .experience-detail-content .exp-top-heading .exp-posted em, .shoppage .shop-content-main .shop-address-detail h6 span, .shoppage .shop-content-main .shop-address-detail .col-2 p, .category-campaign .cat-hero-block .cat-sub-head em, .category-campaign .cat-product-block hgroup em {
   font-family: 'baskerville_italic';
 }
 
@@ -721,7 +721,7 @@ body, .site-header .submenu .colbox ul li a, .site-header .submenu figure p, .ca
 }
 
 /* line 128, sass/base/_typography.scss */
-.btn, .no-categories-main .no-categories-search .search-submit, .shoppage #sl_div #searchForm #radius_in_submit .slp_ui_button, .loader, .related-item-main h1, .related-item-main .related-image-content article h4, .related-item-main .related-preview-content .related-feature-box h6, .site-header .menu, .banner article p, .site-header .saletext, .site-footer h6, .spring-preview-block h1, .spring-preview-block .spring-image-content article h4, .spring-preview-block .spring-preview-content .related-feature-box h4, .experience-page .experience-hero-block h6, .experience-page .experience-cat-list ul li a, .experience-page .experience-blog-list article h6, .experience-page .blog-image-content article h4, .experience-page .categories-blog-list article h6, .shoppage .shop-hero-block h6, .shoppage .shop-tab-main li a, .shoppage .shoplist h6, .category-campaign .cat-hero-block .cat-sub-head, .category-campaign .cat-product-block hgroup, .category-campaign .cat-product-block .category-products .item .product-name {
+.btn, .no-categories-main .no-categories-search .search-submit, .shoppage #sl_div #searchForm #radius_in_submit .slp_ui_button, .loader, .related-item-main h1, .related-item-main .related-image-content article h4, .related-item-main .related-preview-content .related-feature-box h6, .site-header .menu, .banner article p, .site-header .saletext, .site-footer h6, .spring-preview-block h1, .spring-preview-block .spring-image-content article h4, .spring-preview-block .spring-preview-content .related-feature-box h4, .experience-page .experience-hero-block h6, .experience-page .experience-cat-list ul li a, .experience-page .experience-blog-list article h6, .experience-page .blog-image-content article h4, .experience-page .categories-blog-list article h6, .shoppage .shop-hero-block h6, .shoppage .shop-tab-main li a, .shoppage .shoplist h6, .shoppage .shop-content-main .shop-address-detail h6, .category-campaign .cat-hero-block .cat-sub-head, .category-campaign .cat-product-block hgroup, .category-campaign .cat-product-block .category-products .item .product-name {
   font-family: 'sweet_sansmedium';
 }
 
@@ -873,7 +873,7 @@ img {
 }
 
 /* line 48, sass/components/_components.scss */
-.btn, .no-categories-main .no-categories-search .search-submit, .shoppage #sl_div #searchForm #radius_in_submit .slp_ui_button, .page-title h1, .gender-box span, .item-qty a, .item-qty input, .loader, .related-item-main h1, .related-item-main .related-image-content article, .related-item-main .related-preview-content .related-feature-box, .cart-dropdown .no-items, .cart-dropdown h2, .cart-dropdown .cart-list-loop figure, .cart-dropdown .cart-list-loop article, .cart-dropdown .cart-total .cart-message, .cart-dropdown .cart-total .cart-subtotal, .site-header .menu .cart-count-icon, .banner article, .site-header .cart-count, .site-footer h6, .site-footer .copyright, .site-footer .footer-col-left article, .site-footer .footer-col-left .subscribe-form input[type="text"], .site-footer .footer-col-left .subscribe-form .submit-btn, .site-footer .footer-col-right .col ul li, .hollyday-content-block hgroup, .hollyday-content-block .hollyday-product-block .hollyday-box, .spring-preview-block h1, .spring-preview-block .spring-image-content article, .spring-preview-block .spring-preview-content .related-feature-box, .experience-page .experience-hero-block article, .experience-page .experience-cat-block hgroup h1, .experience-page .experience-cat-list .experience-cat-toggle, .experience-page .experience-cat-list ul li a, .experience-page .blog-image-content article, .no-categories-main .no-categories h2, .no-categories-main .no-categories-search .page-content, .shoppage .shop-hero-block article, .shoppage .shop-tab-main li a, .shoppage .shop-top-content h4, .shoppage .shoplist, .shoppage #sl_div #map_sidebar .text_below_map, .shoppage #sl_div #map_sidebar .results_row_left_column, .shoppage #sl_div #map_sidebar .results_row_center_column, .shoppage #sl_div #map_sidebar .results_entry, .shoppage .shop-photos-block h1, .category-campaign .cat-hero-block article, .category-campaign .cat-product-block hgroup, .category-campaign .cat-product-block .category-products .item, .category-campaign .cat-featured-block article {
+.btn, .no-categories-main .no-categories-search .search-submit, .shoppage #sl_div #searchForm #radius_in_submit .slp_ui_button, .page-title h1, .gender-box span, .item-qty a, .item-qty input, .loader, .related-item-main h1, .related-item-main .related-image-content article, .related-item-main .related-preview-content .related-feature-box, .cart-dropdown .no-items, .cart-dropdown h2, .cart-dropdown .cart-list-loop figure, .cart-dropdown .cart-list-loop article, .cart-dropdown .cart-total .cart-message, .cart-dropdown .cart-total .cart-subtotal, .site-header .menu .cart-count-icon, .banner article, .site-header .cart-count, .site-footer h6, .site-footer .copyright, .site-footer .footer-col-left article, .site-footer .footer-col-left .subscribe-form input[type="text"], .site-footer .footer-col-left .subscribe-form .submit-btn, .site-footer .footer-col-right .col ul li, .hollyday-content-block hgroup, .hollyday-content-block .hollyday-product-block .hollyday-box, .spring-preview-block h1, .spring-preview-block .spring-image-content article, .spring-preview-block .spring-preview-content .related-feature-box, .experience-page .experience-hero-block article, .experience-page .experience-cat-block hgroup h1, .experience-page .experience-cat-list .experience-cat-toggle, .experience-page .experience-cat-list ul li a, .experience-page .blog-image-content article, .no-categories-main .no-categories h2, .no-categories-main .no-categories-search .page-content, .shoppage .shop-hero-block article, .shoppage .shop-tab-main li a, .shoppage .shop-top-content h4, .shoppage .shoplist, .shoppage #sl_div #map_sidebar .text_below_map, .shoppage #sl_div #map_sidebar .results_row_left_column, .shoppage #sl_div #map_sidebar .results_row_center_column, .shoppage #sl_div #map_sidebar .results_entry, .shoppage .shop-content-main, .shoppage .shop-photos-block h1, .category-campaign .cat-hero-block article, .category-campaign .cat-product-block hgroup, .category-campaign .cat-product-block .category-products .item, .category-campaign .cat-featured-block article {
   text-align: center;
 }
 
@@ -5900,7 +5900,7 @@ textarea {
 @media only screen and (min-width: 980px) {
   /* line 43, sass/pages/_shop.scss */
   .shoppage .shop-hero-block article {
-    width: 648px;
+    width: 565px;
     padding: 35px 30px 0;
   }
 }
@@ -5940,7 +5940,7 @@ textarea {
   .shoppage .shop-hero-block h6 {
     font-size: 12px;
     line-height: normal;
-    margin: 0 0 20px;
+    margin: 0 0 10px;
   }
 }
 /* line 82, sass/pages/_shop.scss */
@@ -5962,11 +5962,12 @@ textarea {
 @media only screen and (min-width: 768px) {
   /* line 91, sass/pages/_shop.scss */
   .shoppage .shop-hero-block h1 {
+    margin: 0;
     font-size: 50px;
     line-height: 50px;
   }
 }
-/* line 98, sass/pages/_shop.scss */
+/* line 99, sass/pages/_shop.scss */
 .shoppage .shop-hero-block .slick-dots {
   margin: 0;
   padding: 0;
@@ -5976,20 +5977,20 @@ textarea {
   left: 0;
 }
 @media only screen and (min-width: 768px) {
-  /* line 98, sass/pages/_shop.scss */
+  /* line 99, sass/pages/_shop.scss */
   .shoppage .shop-hero-block .slick-dots {
     position: absolute;
     bottom: 40px;
     left: 0;
   }
 }
-/* line 106, sass/pages/_shop.scss */
+/* line 107, sass/pages/_shop.scss */
 .shoppage .shop-hero-block .slick-dots li {
   margin: 0 auto;
   height: auto;
   width: auto;
 }
-/* line 110, sass/pages/_shop.scss */
+/* line 111, sass/pages/_shop.scss */
 .shoppage .shop-hero-block .slick-dots li button {
   height: 4px;
   width: 4px;
@@ -6002,12 +6003,12 @@ textarea {
   -moz-border-radius: 50%;
   border-radius: 50%;
 }
-/* line 119, sass/pages/_shop.scss */
+/* line 120, sass/pages/_shop.scss */
 .shoppage .shop-hero-block .slick-dots li.slick-active button {
   background: #362f2d;
   background: #362f2d;
 }
-/* line 125, sass/pages/_shop.scss */
+/* line 126, sass/pages/_shop.scss */
 .shoppage .shop-hero-block .slick-prev, .shoppage .shop-hero-block .slick-next {
   top: 50%;
   font-size: 0;
@@ -6023,52 +6024,52 @@ textarea {
   background: none;
   margin-top: -29px;
 }
-/* line 137, sass/pages/_shop.scss */
+/* line 138, sass/pages/_shop.scss */
 .shoppage .shop-hero-block .slick-prev {
   left: 45px;
   opacity: 0.5;
   background: url("../images/slider-prev.png") right 0 no-repeat;
   background: url("../images/slider-prev.png") right 0 no-repeat;
 }
-/* line 141, sass/pages/_shop.scss */
+/* line 142, sass/pages/_shop.scss */
 .shoppage .shop-hero-block .slick-prev:hover {
   opacity: 1;
   left: 35px;
 }
-/* line 146, sass/pages/_shop.scss */
+/* line 147, sass/pages/_shop.scss */
 .shoppage .shop-hero-block .slick-next {
   right: 45px;
   opacity: 0.5;
   background: url("../images/slider-next.png") 0 0 no-repeat;
   background: url("../images/slider-next.png") 0 0 no-repeat;
 }
-/* line 150, sass/pages/_shop.scss */
+/* line 151, sass/pages/_shop.scss */
 .shoppage .shop-hero-block .slick-next:hover {
   opacity: 1;
   right: 35px;
 }
-/* line 157, sass/pages/_shop.scss */
+/* line 158, sass/pages/_shop.scss */
 .shoppage .shop-content-block .container {
   padding: 0;
 }
 @media only screen and (min-width: 768px) {
-  /* line 157, sass/pages/_shop.scss */
+  /* line 158, sass/pages/_shop.scss */
   .shoppage .shop-content-block .container {
     padding: 0 40px;
   }
 }
-/* line 164, sass/pages/_shop.scss */
+/* line 165, sass/pages/_shop.scss */
 .shoppage .shop-tab-main {
   position: relative;
 }
-/* line 166, sass/pages/_shop.scss */
+/* line 167, sass/pages/_shop.scss */
 .shoppage .shop-tab-main ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 @media only screen and (min-width: 768px) {
-  /* line 166, sass/pages/_shop.scss */
+  /* line 167, sass/pages/_shop.scss */
   .shoppage .shop-tab-main ul {
     width: 438px;
     margin: -54px 0 0 -219px;
@@ -6077,7 +6078,7 @@ textarea {
     left: 50%;
   }
 }
-/* line 178, sass/pages/_shop.scss */
+/* line 179, sass/pages/_shop.scss */
 .shoppage .shop-tab-main li a {
   width: 50%;
   text-transform: uppercase;
@@ -6089,7 +6090,7 @@ textarea {
   background: #000000;
 }
 @media only screen and (min-width: 768px) {
-  /* line 178, sass/pages/_shop.scss */
+  /* line 179, sass/pages/_shop.scss */
   .shoppage .shop-tab-main li a {
     width: 215px;
     font-size: 12px;
@@ -6097,23 +6098,23 @@ textarea {
     padding: 20px 30px;
   }
 }
-/* line 193, sass/pages/_shop.scss */
+/* line 194, sass/pages/_shop.scss */
 .shoppage .shop-tab-main li a.active {
   color: #000000;
   background: #e3e4dc;
   background: #e3e4dc;
 }
 @media only screen and (min-width: 768px) {
-  /* line 177, sass/pages/_shop.scss */
+  /* line 178, sass/pages/_shop.scss */
   .shoppage .shop-tab-main li {
     margin: 0 1px;
   }
 }
-/* line 203, sass/pages/_shop.scss */
+/* line 204, sass/pages/_shop.scss */
 .shoppage .shop-content {
   display: none;
 }
-/* line 206, sass/pages/_shop.scss */
+/* line 207, sass/pages/_shop.scss */
 .shoppage .shop-top-content {
   height: 72px;
   border-bottom: 1px solid #b6b6b2;
@@ -6121,79 +6122,79 @@ textarea {
   background: #e3e4dc;
 }
 @media only screen and (min-width: 768px) {
-  /* line 206, sass/pages/_shop.scss */
+  /* line 207, sass/pages/_shop.scss */
   .shoppage .shop-top-content {
     height: 118px;
   }
 }
-/* line 213, sass/pages/_shop.scss */
+/* line 214, sass/pages/_shop.scss */
 .shoppage .shop-top-content h4 {
   padding: 24px 0 0;
   font-size: 16.87px;
   line-height: normal;
 }
 @media only screen and (min-width: 768px) {
-  /* line 213, sass/pages/_shop.scss */
+  /* line 214, sass/pages/_shop.scss */
   .shoppage .shop-top-content h4 {
     padding: 44px 0 0;
     font-size: 26px;
     line-height: normal;
   }
 }
-/* line 223, sass/pages/_shop.scss */
+/* line 224, sass/pages/_shop.scss */
 .shoppage .shoplist-area {
   padding: 35px 0;
 }
 @media only screen and (min-width: 980px) {
-  /* line 223, sass/pages/_shop.scss */
+  /* line 224, sass/pages/_shop.scss */
   .shoppage .shoplist-area {
     overflow: hidden;
     padding: 55px 0 0;
   }
 }
 @media only screen and (min-width: 1024px) {
-  /* line 223, sass/pages/_shop.scss */
+  /* line 224, sass/pages/_shop.scss */
   .shoppage .shoplist-area {
     padding-right: 115px;
     padding-left: 115px;
   }
 }
 @media only screen and (min-width: 980px) {
-  /* line 233, sass/pages/_shop.scss */
+  /* line 234, sass/pages/_shop.scss */
   .shoppage .shoplist {
     float: left;
     width: 33.333%;
   }
 }
-/* line 239, sass/pages/_shop.scss */
+/* line 240, sass/pages/_shop.scss */
 .shoppage .shoplist ul {
   list-style: none;
   margin: 0 0 18px;
   padding: 0;
 }
-/* line 243, sass/pages/_shop.scss */
+/* line 244, sass/pages/_shop.scss */
 .shoppage .shoplist ul li {
   color: #7d7d7d;
   font-size: 16px;
   line-height: 16px;
   padding: 0 0 10px;
 }
-/* line 247, sass/pages/_shop.scss */
+/* line 248, sass/pages/_shop.scss */
 .shoppage .shoplist ul li a {
   color: #7d7d7d;
 }
-/* line 249, sass/pages/_shop.scss */
+/* line 250, sass/pages/_shop.scss */
 .shoppage .shoplist ul li a:hover {
   color: #000000;
   border-bottom: 1px solid #000000;
 }
 @media only screen and (min-width: 768px) {
-  /* line 243, sass/pages/_shop.scss */
+  /* line 244, sass/pages/_shop.scss */
   .shoppage .shoplist ul li {
     padding: 0 0 8px;
   }
 }
-/* line 259, sass/pages/_shop.scss */
+/* line 260, sass/pages/_shop.scss */
 .shoppage .shoplist h6 {
   text-transform: uppercase;
   color: #000000;
@@ -6202,25 +6203,25 @@ textarea {
   line-height: normal;
 }
 @media only screen and (min-width: 768px) {
-  /* line 259, sass/pages/_shop.scss */
+  /* line 260, sass/pages/_shop.scss */
   .shoppage .shoplist h6 {
     font-size: 13px;
     line-height: normal;
     margin: 0 0 8px;
   }
 }
-/* line 271, sass/pages/_shop.scss */
+/* line 272, sass/pages/_shop.scss */
 .shoppage #sl_div {
   overflow: hidden;
   padding: 0;
 }
 @media only screen and (min-width: 768px) {
-  /* line 271, sass/pages/_shop.scss */
+  /* line 272, sass/pages/_shop.scss */
   .shoppage #sl_div {
     margin: 0 0 40px;
   }
 }
-/* line 277, sass/pages/_shop.scss */
+/* line 278, sass/pages/_shop.scss */
 .shoppage #sl_div #searchForm {
   overflow: hidden;
   border-bottom: 1px solid #b6b6b2;
@@ -6228,30 +6229,30 @@ textarea {
   background: #e3e4dc;
   background: #e3e4dc;
 }
-/* line 282, sass/pages/_shop.scss */
+/* line 283, sass/pages/_shop.scss */
 .shoppage #sl_div #searchForm label {
   display: none;
 }
 @media only screen and (min-width: 768px) {
-  /* line 277, sass/pages/_shop.scss */
+  /* line 278, sass/pages/_shop.scss */
   .shoppage #sl_div #searchForm {
     padding: 25px 20px;
     margin: 0 0 40px;
   }
 }
 @media only screen and (min-width: 1024px) {
-  /* line 277, sass/pages/_shop.scss */
+  /* line 278, sass/pages/_shop.scss */
   .shoppage #sl_div #searchForm {
     padding: 35px 50px;
   }
 }
-/* line 293, sass/pages/_shop.scss */
+/* line 294, sass/pages/_shop.scss */
 .shoppage #sl_div #address_search {
   max-width: 1260px;
   margin: 0 auto;
 }
 @media only screen and (min-width: 768px) {
-  /* line 298, sass/pages/_shop.scss */
+  /* line 299, sass/pages/_shop.scss */
   .shoppage #sl_div #searchForm .search_item {
     clear: unset;
     float: left;
@@ -6260,30 +6261,30 @@ textarea {
   }
 }
 @media only screen and (min-width: 1140px) {
-  /* line 298, sass/pages/_shop.scss */
+  /* line 299, sass/pages/_shop.scss */
   .shoppage #sl_div #searchForm .search_item {
     width: 30%;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 308, sass/pages/_shop.scss */
+  /* line 309, sass/pages/_shop.scss */
   .shoppage #sl_div #searchForm .search_item:last-child {
     float: right;
     width: 72%;
   }
 }
 @media only screen and (min-width: 1140px) {
-  /* line 308, sass/pages/_shop.scss */
+  /* line 309, sass/pages/_shop.scss */
   .shoppage #sl_div #searchForm .search_item:last-child {
     width: 70%;
   }
 }
-/* line 318, sass/pages/_shop.scss */
+/* line 319, sass/pages/_shop.scss */
 .shoppage #sl_div #searchForm #addy_in_address {
   margin: 0;
   padding: 0 15px;
 }
-/* line 321, sass/pages/_shop.scss */
+/* line 322, sass/pages/_shop.scss */
 .shoppage #sl_div #searchForm #addy_in_address #addressInput {
   border: none;
   height: auto;
@@ -6311,7 +6312,7 @@ textarea {
   color: #000000;
 }
 @media only screen and (min-width: 768px) {
-  /* line 321, sass/pages/_shop.scss */
+  /* line 322, sass/pages/_shop.scss */
   .shoppage #sl_div #searchForm #addy_in_address #addressInput {
     border: none;
     height: 56px;
@@ -6320,7 +6321,7 @@ textarea {
   }
 }
 @media only screen and (min-width: 980px) {
-  /* line 321, sass/pages/_shop.scss */
+  /* line 322, sass/pages/_shop.scss */
   .shoppage #sl_div #searchForm #addy_in_address #addressInput {
     font-size: 20px;
     line-height: normal;
@@ -6328,14 +6329,14 @@ textarea {
   }
 }
 @media only screen and (min-width: 1140px) {
-  /* line 321, sass/pages/_shop.scss */
+  /* line 322, sass/pages/_shop.scss */
   .shoppage #sl_div #searchForm #addy_in_address #addressInput {
     padding: 8px 0 0;
     font-size: 26px;
     line-height: normal;
   }
 }
-/* line 348, sass/pages/_shop.scss */
+/* line 349, sass/pages/_shop.scss */
 .shoppage #sl_div #searchForm #addy_in_radius {
   float: none;
   width: auto;
@@ -6352,7 +6353,7 @@ textarea {
   padding-bottom: 10px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 348, sass/pages/_shop.scss */
+  /* line 349, sass/pages/_shop.scss */
   .shoppage #sl_div #searchForm #addy_in_radius {
     float: left;
     width: 50%;
@@ -6365,19 +6366,19 @@ textarea {
   }
 }
 @media only screen and (min-width: 980px) {
-  /* line 348, sass/pages/_shop.scss */
+  /* line 349, sass/pages/_shop.scss */
   .shoppage #sl_div #searchForm #addy_in_radius {
     padding: 13px 0 0;
     background-position: 90% center;
   }
 }
 @media only screen and (min-width: 1140px) {
-  /* line 348, sass/pages/_shop.scss */
+  /* line 349, sass/pages/_shop.scss */
   .shoppage #sl_div #searchForm #addy_in_radius {
     padding: 12px 0 0;
   }
 }
-/* line 377, sass/pages/_shop.scss */
+/* line 378, sass/pages/_shop.scss */
 .shoppage #sl_div #searchForm #addy_in_radius select {
   border: none;
   text-align: center;
@@ -6388,37 +6389,37 @@ textarea {
   line-height: normal;
 }
 @media only screen and (min-width: 768px) {
-  /* line 377, sass/pages/_shop.scss */
+  /* line 378, sass/pages/_shop.scss */
   .shoppage #sl_div #searchForm #addy_in_radius select {
     width: 110%;
   }
 }
 @media only screen and (min-width: 980px) {
-  /* line 377, sass/pages/_shop.scss */
+  /* line 378, sass/pages/_shop.scss */
   .shoppage #sl_div #searchForm #addy_in_radius select {
     font-size: 20px;
     line-height: normal;
   }
 }
 @media only screen and (min-width: 1140px) {
-  /* line 377, sass/pages/_shop.scss */
+  /* line 378, sass/pages/_shop.scss */
   .shoppage #sl_div #searchForm #addy_in_radius select {
     font-size: 26px;
     line-height: normal;
   }
 }
-/* line 393, sass/pages/_shop.scss */
+/* line 394, sass/pages/_shop.scss */
 .shoppage #sl_div #searchForm #addy_in_radius select option {
   text-align: center;
   width: 100%;
 }
-/* line 399, sass/pages/_shop.scss */
+/* line 400, sass/pages/_shop.scss */
 .shoppage #sl_div #searchForm #radius_in_submit {
   float: none;
   width: 100%;
 }
 @media only screen and (min-width: 768px) {
-  /* line 399, sass/pages/_shop.scss */
+  /* line 400, sass/pages/_shop.scss */
   .shoppage #sl_div #searchForm #radius_in_submit {
     float: right;
     width: 45%;
@@ -6426,30 +6427,30 @@ textarea {
   }
 }
 @media only screen and (min-width: 1024px) {
-  /* line 399, sass/pages/_shop.scss */
+  /* line 400, sass/pages/_shop.scss */
   .shoppage #sl_div #searchForm #radius_in_submit {
     width: 50%;
     padding: 0 0 0 65px;
   }
 }
-/* line 411, sass/pages/_shop.scss */
+/* line 412, sass/pages/_shop.scss */
 .shoppage #sl_div #searchForm #radius_in_submit .slp_ui_button {
   width: 100%;
   padding-top: 19px;
   padding-bottom: 19px;
 }
 @media only screen and (min-width: 1140px) {
-  /* line 411, sass/pages/_shop.scss */
+  /* line 412, sass/pages/_shop.scss */
   .shoppage #sl_div #searchForm #radius_in_submit .slp_ui_button {
     width: 300px;
   }
 }
-/* line 421, sass/pages/_shop.scss */
+/* line 422, sass/pages/_shop.scss */
 .shoppage #sl_div #slp_tagline, .shoppage #sl_div span.slp_result_website {
-  display: none;
+  display: none !important;
 }
 @media only screen and (min-width: 980px) {
-  /* line 424, sass/pages/_shop.scss */
+  /* line 425, sass/pages/_shop.scss */
   .shoppage #sl_div #map_sidebar {
     float: left;
     width: 25%;
@@ -6459,28 +6460,28 @@ textarea {
     border-bottom: 1px solid #dedfda;
   }
 }
-/* line 433, sass/pages/_shop.scss */
+/* line 434, sass/pages/_shop.scss */
 .shoppage #sl_div #map_sidebar .results_wrapper {
   border-bottom: 1px solid #dedfda;
   padding: 20px;
 }
 @media only screen and (min-width: 980px) {
-  /* line 433, sass/pages/_shop.scss */
+  /* line 434, sass/pages/_shop.scss */
   .shoppage #sl_div #map_sidebar .results_wrapper {
     padding: 18px 15px 18px 62px;
     background: url("../images/pin-icon.png") 18px 20px no-repeat;
     background: url("../images/pin-icon.png") 18px 20px no-repeat;
   }
 }
-/* line 440, sass/pages/_shop.scss */
+/* line 441, sass/pages/_shop.scss */
 .shoppage #sl_div #map_sidebar .results_wrapper:last-child {
   border: none;
 }
-/* line 443, sass/pages/_shop.scss */
+/* line 444, sass/pages/_shop.scss */
 .shoppage #sl_div #map_sidebar .results_wrapper:hover, .shoppage #sl_div #map_sidebar .results_wrapper.active {
   background-color: #ecede8;
 }
-/* line 447, sass/pages/_shop.scss */
+/* line 448, sass/pages/_shop.scss */
 .shoppage #sl_div #map_sidebar .text_below_map {
   font-weight: normal;
   border-bottom: 1px solid #dedfda;
@@ -6488,37 +6489,37 @@ textarea {
   line-height: normal;
   padding: 20px;
 }
-/* line 455, sass/pages/_shop.scss */
+/* line 456, sass/pages/_shop.scss */
 .shoppage #sl_div #map_sidebar .results_row_left_column, .shoppage #sl_div #map_sidebar .results_row_center_column {
   float: none;
   width: 100%;
 }
 @media only screen and (min-width: 980px) {
-  /* line 455, sass/pages/_shop.scss */
+  /* line 456, sass/pages/_shop.scss */
   .shoppage #sl_div #map_sidebar .results_row_left_column, .shoppage #sl_div #map_sidebar .results_row_center_column {
     text-align: left;
   }
 }
-/* line 463, sass/pages/_shop.scss */
+/* line 464, sass/pages/_shop.scss */
 .shoppage #sl_div #map_sidebar .results_row_right_column {
   display: none;
 }
-/* line 466, sass/pages/_shop.scss */
+/* line 467, sass/pages/_shop.scss */
 .shoppage #sl_div #map_sidebar .results_entry {
   padding: 0;
   display: block;
 }
-/* line 470, sass/pages/_shop.scss */
+/* line 471, sass/pages/_shop.scss */
 .shoppage #sl_div #map_sidebar .results_entry:hover {
   background: none;
 }
 @media only screen and (min-width: 980px) {
-  /* line 466, sass/pages/_shop.scss */
+  /* line 467, sass/pages/_shop.scss */
   .shoppage #sl_div #map_sidebar .results_entry {
     text-align: left;
   }
 }
-/* line 477, sass/pages/_shop.scss */
+/* line 478, sass/pages/_shop.scss */
 .shoppage #sl_div #map_sidebar .location_name {
   color: #000000;
   font-weight: normal;
@@ -6527,39 +6528,39 @@ textarea {
   font-size: 16.87px;
   line-height: normal;
 }
-/* line 485, sass/pages/_shop.scss */
+/* line 486, sass/pages/_shop.scss */
 .shoppage #sl_div #map_sidebar .location_distance {
   font-size: 11.81px;
   line-height: normal;
   color: #898989;
 }
 @media only screen and (min-width: 768px) {
-  /* line 485, sass/pages/_shop.scss */
+  /* line 486, sass/pages/_shop.scss */
   .shoppage #sl_div #map_sidebar .location_distance {
     font-size: 12px;
     line-height: normal;
   }
 }
-/* line 492, sass/pages/_shop.scss */
+/* line 493, sass/pages/_shop.scss */
 .shoppage #sl_div #map_sidebar .results_row_center_column {
   font-size: 11.81px;
   line-height: normal;
   color: #898989;
 }
 @media only screen and (min-width: 768px) {
-  /* line 492, sass/pages/_shop.scss */
+  /* line 493, sass/pages/_shop.scss */
   .shoppage #sl_div #map_sidebar .results_row_center_column {
     font-size: 12px;
     line-height: normal;
   }
 }
-/* line 500, sass/pages/_shop.scss */
+/* line 501, sass/pages/_shop.scss */
 .shoppage #sl_div #map {
   display: none;
   position: relative;
 }
 @media only screen and (min-width: 980px) {
-  /* line 500, sass/pages/_shop.scss */
+  /* line 501, sass/pages/_shop.scss */
   .shoppage #sl_div #map {
     display: block;
     float: right;
@@ -6570,26 +6571,118 @@ textarea {
   }
 }
 /* line 514, sass/pages/_shop.scss */
+.shoppage .shop-content-main {
+  padding: 0;
+}
+@media only screen and (min-width: 768px) {
+  /* line 514, sass/pages/_shop.scss */
+  .shoppage .shop-content-main {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 0 50px;
+  }
+}
+/* line 522, sass/pages/_shop.scss */
+.shoppage .shop-content-main .shop-dec {
+  font-size: 15px;
+  line-height: 20.47px;
+  padding: 0 0 30px;
+}
+@media only screen and (min-width: 768px) {
+  /* line 522, sass/pages/_shop.scss */
+  .shoppage .shop-content-main .shop-dec {
+    padding: 0 100px 45px;
+    line-height: 23px;
+  }
+}
+/* line 530, sass/pages/_shop.scss */
+.shoppage .shop-content-main .shop-address-detail {
+  overflow: hidden;
+}
+/* line 532, sass/pages/_shop.scss */
+.shoppage .shop-content-main .shop-address-detail article {
+  padding: 0 0 30px;
+}
+@media only screen and (min-width: 768px) {
+  /* line 532, sass/pages/_shop.scss */
+  .shoppage .shop-content-main .shop-address-detail article {
+    float: left;
+    width: 33%;
+    padding: 0 20px;
+  }
+}
+/* line 540, sass/pages/_shop.scss */
+.shoppage .shop-content-main .shop-address-detail h6 {
+  text-transform: uppercase;
+  font-size: 11.74px;
+  line-height: 12.74px;
+  margin: 0 0 5px;
+}
+@media only screen and (min-width: 768px) {
+  /* line 540, sass/pages/_shop.scss */
+  .shoppage .shop-content-main .shop-address-detail h6 {
+    margin: 0 0 10px;
+    font-size: 12px;
+    line-height: normal;
+  }
+}
+/* line 549, sass/pages/_shop.scss */
+.shoppage .shop-content-main .shop-address-detail h6 span {
+  letter-spacing: 1px;
+  text-transform: lowercase;
+}
+/* line 555, sass/pages/_shop.scss */
+.shoppage .shop-content-main .shop-address-detail p {
+  text-decoration: underline;
+  font-size: 15px;
+  line-height: 20px;
+}
+@media only screen and (min-width: 768px) {
+  /* line 555, sass/pages/_shop.scss */
+  .shoppage .shop-content-main .shop-address-detail p {
+    line-height: 24px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 562, sass/pages/_shop.scss */
+  .shoppage .shop-content-main .shop-address-detail .col-2 {
+    border-left: 2px solid #e1e1dc;
+    border-right: 2px solid #e1e1dc;
+  }
+}
+/* line 567, sass/pages/_shop.scss */
+.shoppage .shop-content-main .shop-address-detail .col-2 p {
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 24.56px;
+}
+@media only screen and (min-width: 768px) {
+  /* line 567, sass/pages/_shop.scss */
+  .shoppage .shop-content-main .shop-address-detail .col-2 p {
+    line-height: 23px;
+  }
+}
+/* line 579, sass/pages/_shop.scss */
 .shoppage .shop-address-map .acf-map {
   width: 100%;
   height: 170px;
   border: 3px solid #e7e8e3;
 }
 @media only screen and (min-width: 768px) {
-  /* line 514, sass/pages/_shop.scss */
+  /* line 579, sass/pages/_shop.scss */
   .shoppage .shop-address-map .acf-map {
     border: 6px solid #e7e8e3;
     height: 335px;
   }
 }
 @media only screen and (min-width: 980px) {
-  /* line 514, sass/pages/_shop.scss */
+  /* line 579, sass/pages/_shop.scss */
   .shoppage .shop-address-map .acf-map {
     width: 795px;
     margin: 0 auto;
   }
 }
-/* line 528, sass/pages/_shop.scss */
+/* line 593, sass/pages/_shop.scss */
 .shoppage .shop-photos-block {
   border-top: 1px solid #dbddd5;
   padding: 35px 0;
@@ -6598,13 +6691,13 @@ textarea {
   background: #eef0e8;
 }
 @media only screen and (min-width: 768px) {
-  /* line 528, sass/pages/_shop.scss */
+  /* line 593, sass/pages/_shop.scss */
   .shoppage .shop-photos-block {
     padding: 60px 0 40px;
     margin: 60px 0 0;
   }
 }
-/* line 537, sass/pages/_shop.scss */
+/* line 602, sass/pages/_shop.scss */
 .shoppage .shop-photos-block h1 {
   text-transform: uppercase;
   font-size: 17px;
@@ -6612,49 +6705,49 @@ textarea {
   margin: 0 0 25px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 537, sass/pages/_shop.scss */
+  /* line 602, sass/pages/_shop.scss */
   .shoppage .shop-photos-block h1 {
     margin: 0 0 35px;
     font-size: 23.91px;
     line-height: normal;
   }
 }
-/* line 547, sass/pages/_shop.scss */
+/* line 612, sass/pages/_shop.scss */
 .shoppage .shop-photos-block .shop-photos-area {
   max-width: 888px;
   margin: 0 auto;
 }
-/* line 550, sass/pages/_shop.scss */
+/* line 615, sass/pages/_shop.scss */
 .shoppage .shop-photos-block .shop-photos-area ul {
   list-style: none;
   margin: 0 -7px;
   padding: 0;
 }
 @media only screen and (min-width: 768px) {
-  /* line 550, sass/pages/_shop.scss */
+  /* line 615, sass/pages/_shop.scss */
   .shoppage .shop-photos-block .shop-photos-area ul {
     margin: 0 -15px;
   }
 }
-/* line 557, sass/pages/_shop.scss */
+/* line 622, sass/pages/_shop.scss */
 .shoppage .shop-photos-block .shop-photos-area ul li {
   width: 50%;
   padding: 7px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 557, sass/pages/_shop.scss */
+  /* line 622, sass/pages/_shop.scss */
   .shoppage .shop-photos-block .shop-photos-area ul li {
     width: 33.333%;
     padding: 16px 15px;
   }
 }
 @media only screen and (min-width: 980px) {
-  /* line 557, sass/pages/_shop.scss */
+  /* line 622, sass/pages/_shop.scss */
   .shoppage .shop-photos-block .shop-photos-area ul li {
     width: 25%;
   }
 }
-/* line 571, sass/pages/_shop.scss */
+/* line 636, sass/pages/_shop.scss */
 .shoppage .shop-photos-block .shop-photos-area ul li img {
   display: block;
 }
