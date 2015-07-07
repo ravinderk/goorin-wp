@@ -172,7 +172,7 @@ $args = array(
         'thumbnail',
         'comments'
     ),
-    'has_archive'        => 'shops'
+    //'has_archive'        => false
 );
 
 register_post_type( 'shops', $args );

@@ -22,7 +22,7 @@ get_header(); ?>
 	<section class="shop-hero-block">
         <div class="container">
 	        <figure>
-		        <a href="#"><?php the_post_thumbnail() ?></a>
+		        <a href="<?php echo get_permalink(); ?>"><?php the_post_thumbnail() ?></a>
 	        </figure>
         </div>
     </section>

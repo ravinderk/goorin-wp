@@ -5,7 +5,7 @@
 function ltss_head_script(){
 
 	//bail out
-	if( ! is_post_type_archive( 'shops') ){
+	if( ! is_page_template( 'archive-shops.php' ) ){
 		return;
 	}
 
@@ -68,7 +68,7 @@ add_action( 'wp_footer', 'ltss_head_script', 999 );
  */
 function ltss_footer_script(){
 	//bail out
-	if( ! is_post_type_archive( 'shops') ){
+	if( ! is_page_template( 'archive-shops.php' ) ){
 		return;
 	}
 	?>
