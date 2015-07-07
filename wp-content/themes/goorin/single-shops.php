@@ -29,7 +29,7 @@ global $post;?>
 	<section class="shop-hero-block">
         <div class="container">
 	        <figure>
-		        <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/shop-banner-image.jpg"></a>
+		        <a href="<?php echo get_permalink(); ?>"><?php the_post_thumbnail() ?></a>
 	        </figure>
         </div>
     </section>
