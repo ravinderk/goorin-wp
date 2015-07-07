@@ -6422,18 +6422,13 @@ textarea {
     line-height: normal;
   }
 }
-/* line 401, sass/pages/_shop.scss */
-.shoppage #sl_div #searchForm #addy_in_radius select option {
-  text-align: center;
-  width: 100%;
-}
-/* line 407, sass/pages/_shop.scss */
+/* line 403, sass/pages/_shop.scss */
 .shoppage #sl_div #searchForm #radius_in_submit {
   float: none;
   width: 100%;
 }
 @media only screen and (min-width: 768px) {
-  /* line 407, sass/pages/_shop.scss */
+  /* line 403, sass/pages/_shop.scss */
   .shoppage #sl_div #searchForm #radius_in_submit {
     float: right;
     width: 45%;
@@ -6441,30 +6436,30 @@ textarea {
   }
 }
 @media only screen and (min-width: 1024px) {
-  /* line 407, sass/pages/_shop.scss */
+  /* line 403, sass/pages/_shop.scss */
   .shoppage #sl_div #searchForm #radius_in_submit {
     width: 50%;
     padding: 0 0 0 65px;
   }
 }
-/* line 419, sass/pages/_shop.scss */
+/* line 415, sass/pages/_shop.scss */
 .shoppage #sl_div #searchForm #radius_in_submit .slp_ui_button {
   width: 100%;
   padding-top: 19px;
   padding-bottom: 19px;
 }
 @media only screen and (min-width: 1140px) {
-  /* line 419, sass/pages/_shop.scss */
+  /* line 415, sass/pages/_shop.scss */
   .shoppage #sl_div #searchForm #radius_in_submit .slp_ui_button {
     width: 300px;
   }
 }
-/* line 429, sass/pages/_shop.scss */
+/* line 425, sass/pages/_shop.scss */
 .shoppage #sl_div #slp_tagline, .shoppage #sl_div span.slp_result_website {
   display: none !important;
 }
 @media only screen and (min-width: 980px) {
-  /* line 432, sass/pages/_shop.scss */
+  /* line 428, sass/pages/_shop.scss */
   .shoppage #sl_div #map_sidebar {
     float: left;
     width: 25%;
@@ -6474,28 +6469,28 @@ textarea {
     border-bottom: 1px solid #dedfda;
   }
 }
-/* line 441, sass/pages/_shop.scss */
+/* line 437, sass/pages/_shop.scss */
 .shoppage #sl_div #map_sidebar .results_wrapper {
   border-bottom: 1px solid #dedfda;
   padding: 20px;
 }
 @media only screen and (min-width: 980px) {
-  /* line 441, sass/pages/_shop.scss */
+  /* line 437, sass/pages/_shop.scss */
   .shoppage #sl_div #map_sidebar .results_wrapper {
     padding: 18px 15px 18px 62px;
     background: url("../images/pin-icon.png") 18px 20px no-repeat;
     background: url("../images/pin-icon.png") 18px 20px no-repeat;
   }
 }
-/* line 448, sass/pages/_shop.scss */
+/* line 444, sass/pages/_shop.scss */
 .shoppage #sl_div #map_sidebar .results_wrapper:last-child {
   border: none;
 }
-/* line 451, sass/pages/_shop.scss */
+/* line 447, sass/pages/_shop.scss */
 .shoppage #sl_div #map_sidebar .results_wrapper:hover, .shoppage #sl_div #map_sidebar .results_wrapper.active {
   background-color: #ecede8;
 }
-/* line 455, sass/pages/_shop.scss */
+/* line 451, sass/pages/_shop.scss */
 .shoppage #sl_div #map_sidebar .text_below_map {
   font-weight: normal;
   border-bottom: 1px solid #dedfda;
@@ -6503,37 +6498,37 @@ textarea {
   line-height: normal;
   padding: 20px;
 }
-/* line 463, sass/pages/_shop.scss */
+/* line 459, sass/pages/_shop.scss */
 .shoppage #sl_div #map_sidebar .results_row_left_column, .shoppage #sl_div #map_sidebar .results_row_center_column {
   float: none;
   width: 100%;
 }
 @media only screen and (min-width: 980px) {
-  /* line 463, sass/pages/_shop.scss */
+  /* line 459, sass/pages/_shop.scss */
   .shoppage #sl_div #map_sidebar .results_row_left_column, .shoppage #sl_div #map_sidebar .results_row_center_column {
     text-align: left;
   }
 }
-/* line 471, sass/pages/_shop.scss */
+/* line 467, sass/pages/_shop.scss */
 .shoppage #sl_div #map_sidebar .results_row_right_column {
   display: none;
 }
-/* line 474, sass/pages/_shop.scss */
+/* line 470, sass/pages/_shop.scss */
 .shoppage #sl_div #map_sidebar .results_entry {
   padding: 0;
   display: block;
 }
-/* line 478, sass/pages/_shop.scss */
+/* line 474, sass/pages/_shop.scss */
 .shoppage #sl_div #map_sidebar .results_entry:hover {
   background: none;
 }
 @media only screen and (min-width: 980px) {
-  /* line 474, sass/pages/_shop.scss */
+  /* line 470, sass/pages/_shop.scss */
   .shoppage #sl_div #map_sidebar .results_entry {
     text-align: left;
   }
 }
-/* line 485, sass/pages/_shop.scss */
+/* line 481, sass/pages/_shop.scss */
 .shoppage #sl_div #map_sidebar .location_name {
   color: #000000;
   font-weight: normal;
@@ -6542,39 +6537,39 @@ textarea {
   font-size: 16.87px;
   line-height: normal;
 }
-/* line 493, sass/pages/_shop.scss */
+/* line 489, sass/pages/_shop.scss */
 .shoppage #sl_div #map_sidebar .location_distance {
   font-size: 11.81px;
   line-height: normal;
   color: #898989;
 }
 @media only screen and (min-width: 768px) {
-  /* line 493, sass/pages/_shop.scss */
+  /* line 489, sass/pages/_shop.scss */
   .shoppage #sl_div #map_sidebar .location_distance {
     font-size: 12px;
     line-height: normal;
   }
 }
-/* line 500, sass/pages/_shop.scss */
+/* line 496, sass/pages/_shop.scss */
 .shoppage #sl_div #map_sidebar .results_row_center_column {
   font-size: 11.81px;
   line-height: normal;
   color: #898989;
 }
 @media only screen and (min-width: 768px) {
-  /* line 500, sass/pages/_shop.scss */
+  /* line 496, sass/pages/_shop.scss */
   .shoppage #sl_div #map_sidebar .results_row_center_column {
     font-size: 12px;
     line-height: normal;
   }
 }
-/* line 508, sass/pages/_shop.scss */
+/* line 504, sass/pages/_shop.scss */
 .shoppage #sl_div #map {
   display: none;
   position: relative;
 }
 @media only screen and (min-width: 980px) {
-  /* line 508, sass/pages/_shop.scss */
+  /* line 504, sass/pages/_shop.scss */
   .shoppage #sl_div #map {
     display: block;
     float: right;
@@ -6584,48 +6579,48 @@ textarea {
     border-left: none;
   }
 }
-/* line 521, sass/pages/_shop.scss */
+/* line 517, sass/pages/_shop.scss */
 .shoppage .shop-content-main {
   padding: 0;
 }
 @media only screen and (min-width: 768px) {
-  /* line 521, sass/pages/_shop.scss */
+  /* line 517, sass/pages/_shop.scss */
   .shoppage .shop-content-main {
     max-width: 768px;
     margin: 0 auto;
     padding: 0 0 50px;
   }
 }
-/* line 529, sass/pages/_shop.scss */
+/* line 525, sass/pages/_shop.scss */
 .shoppage .shop-content-main .shop-dec {
   font-size: 15px;
   line-height: 20.47px;
   padding: 0 0 30px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 529, sass/pages/_shop.scss */
+  /* line 525, sass/pages/_shop.scss */
   .shoppage .shop-content-main .shop-dec {
     padding: 0 140px 45px;
     line-height: 23px;
   }
 }
-/* line 537, sass/pages/_shop.scss */
+/* line 533, sass/pages/_shop.scss */
 .shoppage .shop-content-main .shop-address-detail {
   overflow: hidden;
 }
-/* line 539, sass/pages/_shop.scss */
+/* line 535, sass/pages/_shop.scss */
 .shoppage .shop-content-main .shop-address-detail article {
   padding: 0 0 30px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 539, sass/pages/_shop.scss */
+  /* line 535, sass/pages/_shop.scss */
   .shoppage .shop-content-main .shop-address-detail article {
     float: left;
     width: 33%;
     padding: 0 20px;
   }
 }
-/* line 547, sass/pages/_shop.scss */
+/* line 543, sass/pages/_shop.scss */
 .shoppage .shop-content-main .shop-address-detail h6 {
   text-transform: uppercase;
   font-size: 11.74px;
@@ -6633,70 +6628,76 @@ textarea {
   margin: 0 0 5px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 547, sass/pages/_shop.scss */
+  /* line 543, sass/pages/_shop.scss */
   .shoppage .shop-content-main .shop-address-detail h6 {
     margin: 0 0 10px;
     font-size: 12px;
     line-height: normal;
   }
 }
-/* line 556, sass/pages/_shop.scss */
+/* line 552, sass/pages/_shop.scss */
 .shoppage .shop-content-main .shop-address-detail h6 span {
   letter-spacing: 1px;
   text-transform: lowercase;
 }
-/* line 562, sass/pages/_shop.scss */
+/* line 558, sass/pages/_shop.scss */
 .shoppage .shop-content-main .shop-address-detail p {
   text-decoration: underline;
   font-size: 15px;
   line-height: 20px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 562, sass/pages/_shop.scss */
+  /* line 558, sass/pages/_shop.scss */
   .shoppage .shop-content-main .shop-address-detail p {
     line-height: 24px;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 569, sass/pages/_shop.scss */
+  /* line 565, sass/pages/_shop.scss */
   .shoppage .shop-content-main .shop-address-detail .col-2 {
     border-left: 2px solid #e1e1dc;
     border-right: 2px solid #e1e1dc;
   }
 }
-/* line 574, sass/pages/_shop.scss */
+/* line 570, sass/pages/_shop.scss */
 .shoppage .shop-content-main .shop-address-detail .col-2 p {
   text-decoration: none;
   font-size: 15px;
   line-height: 24.56px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 574, sass/pages/_shop.scss */
+  /* line 570, sass/pages/_shop.scss */
   .shoppage .shop-content-main .shop-address-detail .col-2 p {
     line-height: 23px;
   }
 }
-/* line 586, sass/pages/_shop.scss */
+/* line 582, sass/pages/_shop.scss */
 .shoppage .shop-address-map .acf-map {
   width: 100%;
   height: 170px;
   border: 3px solid #e7e8e3;
 }
 @media only screen and (min-width: 768px) {
-  /* line 586, sass/pages/_shop.scss */
+  /* line 582, sass/pages/_shop.scss */
   .shoppage .shop-address-map .acf-map {
     border: 6px solid #e7e8e3;
     height: 335px;
   }
 }
 @media only screen and (min-width: 980px) {
-  /* line 586, sass/pages/_shop.scss */
+  /* line 582, sass/pages/_shop.scss */
   .shoppage .shop-address-map .acf-map {
     width: 795px;
     margin: 0 auto;
   }
 }
-/* line 600, sass/pages/_shop.scss */
+@media only screen and (min-width: 768px) {
+  /* line 596, sass/pages/_shop.scss */
+  .shoppage .shop-info-block {
+    padding: 0 0 40px;
+  }
+}
+/* line 601, sass/pages/_shop.scss */
 .shoppage .shop-photos-block {
   border-top: 1px solid #dbddd5;
   padding: 35px 0;
@@ -6705,13 +6706,13 @@ textarea {
   background: #eef0e8;
 }
 @media only screen and (min-width: 768px) {
-  /* line 600, sass/pages/_shop.scss */
+  /* line 601, sass/pages/_shop.scss */
   .shoppage .shop-photos-block {
     padding: 60px 0 40px;
     margin: 60px 0 0;
   }
 }
-/* line 609, sass/pages/_shop.scss */
+/* line 610, sass/pages/_shop.scss */
 .shoppage .shop-photos-block h1 {
   text-transform: uppercase;
   font-size: 17px;
@@ -6719,49 +6720,49 @@ textarea {
   margin: 0 0 25px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 609, sass/pages/_shop.scss */
+  /* line 610, sass/pages/_shop.scss */
   .shoppage .shop-photos-block h1 {
     margin: 0 0 35px;
     font-size: 23.91px;
     line-height: normal;
   }
 }
-/* line 619, sass/pages/_shop.scss */
+/* line 620, sass/pages/_shop.scss */
 .shoppage .shop-photos-block .shop-photos-area {
   max-width: 888px;
   margin: 0 auto;
 }
-/* line 622, sass/pages/_shop.scss */
+/* line 623, sass/pages/_shop.scss */
 .shoppage .shop-photos-block .shop-photos-area ul {
   list-style: none;
   margin: 0 -7px;
   padding: 0;
 }
 @media only screen and (min-width: 768px) {
-  /* line 622, sass/pages/_shop.scss */
+  /* line 623, sass/pages/_shop.scss */
   .shoppage .shop-photos-block .shop-photos-area ul {
     margin: 0 -15px;
   }
 }
-/* line 629, sass/pages/_shop.scss */
+/* line 630, sass/pages/_shop.scss */
 .shoppage .shop-photos-block .shop-photos-area ul li {
   width: 50%;
   padding: 7px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 629, sass/pages/_shop.scss */
+  /* line 630, sass/pages/_shop.scss */
   .shoppage .shop-photos-block .shop-photos-area ul li {
     width: 33.333%;
     padding: 16px 15px;
   }
 }
 @media only screen and (min-width: 980px) {
-  /* line 629, sass/pages/_shop.scss */
+  /* line 630, sass/pages/_shop.scss */
   .shoppage .shop-photos-block .shop-photos-area ul li {
     width: 25%;
   }
 }
-/* line 643, sass/pages/_shop.scss */
+/* line 644, sass/pages/_shop.scss */
 .shoppage .shop-photos-block .shop-photos-area ul li img {
   display: block;
 }
