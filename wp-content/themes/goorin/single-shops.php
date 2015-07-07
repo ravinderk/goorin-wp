@@ -28,28 +28,29 @@ global $post;?>
 	<!--breadcrumbs-->
 	<section class="shop-hero-block">
         <div class="container">
-        	<div class="shop-hero-slider">
-        		<!--item loop-->
-        		<div class="item">
-	                <figure>
-	                    <a href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?></a>
-	                </figure>
-	                <article>
-	                    <h6><?php echo get_field('city'); ?></h6>
-	                    <h1><a href="<?php the_permalink() ?>"><?php echo get_the_title(); ?></a></h1>
-	                </article>
-	            </div>
-	            <!--item loop-->
-	            <div class="item">
-	                <figure>
-	                    <a href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?></a>
-	                </figure>
-	                <article>
-	                    <h6><?php echo get_field('city'); ?></h6>
-	                    <h1><a href="<?php the_permalink() ?>"><?php echo get_the_title(); ?></a></h1>
-	                </article>
-	            </div>  
-	            <!--item loop-->  
+	        <?php $slider_images = get_field('slider_images'); ?>
+        	<div class="shop-hero-slider <?php if( $slider_images ) echo 'active'; ?>">
+        		<?php if( $slider_images ): ?>
+			        <!--item loop-->
+			        <?php foreach( $slider_images as $image ):  ?>
+				        <div class="item">
+					        <figure>
+						        <a href="<?php the_permalink() ?>"><img src="<?php echo $image['image']['url']; ?>" alt="<?php echo $image['image']['alt']; ?>"/></a>
+					        </figure>
+				        </div>
+			        <?php endforeach; ?>
+
+		        <?php else: ?>
+			        <div class="item">
+				        <figure>
+					        <a href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?></a>
+				        </figure>
+			        </div>
+		        <?php endif; ?>
+		        <article>
+			        <h6><?php echo get_field('city'); ?></h6>
+			        <h1><a href="<?php the_permalink() ?>"><?php echo get_the_title(); ?></a></h1>
+		        </article>
             </div>
         </div>
     </section>
