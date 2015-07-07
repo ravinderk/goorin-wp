@@ -48,9 +48,7 @@ get_header(); ?>
     					<h4>Our Neighborhood Hat Shops</h4>
     				</hgroup>
     				<div class="shoplist-area">
-    					<article class="shoplist">
-						    <?php goorin_shop_listing(); ?>
-					    </article>
+					    <?php goorin_shop_listing(); ?>
     				</div>
     			</div>
     		</div>

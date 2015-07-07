@@ -316,6 +316,7 @@ function goorin_shop_listing(){
 
 	if( $results ){
 		$shops = array();
+		$shop_names = array();
 		foreach( $results as $shop ){
 			$shop_names[ sanitize_title( $shop['sl_city'] ) ] = $shop['sl_city'];
 			$shops[ sanitize_title( $shop['sl_city'] ) ][]= array(
@@ -324,26 +325,57 @@ function goorin_shop_listing(){
 				'shop_name' => $shop['sl_store']
 			);
 		}
+	}else{
+		return;
+	}
+
+	//bailout
+	if( empty( $shops ) || empty( $shop_names ) ){
+		return;
 	}
 
 	//sort shop names
-	ksort($shop_names);
+	//ksort($shop_names);
+	ksort($shops);
+
+	//shops chunks
+	$shop_chunks = partition( $shops, 3 );
 
 	//render html
-	foreach( $shop_names as $shop_key => $shop_name ){
-		echo '<h6>'.$shop_name.'</h6>';
+	foreach( $shop_chunks as $chunk ){
+		echo '<article class="shoplist">';
+			foreach( $chunk as $shop_key => $city ){
+					echo '<h6>'.$shop_names[$shop_key].'</h6>';
 
-		echo '<ul>';
-		foreach( $shops[$shop_key] as $shop ){
-			echo '<li><a href="'.$shop['shop_link'].'">'.$shop['shop_name'].'</a></li>';
-		}
-		echo '</ul>';
-
+					echo '<ul>';
+					foreach( $city as $shop ){
+						echo '<li><a href="'.$shop['shop_link'].'">'.$shop['shop_name'].'</a></li>';
+					}
+					echo '</ul>';
+			}
+		echo '</article>';
 	}
 
-	$gooring_shop_listing = array(
-		'name' => $shop_name,
-		'shops'=> $shops
-	);
+}
+
+/**
+ *
+ * @param Array $list
+ * @param int $p
+ * @return multitype:multitype:
+ * @link http://www.php.net/manual/en/function.array-chunk.php#75022
+ */
+function partition(Array $list, $p) {
+	$listlen = count($list);
+	$partlen = floor($listlen / $p);
+	$partrem = $listlen % $p;
+	$partition = array();
+	$mark = 0;
+	for($px = 0; $px < $p; $px ++) {
+		$incr = ($px < $partrem) ? $partlen + 1 : $partlen;
+		$partition[$px] = array_slice($list, $mark, $incr);
+		$mark += $incr;
+	}
+	return $partition;
 }
 
