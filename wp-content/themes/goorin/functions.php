@@ -365,15 +365,16 @@ function goorin_shop_listing(){
  * @return multitype:multitype:
  * @link http://www.php.net/manual/en/function.array-chunk.php#75022
  */
-function partition(Array $list, $p) {
-	$listlen = count($list);
-	$partlen = floor($listlen / $p);
+function partition( Array $list, $p ) {
+	$listlen = count( $list );
+	$partlen = floor( $listlen / $p );
 	$partrem = $listlen % $p;
 	$partition = array();
 	$mark = 0;
-	for($px = 0; $px < $p; $px ++) {
+
+	for( $px = 0; $px < $p; $px ++ ) {
 		$incr = ($px < $partrem) ? $partlen + 1 : $partlen;
-		$partition[$px] = array_slice($list, $mark, $incr);
+		$partition[ $px ] = array_slice( $list, $mark, $incr );
 		$mark += $incr;
 	}
 	return $partition;
